@@ -1,0 +1,102 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1300px]">
+    <div class="layer-header">
+      <h1>옵션 관리 검색</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div class="tbl-box">
+        <table class="table" summary="옵션 관리 검색">
+
+          <colgroup>
+            <col width="20%">
+            <col width="80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="col">업체 구분</th>
+            <td>
+              <label class="label">
+                <input type="radio">
+                <span class="label-text">본사</span>
+              </label>
+              <label class="label">
+                <input type="radio">
+                <span class="label-text">공급사</span>
+              </label>
+              <button type="button" class="btn-supplier btn-m ml-2">공급사 선택</button>
+              <!--<button type="button" class="btn-m btn-store ml-2">공급사 선택</button>-->
+              <div class="mt-1 flex justify-start">
+                <p class="!min-w-[75px] text-sub-blue-700 font-bold">선택된 공급사 : </p>
+                <div class="w-full">
+                    <span class="inline-block cursor-default">테스트 공급사
+                      <button type="button" class="w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1"><i class="fa-solid fa-xmark"></i></button>
+                    </span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">검색어</th>
+            <td><input type="text" class="input-wrap" placeholder="placeholder"></td>
+          </tr>
+          <tr>
+            <th scope="row">기간</th>
+            <td>
+              <select class="select-wrap align-middle">
+                <option>등록일</option>
+                <option>수정일</option>
+              </select>
+              <span class="input-calendar-wrap">
+                  <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                  <input type="text" class="inline-block float-right w-[76px] h-[38px]">
+                </span>
+              <span class="inline-block px-1">~</span>
+              <span class="input-calendar-wrap">
+                  <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                  <input type="text" class="inline-block float-right w-[76px] h-[38px]">
+                </span>
+              <div class="period-tab">
+                <label class="label">
+                  <input type="radio" name="period">
+                  <span class="label-text">오늘</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period">
+                  <span class="label-text">7일</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period">
+                  <span class="label-text">15일</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period">
+                  <span class="label-text">1개월</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period">
+                  <span class="label-text">3개월</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period" checked="">
+                  <span class="label-text">전체</span>
+                </label>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center mt-3">
+        <button type="button" class="btn-m ml-[110px]">검색</button>
+        <button type="button" class="btn-white-m float-right">옵션 관리 바로 가기</button>
+      </div>
+      <div id="app" class="mt-6"></div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">선택</button>
+      <button type="button" class="btn-white-l">취소</button>
+    </div>
+  </div>
+</div>

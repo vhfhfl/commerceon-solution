@@ -1,0 +1,15 @@
+{{DF this 'id' (UID)}}
+<div class='image_uploader' data-cpntid='{{id}}'>
+  <p class='font-bold'>현재 사용중인 이미지</p>
+  <div class='mt-1'>
+    <img class='max-w-full' src='../images/folder.png' alt='' style='width:138px; height:138px;' />
+{{!--    <img class='max-w-full' src='../images/test_personalseal.jpg' alt='' style='width:138px; height:138px;' />--}}
+  </div>
+  <div class='mt-1 border-sub-blue-200 rounded-sm relative overflow-hidden'>
+    <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+    <label for='input-{{id}}' class='cursor-pointer rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>
+      파일 첨부
+    </label>
+    <input type='file' id='input-{{id}}' class='absolute left-[-99999px]' />
+  </div>
+</div>

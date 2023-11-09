@@ -1,0 +1,156 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 매출정보조회 -->
+            <div>
+              <div class='tit-box'><h3>매출 정보 조회</h3></div>
+              <table class='table mt-1' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>기간</th>
+                    <td>
+                      <div class='H-BOX'>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <span>~</span>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <div class='period-tab'>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>오늘</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>7일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>15일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>1개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' checked='' />
+                            <span class='label-text'>3개월</span>
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='mt-1 text-center'>
+                <button class='btn-m'>검색</button>
+              </div>
+            </div>
+            <!-- //매출정보조회 -->
+
+            <!-- 조회기간매출요약 -->
+            <div class='mt-10'>
+              <div class='tit-box'><h3>조회 기간 매출 요약</h3></div>
+              <div>
+                <div class='TAB-UI tab mt-1 relative'>
+                  <ul>
+                    <li data-tab-key='b762e5b1-9fb7-4553-8cfe-cd8cc3130f97' onclick='ACTIVE_TAB(this);' class='on'>일별 매출현황</li>
+                    <li data-tab-key='cd2e11b2-ff82-4c6c-9f47-4fee8cf844a0' onclick='ACTIVE_TAB(this);'>시간대별 매출현황</li>
+                    <li data-tab-key='c5df066e-d608-4d83-8b46-77bb7b79107c' onclick='ACTIVE_TAB(this);'>요일별 매출현황</li>
+                    <li data-tab-key='5db7b810-aa9b-4212-ba9c-8ffe43b13a0c' onclick='ACTIVE_TAB(this);'>월별 매출현황</li>
+                  </ul>
+                  <div class='absolute top-0 right-0 h-full flex flex-row justify-center items-center'>
+                    <button class='btn-white-m'>
+                      <span>엑셀 다운로드</span>
+                      <span class='icon-download inline-block w-[16px] h-[16px] align-sub bg-icon-download bg-center bg-no-repeat'></span>
+                    </button>
+                  </div>
+                </div>
+                <div class='mt-[20px]'>
+                  <div data-tab-child='b762e5b1-9fb7-4553-8cfe-cd8cc3130f97' class='on'>
+                    <table class='border-table TYPE2 mt-1' >
+                      <thead>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope='col' class='text-center'>총 매출금액</th>
+                          <th scope='col' class='text-center'>무통장입금</th>
+                          <th scope='col' class='text-center'>신용카드</th>
+                          <th scope='col' class='text-center'>계좌이체</th>
+                          <th scope='col' class='text-center'>가상계좌</th>
+                          <th scope='col' class='text-center'>휴대폰</th>
+                          <th scope='col' class='text-center'>페이코</th>
+                          <th scope='col' class='text-center'>네이버페이</th>
+                        </tr>
+                        <tr>
+                          <td rowspan='3' class='text-center'>98,039,896원</td>
+                          <td class='text-center'>0원</td>
+                          <td class='text-center'>43,056,451원</td>
+                          <td class='text-center'>112,360원</td>
+                          <td class='text-center'>4,657,360원</td>
+                          <td class='text-center'>1,271,639원</td>
+                          <td class='text-center'>2,046,524원</td>
+                          <td class='text-center'>39,683,128원</td>
+                        </tr>
+                        <tr>
+                          <th scope='col' class='text-center'>카카오페이</th>
+                          <th scope='col' class='text-center'>에스크로 (신용카드)</th>
+                          <th scope='col' class='text-center'>에스크로 (계좌이체)</th>
+                          <th scope='col' class='text-center'>에스크로 (가상계좌)</th>
+                          <th scope='col' class='text-center'>(포인트)</th>
+                          <th scope='col' class='text-center'>(예치금)</th>
+                          <th scope='col' class='text-center'></th>
+                        </tr>
+                        <tr>
+                          <td class='text-center'>0원</td>
+                          <td class='text-center'>43,056,451원</td>
+                          <td class='text-center'>112,360원</td>
+                          <td class='text-center'>4,657,360원</td>
+                          <td class='text-center'>1,271,639원</td>
+                          <td class='text-center'>2,046,524원</td>
+                          <td class='text-center'></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div data-tab-child='cd2e11b2-ff82-4c6c-9f47-4fee8cf844a0'>2</div>
+                  <div data-tab-child='c5df066e-d608-4d83-8b46-77bb7b79107c'>3</div>
+                  <div data-tab-child='5db7b810-aa9b-4212-ba9c-8ffe43b13a0c'>4</div>
+                </div>
+              </div>
+              <div id='app1' class='mt-1'></div>
+            </div>
+            <!-- //조회기간매출요약 -->
+
+            <!-- 조회기간매출상세 -->
+            <div class='mt-7'>
+              <div class='tit-box'><h3>조회 기간 매출 상세</h3></div>
+              <div id='app2' class='mt-1'></div>
+            </div>
+            <!-- //조회기간매출상세 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

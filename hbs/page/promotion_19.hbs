@@ -1,0 +1,198 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 이벤트검색 -->
+            <div>
+              <div class='tit-box'><h3>이벤트 검색</h3></div>
+              <table class='table mt-1' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>검색어</th>
+                    <td>
+                      <div class='H-BOX'>
+                        <select class='select-wrap'>
+                          <option>선택</option>
+                          <option>이벤트명</option>
+                          <option>상품명</option>
+                          <option>공급사명</option>
+                          <option>등록 아이디</option>
+                        </select>
+                        <input type='text' class='input-wrap' placeholder='placeholder' />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>이벤트 유형 <span class='text-red'>*</span></th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>세트 상품 (고정 세트)</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>세트 상품 (교차 할인)</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>N장 구매 추가 할인</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>기간 검색</th>
+                    <td>
+                      <div class='H-BOX'>
+                        <select class='select-wrap'>
+                          <option>등록일</option>
+                          <option>진행일</option>
+                        </select>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' placeholder='placeholder' />
+                        </span>
+                        <span>~</span>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' placeholder='placeholder' />
+                        </span>
+                        <div class='period-tab'>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>오늘</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' checked='' />
+                            <span class='label-text'>7일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>15일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>1개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>3개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>1년</span>
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //이벤트검색 -->
+            <div class='text-center mt-6'>
+              <button type='button' class='btn-m'>검색</button>
+              <button type='button' class='btn-white-m'>초기화</button>
+            </div>
+            <!-- 리스트 -->
+            <div class='mt-7'>
+              <div>
+                <div class='tit-box'><h3>[세트 상품] 이벤트 리스트</h3></div>
+                <div class='flex justify-between items-end'>
+                  <div>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</div>
+                  <div>
+                    <select class='select-wrap'>
+                      <option>선택</option>
+                      <option>최근 등록 날짜</option>
+                      <option>오래된 등록 날짜</option>
+                      <option>발급 수 높은 순</option>
+                      <option>발급 수 낮은 순</option>
+                    </select>
+                    <select class='select-wrap'>
+                      <option>10개씩 보기</option>
+                      <option>20개씩 보기</option>
+                      <option>30개씩 보기</option>
+                      <option>50개씩 보기</option>
+                      <option>100개씩 보기</option>
+                      <option>150개씩 보기</option>
+                      <option>200개씩 보기</option>
+                      <option>300개씩 보기</option>
+                      <option>500개씩 보기</option>
+                      <option>1000개씩 보기</option>
+                      <option>5000개씩 보기</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- 탭메뉴 -->
+              <div class='TAB-UI tab mt-7'>
+                <ul>
+                  <li data-tab-key='b70c80ed-6977-4fc6-895c-203c44f387b2' onclick='ACTIVE_TAB(this);' class='on'>전체 (12)</li>
+                  <li data-tab-key='c0ab7831-d547-431a-b6da-178d5a30aeb7' onclick='ACTIVE_TAB(this);'>진행대기 (3)</li>
+                  <li data-tab-key='4f1b3ad2-5d3a-404d-a7fa-cbd2a6fda16f' onclick='ACTIVE_TAB(this);'>진행중 (2)</li>
+                  <li data-tab-key='74006c80-0571-4ff5-9319-72994ccfb5b7' onclick='ACTIVE_TAB(this);'>진행종료 (7)</li>
+                </ul>
+              </div>
+              <div class='mt-[20px]'>
+                <div data-tab-child='b70c80ed-6977-4fc6-895c-203c44f387b2' class='on'>
+                  <div id='app'>
+                    <button class='btn-m'>PC</button>
+                    <button class='btn-m'>Mobile</button>
+                    <button class='btn-m'>수정</button>
+                    <button class='btn-warning-m'>삭제</button>
+                  </div>
+                </div>
+                <div data-tab-child='c0ab7831-d547-431a-b6da-178d5a30aeb7'>진행대기</div>
+                <div data-tab-child='4f1b3ad2-5d3a-404d-a7fa-cbd2a6fda16f'>진행중</div>
+                <div data-tab-child='74006c80-0571-4ff5-9319-72994ccfb5b7'>진행종료</div>
+              </div>
+              <div class='mt-1'>
+                <span class='mr-1'>* 선택 항목</span>
+                <button class='btn-warning-m'>삭제</button>
+              </div>
+              <!-- paging -->
+              <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='ddd9f1d0-ac49-4b08-b779-9ebd95f72f60'>
+                <div class='paging new'>
+                  <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                  <a href='#' class='prev btn-paging w-[50px]'>
+                    <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                  </a>
+                  <span class='now btn-paging leading-[26px]'>1</span>
+                  <a href='#' class='btn-paging leading-[26px]'>2</a>
+                  <a href='#' class='btn-paging leading-[26px]'>3</a>
+                  <a href='#' class='btn-paging leading-[26px]'>4</a>
+                  <a href='#' class='next btn-paging w-[50px]'>
+                    <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                  </a>
+                  <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                </div>
+              </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+              <!-- //paging -->
+            </div>
+            <!-- //리스트 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

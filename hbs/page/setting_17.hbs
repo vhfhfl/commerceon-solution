@@ -1,0 +1,92 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230818170815166'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'배송 업체 관리 검색'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col style='width:15%' />
+                    <col style='width:85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/SelectBox_1-a.hbs');</script>
+                        <input type='text' class='input-wrap' placeholder='placeholder' />
+                      </td>
+                    </tr>
+                    <tr><!-- 2022-11-17-수정 -->
+                      <th scope='row'>상태</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <script>Include('/hbs/component/BtnBox_1-c.hbs');</script>
+            </section>
+            <section data-seq='20230818172326593'>
+              <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt1:'배송 업체 리스트'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+
+                  <tbody>
+                    <tr>
+                      <th scope='col' class='text-center'>
+                        <label class='label'>
+                          <input type='checkbox' name='' />
+                          <span class='label-text'></span>
+                        </label>
+                      </th>
+                      <th scope='col' class='text-center'>번호</th>
+                      <th scope='col' class='text-center'>배송 업체명</th>
+                      <th scope='col' class='text-center'>사용 여부</th>
+                      <th scope='col' class='text-center'>배송 추적 URL</th>
+                      <th scope='col' class='text-center'>관리</th>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    {{#LOOP 3}}
+                      <tr>
+                        <td class='text-center'>
+                          <label class='label'>
+                            <input type='checkbox' name='' />
+                            <span class='label-text'></span>
+                          </label>
+                        </td>
+                        <td class='text-center'>{{number}}</td>
+                        <td class='text-center'>한진택배</td>
+                        <td class='text-center'>사용함</td>
+                        <td class='text-center'>https://www.hanjin.co.kr/Delivery_html/inquiry/result_waybill.jsp?wbl_num=__INVOICENO_</td>
+                        <td class='text-center'>
+                          <button type='button' class='btn-white-m' onclick="location.href='setting-delivery_registration.html'">수정</button>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+                <script>Include('/hbs/component/BtnBox_1-b.hbs');</script>
+                <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

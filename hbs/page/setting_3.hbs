@@ -1,0 +1,91 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'외부 스크립트 등록'});</script>
+              <table class='table' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>Label <span class='text-red'>*</span></th>
+                    <td>
+                      <article class='CenterBetween'>
+                        <div style='flex:1;'>
+                          <input type='text' class='input-wrap w-full' placeholder='placeholder' />
+                        </div>
+                        <div>
+                          <span><span class='ml-1 text-red'>0</span>/100</span>
+                        </div>
+                      </article>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>Label <span class='text-red'>*</span></th>
+                    <td>
+                      <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                      <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>Label</th>
+                    <td>
+                      <script>Include('/hbs/component/CheckBox_1-a.hbs');</script>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Label</th>
+                    <td>
+                      <script>Include('/hbs/component/TabBtnBox_1-a.hbs');</script>
+                      <div class='mt-[20px]'>
+                        <textarea class='block w-full h-[100px] overflow-y-auto p-2 border border-sub-blue-200 rounded-sm' placeholder='placeholder'></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div>Label</div>
+                      <div class='mt-1'>
+                        <button class='btn-m'>추가</button>
+                        <button class='btn-warning-m'>삭제</button>
+                      </div>
+                    </th>
+                    <td>
+                      <select class='select-wrap'>
+                        <option>Lorem Ipsum is simply dummy text.</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                      </select>
+                      <div class='mt-4'>
+                        <script>Include('/hbs/component/TabBtnBox_1-a.hbs');</script>
+                      </div>
+                      <div class='mt-[20px]'>
+                        <textarea class='block w-full h-[100px] overflow-y-auto p-2 border border-sub-blue-200 rounded-sm' placeholder='placeholder'></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <script>Include('/hbs/component/BtnBox_1-a.hbs');</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

@@ -1,0 +1,170 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='text-right'>
+              <select class='select-wrap' name=''>
+                <option value=''>50개씩 보기</option>
+                <option value=''>70개씩 보기</option>
+                <option value=''>100개씩 보기</option>
+                <option value=''>150개씩 보기</option>
+                <option value=''>300개씩 보기</option>
+                <option value=''>500개씩 보기</option>
+                <option value=''>1000개씩 보기</option>
+              </select>
+            </div>
+            <div class='tbl-box mt-1'>
+              <table class='table' >
+
+                <thead>
+                  <tr>
+                    <th scope='col' class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </th>
+                    <th scope='col' class='text-center'>번호</th>
+                    <th scope='col' class='text-center'>사은품 지급 타이틀</th>
+                    <th scope='col' class='text-center'>사은품 상품명</th>
+                    <th scope='col' class='text-center'>사은품 구분</th>
+                    <th scope='col' class='text-center'>지급 조건</th>
+                    <th scope='col' class='text-center'>기간</th>
+                    <th scope='col' class='text-center'>진행 여부</th>
+                    <th scope='col' class='text-center'>수정</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>1</td>
+                    <td class='text-center'>아크테릭스 고객 감사전</td>
+                    <td class='text-center'>반다나</td>
+                    <td class='text-center'>직접등록</td>
+                    <td class='text-center'>10만원 구매시 1개</td>
+                    <td class='text-center'>2022-05-01 ~ 2022-07-31</td>
+                    <td class='text-center'>
+                      <label class='toggle-button'>
+                        <input type='checkbox' />
+                        <span class='label-text'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>
+                      <button type='button' class='btn-white-m'>수정</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>2</td>
+                    <td class='text-center'>아크테릭스 고객 감사전</td>
+                    <td class='text-center'>반다나</td>
+                    <td class='text-center'>직접등록</td>
+                    <td class='text-center'>10만원 구매시 1개</td>
+                    <td class='text-center'>2022-05-01 ~ 2022-07-31</td>
+                    <td class='text-center'>
+                      <label class='toggle-button'>
+                        <input type='checkbox' />
+                        <span class='label-text'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>
+                      <button type='button' class='btn-white-m'>수정</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>3</td>
+                    <td class='text-center'>아크테릭스 고객 감사전</td>
+                    <td class='text-center'>반다나</td>
+                    <td class='text-center'>직접등록</td>
+                    <td class='text-center'>10만원 구매시 1개</td>
+                    <td class='text-center'>2022-05-01 ~ 2022-07-31</td>
+                    <td class='text-center'>
+                      <label class='toggle-button'>
+                        <input type='checkbox' />
+                        <span class='label-text'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>
+                      <button type='button' class='btn-white-m'>수정</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>4</td>
+                    <td class='text-center'>아크테릭스 고객 감사전</td>
+                    <td class='text-center'>반다나</td>
+                    <td class='text-center'>직접등록</td>
+                    <td class='text-center'>10만원 구매시 1개</td>
+                    <td class='text-center'>2022-05-01 ~ 2022-07-31</td>
+                    <td class='text-center'>
+                      <label class='toggle-button'>
+                        <input type='checkbox' />
+                        <span class='label-text'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>
+                      <button type='button' class='btn-white-m'>수정</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='7a16bf01-3803-443b-b5c1-2be8834e7a38'>
+                <div class='paging new'>
+                  <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                  <a href='#' class='prev btn-paging w-[50px]'>
+                    <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                  </a>
+                  <span class='now btn-paging leading-[26px]'>1</span>
+                  <a href='#' class='btn-paging leading-[26px]'>2</a>
+                  <a href='#' class='btn-paging leading-[26px]'>3</a>
+                  <a href='#' class='btn-paging leading-[26px]'>4</a>
+                  <a href='#' class='next btn-paging w-[50px]'>
+                    <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                  </a>
+                  <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                </div>
+              </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+            </div>
+            <div class='text-center mt-7'>
+              <button type='button' class='btn-l'>복사</button>
+              <button type='button' class='btn-warning-m h-[44px] px-10'>삭제</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

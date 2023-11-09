@@ -1,0 +1,34 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content">
+    <div class="layer-header">
+      <h1>스킨 업로드</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500">파일 업로드</h2>
+      <table class="table mt-1" summary="파일 업로드">
+
+        <colgroup>
+          <col class="w-[30%]">
+          <col class="w-[70%]">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th scope="col">파일 첨부</th>
+            <td>
+              <input class="bg-main-lightblue leading-[38px] pl-2 text-sub-blue-500 border border-sub-blue-200 rounded-sm" value="파일 선택" disabled="disabled">
+              <label for="pc_file" class="rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top cursor-pointer">파일 첨부</label>
+              <input type="file" id="pc_file" class="absolute left-[-99999px]">
+              <div class="mt-1 text-red">* 스킨 파일은 .zip만 업로드 가능합니다.</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">확인</button>
+      <button type="button" class="btn-white-l">취소</button>
+    </div>
+  </div>
+</div>

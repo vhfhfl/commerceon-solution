@@ -1,0 +1,187 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[900px]">
+    <div class="layer-header">
+      <h1>상품 교환</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div class="tit-box text-lg font-bold mb-2"><h3>주문정보</h3></div>
+      <table class="table" summary="주문정보">
+
+        <colgroup>
+          <col style="width:15%">
+          <col style="width:35%">
+          <col style="width:15%">
+          <col style="width:35%">
+        </colgroup>
+        <tbody>
+        <tr>
+          <th scope="row" class="text-center">주문번호</th>
+          <td class="text-center">1231403401341340</td>
+          <th scope="row" class="text-center">주문일시</th>
+          <td class="text-center">2022년 04월 00일 00시 00분</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="tit-box text-lg font-bold mt-7 mb-2"><h3>결제정보</h3></div>
+      <table class="table" summary="결제정보">
+
+        <colgroup>
+          <col style="width:20%">
+          <col style="width:20%">
+          <col style="width:20%">
+          <col style="width:20%">
+          <col style="width:20%">
+        </colgroup>
+        <thead>
+        <tr>
+          <th scope="row" class="text-center">상품 판매 금액</th>
+          <th scope="row" class="text-center">총 배송비</th>
+          <th scope="row" class="text-center">총 할인 금액</th>
+          <th scope="row" class="text-center">총 결제 금액</th>
+          <th scope="row" class="text-center">총 적립 금액</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="text-center">30,000 원</td>
+          <td class="text-center">2,500 원</td>
+          <td class="text-center">1,000 원</td>
+          <td class="text-center">22,500 원</td>
+          <td class="text-center">0 원</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="tit-box text-lg font-bold mt-7 mb-2"><h3>주문상품</h3></div>
+      <div id="app"></div>
+      <div class="text-right">
+        <button type="button" class="btn-inner-good-exchange btn-m">상품 교환</button>
+      </div>
+      <div class="tit-box text-lg font-bold mt-7 mb-2"><h3>교환상품</h3></div>
+      <div id="app"></div>
+      <div class="mt-7">
+        <button type="button" class="btn-white-m"><i class="fa-solid fa-xmark"></i> 선택 상품 삭제</button>
+      </div>
+      <div class="mt-7 text-center">
+        <button type="button" class="btn-m">결제 금액 계산</button>
+      </div>
+      <div class="mt-7 border-t border-t-sub-blue-200 border-dashed">
+        <div class="tit-box text-lg font-bold mt-7 mb-2"><h3>교환처리</h3></div>
+        <div class="tbl-box">
+          <table class="table" summary="교환처리">
+
+            <colgroup>
+              <col style="width:20%">
+              <col style="width:30%">
+              <col style="width:20%">
+              <col style="width:30%">
+            </colgroup>
+            <tbody>
+            <tr>
+              <th scope="row">교환사유</th>
+              <td colspan="3">
+                <select class="select-wrap !w-[147px]" name="">
+                  <option value="">선택</option>
+                  <option value="">고객변심</option>
+                  <option value="">품절취소</option>
+                  <option value="">배송지연취소</option>
+                  <option value="">배송불가지역</option>
+                  <option value="">중복주문취소</option>
+                  <option value="">시스템오류취소</option>
+                  <option value="">누락배송</option>
+                  <option value="">택배분실</option>
+                  <option value="">상품불량</option>
+                  <option value="">포장불량</option>
+                  <option value="">상품정보상이</option>
+                  <option value="">상품불만족</option>
+                  <option value="">서비스불만족</option>
+                  <option value="">기타</option>
+                  <option value="">임의반품접수</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">상세사유</th>
+              <td colspan="3">
+                <textarea class="w-full h-[100px] overflow-y-auto p-2 border border-sub-blue-200"></textarea>
+                <div class="mt-1">
+                  <label class="label">
+                    <input type="checkbox" name="sns_account">
+                    <span class="label-text">상세 사유를 고객에게 노출합니다.</span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">결제금액</th>
+              <td>
+                <p>
+                  기존 상품 금액 : 40,000 원<br/>
+                  교환할 상품 금액 : 10,000 원<br/>
+                  <br/>
+                  차액 : <span class="text-red">-30,000원 환급금 발생</span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">결제수단</th>
+              <td colspan="3">
+                <!-- 결제수단 선택-->
+                <div>
+                  <select class="select-wrap !w-[147px]" name="">
+                    <option value="">결제 수단 선택</option>
+                  </select>
+                  <div class="mt-1">
+                    <select class="select-wrap !w-[147px] align-middle mr-5" name="">
+                      <option value="">은행 선택</option>
+                    </select>
+                    <span>계좌정보 :</span>
+                    <input type="text" class="input-wrap ml-1 mr-5">
+                    <span>예금주 :</span>
+                    <input type="text" class="input-wrap ml-1">
+                  </div>
+                  <p class="text-red mt-1">* 선택된 계좌로 관리자가 직접 입금 처리하여야 합니다.</p>
+                  <p class="text-red mt-1">* 선택된 계좌로 입금된 내역을 확인 한 후 관리자가 '결제완료' 상태로 변경 처리 하여야 합니다.</p>
+                </div>
+                <!-- 환급금액 발생 -->
+                <div>
+                  <select class="select-wrap !w-[147px]" name="">
+                    <option value="">PG 부분 환불</option>
+                    <option value="">예치금 환불</option>
+                  </select>
+                  <div class="mt-1">
+                    <input type="text" class="input-wrap text-right" value="30,000">
+                  </div>
+                  <p class="text-red mt-1">* 계약된 PG사로 입력된 금액 만큼 카드 승인 취소 요청됩니다.</p>
+                  <p class="text-red mt-1">* 입력된 금액 만큼의 예치금이 고객에게 환불 처리됩니다.</p>
+                </div>
+                <!-- 추가결제금액 발생 -->
+                <div>
+                  <select class="select-wrap !w-[147px]" name="">
+                    <option value="">PG 결제</option>
+                  </select>
+                  <p class="text-red mt-1">* 고객 마이페이지 내 교환 차액 결제 버튼이 생성됩니다.</p>
+                </div>
+                <div>
+                  <select class="select-wrap !w-[147px]" name="">
+                    <option value="">예치금 결제</option>
+                  </select>
+                  <div class="mt-1">
+                    <input type="text" class="input-wrap text-right mr-2" value="30,000"><span>남은 예치금 : 99,999 원</span>
+                  </div>
+                  <p class="text-red mt-1">* 고객 마이페이지 내 교환 차액 결제 버튼이 생성됩니다.</p>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">다음</button>
+      <button type="button" class="btn-white-l">취소</button>
+    </div>
+  </div>
+</div>

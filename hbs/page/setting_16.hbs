@@ -1,0 +1,96 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230818154232732'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'상품 상세 이용안내 내용'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <div class='H-BOX'>
+                          <input type='text' class='input-wrap' placeholder='placeholder' />
+                          <button type='button' class='btn-m'>Button</button>
+                          <button type='button' class='btn-white-m'>Button</button>
+                        </div>
+                      </td>
+                    </tr>
+                    {{#LOOP 2}}
+                      <tr>
+                        <th scope='col'>Label</th>
+                        <td>
+                          <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section data-seq='20230818154327957'>
+              <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt1:'상품 상세 이용안내 리스트'});</script>
+              <div class='tbl-box'>
+                <table class='table center'>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <label class='label'>
+                          <input type='checkbox' name='' />
+                          <span class='label-text'></span>
+                        </label>
+                      </th>
+                      <th>번호</th>
+                      <th>이용안내 분류</th>
+                      <th>적용 범위 분류</th>
+                      <th>이용안내 제목</th>
+                      <th>등록일시</th>
+                      <th>관리</th>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    {{#LOOP 3}}
+                      <tr>
+                        <td class='text-center'>
+                          <label class='label'>
+                            <input type='checkbox' name='' />
+                            <span class='label-text'></span>
+                          </label>
+                        </td>
+                        <td class='text-center'>{{number}}</td>
+                        <td class='text-center'>배송안내</td>
+                        <td class='text-center'><span class='text-red'>(필수)</span></td>
+                        <td class='text-center'>2022년 배송정책 안내본</td>
+                        <td class='text-center'>2022-05-11 15:01:00</td>
+                        <td class='text-center'>
+                          <button type='button' class='btn-white-m'>수정</button>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+                <script>Include('/hbs/component/BtnBox_1-b.hbs');</script>
+                <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

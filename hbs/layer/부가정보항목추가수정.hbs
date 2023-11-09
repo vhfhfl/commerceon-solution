@@ -1,0 +1,63 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content">
+    <div class="layer-header">
+      <h1>부가 정보 항목 추가/수정</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div class="tbl-box">
+        <table class="table" summary="부가 정보 항목 추가/수정">
+
+          <colgroup>
+            <col style="width:30%">
+            <col style="width:70%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row">항목명</th>
+            <td><input type="text" class="input-wrap w-full" placeholder="placeholder"></td>
+          </tr>
+          <tr>
+            <th scope="row">조건</th>
+            <td>
+              <label class="label">
+                <input type="checkbox" name="condition">
+                <span class="label-text">사용</span>
+              </label>
+              <label class="label">
+                <input type="checkbox" name="condition">
+                <span class="label-text">필수</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">타입</th>
+            <td>
+              <select class="select-wrap w-full" name="">
+                <option value="">선택</option>
+                <option value="">텍스트 박스</option>
+                <option value="">체크 박스</option>
+                <option value="">라디오 박스</option>
+                <option value="">셀렉트 박스</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">항목값</th>
+            <td><input type="text" class="input-wrap w-full" placeholder="placeholder"></td>
+          </tr>
+          <tr>
+            <th scope="row">설명</th>
+            <td><input type="text" class="input-wrap w-full" placeholder="placeholder"></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">추가</button>
+      <button type="button" class="btn-white-l">취소</button>
+    </div>
+  </div>
+</div>

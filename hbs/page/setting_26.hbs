@@ -1,0 +1,143 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 기본설정// -->
+            <div>
+              <div class='tit-box'>
+                <h3>기본설정</h3>
+              </div>
+              <table class='table mt-1' summary='기본설정'>
+                <caption>기본설정</caption>
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>카카오페이 설정 <span class='text-red'>*</span></th>
+                    <td>
+                      <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>카카오페이 가맹점 코드 <span class='text-red'>*</span></th>
+                    <td>
+                      <input type='text' class='input-wrap w-1/3' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //기본설정 -->
+            <!-- 카카오페이 예외상품 설정// -->
+            <div class='mt-7'>
+              <div class='tit-box'>
+                <h3>카카오페이 예외상품 설정</h3>
+              </div>
+              <table class='table mt-1' summary='카카오페이 예외상품 설정'>
+                <caption>카카오페이 예외상품 설정</caption>
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>예외 조건 <span class='text-red'>*</span></th>
+                    <td>
+                      <table class='mt-1 border-table w-1/2' summary='예외 카테고리'>
+                        <caption>예외 카테고리</caption>
+                        <tbody>
+                          <tr>
+                            <th scope='row'>예외 상품</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class='btn-m'>
+                                상품 선택
+                              </button>
+                              <article class='mt-1 flex justify-start'>
+                                <div class='text-sub-blue-700 font-bold'>
+                                  선택된 상품 :
+                                </div>
+                                <article class='ml-1 flex-1 flex flex-wrap items-start gap-x-3 gap-y-1'>
+                                  <div class='CenterLeft'>
+                                    <div>
+                                      테스트 상품
+                                    </div>
+                                    <button type='button' class='ml-1 w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700'>
+                                      <i class='fa-solid fa-xmark'></i>
+                                    </button>
+                                  </div>
+                                  <div class='CenterLeft'>
+                                    <div>
+                                      테스트 상품
+                                    </div>
+                                    <button type='button' class='ml-1 w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700'>
+                                      <i class='fa-solid fa-xmark'></i>
+                                    </button>
+                                  </div>
+                                </article>
+                              </article>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>예외 카테고리</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class='btn-m'>
+                                카테고리 선택
+                              </button>
+                              <article class='mt-1 flex justify-start'>
+                                <div class='text-sub-blue-700 font-bold'>
+                                  선택된 카테고리 :
+                                </div>
+                                <article class='ml-1 flex-1 flex flex-wrap items-start gap-x-3 gap-y-1'>
+                                  <div class='CenterLeft'>
+                                    <div>
+                                      테스트 카테고리
+                                    </div>
+                                    <button type='button' class='ml-1 w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700'>
+                                      <i class='fa-solid fa-xmark'></i>
+                                    </button>
+                                  </div>
+                                  <div class='CenterLeft'>
+                                    <div>
+                                      테스트 카테고리
+                                    </div>
+                                    <button type='button' class='ml-1 w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700'>
+                                      <i class='fa-solid fa-xmark'></i>
+                                    </button>
+                                  </div>
+                                </article>
+                              </article>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //카카오페이 예외상품 설정 -->
+            <div class='mt-7'>
+              <script>Include('/hbs/component/BtnBox_1-a.hbs');</script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

@@ -1,0 +1,135 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 검색 조건 -->
+            <div class='tit-box'><h3>검색 조건</h3></div>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:20%' />
+                  <col style='width:80%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>검색어</th>
+                    <td>
+                      <select class='select-wrap !w-[147px]' name=''>
+                        <option value=''>선택</option>
+                        <option value=''>전체</option>
+                        <option value=''>제목</option>
+                        <option value=''>내용</option>
+                      </select>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                      <button type='button' class='btn-m'>검색</button>
+                      <button type='button' class='btn-white-m'>초기화</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>발송 유형</th>
+                    <td>
+                      <label class='label mr-5'>
+                        <input type='radio' name='send_type' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='send_type' />
+                        <span class='label-text'>자동</span>
+                      </label>
+                      <label class='label'>
+                        <input type='radio' name='send_type' />
+                        <span class='label-text'>수동</span>
+                      </label>
+                    </td>
+                  </tr><tr>
+                    <th scope='row'>발송일</th>
+                    <td>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <span class='inline-block px-1'>~</span>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <div class='period-tab'>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>오늘</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>7일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>15일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>3개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' checked='' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //검색 조건 -->
+            <!-- 메일 발송 리스트 -->
+            <div class='tit-box mt-10'><h3>메일 발송 리스트</h3></div>
+            <div class='sorting-box flex justify-between my-3'>
+              <div class='left-box'>
+                <span class='inline-block mt-6'>검색 <span class='text-red'>0</span>명 / 전체 <span class='text-red'>0</span>명</span>
+              </div>
+              <div class='right-box'>
+                <select class='select-wrap' name=''>
+                  <option value=''>10개씩 보기</option>
+                  <option value=''>20개씩 보기</option>
+                  <option value=''>30개씩 보기</option>
+                  <option value=''>50개씩 보기</option>
+                  <option value=''>100개씩 보기</option>
+                  <option value=''>150개씩 보기</option>
+                  <option value=''>200개씩 보기</option>
+                  <option value=''>300개씩 보기</option>
+                  <option value=''>500개씩 보기</option>
+                  <option value=''>1000개씩 보기</option>
+                  <option value=''>5000개씩 보기</option>
+                </select>
+              </div>
+            </div>
+            <div class='mt-1' id='app'>
+              <button type='button' class='btn-mail-detail-view btn-m'>상세보기 (레이어 테스트 버튼 입니다.)</button>
+              <button type='button' class='btn-mail-detail-view-list btn-m'>상세보기-리스트 (레이어 테스트 버튼 입니다.)</button>
+            </div>
+            <div class='mt-1'>
+              <span class='inline-block mr-1'>* 선택 항목 </span>
+              <button type='button' class='btn-m'>삭제</button>
+            </div>
+            <!-- //메일 발송 리스트 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

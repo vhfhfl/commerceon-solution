@@ -1,0 +1,155 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 검색조건 -->
+            <div class='tbl-box'>
+              <div class='tit-box'><h3>검색 조건</h3></div>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:15%' />
+                  <col style='width:85%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>게시판</th>
+                    <td>
+                      <select class='select-wrap' name=''>
+                        <option value=''>선택</option>
+                        <option value=''>1:1 문의</option>
+                        <option value=''>상품후기</option>
+                        <option value=''>상품문의</option>
+                        <option value=''>공지사항</option>
+                        <option value=''>이벤트 게시판</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>검색어</th>
+                    <td>
+                      <select class='select-wrap' name=''>
+                        <option value=''>선택</option>
+                        <option value=''>제목</option>
+                        <option value=''>내용</option>
+                        <option value=''>아이디</option>
+                        <option value=''>이름</option>
+                        <option value=''>닉네임</option>
+                        <option value=''>이메일</option>
+                        <option value=''>휴대폰번호</option>
+                      </select>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>문의 유형</th>
+                    <td>
+                      <select class='select-wrap' name=''>
+                        <option value=''>선택</option>
+                        <option value=''>테스트A</option>
+                        <option value=''>테스트B</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>답변 상태</th>
+                    <td>
+                      <label class='label mr-5'>
+                        <input type='radio' name='answer_state' checked='checked' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='answer_state' />
+                        <span class='label-text'>답변대기</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='answer_state' />
+                        <span class='label-text'>답변중</span>
+                      </label>
+                      <label class='label'>
+                        <input type='radio' name='answer_state' />
+                        <span class='label-text'>답변완료</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>작성일</th>
+                    <td>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'>
+                          <span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span>
+                        </button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <span class='inline-block px-1'>~</span>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'>
+                          <span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span>
+                        </button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <div class='period-tab'>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>오늘</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>7일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>15일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>3개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' checked='' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //검색조건 -->
+            <div class='text-center mt-6'>
+              <button type='button' class='btn-m'>검색</button>
+              <button type='button' class='btn-white-m'>초기화</button>
+            </div>
+            <!-- 1:1문의리스트 -->
+            <div>
+              <div class='tit-box mt-6'><h3>1:1 문의 리스트</h3></div>
+              <div id='app' class='mt-1'>
+                <button type='button' class='btn-inquiry-detail-view btn-m'>답변하기 (레이어 테스트 버튼 입니다.)</button>
+              </div>
+              <div class='mt-1'>
+                <span class='inline-block mr-1'>* 선택 게시글</span>
+                <button type='button' class='btn-warning-m'>삭제</button>
+                <button type='button' class='btn-reply btn-m'>답변완료</button>
+              </div>
+            </div>
+            <!-- //1:1문의리스트 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

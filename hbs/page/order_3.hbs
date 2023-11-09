@@ -1,0 +1,194 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 배송 정보 -->
+            <div class='tit-box'><h3>배송 정보</h3></div>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:20%' />
+                  <col style='width:80%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>주문회원</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                      <button class='btn-search-member btn-m'>회원검색</button>
+                      <button class='btn-search-order btn-m'>주문검색</button>
+                      <button class='btn-white-m'>검색취소</button>
+                      <p class='mt-1 text-red'>* 회원이거나 주문 이력이 있는 고객일 경우 검색을 이용해주시고, 비회원은 주문 정보를 수동으로 입력해주시기 바랍니다.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>주문자명</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>전화번호</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>휴대폰번호</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                      <label class='label block mt-1'>
+                        <input type='checkbox' name='sns_account' />
+                        <span class='label-text'>주문 관련 SMS를 발송합니다. (주문 관련 SMS 수신 동의 : Y)</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>메일주소</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                      <label class='label block mt-1'>
+                        <input type='checkbox' name='sns_account' />
+                        <span class='label-text'>주문 관련 메일을 발송합니다.</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>수령자명</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                      <label class='label block mt-1'>
+                        <input type='checkbox' name='sns_account' />
+                        <span class='label-text'>주문자와 동일</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>전화번호</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>휴대폰번호</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>배송지주소</th>
+                    <td>
+                      <input type='text' class='input-wrap mr-1' placeholder='placeholder' />
+                      <button type='button' class='btn-m'>우편번호 찾기</button>
+                      <input type='text' class='input-wrap w-[50%] block mt-1' placeholder='placeholder' />
+                      <input type='text' class='input-wrap w-[50%] block mt-1' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>주문메시지</th>
+                    <td>
+                      <textarea class='block w-full h-[100px] overflow-y-auto p-2 border border-sub-blue-200 rounded-sm'></textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //배송 정보 -->
+            <!-- 상품 정보 -->
+            <div class='tit-box mt-10'><h3>상품 정보</h3></div>
+            <button class='btn-m'><i class='fa-solid fa-plus'></i> 상품 추가</button>
+            <div class='mt-1' id='app'></div>
+            <p class='mt-1 font-bold'>* 실판매가 합계 : 100,000 원</p>
+            <!-- //상품 정보 -->
+            <!-- 결제 정보 -->
+            <div class='tit-box mt-10'><h3>결제 정보</h3></div>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:20%' />
+                  <col style='width:80%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>결제 방식</th>
+                    <td>
+                      <select class='select-wrap block !w-[147px]' name=''>
+                        <option value=''>결제수단 선택</option>
+                        <option value=''>무통장 입금</option>
+                        <option value=''>PG 결제</option>
+                      </select>
+                      <div class='mt-1'>
+                        <select class='select-wrap !w-[147px] align-middle mr-5' name=''>
+                          <option value=''>은행 선택</option>
+                          <option value=''>국민은행</option>
+                          <option value=''>우리은행</option>
+                          <option value=''>기업은행</option>
+                        </select>
+                        <span>계좌정보 :</span>
+                        <input type='text' class='input-wrap ml-1 mr-5' />
+                        <span>예금주 :</span>
+                        <input type='text' class='input-wrap ml-1' />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>쿠폰 할인</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>코드 할인</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>포인트 사용</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                      <p class='mt-1'>* 실제로 고객의 보유 포인트에서 차감되므로, 해당 고객이 소지한 금액 이상은 입력하실 수 없습니다.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>예치금 사용</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                      <p class='mt-1'>* 실제로 고객의 보유 마일리지에서 차감되므로, 해당 고객이 소지한 금액 이상은 입력하실 수 없습니다.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>배송비</th>
+                    <td>
+                      <input type='text' class='input-wrap' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>결제금액</th>
+                    <td>상품합계 100,000 원 - 할인합계 50,000 원 + 배송비 0 원 = 결제금액 <span class='text-red'>50,000</span> 원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //결제 정보 -->
+            <div class='mt-7 text-right'>
+              <button type='button' class='btn-blue'>등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

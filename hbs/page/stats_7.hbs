@@ -1,0 +1,579 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 검색조건 -->
+            <div>
+              <div class='tit-box'><h3>브랜드별 판매 분석</h3></div>
+              <table class='table mt-1' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>브랜드 검색</th>
+                    <td>
+                      <button type='button' class='btn-m ml-1'>브랜드 선택</button>
+                      <div class='inline-grid grid-cols-[75px_1fr] mt-1'>
+                        <span class='text-sub-blue-700 font-semibold'>선택된 브랜드 :</span>
+                        <div class='flex flex-wrap gap-[4px_8px]'>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>샤넬</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>카테고리 검색</th>
+                    <td>
+                      <div class='inline-grid grid-flow-col gap-2 items-center'>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-1뎁스선택-</option>
+                          <option>FASHION</option>
+                          <option>OUTDOOR</option>
+                          <option>LUXURY</option>
+                          <option>MENS</option>
+                          <option>WOMEN</option>
+                          <option>TRAVEL</option>
+                          <option>TICKET</option>
+                          <option>COSMETIC</option>
+                          <option>CAR</option>
+                          <option>HOME</option>
+                        </select>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-2뎁스선택-</option>
+                          <option>APPERAL</option>
+                          <option>EQUIPMENT</option>
+                          <option>SHOSE</option>
+                          <option>CAMPING</option>
+                          <option>PERFUME</option>
+                          <option>AUDIO</option>
+                          <option>GAME</option>
+                        </select>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-3뎁스선택-</option>
+                          <option>JACKET</option>
+                          <option>PANTS</option>
+                          <option>SHIRTS</option>
+                          <option>BELT</option>
+                        </select>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-4뎁스선택-</option>
+                          <option>바람막이</option>
+                          <option>방수자켓</option>
+                          <option>다운자켓</option>
+                          <option>샤워가운</option>
+                          <option>조끼</option>
+                          <option>트레이닝자켓</option>
+                        </select>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-5뎁스선택-</option>
+                          <option>바람막이</option>
+                          <option>방수자켓</option>
+                          <option>다운자켓</option>
+                          <option>샤워가운</option>
+                          <option>조끼</option>
+                          <option>트레이닝자켓</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>카테고리 데이터 범위</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>메인 카테고리 기준</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>중복 카테고리 포함</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>하위 뎁스 카테고리 포함 여부</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>포함</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>미포함</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>기간별 검색</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>일자로 보기</span>
+                      </label>
+                      <span class='ml-1'>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <span>~</span>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <div class='period-tab'>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>오늘</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' checked='' />
+                            <span class='label-text'>7일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>15일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>1개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>3개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>전체</span>
+                          </label>
+                        </div>
+                        <div class='mt-1 pl-[90px] text-sub-blue-400'>* 최대 31일까지만 조회 가능</div>
+                      </span>
+                      <div class='mt-2'>
+                        <label class='label'>
+                          <input type='radio' />
+                          <span class='label-text'>월별로 보기</span>
+                        </label>
+                        <select class='select-wrap ml-1'>
+                          <option>-연도선택-</option>
+                          <option>2017년</option>
+                          <option>2018년</option>
+                          <option>2019년</option>
+                          <option>2020년</option>
+                          <option>2021년</option>
+                          <option>2022년</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='mt-1 text-center'>
+                <button type='button' class='btn-m'>검색</button>
+              </div>
+            </div>
+            <!-- //검색조건 -->
+
+            <!-- 조회결과 -->
+            <div class='mt-10'>
+              <img src='../images/graph.jpg' />
+              <div class='flex justify-between items-end mt-1'>
+                <div>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</div>
+                <div>
+                  <select class='select-wrap'>
+                    <option>총 판매 금액 높은 순</option>
+                    <option>총 판매 수량 많은 순</option>
+                  </select>
+                  <select class='select-wrap'>
+                    <option>10개씩 보기</option>
+                    <option>20개씩 보기</option>
+                    <option>30개씩 보기</option>
+                    <option>50개씩 보기</option>
+                    <option>100개씩 보기</option>
+                    <option>150개씩 보기</option>
+                    <option>200개씩 보기</option>
+                    <option>300개씩 보기</option>
+                    <option>500개씩 보기</option>
+                    <option>1000개씩 보기</option>
+                    <option>5000개씩 보기</option>
+                  </select>
+                </div>
+              </div>
+              <div class='w-full overflow-x-auto mt-1'>
+                <table class='border-table' >
+
+                  <thead>
+                    <tr>
+                      <th scope='col' rowspan='2' class='text-center whitespace-nowrap'></th>
+                      <th scope='col' rowspan='2' class='text-center whitespace-nowrap'>순위</th>
+                      <th scope='col' rowspan='2' class='text-center whitespace-nowrap'>브랜드</th>
+                      <th scope='col' rowspan='2' class='text-center whitespace-nowrap'>카테고리</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>합계</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 1일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 2일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 3일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 4일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 5일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 6일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 7일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 8일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 9일</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월 10일</th>
+                    </tr>
+                    <tr>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='text-center'>
+                        <label class='label NO-TEXT'>
+                          <input type='checkbox' />
+                        </label>
+                      </td>
+                      <td class='text-center'>1</td>
+                      <td>나이키</td>
+                      <td>자켓</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>
+                        <label class='label NO-TEXT'>
+                          <input type='checkbox' />
+                        </label>
+                      </td>
+                      <td class='text-center'>2</td>
+                      <td>샤넬</td>
+                      <td>자켓</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>
+                        <label class='label NO-TEXT'>
+                          <input type='checkbox' />
+                        </label>
+                      </td>
+                      <td class='text-center'>3</td>
+                      <td>자라</td>
+                      <td>자켓</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='7d809c09-09fb-4cdd-bd75-3e71d298ed2a'>
+                <div class='paging new'>
+                  <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                  <a href='#' class='prev btn-paging w-[50px]'>
+                    <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                  </a>
+                  <span class='now btn-paging leading-[26px]'>1</span>
+                  <a href='#' class='btn-paging leading-[26px]'>2</a>
+                  <a href='#' class='btn-paging leading-[26px]'>3</a>
+                  <a href='#' class='btn-paging leading-[26px]'>4</a>
+                  <a href='#' class='next btn-paging w-[50px]'>
+                    <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                  </a>
+                  <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                </div>
+              </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+            </div>
+            <!-- //조회결과 -->
+
+            <!-- 조회결과2 -->
+            <div class='mt-7'>
+              <img src='../images/graph.jpg' />
+              <div class='flex justify-between items-end mt-1'>
+                <div>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</div>
+                <div>
+                  <select class='select-wrap'>
+                    <option>총 판매 금액 높은 순</option>
+                    <option>총 판매 수량 많은 순</option>
+                  </select>
+                  <select class='select-wrap'>
+                    <option>10개씩 보기</option>
+                    <option>20개씩 보기</option>
+                    <option>30개씩 보기</option>
+                    <option>50개씩 보기</option>
+                    <option>100개씩 보기</option>
+                    <option>150개씩 보기</option>
+                    <option>200개씩 보기</option>
+                    <option>300개씩 보기</option>
+                    <option>500개씩 보기</option>
+                    <option>1000개씩 보기</option>
+                    <option>5000개씩 보기</option>
+                  </select>
+                </div>
+              </div>
+              <div class='w-full overflow-x-auto mt-1'>
+                <table class='border-table' >
+
+                  <thead>
+                    <tr>
+                      <th scope='col' rowspan='2' class='text-center whitespace-nowrap'></th>
+                      <th scope='col' rowspan='2' class='text-center whitespace-nowrap'>순위</th>
+                      <th scope='col' rowspan='2' class='text-center whitespace-nowrap'>브랜드</th>
+                      <th scope='col' rowspan='2' class='text-center whitespace-nowrap'>카테고리</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>합계</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>1월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>2월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>3월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>4월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>5월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>6월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>7월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>8월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>9월</th>
+                      <th scope='col' colspan='2' class='text-center whitespace-nowrap'>10월</th>
+                    </tr>
+                    <tr>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                      <th scope='col' class='text-center'>수량</th>
+                      <th scope='col' class='text-center'>금액</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='text-center'>
+                        <label class='label NO-TEXT'>
+                          <input type='checkbox' />
+                        </label>
+                      </td>
+                      <td class='text-center'>1</td>
+                      <td>나이키</td>
+                      <td>자켓</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>
+                        <label class='label NO-TEXT'>
+                          <input type='checkbox' />
+                        </label>
+                      </td>
+                      <td class='text-center'>2</td>
+                      <td>샤넬</td>
+                      <td>자켓</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>
+                        <label class='label NO-TEXT'>
+                          <input type='checkbox' />
+                        </label>
+                      </td>
+                      <td class='text-center'>3</td>
+                      <td>자라</td>
+                      <td>자켓</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                      <td class='text-right'>10,510</td>
+                      <td class='text-right'>1,030,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='81d90f63-85f4-4bbd-b133-c66b7450904c'>
+                <div class='paging new'>
+                  <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                  <a href='#' class='prev btn-paging w-[50px]'>
+                    <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                  </a>
+                  <span class='now btn-paging leading-[26px]'>1</span>
+                  <a href='#' class='btn-paging leading-[26px]'>2</a>
+                  <a href='#' class='btn-paging leading-[26px]'>3</a>
+                  <a href='#' class='btn-paging leading-[26px]'>4</a>
+                  <a href='#' class='next btn-paging w-[50px]'>
+                    <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                  </a>
+                  <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                </div>
+              </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+            </div>
+            <!-- //조회결과2 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

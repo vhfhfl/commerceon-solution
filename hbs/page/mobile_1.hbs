@@ -1,0 +1,204 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='TAB-UI tab'>
+              <ul>
+                <li data-tab-key='fb7d9556-8831-4cd4-b0d2-4c14d3eaa542' onclick='ACTIVE_TAB(this);' class='on'>푸시 발송 예약</li>
+                <li data-tab-key='891a48fa-5447-4011-a8d8-7fe79f311571' onclick='ACTIVE_TAB(this);'>푸시 발송 내역</li>
+              </ul>
+            </div>
+            <div class='mt-[20px]'>
+              <!-- 1 -->
+              <div data-tab-child='fb7d9556-8831-4cd4-b0d2-4c14d3eaa542' class='on'>
+                <table class='table' >
+
+                  <colgroup>
+                    <col class='w-[15%]' />
+                    <col class='w-[85%]' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>발송 조건</th>
+                      <td>
+                        <div class='H-BOX'>
+                          <label class='label'>
+                            <input type='radio' checked='' />
+                            <span class='label-text'>예약발송</span>
+                          </label>
+                          <span class='input-calendar-wrap ml-1'>
+                            <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                            <input type='text' class='inline-block float-right w-[76px] h-[38px]' placeholder='placeholder' />
+                          </span>
+                          <select class='select-wrap'>
+                            <option>08시</option>
+                            <option>09시</option>
+                            <option>10시</option>
+                          </select>
+                          <select class='select-wrap'>
+                            <option>00분</option>
+                            <option>30분</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>발송 대상</th>
+                      <td>
+                        <label class='label'>
+                          <input type='radio' checked='' />
+                          <span class='label-text'>전체 (앱 설치 고객)</span>
+                        </label>
+                        <label class='label ml-5'>
+                          <input type='radio' />
+                          <span class='label-text'>테스트 발송</span>
+                        </label>
+                        <!-- 테스트발송일 경우 -->
+                        <div class='mt-1'>
+                          <input type='text' class='input-wrap w-1/2' placeholder='placeholder' />
+                          <div class='mt-1 text-red'>* 테스트 발송은 즉시 발송됩니다. (예약 발송 되지 않습니다.)</div>
+                        </div>
+                        <!-- //테스트발송일 경우 -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>발송 제목</th>
+                      <td>
+                        <input type='text' class='input-wrap w-1/2' />
+                        <div class='mt-1 text-red'>* 최대 30자까지 입력 가능합니다.</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>발송 내용</th>
+                      <td>
+                        <textarea class='block w-full h-[100px] overflow-y-auto p-2 border border-sub-blue-200 rounded-sm'></textarea>
+                        <div class='mt-1 text-red'>* 1024자까지 입력 가능합니다.</div>
+                        <div class='mt-1 text-red'>* 줄바꿈 사용시 그대로 전송됩니다.</div>
+                        <div class='mt-1 text-red'>* 광고성 정보의 경우 '광고' 표시가 필수입니다.</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>발송 이미지</th>
+                      <td>
+                        <input class='bg-main-lightblue leading-[38px] pl-2 text-sub-blue-500 border border-sub-blue-200 rounded-sm' value='파일 선택' disabled='disabled' />
+                        <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top cursor-pointer'>파일 첨부</label>
+                        <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                        <div class='mt-1 text-red'>* 이미지 파일(jpg, png)만 업로드할 수 있습니다.</div>
+                        <div class='mt-1 text-red'>* 이미지 사이즈(가로 640px * 세로 320px)만 업로드할 수 있습니다.</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>연결 URL</th>
+                      <td>
+                        <div class='H-BOX w-full'>
+                          <input type='text' class='input-wrap w-1/2' />
+                          <button type='button' class='btn-m'>미리보기</button>
+                        </div>
+                        <div class='mt-1 text-red'>* http:// 혹은 http:// 을 포함한 전체 URL을 입력해주세요.</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class='mt-7 text-center'>
+                  <button type='button' class='btn-blue'>푸시 예약</button>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div data-tab-child='891a48fa-5447-4011-a8d8-7fe79f311571'>
+                <table class='table' >
+
+                  <colgroup>
+                    <col class='w-[15%]' />
+                    <col class='w-[85%]' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>발송 요청일</th>
+                      <td>
+                        <div class='H-BOX'>
+                          <span class='input-calendar-wrap'>
+                            <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                            <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                          </span>
+                          <span>~</span>
+                          <span class='input-calendar-wrap'>
+                            <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                            <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                          </span>
+                          <div class='period-tab'>
+                            <label class='label'>
+                              <input type='radio' name='period' />
+                              <span class='label-text'>오늘</span>
+                            </label>
+                            <label class='label'>
+                              <input type='radio' name='period' />
+                              <span class='label-text'>3일</span>
+                            </label>
+                            <label class='label'>
+                              <input type='radio' name='period' />
+                              <span class='label-text'>7일</span>
+                            </label>
+                            <label class='label'>
+                              <input type='radio' name='period' />
+                              <span class='label-text'>1개월</span>
+                            </label>
+                            <label class='label'>
+                              <input type='radio' name='period' />
+                              <span class='label-text'>3개월</span>
+                            </label>
+                            <label class='label'>
+                              <input type='radio' name='period' checked='' />
+                              <span class='label-text'>전체</span>
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>발송 제목</th>
+                      <td><input type='text' class='input-wrap w-1/2' /></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class='text-center mt-1'>
+                  <button type='button' class='btn-m'>검색</button>
+                </div>
+                <div id='app' class='mt-10'></div>
+                <!-- paging -->
+                <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='3ddf59e3-df3a-4297-b14a-29b75678b1f3'>
+                  <div class='paging new'>
+                    <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                    <a href='#' class='prev btn-paging w-[50px]'>
+                      <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                      <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                    </a>
+                    <span class='now btn-paging leading-[26px]'>1</span>
+                    <a href='#' class='btn-paging leading-[26px]'>2</a>
+                    <a href='#' class='btn-paging leading-[26px]'>3</a>
+                    <a href='#' class='btn-paging leading-[26px]'>4</a>
+                    <a href='#' class='next btn-paging w-[50px]'>
+                      <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                      <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                    </a>
+                    <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                  </div>
+                </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+                <!-- //paging -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

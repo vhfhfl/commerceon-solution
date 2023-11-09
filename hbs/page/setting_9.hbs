@@ -1,0 +1,124 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230816095302792'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'(포인트) 명칭 및 단위 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    {{#LOOP 2}}
+                      <script>Include('/hbs/component/TR_1-a.hbs');</script>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+                <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+              </div>
+            </section>
+            <section data-seq='20230816095530198'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'(예치금) 명칭 및 단위 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    {{#LOOP 2}}
+                      <script>Include('/hbs/component/TR_1-a.hbs');</script>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+                <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+              </div>
+            </section>
+            <section data-seq='20230816095550219'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'(가격) 명칭 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    {{#LOOP 2}}
+                      <script>Include('/hbs/component/TR_1-a.hbs');</script>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+                <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+              </div>
+            </section>
+            <section data-seq='20230816095618892'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'금액 및 단위 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    <script>Include('/hbs/component/TR_2-a.hbs');</script>
+                    <tr>
+                      <th scope='row'>표시 위치</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        <div class='mt-2'>
+                          미리보기
+                          <span class='text-main-blue'>(단위) 200,000</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <script>Include('/hbs/component/TR_2-a.hbs');</script>
+                    <script>Include('/hbs/component/TR_2-a.hbs');</script>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section data-seq='20230816095638065'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'금액 절사 기준 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    {{#LOOP 4}}
+                      <tr>
+                        <th scope='row'>Label</th>
+                        <td>
+                          <article class='CenterLeft'>
+                            <script>Include('/hbs/component/SelectBox_1-a.hbs');</script>
+                            <span class='px-2'>단위</span>
+                            <script>Include('/hbs/component/SelectBox_1-a.hbs');</script>
+                          </article>
+                          <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <script>Include('/hbs/component/BtnBox_1-a.hbs');</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

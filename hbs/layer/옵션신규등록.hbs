@@ -1,0 +1,53 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content">
+    <div class="layer-header">
+      <h1>옵션 신규 등록</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">옵션 내용</h2>
+      <div class="relative">
+        <div>
+          <span class="inline-block mr-2">옵션그룹명</span>
+          <input type="text" class="input-wrap" placeholder="placeholder"/>
+          <button type="button" class="btn-option-view btn-m absolute top-0 right-0">신규 등록 옵션 미리보기</button>
+        </div>
+        <ul class="mt-2">
+          <li class="flex pl-3">
+            <span class="w-2/5 leading-[40px] text-center bg-main-lightblue border border-r-0">옵션명</span>
+            <span class="w-3/5 leading-[40px] text-center bg-main-lightblue border">옵션정보값</span>
+          </li>
+          <li class="flex relative pl-3">
+            <span class="inline-block text-red absolute left-0 top-4">*</span>
+            <span class="w-2/5 p-1 border border-t-0 border-r-0"><span class="inline-block text-red absolute left-0 top-4">*</span><input type="text" class="input-wrap w-full" placeholder="placeholder"/></span>
+            <span class="w-3/5 p-1 border border-t-0"><input type="text" class="input-wrap w-full" placeholder="placeholder"/></span>
+          </li>
+          <li class="flex pl-3">
+            <span class="w-2/5 p-1 border border-t-0 border-r-0"><input type="text" class="input-wrap w-full" placeholder="placeholder"/></span>
+            <span class="w-3/5 p-1 border border-t-0"><input type="text" class="input-wrap w-full" placeholder="placeholder"/></span>
+          </li>
+        </ul>
+        <div class="mt-2 pl-3">
+          <label class="label">
+            <input type="radio" name=""/>
+            <span class="label-text">분리형</span>
+          </label>
+          <label class="label">
+            <input type="radio" name=""/>
+            <span class="label-text">일체형</span>
+          </label>
+          <div class="mt-1">
+            <label class="label">
+              <input type="checkbox" name=""/>
+              <span class="label-text">옵션 관리에 저장</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="layer-footer">
+        <button type="button" class="btn-blue">등록</button>
+      </div>
+    </div>
+  </div>
+</div>

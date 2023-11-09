@@ -1,0 +1,196 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 검색조건 -->
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:15%' />
+                  <col style='width:85%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>사은품 이름</th>
+                    <td>
+                      <textarea class='block w-full h-[150px] overflow-y-auto p-2 border border-sub-blue-200 rounded-sm' placeholder='placeholder'></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>브랜드 검색</th>
+                    <td>
+                      <button type='button' class='btn-brand btn-m'>브랜드 선택</button>
+                      <div class='mt-1 flex justify-start'>
+                        <p class='!min-w-[75px] text-sub-blue-700 font-bold'>선택된 브랜드 : </p>
+                        <div class='w-full'>
+                          <span class='inline-block cursor-default'>파타고니아
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>샤넬
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>프라다
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>보테가 베네타
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>카카오
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>네이버
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //검색조건 -->
+            <div class='text-center mt-6'>
+              <button type='button' class='btn-m'>검색</button>
+            </div>
+            <!-- 사은품리스트 -->
+            <div class='sorting-box flex justify-between mt-6'>
+              <div class='left-box'>
+                <span class='inline-block mt-6'>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</span>
+              </div>
+              <div class='right-box'>
+                <select class='select-wrap' name=''>
+                  <option value=''>50개씩 보기</option>
+                  <option value=''>70개씩 보기</option>
+                  <option value=''>100개씩 보기</option>
+                  <option value=''>150개씩 보기</option>
+                  <option value=''>300개씩 보기</option>
+                  <option value=''>500개씩 보기</option>
+                  <option value=''>1000개씩 보기</option>
+                </select>
+              </div>
+            </div>
+            <div class='tbl-box mt-1'>
+              <table class='table' >
+
+                <thead>
+                  <tr>
+                    <th scope='col' class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </th>
+                    <th scope='col' class='text-center'>이미지</th>
+                    <th scope='col' class='text-center'>사은품 이름</th>
+                    <th scope='col' class='text-center'>브랜드</th>
+                    <th scope='col' class='text-center'>품번</th>
+                    <th scope='col' class='text-center'>상품 코드</th>
+                    <th scope='col' class='text-center'>재고</th>
+                    <th scope='col' class='text-center'>등록일</th>
+                    <th scope='col' class='text-center'>수정</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>
+                      <img src='//img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' alt='' title='' width='40px' />
+                    </td>
+                    <td class='text-center'>아크테릭스 반다나</td>
+                    <td class='text-center'>ARCTERYX</td>
+                    <td class='text-center'>ADD000</td>
+                    <td class='text-center'>10112</td>
+                    <td class='text-center'>20</td>
+                    <td class='text-center'>2022-05-01 ~ 2022-07-31</td>
+                    <td class='text-center'>
+                      <button type='button' class='btn-white-m'>수정</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>
+                      <img src='//img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' alt='' title='' width='40px' />
+                    </td>
+                    <td class='text-center'>아크테릭스 반다나</td>
+                    <td class='text-center'>ARCTERYX</td>
+                    <td class='text-center'>ADD000</td>
+                    <td class='text-center'>10112</td>
+                    <td class='text-center'>20</td>
+                    <td class='text-center'>2022-05-01 ~ 2022-07-31</td>
+                    <td class='text-center'>
+                      <button type='button' class='btn-white-m'>수정</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text !pl-[20px]'></span>
+                      </label>
+                    </td>
+                    <td class='text-center'>
+                      <img src='//img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' alt='' title='' width='40px' />
+                    </td>
+                    <td class='text-center'>아크테릭스 반다나</td>
+                    <td class='text-center'>ARCTERYX</td>
+                    <td class='text-center'>ADD000</td>
+                    <td class='text-center'>10112</td>
+                    <td class='text-center'>20</td>
+                    <td class='text-center'>2022-05-01 ~ 2022-07-31</td>
+                    <td class='text-center'>
+                      <button type='button' class='btn-white-m'>수정</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //사은품리스트 -->
+            <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='f8624142-e52f-4fac-ae7c-61e692849afa'>
+              <div class='paging new'>
+                <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                <a href='#' class='prev btn-paging w-[50px]'>
+                  <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                  <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                </a>
+                <span class='now btn-paging leading-[26px]'>1</span>
+                <a href='#' class='btn-paging leading-[26px]'>2</a>
+                <a href='#' class='btn-paging leading-[26px]'>3</a>
+                <a href='#' class='btn-paging leading-[26px]'>4</a>
+                <a href='#' class='next btn-paging w-[50px]'>
+                  <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                  <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                </a>
+                <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+              </div>
+            </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+            <div class='text-center mt-7'>
+              <button type='button' class='btn-l'>복사</button>
+              <button type='button' class='btn-warning-m h-[44px] px-10'>삭제</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

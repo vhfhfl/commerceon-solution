@@ -1,0 +1,191 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1300px]">
+    <div class="layer-header">
+      <h1>상품 검색</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">상품 검색</h2>
+      <div class="tbl-box">
+        <table class="table" summary="상품 검색">
+
+          <colgroup>
+            <col style="width:20%"/>
+            <col style="width:80%"/>
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row">상품 검색</th>
+            <td>
+              <input type="text" class="input-wrap w-1/2" placeholder="placeholder"/>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">상품 선택</th>
+            <td>
+              <select class="select-wrap" name="">
+                <option value="">전체 상품</option>
+                <option value="">국내 상품</option>
+                <option value="">해외 상품</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">공급사 선택</th>
+            <td>
+              <button type="button" class="btn-supplier btn-m">공급사 선택</button>
+              <div class="mt-1 flex justify-start">
+                <p class="!min-w-[75px] text-sub-blue-700 font-bold">선택된 공급사 : </p>
+                <div class="w-full">
+                    <span class="inline-block cursor-default">인포맥스
+                      <button type="button" class="w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1"><i class="fa-solid fa-xmark"></i></button>
+                    </span>
+                  <span class="inline-block cursor-default">커머스온
+                      <button type="button" class="w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1"><i class="fa-solid fa-xmark"></i></button>
+                    </span>
+                  <span class="inline-block cursor-default">애트니
+                      <button type="button" class="w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1"><i class="fa-solid fa-xmark"></i></button>
+                    </span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">브랜드 선택</th>
+            <td>
+              <button type="button" class="btn-brand btn-m">브랜드 선택</button>
+              <div class="mt-1 flex justify-start">
+                <p class="!min-w-[75px] text-sub-blue-700 font-bold">선택된 브랜드 : </p>
+                <div class="w-full">
+                    <span class="inline-block cursor-default">나이키
+                      <button type="button" class="w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1"><i class="fa-solid fa-xmark"></i></button>
+                    </span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">카테고리 선택</th>
+            <td>
+              <select class="select-wrap" name="">
+                <option value="">1뎁스</option>
+              </select>
+              <select class="select-wrap" name="">
+                <option value="">2뎁스</option>
+              </select>
+              <select class="select-wrap" name="">
+                <option value="">3뎁스</option>
+              </select>
+              <select class="select-wrap" name="">
+                <option value="">4뎁스</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">기간 검색</th>
+            <td>
+              <select class="select-wrap align-middle" name="">
+                <option value="">등록일</option>
+                <option value="">수정일</option>
+              </select>
+              <span class="input-calendar-wrap">
+                  <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                  <input type="text" class="inline-block float-right w-[76px] h-[38px]"/>
+                </span>
+              <span class="inline-block px-1">~</span>
+              <span class="input-calendar-wrap">
+                  <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                  <input type="text" class="inline-block float-right w-[76px] h-[38px]"/>
+                </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">판매 금액</th>
+            <td>
+              <input type="text" class="input-wrap mr-1"/>
+              <span>원 ~</span>
+              <input type="text" class="input-wrap mx-1"/>
+              <span>원</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">진열 상태</th>
+            <td>
+              <label class="label">
+                <input type="radio" checked/>
+                <span class="label-text">전체</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">진열</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">미진열</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">판매 상태</th>
+            <td>
+              <label class="label">
+                <input type="radio" checked/>
+                <span class="label-text">전체</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">판매중</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">판매중지</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">품절</span>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="text-center mt-3">
+          <button type="button" class="btn-m">검색</button>
+        </div>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">조회 상품 리스트</h2>
+      <div class="sorting-box flex justify-between">
+        <div class="left-box">
+          <span class="inline-block mt-6">조회 <span class="text-red">0</span>건 / 전체 <span class="text-red">0</span>건</span>
+        </div>
+        <div class="right-box">
+          <select class="select-wrap" name="">
+            <option value="">50개씩 보기</option>
+            <option value="">70개씩 보기</option>
+            <option value="">100개씩 보기</option>
+            <option value="">150개씩 보기</option>
+            <option value="">200개씩 보기</option>
+            <option value="">300개씩 보기</option>
+            <option value="">500개씩 보기</option>
+            <option value="">1000개씩 보기</option>
+          </select>
+        </div>
+      </div>
+      <div id="app" class="mt-1"></div>
+      <!-- paging -->
+      <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+      <!-- //paging -->
+      <div class="text-center mt-3">
+        <button type="button" class="btn-m">선택</button>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">선택 상품 리스트</h2>
+      <div id="app" class="mt-1"></div>
+      <div class="mt-1">
+        <button type="button" class="btn-warning-m">선택 상품 삭제</button>
+      </div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">적용</button>
+    </div>
+  </div>
+</div>

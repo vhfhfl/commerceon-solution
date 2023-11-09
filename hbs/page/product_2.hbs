@@ -1,0 +1,2218 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <tbody>
+                  <tr>
+                    <th scope='row'>판매 상태</th>
+                    <td colspan='3'>
+                      <label class='label mr-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>판매중</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>판매중지</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>품절</span>
+                      </label>
+                    </td>
+                    <th scope='row'>진열 상태</th>
+                    <td colspan='2'>
+                      <label class='label mr-5'>
+                        <input type='radio' name='display-status' />
+                        <span class='label-text'>진열</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='display_status' />
+                        <span class='label-text'>미진열</span>
+                      </label>
+                    </td>
+                    <th scope='row'>입점사 승인</th>
+                    <td colspan='3'>
+                      <label class='label mr-5'>
+                        <input type='radio' name='approval' />
+                        <span class='label-text'>승인</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='approval' />
+                        <span class='label-text'>반려</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='approval' />
+                        <span class='label-text'>심사대기</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row' rowspan='2'>상품명 <span class='text-red'>*</span></th>
+                    <td rowspan='2' colspan='6'>
+                      <div>
+                        <label class='label mr-5'>
+                          <input type='radio' name='' />
+                          <span class='label-text'>전체 상품명 <span class='text-red'>*</span> </span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' name='' />
+                          <span class='label-text'>상품명 이원화</span>
+                        </label>
+                      </div>
+                      <span class='flex mt-1 gap-1'>
+                        <input type='text' class='input-wrap grow' placeholder='placeholder' />
+                        <span class='leading-[40px]'><span class='text-red'>0</span>/100</span>
+                      </span>
+                      <span class='flex mt-1 gap-1'>
+                        <span class='leading-[40px] w-16'>리스트 <span class='text-red'>*</span></span>
+                        <input type='text' class='input-wrap grow' placeholder='placeholder' />
+                        <span class='leading-[40px]'><span class='text-red'>0</span>/100</span>
+                      </span>
+                      <span class='flex mt-1 gap-1'>
+                        <span class='leading-[40px] w-16'>상세 페이지 <span class='text-red'>*</span></span>
+                        <input type='text' class='input-wrap grow' placeholder='placeholder' />
+                        <span class='leading-[40px]'><span class='text-red'>0</span>/100</span>
+                      </span>
+                      <span class='flex mt-1 gap-1'>
+                        <span class='leading-[40px] w-16'>제휴사</span>
+                        <input type='text' class='input-wrap grow' placeholder='placeholder' />
+                        <span class='leading-[40px]'><span class='text-red'>0</span>/100</span>
+                      </span>
+                    </td>
+                    <th scope='row'>시스템 상품 순번</th>
+                    <td>1234567890</td>
+                    <th scope='row'>상품 연도/시즌</th>
+                    <td>
+                      <select class='select-wrap'>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                      </select>
+                      <select class='select-wrap'>
+                        <option>SS</option>
+                        <option>FW</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>수동 관리 코드</th>
+                    <td colspan='3'><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>카테고리</th>
+                    <td colspan='10'>
+                      <div>
+                        <label class='label mr-5'>
+                          <input type='radio' name='' />
+                          <span class='label-text'>메인</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' name='' />
+                          <span class='label-text'>중복</span>
+                        </label>
+                      </div>
+                      <div class='mt-1'>
+                        <select multiple='' class='border border-sub-blue-200 w-28 h-20 rounded-sm mr-1 bg-none'>
+                          <option>-1뎁스선택-</option>
+                          <option>FASHION 1</option>
+                          <option>FASHION 2</option>
+                          <option>FASHION 3</option>
+                          <option>FASHION 4</option>
+                          <option>FASHION 5</option>
+                          <option>FASHION 6</option>
+                          <option>FASHION 7</option>
+                          <option>FASHION 8</option>
+                          <option>FASHION 9</option>
+                          <option>FASHION 10</option>
+
+                        </select>
+                        <select multiple='' class='border border-sub-blue-200 w-28 h-20 rounded-sm mr-1 bg-none'>
+                          <option>-2뎁스선택-</option>
+                          <option>APPERAL 1</option>
+                          <option>APPERAL 2</option>
+                          <option>APPERAL 3</option>
+                          <option>APPERAL 4</option>
+                          <option>APPERAL 5</option>
+                          <option>APPERAL 6</option>
+                          <option>APPERAL 7</option>
+                          <option>APPERAL 8</option>
+                          <option>APPERAL 9</option>
+                          <option>APPERAL 10</option>
+
+                        </select>
+                        <select multiple='' class='border border-sub-blue-200 w-28 h-20 rounded-sm mr-1 bg-none'>
+                          <option>-3뎁스선택-</option>
+                          <option>JACKET 1</option>
+                          <option>JACKET 2</option>
+                          <option>JACKET 3</option>
+                          <option>JACKET 4</option>
+                          <option>JACKET 5</option>
+                          <option>JACKET 6</option>
+                          <option>JACKET 7</option>
+                          <option>JACKET 8</option>
+                          <option>JACKET 9</option>
+                          <option>JACKET 10</option>
+
+                        </select>
+                        <select multiple='' class='border border-sub-blue-200 w-28 h-20 rounded-sm mr-1 bg-none'>
+                          <option>-4뎁스선택-</option>
+                          <option>트레이닝자켓 1</option>
+                          <option>트레이닝자켓 2</option>
+                          <option>트레이닝자켓 3</option>
+                          <option>트레이닝자켓 4</option>
+                          <option>트레이닝자켓 5</option>
+                          <option>트레이닝자켓 6</option>
+                          <option>트레이닝자켓 7</option>
+                          <option>트레이닝자켓 8</option>
+                          <option>트레이닝자켓 9</option>
+                          <option>트레이닝자켓 10</option>
+
+                        </select>
+                        <select multiple='' class='border border-sub-blue-200 w-28 h-20 rounded-sm mr-1 bg-none'>
+                          <option>-5뎁스선택-</option>
+                          <option>바람막이 1</option>
+                          <option>바람막이 2</option>
+                          <option>바람막이 3</option>
+                          <option>바람막이 4</option>
+                          <option>바람막이 5</option>
+                          <option>바람막이 6</option>
+                          <option>바람막이 7</option>
+                          <option>바람막이 8</option>
+                          <option>바람막이 9</option>
+                          <option>바람막이 10</option>
+
+                        </select>
+                        <button type='button' class='btn-m mt-5 align-top'>선택</button>
+                      </div>
+                      <div class='mt-1'>
+                        <button type='button' class='btn-link'>카테고리 관리 바로가기 <i class='fa-solid fa-arrow-right-long'></i></button>
+                      </div>
+                      <div class='mt-1'>
+                        <span class='inline-block w-24'>* 메인 카테고리</span>
+                        <span class='text-main-blue'>FASHION &gt; APPERAL &gt; JACKET &gt; DOWN JAKCET</span>
+                        <button type='button' class='h-6 px-2 text-white bg-red rounded-sm'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                      </div>
+                      <div class='mt-1'>
+                        <span class='inline-block w-24'>* 중복 카테고리</span>
+                        FASHION &gt; APPERAL &gt; JACKET &gt; DOWN JAKCET
+                        <button type='button' class='h-6 px-2 text-white bg-red rounded-sm'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>브랜드</th>
+                    <td colspan='10'>
+                      <button type='button' class='btn-m mr-2 btn-brand'>브랜드 선택</button>
+                      <div class='mt-1 flex justify-start'>
+                        <p class='!min-w-[75px] text-sub-blue-700 font-bold'>선택된 브랜드 : </p>
+                        <div class='w-full'>
+                          <span data-key='0' class='inline-block cursor-default'>브랜드 1
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='1' class='inline-block cursor-default'>브랜드 2
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='2' class='inline-block cursor-default'>브랜드 3
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='3' class='inline-block cursor-default'>브랜드 4
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='4' class='inline-block cursor-default'>브랜드 5
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='5' class='inline-block cursor-default'>브랜드 6
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='6' class='inline-block cursor-default'>브랜드 7
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='7' class='inline-block cursor-default'>브랜드 8
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='8' class='inline-block cursor-default'>브랜드 9
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span data-key='9' class='inline-block cursor-default'>브랜드 10
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+
+                        </div>
+                      </div>
+                      <button type='button' class='btn-link mt-1'>브랜드 관리 바로가기 <i class='fa-solid fa-arrow-right-long'></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>업체 정보</th>
+                    <td colspan='10'>
+                      <table class='border-table' >
+
+                        <colgroup>
+                          <col width='6%' />
+                          <col width='28%' />
+                          <col width='6%' />
+                          <col width='16%' />
+                          <col width='6%' />
+                          <col width='16%' />
+                          <col width='6%' />
+                          <col width='16%' />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope='row'>업체 구분</th>
+                            <td colspan='7'>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>본사</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>공급사</span>
+                              </label>
+                              <button type='button' class='btn-supplier btn-m mr-2'>공급사 선택</button>
+                              <span class='text-sub-blue-700 font-bold'>선택된 공급사 : </span>
+                              <span class='inline-block'>공급사
+                                <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row' rowspan='2'>거래 유형</th>
+                            <td rowspan='2'>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>수수료</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>공급가</span>
+                              </label>
+                              <div class='mt-1'>
+                                <label class='label mr-1'>
+                                  <input type='radio' name='' />
+                                  <span class='label-text'>수수료율</span>
+                                </label>
+                                <input type='text' class='input-wrap w-12' value='0' />
+                                %
+                                <label class='label mr-1'>
+                                  <input type='radio' name='' />
+                                  <span class='label-text'>수수료액</span>
+                                </label>
+                                <input type='text' class='input-wrap w-12' value='0' />
+                                원
+                              </div>
+                              <div class='mt-1'>
+                                <label class='label mr-1'>
+                                  <input type='radio' name='' />
+                                  <span class='label-text'>공급율</span>
+                                </label>
+                                <input type='text' class='input-wrap w-12' />
+                                %
+                                <label class='label mr-1'>
+                                  <input type='radio' name='' />
+                                  <span class='label-text'>공급가액</span>
+                                </label>
+                                <input type='text' class='input-wrap w-12' />
+                                원
+                              </div>
+                            </td>
+                            <th scope='row'>포인트 사용</th>
+                            <td>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>가능</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>불가</span>
+                              </label>
+                            </td>
+                            <th scope='row' rowspan='2'>포인트 적립 방법</th>
+                            <td rowspan='2'>
+                              <label class='label'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>상품별 포인트 적용</span>
+                              </label><br />
+                              <label class='label'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>통합 적용</span>
+                              </label><br />
+                              <label class='label'>
+                                <input type='radio' name='' />
+                                <span class='label-text t-col'>지급안함</span>
+                              </label>
+                            </td>
+                            <th scope='row' rowspan='2'>적립 포인트</th>
+                            <td rowspan='2'>
+                              <label class='label V2'>
+                                <input type='radio' name='42b4cd43-1c38-4eb3-bb84-1fcff1c3df77' />
+                                <div class='label-text'>
+                                  <input type='text' class='input-wrap' placeholder='placeholder' />
+                                  %
+                                </div>
+                              </label>
+                              <label class='label V2 mt-[4px]'>
+                                <input type='radio' name='42b4cd43-1c38-4eb3-bb84-1fcff1c3df77' />
+                                <span class='label-text'><input type='text' class='input-wrap' placeholder='placeholder' /> 원</span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>쿠폰 사용</th>
+                            <td>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>통합 적용</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>지급안함</span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>제조사</th>
+                            <td><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                            <th scope='row'>수입사</th>
+                            <td><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                            <th scope='row'>원산지</th>
+                            <td colspan='3'><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>제조일</th>
+                            <td>
+                              <span class='input-calendar-wrap'>
+                                <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                                <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                              </span>
+                            </td>
+                            <th scope='row'>수입일</th>
+                            <td colspan='5'>
+                              <span class='input-calendar-wrap'>
+                                <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                                <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>상품 구분</th>
+                            <td>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>해외상품</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>국내상품</span>
+                              </label>
+                            </td>
+                            <th scope='row'>부티크 정보</th>
+                            <td colspan='5'>atny japan co.</td>
+                          </tr>
+                        </thead>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>판매 정보</th>
+                    <td colspan='10'>
+                      <div class='mb-1'>
+                        <button type='button' class='btn-m btn-price-log'>가격수정 로그보기</button>
+                      </div>
+                      <table  class='border-table'>
+
+                        <tbody>
+                          <tr>
+                            <th scope='row'>소비자가</th>
+                            <td><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                            <th scope='row'><span>*</span> 판매가</th>
+                            <td><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                            <th scope='row'>통합회원가</th>
+                            <td>
+                              <button type='button'></button>
+                              <input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                            <th scope='row'>네이버EP가</th>
+                            <td><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                            <th scope='row'>네이버 최저가<br />
+                              <a href='javescript:;' class='btn-link'>바로가기</a>
+                            </th>
+                            <td>90,000</td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>텍스트 판매가</th>
+                            <td>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용함</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용안함</span>
+                              </label>
+                            </td>
+                            <th scope='row'>소비자 영역</th>
+                            <td>
+                              <span class='ipt'>
+                                <input type='text' class='input-wrap' placeholder='placeholder' />
+                                <span class='text-red'>0</span>/50
+                              </span>
+                            </td>
+                            <th scope='row'>판매가 영역</th>
+                            <td colspan='5'>
+                              <span class='ipt'>
+                                <input type='text' class='input-wrap' placeholder='placeholder' />
+                                <span class='text-red'>0</span>/50
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>재고 수량 관리</th>
+                            <td>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>무한</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>등록 재고량</span>
+                              </label>
+                            </td>
+                            <th scope='row'>총 재고 수량</th>
+                            <td>
+                              <input type='text' class='input-wrap' value='77' />
+                              개
+                              <button type='button' class='btn-m btn-stock-log mt-1'>재고수정 로그보기</button>
+                            </td>
+                            <th scope='row'>재고여부 노출관리</th>
+                            <td colspan='2'>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용함</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용안함</span>
+                              </label>
+                            </td>
+                            <th scope='row'>네이버 EP 등록</th>
+                            <td colspan='2'>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>노출</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>노출안함</span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>등급할인/적립</th>
+                            <td colspan='3'>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용함</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용안함</span>
+                              </label>
+                            </td>
+                            <th scope='row'>상품구매 회원등급</th>
+                            <td colspan='2'>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>전체</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>비회원</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>A그룹</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>B그룹</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>C그룹</span>
+                              </label>
+                            </td>
+                            <th scope='row'>상품노출 회원등급</th>
+                            <td colspan='2'>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>전체</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>비회원</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>A그룹</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>B그룹</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>C그룹</span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>예약판매</th>
+                            <td colspan='4'>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용함</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용안함</span>
+                              </label>
+                              <div class='mt-1'>
+                                <span class='input-calendar-wrap'>
+                                  <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                                  <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                                </span>
+                                <span class='input-calendar-wrap'>
+                                  <button type='button' class='btn-calender'><i class='fa-solid fa-clock text-sub-blue-700'></i></button>
+                                  <input type='text' class='inline-block float-right w-[76px] h-[38px]' placeholder='placeholder' />
+                                </span>
+                                <span class='inline-block px-1'>~</span>
+                                <span class='input-calendar-wrap'>
+                                  <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                                  <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                                </span>
+                                <span class='input-calendar-wrap'>
+                                  <button type='button' class='btn-calender'><i class='fa-solid fa-clock text-sub-blue-700'></i></button>
+                                  <input type='text' class='inline-block float-right w-[76px] h-[38px]' placeholder='placeholder' />
+                                </span>
+                              </div>
+                              <div class='mt-1'>
+                                <label class='label mr-5'>
+                                  <input type='checkbox' name='' />
+                                  <span class='label-text'>기간 종료 후 판매/노출 유지</span>
+                                </label>
+                              </div>
+                            </td>
+                            <th scope='row'>구매 수량 제한</th>
+                            <td colspan='4'>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>없음</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>제한</span>
+                              </label>
+                              <span class='inline-block w-24 align-middle'>
+                                <label class='label mr-5'>
+                                  <input type='radio' name='' />
+                                  <span class='label-text'>주문건당</span>
+                                </label>
+                                <label class='label mr-5'>
+                                  <input type='radio' name='' />
+                                  <span class='label-text'>아이디당</span>
+                                </label>
+                              </span>
+                              <input type='text' class='input-wrap' placeholder='placeholder' />
+                              개
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>배송비</th>
+                            <td colspan='10'>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>기본 설정 배송비</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>무료배송</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>
+                                  <button type='button' class='btn-delivery-setting'>개별 배송비 설정</button>
+                                </span>
+                              </label>
+                              <span class='text-main-blue'>3만원 이상 구매시 무료 배송, 도서산간비 추가 5,000원</span>
+                              <div class='my-1'>
+                                <button class='btn-link' onclick="window.open('delivery-charge-list.html')"> 배송비 관리 바로가기 <i class='fa-solid fa-arrow-right-long'></i></button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>옵션</th>
+                    <td colspan='10'>
+                      <table summay='옵션' class='border-table'>
+
+                        <colgroup>
+                          <col width='120px' />
+                          <col width='*' />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope='row'>옵션 사용</th>
+                            <td>
+                              <label class='label'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용함</span>
+                              </label>
+                              <label class='label ml-5'>
+                                <input type='radio' name='' />
+                                <span class='label-text'>사용안함</span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>옵션 설정</th>
+                            <td><!--2022-12-21-LSE-->
+                              <button type='button' class='btn-option-reg btn-m'>신규 등록</button>
+                              <button type='button' class='btn-option-search btn-m'>옵션 관리 검색</button>
+                              <!-- <button type="button" class="btn-option-item btn-m">상품 검색</button> -->
+                              <div class='text-main-blue mt-1'>선택된 옵션명 : <span>몽클레이키즈</span></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class='font-semibold mt-4 mb-2'>신규 등록 옵션 내용</div>
+                      <div class='relative'>
+                        <div class='mb-1 pl-8'>
+                          <span class='inline-block mr-2'>옵션 그룹명</span>
+                          <input type='text' class='input-wrap' placeholder='placeholder' />
+                          <label class='label mr-5'>
+                            <input type='checkbox' name='' />
+                            <span class='label-text'>옵션 관리에 저장함</span>
+                          </label>
+                          <button type='button' class='btn-m absolute top-0 right-0 btn-option-view'>신규 등록 옵션<br />미리 보기</button>
+                        </div>
+                        <ul class='mt-2'>
+                          <li class='flex relative pl-8'>
+                            <span class='border leading-[40px] border-r-0 w-3/12 text-center'>옵션명</span>
+                            <span class='border leading-[40px] border-r-0 w-3/12 text-center'>옵션 정보값</span>
+                            <span class='border leading-[40px] w-6/12 text-center'>옵션 가격</span>
+                          </li>
+                          <li class='flex relative pl-8'>
+                            <button type='button' class='h-7 px-2 text-white bg-sub-blue-900 border border-sub-blue-900 rounded-sm hover:bg-sub-blue-500 hover:border-sub-blue-500 active:bg-sub-blue-700 active:border-sub-blue-700 absolute left-0 top-2.5'><i class='fa-solid fa-plus'></i></button>
+                            <span class='border border-r-0 border-t-0 w-3/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                            <span class='border border-r-0 border-t-0 w-3/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                            <span class='border border-t-0 w-6/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          </li>
+                          <li class='flex relative pl-8'>
+                            <button type='button' class='h-7 px-2 text-white bg-sub-blue-900 border border-sub-blue-900 rounded-sm hover:bg-sub-blue-500 hover:border-sub-blue-500 active:bg-sub-blue-700 active:border-sub-blue-700 absolute left-0 top-2.5'><i class='fa-solid fa-minus'></i></button>
+                            <span class='border border-r-0 border-t-0 w-3/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                            <span class='border border-r-0 border-t-0 w-3/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                            <span class='border border-t-0 w-6/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          </li>
+                        </ul>
+                        <div class='mt-1 mb-3 pl-8'>
+                          <button type='button' class='btn-m'>등록</button>
+                          <button type='button' class='btn-white-m'>초기화</button>
+                        </div>
+                      </div>
+                      <div class='font-semibold mt-4 mb-1'>적용 중인 옵션/재고 상세 정보</div>
+                      <ul>
+                        <li class='flex'>
+                          <span class='text-center w-[6%] border border-r-0 leading-[40px]'>
+                            <label class='label'>
+                              <input type='checkbox' name='' />
+                              <span class='label-text align-middle'></span>
+                            </label>
+                          </span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px]'>컬러</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px]'>사이즈</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px]'>재고량</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px]'>옵션가</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px]'>컬러코드</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px]'>사이즈코드</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px]'>상품코드</span>
+                          <span class='text-center w-[8%] border border-r-0 leading-[40px]'>판매 상태</span>
+                          <span class='text-center w-[8%] border border-r-0 leading-[40px]'>진열 상태</span>
+                          <span class='text-center w-[8%] border leading-[40px]'>순서</span>
+                        </li>
+                        <li class='flex'>
+                          <span class='text-center w-[6%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <label class='label'>
+                              <input type='checkbox' name='' />
+                              <span class='label-text align-middle'></span>
+                            </label>
+                          </span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'>RED</span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'>95</span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' value='5' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' value='10,000' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[8%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <select class='select-wrap w-full'>
+                              <option>판매중</option>
+                              <option>판매중지(미진열)</option>
+                              <option>품절(진열+구매불가)</option>
+                            </select>
+                          </span>
+                          <span class='text-center w-[8%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <select class='select-wrap w-full'>
+                              <option>진열</option>
+                              <option>미진열</option>
+                            </select>
+                          </span>
+                          <span class='text-center w-[8%] border border-t-0 flex justify-center items-center p-1'>
+                            <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                            <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                          </span>
+                        </li>
+                        <li class='flex'>
+                          <span class='text-center w-[6%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <label class='label'>
+                              <input type='checkbox' name='' />
+                              <span class='label-text align-middle'></span>
+                            </label>
+                          </span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'>RED</span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'>95</span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' value='5' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' value='10,000' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[8%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <select class='select-wrap w-full'>
+                              <option>판매중</option>
+                              <option>판매중지(미진열)</option>
+                              <option>품절(진열+구매불가)</option>
+                            </select>
+                          </span>
+                          <span class='text-center w-[8%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <select class='select-wrap w-full'>
+                              <option>진열</option>
+                              <option>미진열</option>
+                            </select>
+                          </span>
+                          <span class='text-center w-[8%] border border-t-0 flex justify-center items-center p-1'>
+                            <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                            <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                          </span>
+                        </li>
+                      </ul>
+                      <div class='py-1 mb-3'>
+                        <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 선택한 행 삭제</button>
+                        <button type='button' class='btn-m'><i class='fa-solid fa-plus'></i> 선택한 행 복사</button>
+                        <button type='button' class='btn-m'><i class='fa-solid fa-rotate-right'></i> 초기화</button>
+                      </div>
+                      <table summay='옵션' class='border-table'>
+
+                        <colgroup>
+                          <col width='120px' />
+                          <col width='*' />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope='row'>텍스트 옵션 사용</th>
+                            <td>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' /><!--2022-12-21-LSE-->
+                                <span class='label-text'>사용함</span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='radio' name='' /><!--2022-12-21-LSE-->
+                                <span class='label-text'>사용안함</span>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>텍스트 옵션 내용</th>
+                            <td>
+                              <ul class='mt-2'>
+                                <li class='flex'>
+                                  <span class='border leading-[40px] border-r-0 text-center w-40'>옵션명</span>
+                                  <span class='border leading-[40px] border-r-0 text-center w-40'>옵션가</span>
+                                  <span class='border leading-[40px] text-center w-40'>필수여부</span>
+                                </li>
+                                <li class='flex'>
+                                  <span class='border border-r-0 border-t-0 w-40 p-1 text-center'></span>
+                                  <span class='border border-r-0 border-t-0 w-40 p-1 text-center'></span>
+                                  <span class='border border-t-0 w-40 p-1 text-center'>
+                                    <label class='label'>
+                                      <input type='checkbox' name='' />
+                                      <span class='label-text align-middle'></span>
+                                    </label>
+                                  </span>
+                                  <span class='w-40 pl-2'>
+                                    <button type='button' class='h-7 px-2 text-white bg-sub-blue-900 border border-sub-blue-900 rounded-sm hover:bg-sub-blue-500 hover:border-sub-blue-500 active:bg-sub-blue-700 active:border-sub-blue-700 mt-1.5'><i class='fa-solid fa-plus'></i></button>
+                                  </span>
+                                </li>
+                                <li class='flex'>
+                                  <span class='border border-r-0 border-t-0 w-40 p-1 text-center'></span>
+                                  <span class='border border-r-0 border-t-0 w-40 p-1 text-center'></span>
+                                  <span class='border border-t-0 w-40 p-1 text-center'>
+                                    <label class='label'>
+                                      <input type='checkbox' name='' />
+                                      <span class='label-text align-middle'></span>
+                                    </label>
+                                  </span>
+                                  <span class='w-40 pl-2'>
+                                    <button type='button' class='h-7 px-2 text-white bg-sub-blue-900 border border-sub-blue-900 rounded-sm hover:bg-sub-blue-500 hover:border-sub-blue-500 active:bg-sub-blue-700 active:border-sub-blue-700 mt-1.5'><i class='fa-solid fa-plus'></i></button>
+                                    <button type='button' class='h-7 px-2 text-white bg-sub-blue-900 border border-sub-blue-900 rounded-sm hover:bg-sub-blue-500 hover:border-sub-blue-500 active:bg-sub-blue-700 active:border-sub-blue-700 mt-1.5'><i class='fa-solid fa-minus'></i></button>
+                                  </span>
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>아이콘</th>
+                    <td colspan='10'>
+                      <label class='label w-28 inline-block'>
+                        <input type='radio' name='ico-display' />
+                        <span class='label-text'>상시 노출</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'><span class='C-LABEL 세일'>세일</span></span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'><span class='C-LABEL 신상품'>신상품</span></span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'><span class='C-LABEL 추천'>추천</span></span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'><span class='C-LABEL 예약'>예약</span></span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'><span class='C-LABEL 쿠폰'>쿠폰30%</span></span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'><span class='C-LABEL 상반기베스트'>상반기베스트</span></span>
+                      </label>
+                      <button type='button' class='btn-m btn-icon-list'>아이콘 전체 보기</button>
+                      <div class='mt-1'>
+                        <label class='label w-28 inline-block'>
+                          <input type='radio' name='ico-display' />
+                          <span class='label-text'>특정 기간 노출</span>
+                        </label>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <span class='inline-block px-1'>~</span>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>상품정보<br />제공고시</th>
+                    <td colspan='10'>
+                      <div class='flex gap-x-2.5'>
+                        <div class='w-2/12 pt-10'>
+                          <select class='select-wrap w-full'>
+                            <option>-상품군 선택-</option>
+                            <option></option>
+                            <option>의류</option>
+                            <option>스포츠용품</option>
+                            <option>귀금속/보석/시계류</option>
+                            <option>화장품</option>
+                            <option>패션잡화</option>
+                            <option>가방</option>
+                            <option>구두/신발</option>
+                            <option>기타</option>
+                          </select>
+                        </div>
+                        <div class='w-10/12'>
+                          <div class='relative'>
+                            <div class='text-main-blue mb-1'>상품군 : 의류</div>
+                            <a href='products-info.html' class='btn-link'>상품정보 제공고시 관리 바로가기 <i class='fa-solid fa-arrow-right-long'></i></a>
+                            <button type='button' class='btn-m absolute bottom-0 right-0 !leading-[1rem]'>내용란<br />'상품 상세 설명 참조' 일괄 입력</button>
+                          </div>
+                          <ul class='mt-1'>
+                            <li class='flex'>
+                              <span class='w-2/5 border leading-[40px] border-r-0 text-center bg-main-lightblue'>항목</span>
+                              <span class='w-2/5 border leading-[40px] border-r-0 text-center bg-main-lightblue'>내용</span>
+                              <span class='w-[10%] border leading-[40px] border-r-0 text-center bg-main-lightblue'>순서</span>
+                              <span class='w-[10%] border leading-[40px] text-center bg-main-lightblue'>삭제</span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>소재</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>색상</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>치수</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>제조사,수입품의 경우 수입자를 함께 표시</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>제조국</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>세탁방법 및 취급시 주의사항</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>제조년월</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>품질보증기준</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>A/S책임자와 그 전화번호</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                            <li class='flex'>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>기타</span>
+                              <span class='w-2/5 border border-r-0 border-t-0 p-1 text-center'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                              <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                                <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                              </span>
+                              <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                                <button type='button' class='rounded-sm bg-red text-white px-2.5 py-1.5'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </span>
+                            </li>
+                          </ul>
+                          <div class='py-1'>
+                            <button type='button' class='btn-m'><i class='fa-solid fa-plus'></i> 행추가</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='mt-2 pt-3 border-t border-dashed text-center'>
+                        <label class='label mr-5'>
+                          <input type='checkbox' name='' />
+                          <span class='label-text'> 추가 등록</span>
+                        </label>
+                        <span class='pr-5'>서브타이틀 <input type='text' class='input-wrap w-80' placeholder='placeholder' /></span>
+                        <span class='pr-5'>내용 <input type='text' class='input-wrap w-80' placeholder='placeholder' /></span>
+                        <button type='button' class='btn-m'><i class='fa-solid fa-plus'></i> 행추가</button>
+                        <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>키워드</th>
+                    <td colspan='10'>
+                      <div class='mb-1'>※ 상품명, 카테고리명, 브랜드명은 자동으로 검색값에 포함됩니다.</div>
+                      <input type='text' class='input-wrap w-4/6' />
+                      <span class='text-red'>0</span>/250
+                      <div class='text-sub-blue-400 mt-1'>입력시 키워드별 쉼표입력(ex:나이키,뉴발란스,런닝화)</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>성별 설정</th>
+                    <td colspan='10'>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'>공용</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'>남성</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='checkbox' name='' />
+                        <span class='label-text'>여성</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>대표 컬러<br />
+                      <button class='btn-s'>대표 컬러 관리</button>
+                    </th>
+                    <td colspan='10'>
+                      <label data-key='0' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#ffffff'></span>
+                      </label>
+                      <label data-key='1' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#888888'></span>
+                      </label>
+                      <label data-key='2' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#231f20'></span>
+                      </label>
+                      <label data-key='3' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#26abe3'></span>
+                      </label>
+                      <label data-key='4' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#83c9af'></span>
+                      </label>
+                      <label data-key='5' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#89c64f'></span>
+                      </label>
+                      <label data-key='6' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#fff35f'></span>
+                      </label>
+                      <label data-key='7' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#f8ead0'></span>
+                      </label>
+                      <label data-key='8' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#c1aa80'></span>
+                      </label>
+                      <label data-key='9' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#523a1e'></span>
+                      </label>
+                      <label data-key='10' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#f27330'></span>
+                      </label>
+                      <label data-key='11' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#bf1f21'></span>
+                      </label>
+                      <label data-key='12' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#f170a9'></span>
+                      </label>
+                      <label data-key='13' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#6c3589'></span>
+                      </label>
+                      <label data-key='14' class='relative inline-block overflow-hidden'>
+                        <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                        <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color:#580300'></span>
+                      </label>
+
+                      <div class='mt-1'>
+                        <span class='inline-block align-middle'>선택된 컬러</span>
+                        <label class='relative inline-block overflow-hidden align-middle'>
+                          <input type='radio' name='product_color' class='absolute left-[-99999px]' />
+                          <span class='border inline-block w-10 h-10 align-top cursor-pointer' style='background-color: #580300'></span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>검색용 사이즈<br />(간편 검색/<br />필터 검색)<br />
+                      <button type='button' class='btn-link mt5'>검색 사이즈 관리 <i class='fa-solid fa-arrow-right-long'></i></button>
+                    </th>
+                    <td colspan='10'>
+                      <table  class='border-table'>
+                        <caption>
+                          검색용 사이즈
+                        </caption>
+                        <tbody>
+                          <tr>
+                            <th scope='row'>상의1</th>
+                            <td>
+                              <label data-key='0' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>75</span>
+                              </label>
+                              <label data-key='1' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>80</span>
+                              </label>
+                              <label data-key='2' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>85</span>
+                              </label>
+                              <label data-key='3' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>90</span>
+                              </label>
+                              <label data-key='4' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>95</span>
+                              </label>
+                              <label data-key='5' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>100</span>
+                              </label>
+                              <label data-key='6' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>105</span>
+                              </label>
+                              <label data-key='7' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>110</span>
+                              </label>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>상의2</th>
+                            <td>
+                              <label data-key='0' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>55</span>
+                              </label>
+                              <label data-key='1' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>66</span>
+                              </label>
+                              <label data-key='2' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>77</span>
+                              </label>
+                              <label data-key='3' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>88</span>
+                              </label>
+                              <label data-key='4' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>99</span>
+                              </label>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>하의1</th>
+                            <td>
+                              <label data-key='0' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>25</span>
+                              </label>
+                              <label data-key='1' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>26</span>
+                              </label>
+                              <label data-key='2' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>27</span>
+                              </label>
+                              <label data-key='3' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>28</span>
+                              </label>
+                              <label data-key='4' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>29</span>
+                              </label>
+                              <label data-key='5' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>30</span>
+                              </label>
+                              <label data-key='6' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>31</span>
+                              </label>
+                              <label data-key='7' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>32</span>
+                              </label>
+                              <label data-key='8' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>33</span>
+                              </label>
+                              <label data-key='9' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>34</span>
+                              </label>
+                              <label data-key='10' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>35</span>
+                              </label>
+                              <label data-key='11' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>36</span>
+                              </label>
+                              <label data-key='12' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>37</span>
+                              </label>
+                              <label data-key='13' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>38</span>
+                              </label>
+                              <label data-key='14' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>39</span>
+                              </label>
+                              <label data-key='15' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>40</span>
+                              </label>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>하의2</th>
+                            <td>
+                              <label data-key='0' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>65</span>
+                              </label>
+                              <label data-key='1' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>67</span>
+                              </label>
+                              <label data-key='2' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>69</span>
+                              </label>
+                              <label data-key='3' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>71</span>
+                              </label>
+                              <label data-key='4' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>73</span>
+                              </label>
+                              <label data-key='5' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>75</span>
+                              </label>
+                              <label data-key='6' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>77</span>
+                              </label>
+                              <label data-key='7' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>79</span>
+                              </label>
+                              <label data-key='8' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>81</span>
+                              </label>
+                              <label data-key='9' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>83</span>
+                              </label>
+                              <label data-key='10' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>85</span>
+                              </label>
+                              <label data-key='11' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>87</span>
+                              </label>
+                              <label data-key='12' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>89</span>
+                              </label>
+                              <label data-key='13' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>91</span>
+                              </label>
+                              <label data-key='14' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>93</span>
+                              </label>
+                              <label data-key='15' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>95</span>
+                              </label>
+                              <label data-key='16' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>97</span>
+                              </label>
+                              <label data-key='17' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>99</span>
+                              </label>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>신발1</th>
+                            <td>
+                              <label data-key='0' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>220</span>
+                              </label>
+                              <label data-key='1' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>225</span>
+                              </label>
+                              <label data-key='2' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>230</span>
+                              </label>
+                              <label data-key='3' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>235</span>
+                              </label>
+                              <label data-key='4' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>240</span>
+                              </label>
+                              <label data-key='5' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>245</span>
+                              </label>
+                              <label data-key='6' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>250</span>
+                              </label>
+                              <label data-key='7' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>255</span>
+                              </label>
+                              <label data-key='8' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>260</span>
+                              </label>
+                              <label data-key='9' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>265</span>
+                              </label>
+                              <label data-key='10' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>270</span>
+                              </label>
+                              <label data-key='11' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>275</span>
+                              </label>
+                              <label data-key='12' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>280</span>
+                              </label>
+                              <label data-key='13' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>285</span>
+                              </label>
+                              <label data-key='14' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>290</span>
+                              </label>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>신발2</th>
+                            <td>
+                              <label data-key='0' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>5</span>
+                              </label>
+                              <label data-key='1' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>5.5</span>
+                              </label>
+                              <label data-key='2' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>6</span>
+                              </label>
+                              <label data-key='3' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>6.5</span>
+                              </label>
+                              <label data-key='4' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>7</span>
+                              </label>
+                              <label data-key='5' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>7.5</span>
+                              </label>
+                              <label data-key='6' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>8</span>
+                              </label>
+                              <label data-key='7' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>8.5</span>
+                              </label>
+                              <label data-key='8' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>9</span>
+                              </label>
+                              <label data-key='9' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>9.5</span>
+                              </label>
+                              <label data-key='10' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>10</span>
+                              </label>
+                              <label data-key='11' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>10.5</span>
+                              </label>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>기타</th>
+                            <td>
+                              <label data-key='0' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>XS</span>
+                              </label>
+                              <label data-key='1' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>S</span>
+                              </label>
+                              <label data-key='2' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>M</span>
+                              </label>
+                              <label data-key='3' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>L</span>
+                              </label>
+                              <label data-key='4' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>XL</span>
+                              </label>
+                              <label data-key='5' class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>XXL</span>
+                              </label>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope='row'>단일사이즈</th>
+                            <td>
+                              <label class='label mr-5'>
+                                <input type='checkbox' name='' />
+                                <span class='label-text'>FREE</span>
+                              </label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>상품 이미지</th>
+                    <td colspan='10'>
+                      <div class='mb-1 relative h-[40px]'>
+                        <span class='inline-block mt-2.5'>
+                          <label class='label mr-5'>
+                            <input type='radio' name='' />
+                            <span class='label-text'>파일 업로드</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' name='' />
+                            <span class='label-text'>URL 등록</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' name='' />
+                            <span class='label-text'>자동 리사이징</span>
+                          </label>
+                        </span>
+                        <span class='absolute top-0 right-0'>
+                          리스트 이미지 마우스 오버시 부가 이미지 노출(PC전용)
+                          <select class='select-wrap align-middle'>
+                            <option>-사용안함-</option>
+                            <option>부가이미지1</option>
+                            <option>부가이미지2</option>
+                            <option>부가이미지3</option>
+                            <option>부가이미지4</option>
+                            <option>부가이미지5</option>
+                            <option>부가이미지6</option>
+                            <option>부가이미지7</option>
+                            <option>부가이미지8</option>
+                            <option>부가이미지9</option>
+                            <option>부가이미지10</option>
+                          </select>
+                        </span>
+                      </div>
+                      <table  class='border-table'>
+
+                        <colgroup>
+                          <col width='50%' />
+                          <col width='50%' />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope='row' class='text-center'>PC 페이지</th>
+                            <th scope='row' class='text-center'>Mobile 페이지</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>메인 이미지</span>
+                                <!--<div class="border-sub-blue-200 rounded-sm relative overflow-hidden">-->
+                                <!--  <input class="bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm" value="파일선택" disabled="disabled"/>-->
+                                <!--  <label for="pc_file" class="rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top">찾아보기</label>-->
+                                <!--  <input type="file" id="pc_file" class="absolute left-[-99999px]"/>-->
+                                <!--</div>-->
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='b627b1c2-8263-4068-aeeb-6ecac9628e8d'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>확대 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='14146df7-593d-410a-ba93-e7eb18a4dcda'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>썸네일 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='ea6a9723-498b-4a7d-b43f-1203aec3ced9'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='4463e3e4-d44b-4d30-8f94-48ec5e977bcc'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-white-m font-semibold'><i class='fa-solid fa-plus'></i> 추가</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지2</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='346cbba2-702c-4ae7-a9fe-58e7fe3e15b5'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지3</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='42b1224e-79ca-4b83-be4e-5ecceb0d205c'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지4</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='288c97c2-cac4-4bae-b6ca-e0625e4261e2'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                            </td>
+                            <td>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>메인 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='7788dddf-a909-4bf7-9e21-c860d9156e09'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>확대 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='ebd3b00a-7dc4-498a-9a91-12a820391806'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>썸네일 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='6139e57f-3d32-4cb0-8222-7fc17585f2e9'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='2c10e083-e873-468b-af57-46fd7d110223'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-white-m font-semibold'><i class='fa-solid fa-plus'></i> 추가</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지2</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='bc49f665-c600-46d1-9a22-7d15cc539757'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지3</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='1a9a44ff-f3d9-4cdc-bc7b-a7afcab6323e'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지4</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='7a1470d3-9068-4581-a5b0-aee0a828e870'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class='border-table mt-[-1px]' >
+
+                        <colgroup>
+                          <col width='50%' />
+                          <col width='50%' />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope='row' class='text-center'>PC 페이지</th>
+                            <th scope='row' class='text-center'>Mobile 페이지</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>메인 이미지</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>확대 이미지</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>썸네일 이미지</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                <button type='button' class='btn-white-m font-semibold'><i class='fa-solid fa-plus'></i> 추가</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지2</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지3</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지4</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                            </td>
+                            <td>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>메인 이미지</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>확대 이미지</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>썸네일 이미지</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                <button type='button' class='btn-white-m font-semibold'><i class='fa-solid fa-plus'></i> 추가</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지2</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지3</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지4</span>
+                                <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div class='my-2'>
+                        <div class='flex mb-1 gap-1'>
+                          <span class='w-28 h-[40px]'>원본이미지<br />(리사이징용)</span>
+                          <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                          <button type='button' class='btn-m btn-resizing'>자동 리사이징 크기 설정</button>
+                        </div>
+                      </div>
+                      <table  class='border-table'>
+
+                        <colgroup>
+                          <col width='50%' />
+                          <col width='50%' />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope='row' class='text-center'>PC 페이지</th>
+                            <th scope='row' class='text-center'>Mobile 페이지</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='ea8f8511-ccef-4e95-810a-905ffc6bf1e6'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-white-m font-semibold'><i class='fa-solid fa-plus'></i> 추가</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지2</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='9addc1bc-f56b-492b-ab3b-edffff8c79d3'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                            </td>
+                            <td>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='2928c2b4-eece-42da-b5f5-11c09abc1d7a'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-white-m font-semibold'><i class='fa-solid fa-plus'></i> 추가</button>
+                              </div>
+                              <div class='flex mb-1 gap-1'>
+                                <span class='w-28 h-[40px] leading-[40px]'>부가 이미지2</span>
+                                <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='80205ee6-3c2b-4c55-86e5-8dddb2490743'>
+                                  <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                                  <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                                  <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                                </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                                <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan='2'>
+                              <div class='inline-block mr-2'>
+                                <div class='flex mb-1 gap-1'>
+                                  <span class='w-28 h-[40px] leading-[40px]'>동영상(유튜브) 등록</span>
+                                  <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                </div>
+                              </div>
+                              <div class='inline-block'>
+                                <div class='flex mb-1 gap-1'>
+                                  <span class='inline-block w-28 h-[40px] leading-[40px]'>동영상 썸네일 이미지</span>
+                                  <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' value='' placeholder='placeholder' />
+                                </div>
+                              </div>
+                              <div>
+                                <span class='w-28 h-[40px] leading-[40px] inline-block'>동영상 사이즈</span>
+                                <label class='label mr-5'>
+                                  <input type='radio' name='' />
+                                  <span class='label-text'>기본 (너비 640 X 높이 360)</span>
+                                </label>
+                                <label class='label mr-5'>
+                                  <input type='radio' name='' />
+                                  <span class='label-text'>사용자 입력</span>
+                                </label>
+                                <span>
+                                  ( 너비
+                                  <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' placeholder='placeholder' />
+                                  X 높이
+                                  <input type='text' class='leading-[38px] pl-2 border border-sub-blue-200' placeholder='placeholder' />
+                                  )
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class='tit-box mt-6'>
+              <h3>상품 상세 설명</h3>
+            </div>
+            <div class='tit-box mt-6'>
+              <h3 class='inline-block'>연관 상품 설정</h3>
+              <button type='button' class='font-normal rounded-sm text-white bg-sub-blue-900 text-xs p-2 btn-option-view'>상품 조회하기</button>
+            </div>
+            <ul>
+              <li class='flex'>
+                <span class='w-[10%] border leading-[40px] border-r-0 text-center'>순서</span>
+                <span class='w-[10%] border leading-[40px] border-r-0 text-center'>이미지</span>
+                <span class='w-[20%] border leading-[40px] border-r-0 text-center'>상품명</span>
+                <span class='w-[10%] border leading-[40px] border-r-0 text-center'>소비자가</span>
+                <span class='w-[10%] border leading-[40px] border-r-0 text-center'>판매가</span>
+                <span class='w-[8%] border leading-[40px] border-r-0 text-center'>브랜드명</span>
+                <span class='w-[7%] border leading-[40px] border-r-0 text-center'>공급사</span>
+                <span class='w-[5%] border leading-[40px] border-r-0 text-center'>재고</span>
+                <span class='w-[5%] border leading-[40px] border-r-0 text-center'>판매 상태</span>
+                <span class='w-[5%] border leading-[40px] border-r-0 text-center'>진열 상태</span>
+                <span class='w-[10%] border leading-[40px] text-center'>추가/삭제</span>
+              </li>
+              <li class='flex'>
+                <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                  <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                  <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                </span>
+                <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                  <img src='http://img.atny.com/data/goods/ATNY/55/1211255/18048394_38790237_1000_list1.png' alt='' title='' width='50px' />
+                </span>
+                <span class='w-[20%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>남성 점퍼/바람막이</span>
+                <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>700,000</span>
+                <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>100,000</span>
+                <span class='w-[8%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>발렌시아가</span>
+                <span class='w-[7%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>공급사</span>
+                <span class='w-[5%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>100</span>
+                <span class='w-[5%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>판매중</span>
+                <span class='w-[5%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>진열</span>
+                <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                  <button type='button' class='rounded-sm w-14 h-[40px] border border-sub-blue-200 text-xs mr-1'><i class='fa-solid fa-plus'></i> 추가</button>
+                  <button type='button' class='rounded-sm bg-red text-white w-14 h-[40px] text-xs'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                </span>
+              </li>
+              <li class='flex'>
+                <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                  <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                  <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                </span>
+                <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>
+                  <img src='http://img.atny.com/data/goods/ATNY/0/169000/16109825_30618092_1000_list1_rb.png' alt='' title='' width='50px' />
+                </span>
+                <span class='w-[20%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>나이키 점퍼/바람막이</span>
+                <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>1700,000</span>
+                <span class='w-[10%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>128,000</span>
+                <span class='w-[8%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>나이키</span>
+                <span class='w-[7%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>공급사</span>
+                <span class='w-[5%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>100</span>
+                <span class='w-[5%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>판매중</span>
+                <span class='w-[5%] border border-r-0 border-t-0 p-1 text-center flex justify-center items-center'>진열</span>
+                <span class='w-[10%] border border-t-0 p-1 text-center flex justify-center items-center'>
+                  <button type='button' class='rounded-sm w-14 h-[40px] border border-sub-blue-200 text-xs mr-1'><i class='fa-solid fa-plus'></i> 추가</button>
+                  <button type='button' class='rounded-sm bg-red text-white w-14 h-[40px] text-xs'><i class='fa-solid fa-xmark'></i> 삭제</button>
+                </span>
+              </li>
+            </ul>
+            <div class='tit-box mt-6'><h3>이용 안내 등록</h3></div>
+            <h4 class='inline-block text-sub-blue-500 text-xs font-normal mb-2'>필수 이용 안내</h4>
+            <table  class='table'>
+
+              <colgroup>
+                <col width='10%' />
+                <col width='90%' />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope='row'>적용 범위 분류</th>
+                  <td>배송 안내</td>
+                </tr>
+                <tr>
+                  <th scope='row'>제목 (등록일시)</th>
+                  <td>2022년 배송 정책 안내본 (2022-05-05 11:24:13)</td>
+                </tr>
+                <tr>
+                  <th scope='row'>내용</th>
+                  <td><textarea class='w-full border border-sub-blue-200 rounded-sm p-2'></textarea></td>
+                </tr>
+                <tr>
+                  <th scope='row'>적용 범위 분류</th>
+                  <td>AS 안내</td>
+                </tr>
+                <tr>
+                  <th scope='row'>제목(등록일시)</th>
+                  <td>2022년 AS정책 안내본( 2022-05-19 20:22:22 )</td>
+                </tr>
+                <tr>
+                  <th scope='row'>내용</th>
+                  <td><textarea class='w-full border border-sub-blue-200 rounded-sm p-2'></textarea></td>
+                </tr>
+                <tr>
+                  <th scope='row'>적용 범위 분류</th>
+                  <td>환불 안내</td>
+                </tr>
+                <tr>
+                  <th scope='row'>제목 (등록일시)</th>
+                  <td>2022년 AS 정책 안내본 (2022-05-05 11:24:13)</td>
+                </tr>
+                <tr>
+                  <th scope='row'>내용</th>
+                  <td><textarea class='w-full border border-sub-blue-200 rounded-sm p-2'></textarea></td>
+                </tr>
+                <tr>
+                  <th scope='row'>적용 범위 분류</th>
+                  <td>교환 안내</td>
+                </tr>
+                <tr>
+                  <th scope='row'>제목(등록일시)</th>
+                  <td>2022년 AS정책 안내본(2022-05-05 11:24:13)</td>
+                </tr>
+                <tr>
+                  <th scope='row'>내용</th>
+                  <td><textarea class='w-full border border-sub-blue-200 rounded-sm p-2'></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class='mt-10 mb-2'>
+              <h4 class='inline-block text-sub-blue-500 text-xs font-normal mb-2 mr-10'>선택 이용 안내</h4>
+              <label class='label mr-5'>
+                <input type='radio' name='content_input' />
+                <span class='label-text'>직접 입력</span>
+              </label>
+              <label class='label mr-5'>
+                <input type='radio' name='content_input' />
+                <span class='label-text'>이용 안내 불러오기</span>
+              </label>
+            </div>
+            <div class='relative'>
+              <table  class='table w-11/12'>
+
+                <colgroup>
+                  <col width='10%' />
+                  <col width='*' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>적용 범위 분류</th>
+                    <td>기타 안내</td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>제목 (등록일시)</th>
+                    <td>2022년 AS 정책 안내본</td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>내용</th>
+                    <td><textarea class='w-full border border-sub-blue-200 rounded-sm p-2'></textarea></td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type='button' class='rounded-sm bg-red text-white w-14 h-[40px] text-xs absolute top-0 right-0'><i class='fa-solid fa-xmark'></i> 삭제</button>
+            </div>
+            <h4 class='inline-block text-sub-blue-500 text-xs font-normal mb-2 mr-10 mt-10'>선택 이용 안내 추가</h4>
+            <table  class='table'>
+
+              <colgroup>
+                <col width='10%' />
+                <col width='10%' />
+                <col width='80%' />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope='col' colspan='3'>-직접입력-</th>
+                </tr>
+                <tr>
+                  <th scope='row'>이용 안내 제목</th>
+                  <td colspan='2'><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                </tr>
+                <tr>
+                  <th scope='row'>이용 안내 내용</th>
+                  <td colspan='2'>
+                    <textarea class='w-full border border-sub-blue-200 rounded-sm p-2'></textarea>
+                    <div class='pt-1'>
+                      <button type='button' class='btn-m'>추가</button>
+                      <button type='button' class='btn-white-m'>초기화</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table  class='table'>
+
+              <colgroup>
+                <col width='10%' />
+                <col width='90%' />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope='col' colspan='2'>-불러오기-</th>
+                </tr>
+                <tr>
+                  <th scope='row'>적용 범위 분류</th>
+                  <td>
+                    <select class='select-wrap align-middle'>
+                      <option>선택</option>
+                      <option>배송안내</option>
+                      <option>환불안내</option>
+                      <option>AS안내</option>
+                      <option>교환안내</option>
+                      <option>기타</option>
+                    </select>
+                    <span class='inline-block align-middle'>제목</span>
+                    <select class='select-wrap align-middle'>
+                      <option>선택</option>
+                      <option>2022 AS 정책 안내</option>
+                      <option>2021 AS 정책 안내</option>
+                      <option>2020 AS 정책 안내</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope='row' rowspan='3'>미리 보기</th>
+                  <td>
+                    <table  class='border-table'>
+
+                      <colgroup>
+                        <col width='10%' />
+                        <col width='90%' />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>적용 범위 분류</th>
+                          <td>AS 안내</td>
+                        </tr>
+                        <tr>
+                          <th>제목 (등록 일시)</th>
+                          <td>2022년 AS 정책 안내본 ( 2022-05-19 20:22:22 )</td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>내용</th>
+                          <td>
+                            <textarea class='w-full border border-sub-blue-200 rounded-sm p-2'></textarea>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class='mt-1'>
+                      <button type='button' class='btn-m'>추가</button>
+                      <button type='button' class='btn-white-m'>취소</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 class='text-base font-semibold mt-3 mb-2'>상품 메모</h4>
+            <table  class='table'>
+
+              <colgroup>
+                <col width='10%' />
+                <col width='90%' />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope='row'>관리 메모</th>
+                  <td><textarea class='w-full border border-sub-blue-200 rounded-sm p-2' placeholder='placeholder'></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

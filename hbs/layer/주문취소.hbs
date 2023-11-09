@@ -1,0 +1,376 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1300px]">
+    <div class="layer-header">
+      <h1>주문 취소</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div>
+        <h2 class="text-sub-blue-500 mb-2">주문정보</h2>
+        <table class="table" summary="주문정보">
+
+          <colgroup>
+            <col style="width:15%">
+            <col style="width:35%">
+            <col style="width:15%">
+            <col style="width:35%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-center">주문번호</th>
+              <td class="text-center">1231403401341340</td>
+              <th scope="row" class="text-center">주문일시</th>
+              <td class="text-center">2022년 04월 00일 00시 00분</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2 class="text-sub-blue-500 mt-6 mb-2">결제정보</h2>
+        <table class="table" summary="결제정보">
+
+          <colgroup>
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:20%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th scope="row" class="text-center">상품 판매 금액</th>
+            <th scope="row" class="text-center">총 배송비</th>
+            <th scope="row" class="text-center">총 할인 금액</th>
+            <th scope="row" class="text-center">총 결제 금액</th>
+            <th scope="row" class="text-center">총 적립 금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td class="text-center">30,000 원</td>
+            <td class="text-center">2,500 원</td>
+            <td class="text-center">1,000 원</td>
+            <td class="text-center">22,500 원</td>
+            <td class="text-center">0 원</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2 class="text-sub-blue-500 mt-6 mb-2">주문상품</h2>
+        <div id="app"></div>
+        <div class="mt-6 text-right">
+          <button type="button" class="btn-m"><i class="fa-solid fa-xmark"></i> 선택 상품 취소</button>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-sub-blue-500 mb-2">취소처리</h2>
+        <table class="table" summary="취소처리">
+
+          <colgroup>
+            <col style="width:15%">
+            <col style="width:35%">
+            <col style="width:15%">
+            <col style="width:35%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope="row">취소처리 상태</th>
+              <td>
+                <select class="select-wrap">
+                <option>취소종류 선택</option>
+                <option>품절 취소</option>
+                <option>관리자 취소</option>
+                </select>
+              </td>
+              <th scope="row">취소사유</th>
+              <td>
+                <select class="select-wrap">
+                  <option>고객변심</option>
+                  <option>품절취소</option>
+                  <option>..</option>
+                  <option>기타</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">상세사유</th>
+              <td colspan="3">
+                <div class="w-full">
+                  <textarea class="block w-full h-[100px] overflow-y-auto p-2 border border-sub-blue-200 rounded-sm"></textarea>
+                  <label class="label block mt-1 !ml-0">
+                    <input type="checkbox" name="">
+                    <span class="label-text">상세 사유를 고객에게 (마이페이지 주문상세) 노출합니다. </span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2 class="text-sub-blue-500 mt-6 mb-2">취소 금액 설정</h2>
+        <table class="table" summary="취소 금액 설정">
+
+          <colgroup>
+            <col style="width:15%">
+            <col style="width:85%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope="row">상품 금액</th>
+              <td>10,000원</td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-top">
+                <div class="relative">
+                  <span>할인 혜택 금액</span>
+                  <span class="absolute top-[-5px] right-0">
+                  <button type="button" class="px-2 py-1.5"><i class="fa-solid fa-angle-up"></i></button>
+                  <!-- <button type="button" class="px-2 py-1.5"><i class="fa-solid fa-angle-down"></i></button> -->
+                  </span>
+                </div>
+              </th>
+              <td>
+                <p>3,300원</p>
+                <!-- type(1) -->
+                <div class="mt-1">
+                  <table class="border-table" summary="할인 혜택 금액">
+
+                    <colgroup>
+                      <col style="width:20%">
+                      <col style="width:80%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">상품 금액 (판매가)</th>
+                        <td><input type="text" class="input-wrap bg-main-lightblue" readonly value="10,000" /> 원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">회원 할인 금액</th>
+                        <td><input type="text" class="input-wrap bg-main-lightblue" readonly value="0" /> 원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">상품 쿠폰 할인 금액</th>
+                        <td><input type="text" class="input-wrap bg-main-lightblue" readonly value="0" /> 원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">주문(중복) 쿠폰 할인 금액</th>
+                        <td>
+                          <p class="inline-block mr-5"><input type="text" class="input-wrap" value="3,300"> 원</p>
+                          <label class="label">
+                            <input type="radio" name="" checked="">
+                            <span class="label-text">주문 쿠폰 할인 취소</span>
+                          </label>
+                          <label class="label">
+                            <input type="radio" name="">
+                            <span class="label-text">취소안함</span>
+                          </label>
+                          <span class="ml-5">(최대 취소 가능 금액 : <span class="text-red">3,300</span>원)</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">코드 할인 금액</th>
+                        <td><input type="text" class="input-wrap bg-main-lightblue" readonly value="0" /> 원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">포인트 할인 금액</th>
+                        <td>
+                          <p class="inline-block mr-5"><input type="text" class="input-wrap" value="0"> 원</p>
+                          <label class="label">
+                            <input type="radio" name="" checked="">
+                            <span class="label-text">환불함</span>
+                          </label>
+                          <label class="label">
+                            <input type="radio" name="">
+                            <span class="label-text">환불안함</span>
+                          </label>
+                          <span class="ml-5">(최대 취소 가능 금액 : <span class="text-red">0</span>원)</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">예치금 할인 금액</th>
+                        <td>
+                          <p class="inline-block mr-5"><input type="text" class="input-wrap" value="0"> 원</p>
+                          <label class="label">
+                            <input type="radio" name="" checked="">
+                            <span class="label-text">환불함</span>
+                          </label>
+                          <label class="label">
+                            <input type="radio" name="">
+                            <span class="label-text">환불안함</span>
+                          </label>
+                          <span class="ml-5">(최대 취소 가능 금액 : <span class="text-red">0</span>원)</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- //type(1) -->
+                <!-- type(2) -->
+                <div class="hidden mt-1">
+                  <table class="border-table" summary="할인 혜택 금액">
+
+                    <colgroup>
+                      <col style="width:20%">
+                      <col style="width:20%">
+                      <col style="width:60%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">상품 금액 (판매가)</th>
+                        <td><input type="text" class="input-wrap bg-main-lightblue" readonly value="10,000" /> 원</td>
+                        <td rowspan="5" class="text-center text-sub-blue-500">주문 전체 취소이므로 혜택도 일괄 취소 처리됩니다.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">회원 할인 금액</th>
+                        <td><input type="text" class="input-wrap bg-main-lightblue" readonly value="0" /> 원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">상품 쿠폰 할인 금액</th>
+                        <td><input type="text" class="input-wrap bg-main-lightblue" readonly value="0" /> 원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">주문(중복) 쿠폰 할인 금액</th>
+                        <td><input type="text" class="input-wrap" value="3,300"> 원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">코드 할인 금액</th>
+                        <td><input type="text" class="input-wrap bg-main-lightblue" readonly value="0" /> 원</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">포인트 할인 금액</th>
+                        <td colspan="2">
+                          <p class="inline-block mr-5"><input type="text" class="input-wrap" value="0"> 원</p>
+                          <label class="label">
+                            <input type="radio" name="" checked="">
+                            <span class="label-text">환불함</span>
+                          </label>
+                          <label class="label">
+                            <input type="radio" name="">
+                            <span class="label-text">환불안함</span>
+                          </label>
+                          <span class="ml-5">(최대 취소 가능 금액 : <span class="text-red">0</span>원)</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">예치금 할인 금액</th>
+                        <td colspan="2">
+                          <p class="inline-block mr-5"><input type="text" class="input-wrap" value="0"> 원</p>
+                          <label class="label">
+                            <input type="radio" name="" checked="">
+                            <span class="label-text">환불함</span>
+                          </label>
+                          <label class="label">
+                            <input type="radio" name="">
+                            <span class="label-text">환불안함</span>
+                          </label>
+                          <span class="ml-5">(최대 취소 가능 금액 : <span class="text-red">0</span>원)</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- //type(2) -->
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-top">
+                <div class="relative">
+                  <span>총 배송비</span>
+                  <span class="absolute top-[-5px] right-0">
+                  <button type="button" class="px-2 py-1.5"><i class="fa-solid fa-angle-up"></i></button>
+                  <!-- <button type="button" class="px-2 py-1.5"><i class="fa-solid fa-angle-down"></i></button> -->
+                  </span>
+                </div>
+              </th>
+              <td>
+                <p>2,500원</p>
+                <div class="mt-1">
+                  <table class="border-table" summary="배송비 쿠폰 할인 조정">
+
+                    <colgroup>
+                      <col style="width:20%">
+                      <col style="width:80%">
+                    </colgroup>
+                    <tbody>												
+                      <tr>
+                        <th scope="row">배송비 쿠폰 할인 조정</th>
+                        <td>
+                          <p class="inline-block mr-5"><input type="text" class="input-wrap" value="0"> 원</p>
+                          <label class="label">
+                            <input type="radio" name="" checked="">
+                            <span class="label-text">배송비 쿠폰 할인 취소</span>
+                          </label>
+                          <label class="label">
+                            <input type="radio" name="">
+                            <span class="label-text">취소안함</span>
+                          </label>
+                          <span class="ml-5">(최대 취소 가능 금액 : <span class="text-red">0</span>원)</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2 class="text-sub-blue-500 mt-6 mb-2">취소 후 최종 결제 금액</h2>
+        <table class="table" summary="취소 후 최종 결제 금액">
+
+          <colgroup>
+            <col style="width:15%">
+            <col style="width:85%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope="row">취소 전 주문 결제 금액</th>
+              <td>31,500원</td>
+            </tr>
+            <tr>
+              <th scope="row">총 취소 금액</th>
+              <td>9,000원</td>
+            </tr>
+            <tr>
+              <th scope="row">취소 후 최종 결제 예상 금액</th>
+              <td>22,500원</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2 class="text-sub-blue-500 mt-6 mb-2">취소 재고 복원 여부</h2>
+        <table class="table" summary="취소 재고 복원 여부">
+
+          <colgroup>
+            <col style="width:15%">
+            <col style="width:85%">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope="row">재고 수량 복원 여부</th>
+              <td>
+                <label class="label">
+                  <input type="radio" name="" checked="">
+                  <span class="label-text">복원함</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="">
+                  <span class="label-text">복원안함</span>
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div class="layer-footer">
+        <button type="button" class="btn-blue">다음</button>
+      <button type="button" class="btn-white-l">취소</button>
+    </div>
+  </div>
+</div>

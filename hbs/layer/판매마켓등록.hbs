@@ -1,0 +1,127 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1300px]">
+    <div class="layer-header">
+      <h1>판매마켓 등록</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div class="mb-2">어떤 마켓을 연동하시겠습니까?</div>
+      <div class="tab">
+        <ul>
+          <li class="on">11번가</li>
+          <li>쿠팡</li>
+          <li>스마트스토어</li>
+          <li>아이스탁몰</li>
+          <li>HMALL</li>
+          <li>AKMALL</li>
+          <li>하프클럽</li>
+          <li>다이소</li>
+          <li>패션플러스</li>
+          <li>사방넷</li>
+          <li>옥션</li>
+          <li>지마켓</li>
+        </ul>
+      </div>
+      <div class="py-5">
+        <table summary="아이디" class="border-table">
+
+          <colgroup>
+            <col width="15%">
+            <col width="15%">
+            <col width="70%">
+          </colgroup>
+          <thead>
+          <tr>
+            <th scope="row">아이디</th>
+            <td colspan="2"><input type="text" class="input-wrap"></td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">인증정보 - 발급안내</th>
+            <th scope="row">스토어판 API ID</th>
+            <td><input type="text" class="input-wrap"></td>
+          </tr>
+          <tr>
+            <th scope="row">스토어팜 URL</th>
+            <td>http://www.commerceon.co.kr</td>
+          </tr>
+          <tr>
+            <th scope="row">판매가격</th>
+            <td colspan="2">
+              <label class="label">
+                <input type="radio" name="">
+                <span class="label-text">원상품 판매가격과 동일하게 전송</span>
+              </label>
+              <div class="mt-1">
+                <label class="label">
+                  <input type="radio" name="">
+                  <span class="label-text !bg-left-center">
+                    <input type="text" class="input-wrap">
+                    <select class="select-wrap">
+                      <option>%</option>
+                      <option>원</option>
+                    </select>
+                    <select class="select-wrap">
+                      <option>+조정</option>
+                      <option>-조정</option>
+                    </select>
+                    로 일괄 전송
+                  </span>
+                </label>
+              </div>
+              <div>
+                <label class="label">
+                  <input type="radio" name="">
+                  <span class="label-text !bg-left-center !leading-[40px]">
+                    조정된 가격을
+                    <select class="select-wrap">
+                      <option>일원 단위</option>
+                      <option>십원 단위</option>
+                      <option>백원 단위</option>
+                    </select>
+                    <select class="select-wrap">
+                      <option>버림</option>
+                      <option>올림</option>
+                      <option>반올림</option>
+                    </select>
+                    하여 절사 처리합니다.
+                  </span>
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">재고수량 설정</th>
+            <td colspan="2">
+              <div class="mb-2">
+                <label class="label">
+                  <input type="radio" name="">
+                  <span class="label-text">원상품 판매가격과 동일하게 전송</span>
+                </label>
+              </div>
+              <div>
+                <label class="label">
+                  <input type="radio" name="">
+                  <span class="label-text !bg-left-center !leading-[40px]">재고수량을 <input type="text" class="input-wrap"> 개로 일괄 전송</span>
+                </label>
+              </div>
+            </td>
+          </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <div class="layer-footer">
+      <div>
+        <button type="button" class="btn-blue">등록하기</button>
+        <button type="button" class="btn-white-l">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // 레이어 - 판매마켓 계정 추가
+  $('.btn-account-add').on('click', function () {
+    $('.layer-account-add').show();
+  })
+</script>

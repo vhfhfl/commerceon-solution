@@ -1,0 +1,92 @@
+<div class="layer relative z-[120]">
+  <div class="bg-layer"></div>
+  <div class="layer-content">
+    <div class="layer-header">
+      <h1>선택 회원 (포인트) 지급/차감</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">(포인트) 지급/차감</h2>
+      <table class="table" summary="(포인트) 지급/차감">
+
+        <colgroup>
+          <col style="width:30%">
+          <col style="width:70%">
+        </colgroup>
+        <tbody>
+        <tr>
+          <th scope="row">지급/차감 여부 <span class="text-red">*</span></th>
+          <td>
+            <label class="label">
+              <input type="radio" name="point">
+              <span class="label-text !text-main-blue">지급 (+)</span>
+            </label>
+            <label class="label">
+              <input type="radio" name="point">
+              <span class="label-text !text-red">차감 (-)</span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">금액설정 <span class="text-red">*</span></th>
+          <td>
+            <input type="text" class="input-wrap mr-1 align-middle w-[93%]" placeholder="placeholder"><span>원</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">유효기간 <span class="text-red">*</span></th>
+          <td>
+            <label class="label">
+              <input type="radio" name="valid">
+              <span class="label-text">기본설정</span>
+            </label>
+            <div class="mt-1">
+              <label class="label">
+                <input type="radio" name="valid">
+                <span class="label-text mr-1">직접설정</span>
+                <span class="input-calendar-wrap">
+                    <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                    <input type="text" class="inline-block float-right w-[76px] h-[38px]">
+                  </span>
+              </label>
+            </div>
+            <p class="text-red mt-1">* 유효기간을 '기본설정'으로 지정하는 경우 '회원 > 회원 관리 > (포인트) 기본설정 관리'의 기본 정책을 따르게 됩니다.</p>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">사유 <span class="text-red">*</span></th>
+          <td>
+            <select class="select-wrap w-full">
+              <option>선택</option>
+              <option>가입시 추천인 등록</option>
+              <option>후기 삭제로 인한 차감</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">안내</th>
+          <td>
+            <label class="label">
+              <input type="checkbox" name="guide">
+              <span class="label-text">SMS</span>
+            </label>
+            <label class="label">
+              <input type="checkbox" name="guide">
+              <span class="label-text">이메일</span>
+            </label>
+            <label class="label">
+              <input type="checkbox" name="guide">
+              <span class="label-text">카카오톡</span>
+            </label>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <p class="mt-1 text-red">* 선택 회원을 대상으로 (포인트)을/를 일괄 지급/차감 합니다.</p>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">지급</button>
+      <button type="button" class="btn-white-l">차감</button>
+    </div>
+  </div>
+</div>

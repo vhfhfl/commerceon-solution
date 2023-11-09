@@ -1,0 +1,285 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width: 15%' />
+                  <col style='width: 35%' />
+                  <col style='width: 15%' />
+                  <col style='width: 35%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>사은품명 <span class='text-red'>*</span></th>
+                    <td>
+                      <input type='text' placeholder='placeholder' />
+                      <span class='text-red'>0</span>/50
+                    </td>
+                    <th scope='row'>품번</th>
+                    <td>
+                      <input type='text' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>상품 코드</th>
+                    <td>11112120</td>
+                    <th scope='row'>브랜드 검색 <span class='text-red'>*</span></th>
+                    <td>
+                      <button type='button' class='btn-brand btn-m'>브랜드 선택</button>
+                      <div class='mt-1 flex justify-start'>
+                        <p class='!min-w-[75px] text-sub-blue-700 font-bold'>선택된 브랜드 : </p>
+                        <div class='w-full'>
+                          <span class='inline-block cursor-default'>파타고니아
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>샤넬
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>프라다
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>보테가 베네타
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>카카오
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block cursor-default'>네이버
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>재고 수량 관리 <span class='text-red'>*</span></th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>무한</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>등록 재고량</span>
+                      </label>
+                    </td>
+                    <th scope='row'>재고 수량</th>
+                    <td>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                      개
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>사은품 PC 이미지</th>
+                    <td>
+                      <input type='text' class='input-wrap text-sub-blue-500 bg-main-lightblue border border-sub-blue-200 rounded-sm' value='파일 선택' disabled='disabled' />
+                      <label for='pc_file' class='inline-block h-[40px] leading-[40px] px-4 text-white bg-main-blue rounded-sm align-top cursor-pointer'>파일첨부</label>
+                      <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                      <div class='mt-1'>
+                        <label class='label'>
+                          <input type='checkbox' />
+                          <span class='label-text'>PC 이미지 리사이징</span>
+                        </label>
+                        <span class='ml-2'>
+                          ( 가로 픽셀
+                          <input type='text' class='input-wrap mx-1 border border-sub-blue-200 !w-24' placeholder='placeholder' />
+                          X 세로 픽셀
+                          <input type='text' class='input-wrap mx-1 border border-sub-blue-200 !w-24' placeholder='placeholder' />
+                          )
+                        </span>
+                      </div>
+                    </td>
+                    <th scope='row'>사은품 Mobile 이미지</th>
+                    <td>
+                      <input type='text' class='input-wrap text-sub-blue-500 bg-main-lightblue border border-sub-blue-200 rounded-sm' value='파일 선택' disabled='disabled' />
+                      <label for='pc_file' class='inline-block h-[40px] leading-[40px] px-4 text-white bg-main-blue rounded-sm align-top cursor-pointer'>파일첨부</label>
+                      <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                      <div class='mt-1'>
+                        <label class='label'>
+                          <input type='checkbox' />
+                          <span class='label-text'>Mobile 이미지 리사이징</span>
+                        </label>
+                        <span class='ml-2'>
+                          ( 가로 픽셀
+                          <input type='text' class='input-wrap mx-1 border border-sub-blue-200 !w-24' placeholder='placeholder' />
+                          X 세로 픽셀
+                          <input type='text' class='input-wrap mx-1 border border-sub-blue-200 !w-24' placeholder='placeholder' />
+                          )
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>옵션 사용</th>
+                    <td colspan='3'>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>사용함</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>사용안함 (단일옵션)</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>옵션 설정</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>신규 등록</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>옵션 불러오기</span>
+                      </label>
+                      <button type='button' class='btn-option-search btn-m ml-2'>옵션 관리 검색</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>옵션 신규 등록</th>
+                    <td colspan='3'>
+                      <div class='text-right'>
+                        <button type='button' class='btn-m btn-option-view'>옵션 미리 보기</button>
+                      </div>
+                      <ul class='mt-1'>
+                        <li class='flex relative pl-8'>
+                          <span class='border leading-[40px] border-r-0 w-3/12 text-center bg-main-lightblue'>옵션명</span>
+                          <span class='border leading-[40px] border-r-0 w-3/12 text-center bg-main-lightblue'>옵션 정보값</span>
+                          <span class='border leading-[40px] w-6/12 text-center bg-main-lightblue'>옵션 가격</span>
+                        </li>
+                        <li class='flex relative pl-8'>
+                          <button type='button' class='h-7 px-2 text-white bg-sub-blue-900 border border-sub-blue-900 rounded-sm hover:bg-sub-blue-500 hover:border-sub-blue-500 active:bg-sub-blue-700 active:border-sub-blue-700 absolute left-0 top-2.5'><i class='fa-solid fa-plus'></i></button>
+                          <span class='border border-r-0 border-t-0 w-3/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='border border-r-0 border-t-0 w-3/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='border border-t-0 w-6/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                        </li>
+                        <li class='flex relative pl-8'>
+                          <button type='button' class='h-7 px-2 text-white bg-sub-blue-900 border border-sub-blue-900 rounded-sm hover:bg-sub-blue-500 hover:border-sub-blue-500 active:bg-sub-blue-700 active:border-sub-blue-700 absolute left-0 top-2.5'><i class='fa-solid fa-minus'></i></button>
+                          <span class='border border-r-0 border-t-0 w-3/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='border border-r-0 border-t-0 w-3/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='border border-t-0 w-6/12 p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                        </li>
+                      </ul>
+                      <div class='pl-8 mt-1'>
+                        <button type='button' class='btn-m'>등록</button>
+                        <button type='button' class='btn-white-m'>초기화</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>적용 중인 옵션/재고 상세 정보</th>
+                    <td colspan='3'>
+                      <ul>
+                        <li class='flex'>
+                          <span class='text-center w-[6%] border border-r-0 leading-[40px] bg-main-lightblue'>
+                            <label class='label'>
+                              <input type='checkbox' name='' />
+                              <span class='label-text align-middle !pl-[20px]'></span>
+                            </label>
+                          </span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px] bg-main-lightblue'>컬러</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px] bg-main-lightblue'>사이즈</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px] bg-main-lightblue'>재고량</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px] bg-main-lightblue'>옵션가</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px] bg-main-lightblue'>컬러 코드</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px] bg-main-lightblue'>사이즈 코드</span>
+                          <span class='text-center w-[10%] border border-r-0 leading-[40px] bg-main-lightblue'>옵션 코드</span>
+                          <span class='text-center w-[8%] border border-r-0 leading-[40px] bg-main-lightblue'>판매 상태</span>
+                          <span class='text-center w-[8%] border border-r-0 leading-[40px] bg-main-lightblue'>진열 상태</span>
+                          <span class='text-center w-[8%] border leading-[40px] bg-main-lightblue'>순서</span>
+                        </li>
+                        <li class='flex'>
+                          <span class='text-center w-[6%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <label class='label'>
+                              <input type='checkbox' name='' />
+                              <span class='label-text align-middle !pl-[20px]'></span>
+                            </label>
+                          </span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'>RED</span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'>95</span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' value='5' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' value='10,000' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[8%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <select class='select-wrap w-full'>
+                              <option>판매중</option>
+                              <option>판매중지 (미진열)</option>
+                              <option>품절 (진열+구매불가)</option>
+                            </select>
+                          </span>
+                          <span class='text-center w-[8%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <select class='select-wrap w-full'>
+                              <option>진열</option>
+                              <option>미진열</option>
+                            </select>
+                          </span>
+                          <span class='text-center w-[8%] border border-t-0 flex justify-center items-center p-1'>
+                            <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                            <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                          </span>
+                        </li>
+                        <li class='flex'>
+                          <span class='text-center w-[6%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <label class='label'>
+                              <input type='checkbox' name='' />
+                              <span class='label-text align-middle !pl-[20px]'></span>
+                            </label>
+                          </span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'>RED</span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'>95</span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' value='5' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' value='10,000' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[10%] border border-r-0 border-t-0 flex justify-center items-center p-1'><input type='text' class='input-wrap w-full' placeholder='placeholder' /></span>
+                          <span class='text-center w-[8%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <select class='select-wrap w-full'>
+                              <option>판매중</option>
+                              <option>판매중지 (미진열)</option>
+                              <option>품절 (진열+구매불가)</option>
+                            </select>
+                          </span>
+                          <span class='text-center w-[8%] border border-r-0 border-t-0 flex justify-center items-center p-1'>
+                            <select class='select-wrap w-full'>
+                              <option>진열</option>
+                              <option>미진열</option>
+                            </select>
+                          </span>
+                          <span class='text-center w-[8%] border border-t-0 flex justify-center items-center p-1'>
+                            <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5'><i class='fa-solid fa-arrow-up'></i></button>
+                            <button type='button' class='rounded-sm bg-sub-blue-900 text-white px-2.5 py-1.5 ml-1'><i class='fa-solid fa-arrow-down'></i></button>
+                          </span>
+                        </li>
+                      </ul>
+                      <div class='mt-1'>
+                        <button type='button' class='btn-warning-m'><i class='fa-solid fa-xmark'></i> 선택한 행 삭제</button>
+                        <button type='button' class='btn-m'><i class='fa-solid fa-plus'></i> 선택한 행 복사</button>
+                        <button type='button' class='btn-white-m'><i class='fa-solid fa-rotate-right'></i> 초기화</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

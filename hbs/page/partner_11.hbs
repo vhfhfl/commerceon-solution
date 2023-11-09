@@ -1,0 +1,80 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='tab mb-2'>
+              <ul>
+                <li class='on'>사방넷</li>
+              </ul>
+            </div>
+            <div class='flex border border-sub-blue-200'>
+              <div class='w-52'>
+                <div class='h-[40px] leading-[40px] px-3 bg-sub-blue-100'><span class='font-bold'>판매자 아이디</span></div>
+                <ul class=''>
+                  <li class='leading-9 h-9 px-6 cursor-pointer border-b border-sub-blue-100 mb-2'><span class="text-main-blue font-bold block pr-10 bg-[url('../images/ico-arrow-down.svg')] bg-no-repeat bg-right-center">apple123</span></li>
+                  <li>
+                    <a href='sabangnet-account.html' class='block leading-9 h-9 px-6'>계정 설정</a>
+                  </li>
+                  <li>
+                    <a href='sabangnet-info-setting.html' class='block leading-9 h-9 px-6 bg-main-blue text-white'>필수정보 설정</a>
+                  </li>
+                  <li>
+                    <a href='sabangnet-category.html' class='block leading-9 h-9 px-6'>카테고리 매칭</a>
+                  </li>
+                </ul>
+              </div>
+              <div class='grow pb-5 border-l border-sub-blue-200'>
+                <div class='h-[40px] leading-[40px] font-bold bg-sub-blue-100 px-5'>필수정보</div>
+                <div class='p-5'>
+                  <div>
+                    <button type='buton' class='btn-white-m' onclick="location.href='sabangnet-info-add.html'"><i class='fa-solid fa-plus'></i> 새 필수정보</button>
+                    <button type='buton' class='btn-white-m' onclick="location.href='sabangnet-info-modify.html'">(임시)수정</button>
+                    <button type='buton' class='btn-white-m'>삭제</button>
+                  </div>
+                  <div class='relative my-2'>
+                    <input type='text' class='input-wrap' />
+                    <button type='button' class='btn-white-m'>검색</button>
+                    <select class='select-wrap absolute bottom-0 right-0'>
+                      <option>10개씩 보기</option>
+                      <option>30개씩 보기</option>
+                      <option>50개씩 보기</option>
+                      <option>100개씩 보기</option>
+                    </select>
+                  </div>
+                  <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='bc4acc50-e674-4498-bf31-acec069b35c1'>
+                    <div class='paging new'>
+                      <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                      <a href='#' class='prev btn-paging w-[50px]'>
+                        <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                        <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                      </a>
+                      <span class='now btn-paging leading-[26px]'>1</span>
+                      <a href='#' class='btn-paging leading-[26px]'>2</a>
+                      <a href='#' class='btn-paging leading-[26px]'>3</a>
+                      <a href='#' class='btn-paging leading-[26px]'>4</a>
+                      <a href='#' class='next btn-paging w-[50px]'>
+                        <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                        <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                      </a>
+                      <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                    </div>
+                  </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

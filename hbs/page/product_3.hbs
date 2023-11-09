@@ -1,0 +1,198 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='tit-box'>
+              <h3>브랜드 편집</h3>
+            </div>
+            <div class='mb-2'>※ 위치 선택 후 마우스 우측 버튼 클릭시 브랜드 생성 및 수정 편집 가능</div>
+            <div class='flex border-t border-sub-blue-200 border-b'>
+              <div class='category-list pt-5 pr-20 w-60'>
+                <ul>
+                  <li>
+                    <a href='#'><i class='fa-solid fa-folder mr-2 ml-1'></i>카테고리</a>
+                    <ul>
+                      <li data-key='0'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <input type='text' class='input-wrap p-1 h-6 w-20' value='BRAND 0' />
+                        </a>
+                      </li>
+                      <li data-key='1'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 1</span>
+                        </a>
+                      </li>
+                      <li data-key='2'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 2</span>
+                        </a>
+                      </li>
+                      <li data-key='3'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 3</span>
+                        </a>
+                      </li>
+                      <li data-key='4'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 4</span>
+                        </a>
+                      </li>
+                      <li data-key='5'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 5</span>
+                        </a>
+                      </li>
+                      <li data-key='6'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 6</span>
+                        </a>
+                      </li>
+                      <li data-key='7'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 7</span>
+                        </a>
+                      </li>
+                      <li data-key='8'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 8</span>
+                        </a>
+                      </li>
+                      <li data-key='9'>
+                        <a href='#' class='!flex flex-row items-center'>
+                          <i class='fa-solid fa-folder mr-2 ml-1'></i>
+                          <span>BRAND 9</span>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class='border-l border-sub-blue-200 p-5 grow'>
+                <div class='pb-2'>
+                  <button type='button' class='btn-blue-m'><i class='fa-solid fa-plus'></i> 브랜드 신규 등록</button>
+                  <button type='button' class='btn-blue-m'>선택 브랜드의 상품 진열 페이지로 바로가기</button>
+                </div>
+                <div class='tbl-box'>
+                  <table  class='table'>
+
+                    <colgroup>
+                      <col width='10%' />
+                      <col width='40%' />
+                      <col width='10%' />
+                      <col width='40%' />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope='row'>브랜드 이름 <span class='text-red'>*</span></th>
+                        <td colspan='3'>
+                          <input type='text' class='input-wrap' placeholder='placeholder' />
+                          <span class='leading-[40px]'><span class='text-red'>0</span>/30</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>브랜드 자동생성 코드</th>
+                        <td>aa1112</td>
+                        <th scope='row'>상품 수</th>
+                        <td>1,000개
+                          <a href='#' class='btn-link ml-5'>상품리스트 바로가기 <i class='fa-solid fa-arrow-right-long'></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>브랜드 노출 여부</th>
+                        <td colspan='3'>
+                          <label class='label mr-5'>
+                            <input type='radio' name='' />
+                            <span class='label-text'>노출함</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='' />
+                            <span class='label-text'>노출안함</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope='row' rowspan='2'>행당 상품 진열 수</th>
+                        <td colspan='3'>
+                          <span class='inline-block w-10'>PC</span>
+                          <input type='text' class='input-wrap' placeholder='placeholder' />
+                          개
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan='3'>
+                          <span class='inline-block w-10'>Mobile</span>
+                          <input type='text' class='input-wrap' placeholder='placeholder' />
+                          개
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>키워드</th>
+                        <td colspan='3'>
+                          <div>
+                            <input type='text' class='input-wrap' />
+                            <span class='leading-[40px]'><span class='text-red'>0</span>/250</span>
+                          </div>
+                          <div class='text-xs text-sub-blue-500 mt-1'>입력시 키워드별 쉼표입력(ex:나이키,뉴발란스,런닝화)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>PC 쇼핑몰<br />브랜드 이미지 등록</th>
+                        <td colspan='3'>
+                          <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='1e771437-4379-40d9-9158-ec2efbb5eb56'>
+                            <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                            <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                            <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                          </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>MOBILE 쇼핑몰<br />브랜드 이미지 등록</th>
+                        <td colspan='3'>
+                          <!-- START : Handlebars.component : ../components/file_input.hbs --><div class='FILE-INPUT border-sub-blue-200 rounded-sm relative overflow-hidden' data-cpntid='26be66b1-d7fc-4c34-acb4-fea2aa6a10f3'>
+                            <input class='bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm' value='파일선택' disabled='disabled' />
+                            <label for='pc_file' class='rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top'>찾아보기</label>
+                            <input type='file' id='pc_file' class='absolute left-[-99999px]' />
+                          </div><!-- // END : Handlebars.component : ../components/file_input.hbs -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>브랜드 설명 등록</th>
+                        <td colspan='3'>
+                          <textarea class='w-full resize-none border border-sub-blue-200 p-4 h-20' placeholder='placeholder'></textarea>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class='mt-5 text-center'>
+                  <button type='button' class='btn-blue-m'>저장</button>
+                  <button type='button' class='btn-warning-m'>삭제</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

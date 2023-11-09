@@ -1,0 +1,70 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[800px]">
+    <div class="layer-header">
+      <h1>회원 등급 검색</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">회원 등급 검색</h2>
+      <div class="tbl-box">
+        <table class="table" summary="회원 등급 검색">
+
+          <colgroup>
+            <col style="width:20%">
+            <col style="width:80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row">회원 등급명</th>
+            <td>
+              <select class="select-wrap">
+                <option value="">전체 검색</option>
+                <option value="">일반 회원</option>
+                <option value="">실버</option>
+                <option value="">골드</option>
+                <option value="">다이아</option>
+                <option value="">임원</option>
+              </select>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="text-center mt-3">
+          <button type="button" class="btn-m">검색</button>
+        </div>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">선택 회원 등급</h2>
+      <div class="w-full">
+        <span class="inline-block">테스트 회원 등급
+          <button type="button" class="w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1"><i class="fa-solid fa-xmark"></i></button>
+        </span>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">회원 등급 리스트</h2>
+      <div class="sorting-box flex justify-between">
+        <div class="left-box">
+          <span class="inline-block mt-6">조회 <span class="text-red">0</span>건 / 전체 <span class="text-red">0</span>건</span>
+        </div>
+        <div class="right-box">
+          <select class="select-wrap" name="">
+            <option value="">10개씩 보기</option>
+            <option value="">20개씩 보기</option>
+            <option value="">30개씩 보기</option>
+            <option value="">50개씩 보기</option>
+            <option value="">100개씩 보기</option>
+            <option value="">150개씩 보기</option>
+            <option value="">200개씩 보기</option>
+            <option value="">300개씩 보기</option>
+            <option value="">500개씩 보기</option>
+            <option value="">1000개씩 보기</option>
+            <option value="">5000개씩 보기</option>
+          </select>
+        </div>
+      </div>
+      <div id="app" class="mt-1"></div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">확인</button>
+    </div>
+  </div>
+</div>

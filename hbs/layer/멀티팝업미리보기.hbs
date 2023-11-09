@@ -1,0 +1,50 @@
+<link rel='stylesheet' href='../libs/swiper-bundle.min.css' />
+<script src='../libs/swiper-bundle.min.js'></script>
+
+<div class='layer'>
+  <div class='bg-layer'></div>
+  <div class='layer-content'>
+    <div class='layer-header'>
+      <h1>멀티 팝업 미리보기</h1>
+      <button type='button' class='btn-close-layer'><span class='icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat'></span></button>
+    </div>
+    <div class='layer-body'>
+      <!-- 단일 이미지 :: START -->
+      <div class='hidden w-full h-auto text-center border relative'>
+        <img class='w-auto h-auto' src='../images/test_mo.jpeg' alt='' />
+      </div>
+      <!-- // 단일 이미지 :: END -->
+
+      <!-- swiper_multiPopup :: START -->
+      <div class='swiper_multiPopup' data-swiper='basic'>
+        <div class='swiper'>
+          <div class='swiper-wrapper'>
+            {{#LOOP 2}}
+              <div class='swiper-slide'>
+                <div class='swiper-item'>
+                  <img src='../images/test_pc.jpeg' alt='' />
+                </div>
+              </div>
+            {{/LOOP}}
+          </div>
+        </div>
+        <div class='swiper-bottom-nav-box'>
+          <div class='swiper-nav-button swiper-button-prev'></div>
+          <div class='swiper-pagination'></div>
+          <div class='swiper-nav-button swiper-button-next'></div>
+        </div>
+      </div>
+      <script>
+        const swiper_multiPopup = new Swiper(".swiper_multiPopup > .swiper", { loop : true, navigation : { prevEl : ".swiper_multiPopup .swiper-button-prev", nextEl : ".swiper_multiPopup .swiper-button-next", }, pagination : { el : ".swiper_multiPopup .swiper-pagination", clickable : true, }, });
+      </script>
+      <!-- // swiper_multiPopup :: END -->
+    </div>
+    <div class='layer-footer !text-right'>
+      <label class='label'>
+        <input type='checkbox' name='' />
+        <span class='label-text'>오늘 하루 열지 않기</span>
+      </label>
+      <span class="btn-close-layer inline-block ml-5 px-1 cursor-pointer relative before:inline-block before:content-['|'] before:text-sub-blue-200 before:absolute before:top-0 before:-left-3">닫기</span>
+    </div>
+  </div>
+</div>

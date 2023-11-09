@@ -1,0 +1,45 @@
+{
+  "name": "base-include",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run scss:sitemap\" \"npm run build\" \"npm run chd\" \"npm run wh\" \"npm run sync:js\" \"npm run sync:css\" \"npm run sync:images\" \"npm run sync:icon\" \"npm run sync:libs\" \"npm run sync:font\" \"npm run builder\" \"npm run fs\"",
+    "build": "npx tailwindcss -i ./input.css -o ./css/output.css --watch",
+    "chd": "node create_hbs_data.js",
+    "wh": "node watch_hbs.js",
+    "scss:sitemap": "sass -w scss/sitemap.scss css/sitemap.css",
+    "scss:global": "sass -w global.scss css/global.css",
+    "fs": "node five-server.js",
+    "builder": "node builder.js",
+    "sync:js": "syncdir ./js ./dist/js -w --quiet",
+    "sync:css": "syncdir ./css ./dist/css -w --quiet",
+    "sync:images": "syncdir ./images ./dist/images -w --quiet",
+    "sync:icon": "syncdir ./icon ./dist/icon -w --quiet",
+    "sync:libs": "syncdir ./libs ./dist/libs -w --quiet",
+    "sync:font": "syncdir ./font ./dist/font -w --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksm-friends/base-include.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksm-friends/base-include/issues"
+  },
+  "homepage": "https://github.com/ksm-friends/base-include#readme",
+  "devDependencies": {
+    "address": "^1.2.2",
+    "chokidar": "^3.5.3",
+    "concurrently": "^8.2.0",
+    "five-server": "^0.3.1",
+    "js-beautify": "^1.14.9",
+    "lodash": "^4.17.21",
+    "prettier": "^3.0.1",
+    "sass": "^1.64.0",
+    "sync-directory": "^6.0.4",
+    "tailwindcss": "^3.2.1"
+  }
+}

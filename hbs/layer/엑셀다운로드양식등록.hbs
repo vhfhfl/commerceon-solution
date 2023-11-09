@@ -1,0 +1,118 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1000px]">
+    <div class="layer-header">
+      <h1>엑셀 다운로드 양식 등록</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div class="text-sub-blue-500 mb-2">엑셀 양식 정보</div>
+      <div class="tbl-box">
+        <table class="table" summary="엑셀 양식 정보">
+
+          <colgroup>
+            <col width="10%">
+            <col width="90%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="col">엑셀 다운로드 양식명</th>
+            <td><input type="text" class="input-wrap" placeholder="placeholder"></td>
+          </tr>
+          <tr>
+            <th scope="col">메뉴 분류</th>
+            <td>
+              <select class="select-wrap w-[147px]">
+                <option>선택</option>
+                <option>상품</option>
+                <option>주문/배송</option>
+                <option>회원</option>
+                <option>게시판</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="col">상세 항목</th>
+            <td>
+              <select class="select-wrap w-[147px]">
+                <option>선택</option>
+                <option>통합 회원 리스트</option>
+                <option>휴면 회원</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="col">다운로드 항목</th>
+            <td>
+              <div class="flex justify-between">
+                <!-- 전체 항목 리스트 -->
+                <div class="w-[45%]">
+                  <div class="tit-box text-lg font-bold mb-2"><h3>전체 항목 리스트</h3></div>
+                  <!-- 2022.10.26.수정 -->
+                  <div class="min-h-60">
+                    <ul class="overflow-auto h-60">
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer">항목명</li>
+                      <li class="bg-sub-blue-100 border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer">아이디</li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer">닉네임</li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer">이메일</li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                    </ul>
+                  </div>
+                  <div class="mt-5">
+                    <button type="button" class="btn-arrow-right2 btn-white-m-sub mr-1"><span>선택 항목 추가 </span><span class="icon-arrow-right2 inline-block w-[16px] h-[9px] bg-icon-arrow-right2 bg-center bg-no-repeat"></span></button>
+                    <button type="button" class="btn-arrow-right2 btn-white-m-sub"><span>전체 항목 추가 </span><span class="icon-arrow-right2 inline-block w-[16px] h-[9px] bg-icon-arrow-right2 bg-center bg-no-repeat"></span></button>
+                  </div>
+                </div>
+                <!-- //검색 결과 리스트 -->
+                <!-- 중앙 좌우 화살표 -->
+                <!-- 2022.10.26.수정 -->
+                <div class="w-[10%] h-60 flex justify-center items-center flex-wrap pt-20">
+                    <span class="inline-block w-[40px] h-[40px] border bg-main-lightblue border-sub-blue-200 rounded-sm z-20">
+                      <span class="icon-arrow-next inline-block w-full h-full bg-icon-arrow-next bg-center bg-no-repeat bg-contain"></span>
+                    </span>
+                  <span class="inline-block w-[40px] h-[40px] border bg-main-lightblue border-sub-blue-200 rounded-sm z-20">
+                      <span class="icon-arrow-prev inline-block w-full h-full bg-icon-arrow-prev bg-center bg-no-repeat bg-contain"></span>
+                    </span>
+                </div>
+                <!-- //중앙 좌우 화살표 -->
+                <!-- 선택 회원 리스트 -->
+                <div class="w-[45%]">
+                  <div class="tit-box text-lg font-bold mb-2"><h3>선택 항목 리스트</h3></div>
+                  <!-- 2022.10.26.수정 -->
+                  <div class="min-h-60">
+                    <ul class="overflow-auto h-60">
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer">항목명</li>
+                      <li class="bg-sub-blue-100 border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer">아이디</li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer">닉네임</li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer">이메일</li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-b-0 border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                      <li class="border border-sub-blue-200 h-8 leading-8 text-center cursor-pointer"></li>
+                    </ul>
+                  </div>
+                  <div class="mt-5">
+                    <button type="button" class="btn-arrow-left2 btn-m mr-1"><span class="icon-arrow-left2 inline-block w-[16px] h-[9px] bg-icon-arrow-left2-white bg-center bg-no-repeat"></span><span> 선택 항목 제외</span></button>
+                    <button type="button" class="btn-arrow-left2 btn-m mr-1"><span class="icon-arrow-left2 inline-block w-[16px] h-[9px] bg-icon-arrow-left2-white bg-center bg-no-repeat"></span><span> 전체 항목 제외</span></button>
+                  </div>
+                </div>
+                <!-- //선택 회원 리스트 -->
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">선택 완료</button>
+    </div>
+  </div>
+</div>

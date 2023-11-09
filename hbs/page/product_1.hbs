@@ -1,0 +1,1929 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='tit-box relative'>
+              <h3>상품 검색</h3>
+              <button type='button' class='btn-blue absolute top-0 right-0 btn-keyword'># 단축 검색 등록</button>
+            </div>
+            <!-- 검색조건 -->
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col width='10%' />
+                  <col width='90%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='col'>검색어 조회</th>
+                    <td>
+                      <select class='select-wrap'>
+                        <option>전체</option>
+                        <option>상품명</option>
+                        <option>수동관리코드</option>
+                        <option>키워드</option>
+                        <option>브랜드명</option>
+                        <option>카테고리명</option>
+                        <option>상품메모</option>
+                      </select>
+                      <div class='mt-1'>
+                        <textarea class='p-2 border border-sub-blue-200 w-full h-20 lg:w-1/2' placeholder='placeholder'></textarea>
+                        <span class='group h-10 align-top px-2.5 inline-block border rounded-sm border-sub-blue-200 leading-10 cursor-pointer relative hover:bg-sub-blue-100 hover:border-sub-blue-100 hover:text-sub-blue-200'># 비 올때 기획전 검색
+                          <button type='button' class='hidden absolute w-5 h-5 top-[-10px] right-[-10px] group-hover:block z-10 bg-sub-blue-900 text-center rounded-full leading-5'><i class='fa-solid fa-xmark text-white'></i></button>
+                        </span>
+                        <span class='group h-10 align-top px-2.5 inline-block border rounded-sm border-sub-blue-200 leading-10 cursor-pointer relative hover:bg-sub-blue-100 hover:border-sub-blue-100 hover:text-sub-blue-200'># 비 올때 기획전 검색
+                          <button type='button' class='hidden absolute w-5 h-5 top-[-10px] right-[-10px] group-hover:block z-10 bg-sub-blue-900 text-center rounded-full leading-5'><i class='fa-solid fa-xmark text-white'></i></button>
+                        </span>
+                        <span class='group h-10 align-top px-2.5 inline-block border rounded-sm border-sub-blue-200 leading-10 cursor-pointer relative hover:bg-sub-blue-100 hover:border-sub-blue-100 hover:text-sub-blue-200 bg-sub-blue-900 border-sub-blue-900 text-white'># 비 올때 기획전 검색
+                          <button type='button' class='hidden absolute w-5 h-5 top-[-10px] right-[-10px] group-hover:block z-10 bg-sub-blue-900 text-center rounded-full leading-5'><i class='fa-solid fa-xmark'></i></button>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //검색조건 -->
+            <!-- 상세조건 -->
+            <!-- START : Handlebars.component : ../components/search_toggle_btn.hbs --><div class='TOGGLE-BTN-WRAP-1' data-cpntid='3840567f-d69d-44ea-b96b-df5700e441db'>
+              <div class='TOGGLE-BTN-1'>
+                <input data-toggle-key='60fba79f-edeb-4316-8eb9-e1a22c7cbedf' onclick='TOGGLE_BTN(this)' type='checkbox' />
+                <button type='button'>
+                  <div class='label'>상세검색 열기 <i class='fa-solid fa-caret-down'></i></div>
+                  <div class='label'>상세검색 닫기 <i class='fa-solid fa-caret-up'></i></div>
+                </button>
+              </div>
+            </div><!-- // END : Handlebars.component : ../components/search_toggle_btn.hbs -->
+            <div class='detail-search-wrap' data-toggle-child='60fba79f-edeb-4316-8eb9-e1a22c7cbedf'>
+              <div class='tbl-box'>
+                <table class='table' >
+
+                  <colgroup>
+                    <col width='8%' />
+                    <col width='25%' />
+                    <col width='8%' />
+                    <col width='25%' />
+                    <col width='8%' />
+                    <col width='26%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>기간별 검색</th>
+                      <td colspan='5'>
+                        <select class='select-wrap'>
+                          <option>등록일</option>
+                          <option>수정일</option>
+                          <option>승인일</option>
+                        </select>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <span class='inline-block px-1'>~</span>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <div class='period-tab'>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>오늘</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>7일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>15일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>1개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' checked='' />
+                            <span class='label-text'>전체</span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>판매 상태</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>판매중</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>판매중지</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>품절</span>
+                        </label>
+                      </td>
+                      <th scope='row'>진열상태</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>진열</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>미진열</span>
+                        </label>
+                      </td>
+                      <th scope='row'>입정사 승인</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>승인</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>반려</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>심사대기</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>카테고리 검색</th>
+                      <td colspan='5'>
+                        <select class='select-wrap'>
+                          <option>-1뎁스 카테고리-</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-2뎁스 카테고리-</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-3뎁스 카테고리-</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-4뎁스 카테고리-</option>
+                        </select>
+                        <span>
+                          <select class='select-wrap'>
+                            <option>-5뎁스 카테고리-</option>
+                          </select>
+                        </span>
+                        <div class='mt-1'>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>카테고리 전체보기</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>메인 카테고리만 보기</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>중복 카테고리만 보기</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>카테고리 미설정 상품 보기</span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>브랜드 검색</th>
+                      <td>
+                        <button type='button' class='btn-m mr-2 btn-brand'>브랜드 선택</button>
+                        <div class='mt-2'>
+                          <span class='text-sub-blue-700 font-bold'>선택된 브랜드 : </span>
+                          <span class='inline-block'>나이키
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block'>파타고니아
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block'>샤넬
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block'>프라다
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block'>보테가 베네타
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block'>카카오
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                          <span class='inline-block'>네이버
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                        </div>
+                      </td>
+                      <th scope='row'>업체별 검색</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>본사</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>공급사</span>
+                        </label>
+                        <button type='button' class='btn-m btn-supplier'>공급사 선택</button>
+                        <div class='mt-2'>
+                          <span class='text-sub-blue-700 font-bold'>선택된 공급사 : </span>
+                          <span class='inline-block'>공급사
+                            <button type='button' class='w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1'><i class='fa-solid fa-xmark'></i></button>
+                          </span>
+                        </div>
+                      </td>
+                      <th scope='row'>재고여부<br />노출관리</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용안함</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>상품 구분</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>해외상품</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>국내상품</span>
+                        </label>
+                      </td>
+                      <th scope='row'>부티크 정보</th>
+                      <td colspan='3'>
+                        <select class='select-wrap'>
+                          <option>-Choose Store-</option>
+                          <option>Adda</option>
+                          <option>AMR</option>
+                          <option>Baseblu</option>
+                          <option>Baseblu2</option>
+                          <option>Bonucci</option>
+                          <option>Brunarosso</option>
+                          <option>Coltorti</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>판매 재고</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' name='stock' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' name='stock' />
+                          <span class='label-text'>재고설정</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' name='stock' />
+                          <span class='label-text'>무한정</span>
+                        </label>
+                      </td>
+                      <th scope='row'>재고 수량별</th>
+                      <td>
+                        <input type='text' class='input-wrap' />
+                        <span class='px-1'>~</span>
+                        <input type='text' class='input-wrap' />
+                      </td>
+                      <th scope='row'>예약 판매</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용안함</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>상품 가격</th>
+                      <td colspan='3'>
+                        <select class='select-wrap'>
+                          <option>소비자가</option>
+                          <option>판매자가</option>
+                          <option>통합회원가</option>
+                          <option>네이버EP가</option>
+                        </select>
+                        <input type='text' class='input-wrap' />
+                        <span class='px-1'>~</span>
+                        <input type='text' class='input-wrap' />
+                      </td>
+                      <th scope='row'>네이버 최저가</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>유</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>무</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>통합회원가</th>
+                      <td>
+                        <input type='text' class='input-wrap' />
+                        <span class='px-1'>~</span>
+                        <input type='text' class='input-wrap' />
+                      </td>
+                      <th scope='row'>네이버 EP가</th>
+                      <td>
+                        <input type='text' class='input-wrap' />
+                        <span class='px-1'>~</span>
+                        <input type='text' class='input-wrap' />
+                      </td>
+                      <th scope='row'>구매회원<br />등급별</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>비회원</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>A그룹</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>B그룹</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>C그룹</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>등급 할인</th>
+                      <td colspan='5'>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용안함</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>상품구매 회원등급</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>비회원</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>A그룹</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>B그룹</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>C그룹</span>
+                        </label>
+                      </td>
+                      <th scope='row'>상품노출 회원등급</th>
+                      <td colspan='3'>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>비회원</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>A그룹</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>B그룹</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>C그룹</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>수수료</th>
+                      <td>
+                        <input type='text' class='input-wrap w-20' />
+                        <span class='px-1'>~</span>
+                        <input type='text' class='input-wrap w-20' />
+                        <select class='select-wrap'>
+                          <option>원</option>
+                          <option>%</option>
+                        </select>
+                      </td>
+                      <th scope='row'>공급가</th>
+                      <td>
+                        <input type='text' class='input-wrap w-20' />
+                        <span class='px-1'>~</span>
+                        <input type='text' class='input-wrap w-20' />
+                        <select class='select-wrap'>
+                          <option>원</option>
+                          <option>%</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>포인트<br /> 적용 범위</th>
+                      <td>
+                        <input type='text' class='input-wrap w-20' />
+                        <span class='px-1'>~</span>
+                        <input type='text' class='input-wrap w-20' />
+                        <select class='select-wrap'>
+                          <option>원</option>
+                          <option>%</option>
+                        </select>
+                      </td>
+                      <th scope='row'>포인트<br />적용 여부</th>
+                      <td>
+                        <div>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>전체(지급+미지급)</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>지급함</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>지급안함</span>
+                          </label>
+                        </div>
+                        <div>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>전체(가능+불가)</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>사용가능</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>사용불가</span>
+                          </label>
+                        </div>
+                      </td>
+                      <th scope='row'>포인트<br />설정 방법</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>통합 설정</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>상품별</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>옵션 사용</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용안함</span>
+                        </label>
+                      </td>
+                      <th scope='row'>성별 구분</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>공용</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>남성</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>여성</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>미설정</span>
+                        </label>
+                      </td>
+                      <th scope='row'>텍스트<br />판매가 여부</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' />
+                          <span class='label-text'>사용안함</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>배송비 조건</th>
+                      <td colspan='5'>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>무료배송</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>금액별배송</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>수량별배송</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>무게별배송</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>고정배송비</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>퀵</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>직접수령</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text !text-red'>미설정</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>쿠폰 설정</th>
+                      <td colspan='3'>
+                        <div>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>전체</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>설정</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>설정안함</span>
+                          </label>
+                        </div>
+                        <div class='mt-1'>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>전체</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>상품쿠폰</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>주문쿠폰</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>시리얼쿠폰</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='checkbox' />
+                            <span class='label-text'>쿠폰 사용 불가</span>
+                          </label>
+                        </div>
+                      </td>
+                      <th scope='row'>사은품 설정</th>
+                      <td colspan='2'>
+                        <div>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>전체</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>사용</span>
+                          </label>
+                          <label class='label mr-5'>
+                            <input type='radio' />
+                            <span class='label-text'>사용안함</span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>아이콘 설정</th>
+                      <td colspan='5'>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'><span class='txt-box'>전체</span></span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'><span class='inline-block px-1 border border-[#F5BFCC] text-[#E54E73] rounded h-[20px] leading-[20px]'>세일</span></span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'><span class='inline-block px-1 border border-[#92E7E1] text-[#00B0A5] rounded h-[20px] leading-[20px]'>신상품</span></span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'><span class='inline-block px-1 border border-[#FEA188] text-[#DD6C48] rounded h-[20px] leading-[20px]'>추천</span></span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'><span class='inline-block px-1 border border-[#9EEE82] text-[#36D000] rounded h-[20px] leading-[20px]'>예약</span></span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'><span class='inline-block px-1 border border-[#95BEE2] text-[#0088FF] rounded h-[20px] leading-[20px]'>쿠폰30%</span></span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'><span class='inline-block px-1 border border-[#BD9DC8] text-[#8E00BF] rounded h-[20px] leading-[20px]'>상반기베스트</span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>기획전</th>
+                      <td>
+                        <select class='select-wrap'>
+                          <option>-기획전-</option>
+                          <option>신상품이벤트</option>
+                          <option>얼리버드이벤트</option>
+                          <option>마지막땡처리</option>
+                        </select>
+                      </td>
+                      <th scope='row'>시즌정보</th>
+                      <td colspan='3'>
+                        <select class='select-wrap'>
+                          <option>2022</option>
+                          <option>2021</option>
+                          <option>2020</option>
+                          <option>2019</option>
+                          <option>2018</option>
+                          <option>2017</option>
+                          <option>2016</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                          <option>2011</option>
+                          <option>2010</option>
+                          <option>2009</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>SS</option>
+                          <option>FW</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- //상세조건 -->
+            <!-- 버튼 -->
+            <div class='py-2 text-center'>
+              <button type='button' class='btn-m'>검색</button>
+              <button type='button' class='btn-white-m'>초기화</button>
+            </div>
+            <!-- //버튼 -->
+            <!-- 조회결과 리스트 -->
+            <div class='py-1 mt-2'>
+              <label class='label mr-5'>
+                <input type='radio' />
+                <span class='label-text'>합계 재고로 보기</span>
+              </label>
+              <label class='label mr-5'>
+                <input type='radio' />
+                <span class='label-text'>옵션별 재고로 보기</span>
+              </label>
+            </div>
+            <div class='py-1'>조회 <span class='!text-red'>0</span>개/전체 <span class='!text-red'>0</span>개</div>
+            <div class='relative mb-2'>
+              <div class='text-sub-blue-400'>※ 리스트의 이미지 클릭시 고객 상룸 상세 페이지, 시스템 상품 순번 클릭시 관리자 상품 등록/수정 페이지 새창 열기 표시</div>
+              <div class='absolute bottom-0 right-0'>
+                <button type='button' class='btn-m btn-item-setting'><i class='fa-solid fa-gear'></i> 조회항목 설정</button>
+                <select class='select-wrap'>
+                  <option>10개씩 보기</option>
+                  <option>30개씩 보기</option>
+                  <option>50개씩 보기</option>
+                  <option>100개씩 보기</option>
+                </select>
+              </div>
+            </div>
+            <table class='table' >
+
+              <colgroup>
+                <col width='3%' />
+                <col width='4%' />
+                <col width='5%' />
+                <col width='5%' />
+                <col width='5%' />
+                <col width='12%' />
+                <col width='8%' />
+                <col width='8%' />
+                <col width='8%' />
+                <col width='10%' />
+                <col width='5%' />
+                <col width='5%' />
+                <col width='8%' />
+                <col width='4%' />
+                <col width='4%' />
+                <col width='6%' />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope='col' class='text-center'>
+                    <label class='label'>
+                      <input type='checkbox' />
+                      <span class='label-text'></span>
+                    </label>
+                  </th>
+                  <th scope='col' class='text-center'>순번</th>
+                  <th scope='col' class='text-center'>시스템<br />상품순번</th>
+                  <th scope='col' class='text-center'>수동관리코드</th>
+                  <th scope='col' class='text-center'>이미지</th>
+                  <th scope='col' class='text-center'>상품명</th>
+                  <th scope='col' class='text-center'>공급사</th>
+                  <th scope='col' class='text-center'>소비자가</th>
+                  <th scope='col' class='text-center'>판매가</th>
+                  <th scope='col' class='text-center'>최저가</th>
+                  <th scope='col' class='text-center'>판매상태</th>
+                  <th scope='col' class='text-center'>진열상태</th>
+                  <th scope='col' class='text-center'>등록일<br />수정일</th>
+                  <th scope='col' class='text-center'>재고</th>
+                  <th scope='col' class='text-center'>판매</th>
+                  <th scope='col' class='text-center'>수정</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-key='0'>
+                  <td class='text-center'>
+                    <label class='label'>
+                      <input type='checkbox' />
+                      <span class='label-text'></span>
+                    </label>
+                  </td>
+                  <td class='text-center'>1</td>
+                  <td class='text-center'>0010101</td>
+                  <td class='text-center'>bac1321</td>
+                  <td class='text-center'>
+                    <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                  </td>
+                  <td class='text-center'>스카이티</td>
+                  <td class='text-center'>본사</td>
+                  <td class='text-center'><input type='text' value='100,000' class='input-wrap w-20 text-right' /></td>
+                  <td class='text-center'><input type='text' value='90,000' class='input-wrap w-20 text-right' /></td>
+                  <td class='text-center'>
+                    <a href='#' target='_blank' class='!text-red'>89,000</a>
+                    <br />
+                    <a href='#' target='_blank'>현대Hmall</a>
+                    <br />
+                    <button class='btn-s'>최저가 목록</button>
+                  </td>
+                  <td class='text-center'>판매</td>
+                  <td class='text-center'>진열</td>
+                  <td class='text-center'>22/04/01<br />22/04/11</td>
+                  <td class='text-center'>무한</td>
+                  <td class='text-center'>1</td>
+                  <td class='text-center'>
+                    <button type='button' class='btn-m'>수정</button>
+                  </td>
+                </tr>
+                <tr data-key='1'>
+                  <td class='text-center'>
+                    <label class='label'>
+                      <input type='checkbox' />
+                      <span class='label-text'></span>
+                    </label>
+                  </td>
+                  <td class='text-center'>2</td>
+                  <td class='text-center'>0010101</td>
+                  <td class='text-center'>bac1321</td>
+                  <td class='text-center'>
+                    <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                  </td>
+                  <td class='text-center'>스카이티</td>
+                  <td class='text-center'>본사</td>
+                  <td class='text-center'><input type='text' value='100,000' class='input-wrap w-20 text-right' /></td>
+                  <td class='text-center'><input type='text' value='90,000' class='input-wrap w-20 text-right' /></td>
+                  <td class='text-center'>
+                    <a href='#' target='_blank' class='!text-red'>89,000</a>
+                    <br />
+                    <a href='#' target='_blank'>현대Hmall</a>
+                    <br />
+                    <button class='btn-s'>최저가 목록</button>
+                  </td>
+                  <td class='text-center'>판매</td>
+                  <td class='text-center'>진열</td>
+                  <td class='text-center'>22/04/01<br />22/04/11</td>
+                  <td class='text-center'>무한</td>
+                  <td class='text-center'>1</td>
+                  <td class='text-center'>
+                    <button type='button' class='btn-m'>수정</button>
+                  </td>
+                </tr>
+                <tr data-key='2'>
+                  <td class='text-center'>
+                    <label class='label'>
+                      <input type='checkbox' />
+                      <span class='label-text'></span>
+                    </label>
+                  </td>
+                  <td class='text-center'>3</td>
+                  <td class='text-center'>0010101</td>
+                  <td class='text-center'>bac1321</td>
+                  <td class='text-center'>
+                    <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                  </td>
+                  <td class='text-center'>스카이티</td>
+                  <td class='text-center'>본사</td>
+                  <td class='text-center'><input type='text' value='100,000' class='input-wrap w-20 text-right' /></td>
+                  <td class='text-center'><input type='text' value='90,000' class='input-wrap w-20 text-right' /></td>
+                  <td class='text-center'>
+                    <a href='#' target='_blank' class='!text-red'>89,000</a>
+                    <br />
+                    <a href='#' target='_blank'>현대Hmall</a>
+                    <br />
+                    <button class='btn-s'>최저가 목록</button>
+                  </td>
+                  <td class='text-center'>판매</td>
+                  <td class='text-center'>진열</td>
+                  <td class='text-center'>22/04/01<br />22/04/11</td>
+                  <td class='text-center'>무한</td>
+                  <td class='text-center'>1</td>
+                  <td class='text-center'>
+                    <button type='button' class='btn-m'>수정</button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <div class='mt-1'>
+              <button type='button' class='btn-m'>수정값 즉시 저장</button>
+              <div class='float-right'>
+                <button type='button' class='btn-all-excel-download btn-white-m-sub'><span class='inline-block relative top-[-3px] right-[3px]'>전체(검색) 엑셀 다운로드 </span><span class='icon-download inline-block w-[16px] h-[16px] bg-icon-download bg-center bg-no-repeat'></span></button>
+                <button type='button' class='btn-excel-download btn-white-m-sub'><span class='inline-block relative top-[-3px] right-[3px]'>선택 엑셀 다운로드 </span><span class='icon-download inline-block w-[16px] h-[16px] bg-icon-download bg-center bg-no-repeat'></span></button>
+              </div>
+            </div>
+            <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='9bfae2ea-a304-4127-8896-3714cce207ed'>
+              <div class='paging new'>
+                <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                <a href='#' class='prev btn-paging w-[50px]'>
+                  <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                  <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                </a>
+                <span class='now btn-paging leading-[26px]'>1</span>
+                <a href='#' class='btn-paging leading-[26px]'>2</a>
+                <a href='#' class='btn-paging leading-[26px]'>3</a>
+                <a href='#' class='btn-paging leading-[26px]'>4</a>
+                <a href='#' class='next btn-paging w-[50px]'>
+                  <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                  <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                </a>
+                <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+              </div>
+            </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+
+            <br /><br /><br />
+
+            <div class='tbl-box'>
+              <div class='py-1'>조회
+                <span class='!text-red'>0</span>개/전체
+                <span class='!text-red'>0</span>개
+                <div class='relative mb-2'>
+                  <div class='text-sub-blue-400'>※ 리스트의 이미지 클릭시 고객 상룸 상세 페이지, 시스템 상품 순번 클릭시 관리자 상품 등록/수정 페이지 새창 열기 표시</div>
+                  <div class='absolute bottom-0 right-0'>
+                    <button type='button' class='btn-m btn-item-setting'><i class='fa-solid fa-gear'></i> 조회항목 설정</button>
+                    <select class='select-wrap'>
+                      <option>10개씩 보기</option>
+                      <option>30개씩 보기</option>
+                      <option>50개씩 보기</option>
+                      <option>100개씩 보기</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <table class='table' >
+
+                <thead>
+                  <tr>
+                    <th scope='col' class='text-center'>
+                      <label class='label'>
+                        <input type='checkbox' />
+                        <span class='label-text'></span>
+                      </label>
+                    </th>
+                    <th scope='col' class='text-center'>순번</th>
+                    <th scope='col' class='text-center'>시스템상품 순번</th>
+                    <th scope='col' class='text-center'>수동관리코드</th>
+                    <th scope='col' class='text-center'>이미지</th>
+                    <th scope='col' class='text-center'>상품명</th>
+                    <th scope='col' class='text-center'>공급사</th>
+                    <th scope='col' class='text-center'>소비자가</th>
+                    <th scope='col' class='text-center'>판매가</th>
+                    <th scope='col' class='text-center'>판매 상태</th>
+                    <th scope='col' class='text-center'>진열 상태</th>
+                    <th scope='col' class='text-center'>등록일<br />수정일</th>
+                    <th scope='col' class='text-center'>1뎁스<br />옵션</th>
+                    <th scope='col' class='text-center'>2뎁스<br />옵션</th>
+                    <th scope='col' class='text-center'><span class='text-main-blue'>*</span>재고</th>
+                    <th scope='col' class='text-center'>판매</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='text-center' rowspan='4'>
+                      <label class='label'>
+                        <input type='checkbox' />
+                        <span class='label-text'></span>
+                      </label>
+                    </td>
+                    <td class='text-center' rowspan='4'>1</td>
+                    <td class='text-center' rowspan='4'>00100101</td>
+                    <td class='text-center' rowspan='4'>asd1258</td>
+                    <td class='text-center' rowspan='4'>
+                      <img src='//img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' alt='' title='' width='40px' />
+                    </td>
+                    <td class='text-center' rowspan='4'>스카이티</td>
+                    <td class='text-center' rowspan='4'>본사</td>
+                    <td class='text-center' rowspan='4'>100,000</td>
+                    <td class='text-center' rowspan='4'>99,000</td>
+                    <td class='text-center' rowspan='4'>판매</td>
+                    <td class='text-center' rowspan='4'>진열</td>
+                    <td class='text-center' rowspan='4'>22/04/01<br />22/04/11</td>
+                    <td class='text-center !p-1'>RED</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>5</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>GREEN</td>
+                    <td class='text-center !p-1'>M</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>1</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>BLUE</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>7</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>BEIGE</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>2</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center' rowspan='4'>
+                      <label class='label'>
+                        <input type='checkbox' />
+                        <span class='label-text'></span>
+                      </label>
+                    </td>
+                    <td class='text-center' rowspan='4'>2</td>
+                    <td class='text-center' rowspan='4'>00100101</td>
+                    <td class='text-center' rowspan='4'>asd1258</td>
+                    <td class='text-center' rowspan='4'>
+                      <img src='//img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' alt='' title='' width='40px' />
+                    </td>
+                    <td class='text-center' rowspan='4'>스카이티</td>
+                    <td class='text-center' rowspan='4'>본사</td>
+                    <td class='text-center' rowspan='4'>100,000</td>
+                    <td class='text-center' rowspan='4'>99,000</td>
+                    <td class='text-center' rowspan='4'>판매</td>
+                    <td class='text-center' rowspan='4'>진열</td>
+                    <td class='text-center' rowspan='4'>22/04/01<br />22/04/11</td>
+                    <td class='text-center !p-1'>RED</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>5</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>GREEN</td>
+                    <td class='text-center !p-1'>M</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>1</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>BLUE</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>7</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>BEIGE</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>2</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center' rowspan='4'>
+                      <label class='label'>
+                        <input type='checkbox' />
+                        <span class='label-text'></span>
+                      </label>
+                    </td>
+                    <td class='text-center' rowspan='4'>3</td>
+                    <td class='text-center' rowspan='4'>00100101</td>
+                    <td class='text-center' rowspan='4'>asd1258</td>
+                    <td class='text-center' rowspan='4'>
+                      <img src='//img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' alt='' title='' width='40px' />
+                    </td>
+                    <td class='text-center' rowspan='4'>스카이티</td>
+                    <td class='text-center' rowspan='4'>본사</td>
+                    <td class='text-center' rowspan='4'>100,000</td>
+                    <td class='text-center' rowspan='4'>99,000</td>
+                    <td class='text-center' rowspan='4'>판매</td>
+                    <td class='text-center' rowspan='4'>진열</td>
+                    <td class='text-center' rowspan='4'>22/04/01<br />22/04/11</td>
+                    <td class='text-center !p-1'>RED</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>5</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>GREEN</td>
+                    <td class='text-center !p-1'>M</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>1</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>BLUE</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>7</td>
+                  </tr>
+                  <tr>
+                    <td class='text-center !p-1'>BEIGE</td>
+                    <td class='text-center !p-1'>S</td>
+                    <td class='text-center !p-1'><input type='text' value='2' class='input-wrap' /></td>
+                    <td class='text-center !p-1'>2</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <div class='mt-1'>
+                <button type='button' class='btn-m'>수정값 즉시 저장</button>
+                <div class='float-right'>
+                  <button type='button' class='btn-all-excel-download btn-white-m-sub'><span class='inline-block relative top-[-3px] right-[3px]'>전체(검색) 엑셀 다운로드 </span><span class='icon-download inline-block w-[16px] h-[16px] bg-icon-download bg-center bg-no-repeat'></span></button>
+                  <button type='button' class='btn-excel-download btn-white-m-sub'><span class='inline-block relative top-[-3px] right-[3px]'>선택 엑셀 다운로드 </span><span class='icon-download inline-block w-[16px] h-[16px] bg-icon-download bg-center bg-no-repeat'></span></button>
+                </div>
+              </div>
+              <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='b2e87c1a-8a48-4b64-9f93-7036532f52b0'>
+                <div class='paging new'>
+                  <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                  <a href='#' class='prev btn-paging w-[50px]'>
+                    <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                  </a>
+                  <span class='now btn-paging leading-[26px]'>1</span>
+                  <a href='#' class='btn-paging leading-[26px]'>2</a>
+                  <a href='#' class='btn-paging leading-[26px]'>3</a>
+                  <a href='#' class='btn-paging leading-[26px]'>4</a>
+                  <a href='#' class='next btn-paging w-[50px]'>
+                    <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                  </a>
+                  <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                </div>
+              </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+            </div>
+            <!-- //조회결과 리스트 -->
+            <div class='mt-10'>
+              <div>
+                <select class='select-wrap'>
+                  <option>=선택상품 삭제=</option>
+                  <option>선택상품 복사</option>
+                  <option>선택상품 판매</option>
+                  <option>선택상품 판매중지</option>
+                  <option>선택상품 품절처리</option>
+                  <option>선택상품 진열처리</option>
+                  <option>선택상품 미진열처리</option>
+                </select>
+                로 일괄 적용하여 수정합니다.
+                <button type='button' class='btn-blue'>확인</button>
+              </div>
+
+              <div class='TAB-UI tab mt-2.5'>
+                <ul>
+                  <li data-tab-key='319aaf7f-1147-47b5-b6db-f60797cbc8d5' onclick='ACTIVE_TAB(this)' class='on'>가격</li>
+                  <li data-tab-key='c3cc2630-347a-478e-8527-67fb83723d5d' onclick='ACTIVE_TAB(this)'>판매 상태 진열</li>
+                  <li data-tab-key='9182eea3-7dd9-4b09-9ee5-0f9b03d818ce' onclick='ACTIVE_TAB(this)'>재고</li>
+                  <li data-tab-key='7ff39bdc-7bf8-4704-af68-b931686043c7' onclick='ACTIVE_TAB(this)'>포인트</li>
+                  <li data-tab-key='8db82069-5fbf-4fe2-8e21-417b1aa35521' onclick='ACTIVE_TAB(this)'>쿠폰 제외</li>
+                  <li data-tab-key='6ff4a25b-556d-45bb-8d19-fdc32b3475dc' onclick='ACTIVE_TAB(this)'>브랜드</li>
+                  <li data-tab-key='3a94c99c-6880-43b6-b01a-800467954a09' onclick='ACTIVE_TAB(this)'>카테고리</li>
+                  <li data-tab-key='9e25df15-1857-4ce6-bf68-2ccc311fe8e0' onclick='ACTIVE_TAB(this)'>공급가/수수료</li>
+                  <li data-tab-key='c61e0219-46f8-4b1d-aa59-b5575e8f96ac' onclick='ACTIVE_TAB(this)'>아이콘</li>
+                  <li data-tab-key='a75dcfe0-5c47-48b7-94e8-7ce3a774c7df' onclick='ACTIVE_TAB(this)'>회원 등급</li>
+                  <li data-tab-key='bb537014-1889-4df2-8e2b-f47fa2333e11' onclick='ACTIVE_TAB(this)'>배송비</li>
+                  <li data-tab-key='8e678fc0-4948-41af-8768-eecd18922a3b' onclick='ACTIVE_TAB(this)'>입점사 승인</li>
+                </ul>
+              </div>
+              <div class='mt-5'>
+                <!-- 가격 -->
+                <div data-tab-child='319aaf7f-1147-47b5-b6db-f60797cbc8d5' class='on'>
+                  <div class='leading-[40px]'>
+                    <select class='select-wrap align-middle'>
+                      <option>리스트 선택된(체크박스) 상품의</option>
+                      <option>리스트(검색결과) 전체 상품의</option>
+                    </select>
+                    <select class='select-wrap align-middle'>
+                      <option>소비자가</option>
+                      <option>판매가</option>
+                      <option>통합회원가</option>
+                      <option>네이버EP가</option>
+                    </select>
+                    <input type='text' placeholder='placeholder' />
+                    <select class='select-wrap align-middle'>
+                      <option>원 균일가</option>
+                      <option>원 할인</option>
+                      <option>% 할인</option>
+                      <option>원 할증</option>
+                      <option>% 할증</option>
+                    </select>
+                    로 일괄 적용하여 수정합니다.
+                  </div>
+                  <div class='leading-[40px] mt-2'>
+                    <label class='label'>
+                      <input type='checkbox' />
+                      <span class='label-text'>수정된 가격은</span>
+                    </label>
+                    <select class='select-wrap align-middle'>
+                      <option>1</option>
+                      <option>10</option>
+                      <option>100</option>
+                      <option>1000</option>
+                    </select>
+                    원 단위로
+                    <select class='select-wrap'>
+                      <option>올림</option>
+                      <option>내림</option>
+                      <option>반올림</option>
+                    </select>
+                    합니다.
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //가격 -->
+
+                <!-- 판매 상태 진열 -->
+                <div data-tab-child='c3cc2630-347a-478e-8527-67fb83723d5d'>
+                  <select class='select-wrap'>
+                    <option>리스트 선택된(체크박스) 상품의</option>
+                    <option>리스트(검색결과) 전체 상품의</option>
+                  </select>
+                  <div class='inline-block align-middle mr-5'>
+                    <table  class='border-table w-auto'>
+
+                      <thead>
+                        <tr>
+                          <th scope='row'>판매상태</th>
+                          <td>
+                            <label class='label mr-5'>
+                              <input type='radio' />
+                              <span class='label-text'>판매중</span>
+                            </label>
+                            <label class='label mr-5'>
+                              <input type='radio' />
+                              <span class='label-text'>판매중지</span>
+                            </label>
+                            <label class='label mr-5'>
+                              <input type='radio' />
+                              <span class='label-text'>품절</span>
+                            </label>
+                          </td>
+
+                          <th scope='row' rowspan='2'>진열상태</th>
+                          <td rowspan='2'>
+                            <label class='label mr-5'>
+                              <input type='radio' />
+                              <span class='label-text'>진열</span>
+                            </label>
+                            <label class='label mr-5'>
+                              <input type='radio' />
+                              <span class='label-text'>미진열</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>모든 재고 0일시<br />자동미진열적용</th>
+                          <td>
+                            <label class='label mr-5'>
+                              <input type='radio' />
+                              <span class='label-text'>적용</span>
+                            </label>
+                            <label class='label mr-5'>
+                              <input type='radio' />
+                              <span class='label-text'>미적용</span>
+                            </label>
+                          </td>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <span class='inline-block align-middle'>로 일괄 적용하여 수정합니다.</span>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //판매 상태 진열 -->
+
+                <!-- 재고 -->
+                <div data-tab-child='9182eea3-7dd9-4b09-9ee5-0f9b03d818ce'>
+                  <div class='leading-[40px]'>
+                    <select class='select-wrap'>
+                      <option>리스트 선택된(체크박스) 상품의</option>
+                      <option>리스트(검색결과) 전체 상품의</option>
+                    </select>
+                    <span class='px-1 align-top'>옵션별재고(단일옵션포함)</span>
+                    <div class='inline-block w-64 align-top'>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text !bg-left-center'><input type='text' placeholder='placeholder' /> 개</span>
+                      </label>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>무한</span>
+                      </label>
+                    </div>
+                    <select class='select-wrap'>
+                      <option>입력 수량</option>
+                      <option>추가</option>
+                      <option>차감</option>
+                    </select>
+                    <span clas='align-top'>로 일괄 적용하여 수정합니다.</span>
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //재고 -->
+
+                <!-- 포인트 -->
+                <div data-tab-child='7ff39bdc-7bf8-4704-af68-b931686043c7'>
+                  <div class='border-b border-dotted border-sub-blue-200 py-2'>
+                    <label class='label mr-5'>
+                      <input type='radio' />
+                      <span class='label-text'>포인트 지급</span>
+                    </label>
+                    <label class='label mr-5'>
+                      <input type='radio' />
+                      <span class='label-text'>포인트 지급 안함</span>
+                    </label>
+                    으로 적용하여 일괄 수정합니다.
+                  </div>
+                  <div class='border-b border-dotted border-sub-blue-200 py-2'>
+                    <div class='mb-1'>
+                      <label class='label mr-5'>
+                        <input type='radio' />
+                        <span class='label-text !bg-left-center align-middle !leading-[40px]'>
+                          <select class='select-wrap'>
+                            <option>리스트 선택된(체크박스) 상품의</option>
+                            <option>리스트(검색결과) 전체 상품의</option>
+                          </select>
+                          포인트를
+                        </span>
+                      </label>
+                      <select class='select-wrap'>
+                        <option>소비자가 기준</option>
+                        <option>판매가 기준</option>
+                        <option>통합 회원가 기준</option>
+                        <option>네이버EP가 기준</option>
+                      </select>
+                      <input type='text' placeholder='placeholder' />
+                      <select class='select-wrap'>
+                        <option>원</option>
+                        <option>%</option>
+                      </select>
+                      로 일괄 적용하여 수정합니다.
+                    </div>
+                    <label class='label mt5'>
+                      <input type='radio' />
+                      <span class='label-text'>통합 포인트 설정으로 적용하여 일괄 수정합니다.</span>
+                    </label>
+                  </div>
+                  <div class='py-2'>
+                    <label class='label mr-5'>
+                      <input type='radio' />
+                      <span class='label-text'>포인트 사용 가능</span>
+                    </label>
+                    <label class='label mr-5'>
+                      <input type='radio' />
+                      <span class='label-text'>포인트 사용 불가</span>
+                    </label>
+                    <span>로 적용하여 일괄 수정합니다.</span>
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //포인트 -->
+
+                <!-- 쿠폰제외 -->
+                <div data-tab-child='8db82069-5fbf-4fe2-8e21-417b1aa35521'>
+                  <select class='select-wrap align-middle mr-5'>
+                    <option>리스트 선택된(체크박스) 상품의</option>
+                    <option>리스트(검색결과) 전체 상품의</option>
+                  </select>
+                  <div class='inline-block align-middle'>
+                    <label class='label mr-5'>
+                      <input type='checkbox' />
+                      <span class='label-text'>전체</span>
+                    </label>
+                    <label class='label mr-5'>
+                      <input type='checkbox' />
+                      <span class='label-text'>상품 쿠폰</span>
+                    </label>
+                    <label class='label mr-5'>
+                      <input type='checkbox' />
+                      <span class='label-text'>주문 쿠폰</span>
+                    </label>
+                    <label class='label mr-5'>
+                      <input type='checkbox' />
+                      <span class='label-text'>시리얼 쿠폰</span>
+                    </label>
+                    을 제외 처리함(재적용을 해야하는 경우 다시 쿠폰 정보에서 적용상품 설정)
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //쿠폰제외 -->
+
+                <!-- 브랜드 -->
+                <div data-tab-child='6ff4a25b-556d-45bb-8d19-fdc32b3475dc'>
+                  <div class='leading-[40px]'>
+                    <select class='select-wrap mr-1'>
+                      <option>리스트 선택된(체크박스) 상품의</option>
+                      <option>리스트(검색결과) 전체 상품의</option>
+                    </select>
+                    브랜드를
+                    <select class='select-wrap mr-1 ml-5'>
+                      <option>-브랜드 선택-</option>
+                    </select>
+                    로 일괄 적용하여 수정합니다.
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //브랜드 -->
+
+                <!-- 카테고리 -->
+                <div data-tab-child='3a94c99c-6880-43b6-b01a-800467954a09'>
+                  <div>
+                    <div class='inline-block mr-5 align-middle'>
+                      <div class='leading-[40px] mb-1'>
+                        <select class='select-wrap'>
+                          <option>리스트 선택된(체크박스) 상품의</option>
+                          <option>리스트(검색결과) 전체 상품의</option>
+                        </select>
+                        <span class='inline-block w-28'>메인 카테고리를</span>
+                        <select class='select-wrap'>
+                          <option>-1뎁스 카테고리-</option>
+                          <option>FASHION</option>
+                          <option>OUTDOOR</option>
+                          <option>GOLF</option>
+                          <option>WOMEN</option>
+                          <option>MEN</option>
+                          <option>LUXURY</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-2뎁스 카테고리-</option>
+                          <option>APPAREL</option>
+                          <option>EQUIPMENT</option>
+                          <option>CAMPING</option>
+                          <option>SHOSE</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-3뎁스 카테고리-</option>
+                          <option>JACKET</option>
+                          <option>PANT</option>
+                          <option>TEE</option>
+                          <option>ACC</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-4뎁스 카테고리-</option>
+                          <option>바람막이</option>
+                          <option>다운자켓</option>
+                          <option>떡볶이코트</option>
+                          <option>땀복</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-5뎁스 카테고리-</option>
+                          <option>바람막이</option>
+                          <option>다운자켓</option>
+                          <option>떡볶이코트</option>
+                          <option>땀복</option>
+                        </select>
+                      </div>
+                      <div class='leading-[40px] mb-1'>
+                        <select class='select-wrap'>
+                          <option>리스트 선택된(체크박스) 상품의</option>
+                          <option>리스트(검색결과) 전체 상품의</option>
+                        </select>
+                        <span class='inline-block w-28'>1번째 중복 카테고리를</span>
+                        <select class='select-wrap'>
+                          <option>-1뎁스 카테고리-</option>
+                          <option>FASHION</option>
+                          <option>OUTDOOR</option>
+                          <option>GOLF</option>
+                          <option>WOMEN</option>
+                          <option>MEN</option>
+                          <option>LUXURY</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-2뎁스 카테고리-</option>
+                          <option>APPAREL</option>
+                          <option>EQUIPMENT</option>
+                          <option>CAMPING</option>
+                          <option>SHOSE</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-3뎁스 카테고리-</option>
+                          <option>JACKET</option>
+                          <option>PANT</option>
+                          <option>TEE</option>
+                          <option>ACC</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-4뎁스 카테고리-</option>
+                          <option>바람막이</option>
+                          <option>다운자켓</option>
+                          <option>떡볶이코트</option>
+                          <option>땀복</option>
+                        </select>
+                        <select class='select-wrap'>
+                          <option>-5뎁스 카테고리-</option>
+                          <option>바람막이</option>
+                          <option>다운자켓</option>
+                          <option>떡볶이코트</option>
+                          <option>땀복</option>
+                        </select>
+                        <button type='button' class='btn-m' id=''><i class='fa-solid fa-xmark'></i> 삭제</button>
+                      </div>
+                    </div>
+                    <span class='inline-block align-middle'>로 일괄 적용하여 수정합니다.</span>
+                  </div>
+                  <div>
+                    <button type='button' class='btn-m' id='btn-category-add'><i class='fa-solid fa-plus'></i> 추가</button>
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //카테고리 -->
+
+                <!-- 공급가/수수료 -->
+                <div data-tab-child='9e25df15-1857-4ce6-bf68-2ccc311fe8e0'>
+                  <div class='border-b border-dotted border-sub-blue-200 py-2'>
+                    <div class='inline-block align-middle mr-5'>
+                      <div class='mb-1'>
+                        <label class='label align-top'>
+                          <input type='radio' />
+                          <span class='label-text !bg-left-center'>
+                            <select class='select-wrap'>
+                              <option>리스트 선택된(체크박스) 상품의</option>
+                              <option>리스트(검색결과) 전체 상품의</option>
+                            </select>
+                          </span>
+                        </label>
+                        공급가를
+                        <input type='text' placeholder='placeholder' />
+                        원으로
+                      </div>
+                      <div>
+                        <label class='label align-top'>
+                          <input type='radio' />
+                          <span class='label-text !bg-left-center'>
+                            <select class='select-wrap'>
+                              <option>리스트 선택된(체크박스) 상품의</option>
+                              <option>리스트(검색결과) 전체 상품의</option>
+                            </select>
+                          </span>
+                        </label>
+                        공급가를
+                        <select class='select-wrap'>
+                          <option>소비자가의</option>
+                          <option>판매가의</option>
+                          <option>통합회원가의</option>
+                          <option>네이버EP가의</option>
+                        </select>
+                        <input type='text' placeholder='placeholder' />
+                        %로
+                      </div>
+                    </div>
+                    <span class='inline-block align-middle'>로 일괄 적용하여 수정합니다.</span>
+                  </div>
+                  <div class='border-b border-dotted border-sub-blue-200 py-2'>
+                    <div class='inline-block align-middle mr-5'>
+                      <div class='mb-1'>
+                        <label class='label align-top'>
+                          <input type='radio' />
+                          <span class='label-text !bg-left-center'>
+                            <select class='select-wrap'>
+                              <option>리스트 선택된(체크박스) 상품의</option>
+                              <option>리스트(검색결과) 전체 상품의</option>
+                            </select>
+                          </span>
+                        </label>
+                        수수료를
+                        <input type='text' placeholder='placeholder' />
+                      </div>
+                      <div>
+                        <label class='label align-top'>
+                          <input type='radio' />
+                          <span class='label-text !bg-left-center'>
+                            <select class='select-wrap'>
+                              <option>리스트 선택된(체크박스) 상품의</option>
+                              <option>리스트(검색결과) 전체 상품의</option>
+                            </select>
+                          </span>
+                        </label>
+                        수수료를
+                        <select class='select-wrap'>
+                          <option>소비자가의</option>
+                          <option>판매가의</option>
+                          <option>통합회원가의</option>
+                          <option>네이버EP가의</option>
+                        </select>
+                        <input type='text' placeholder='placeholder' />
+                        %로
+                      </div>
+                    </div>
+                    <span class='inline-block align-middle'>로 일괄 적용하여 수정합니다.</span>
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //공급가/수수료 -->
+
+                <!-- 아이콘 -->
+                <div data-tab-child='c61e0219-46f8-4b1d-aa59-b5575e8f96ac'>
+                  <div>
+                    <div class='leading-[40px] inline-block mr-5'>
+                      <select class='select-wrap'>
+                        <option>리스트 선택된(체크박스) 상품의</option>
+                        <option>리스트(검색결과) 전체 상품의</option>
+                      </select>
+                      아이콘을 수정합니다<br />
+                      <label class='label mr-5'>
+                        <input type='checkbox' />
+                        <span class='label-text'>기존 등록 아이콘을 삭제하지 않고 추가함</span>
+                      </label>
+                    </div>
+                    <div class='inline-block align-top'>
+                      <table summay='옵션' class='border-table'>
+
+                        <colgroup>
+                          <col width='120px' />
+                          <col width='*' />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope='row'>아이콘 선택</th>
+                            <td>
+                              <label class='label mr-5'>
+                                <input type='checkbox' />
+                                <span class='label-text'><span class='inline-block px-1 border border-[#F5BFCC] text-[#E54E73] rounded h-[20px] leading-[20px]'>세일</span></span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' />
+                                <span class='label-text'><span class='inline-block px-1 border border-[#92E7E1] text-[#00B0A5] rounded h-[20px] leading-[20px]'>신상품</span></span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' />
+                                <span class='label-text'><span class='inline-block px-1 border border-[#FEA188] text-[#DD6C48] rounded h-[20px] leading-[20px]'>추천</span></span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' />
+                                <span class='label-text'><span class='inline-block px-1 border border-[#9EEE82] text-[#36D000] rounded h-[20px] leading-[20px]'>예약</span></span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' />
+                                <span class='label-text'><span class='inline-block px-1 border border-[#95BEE2] text-[#0088FF] rounded h-[20px] leading-[20px]'>쿠폰30%</span></span>
+                              </label>
+                              <label class='label mr-5'>
+                                <input type='checkbox' />
+                                <span class='label-text'><span class='inline-block px-1 border border-[#BD9DC8] text-[#8E00BF] rounded h-[20px] leading-[20px]'>상반기베스트</span></span>
+                              </label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //아이콘 -->
+
+                <!-- 회원등급 -->
+                <div data-tab-child='a75dcfe0-5c47-48b7-94e8-7ce3a774c7df'>
+                  <div class='border-b border-dotted border-sub-blue-200 py-2'>
+                    <div class='inline-block align-middle'>
+                      <div class='leading-[40px] mb-1'>
+                        <select class='select-wrap mr-1'>
+                          <option>리스트 선택된(체크박스) 상품의</option>
+                          <option>리스트(검색결과) 전체 상품의</option>
+                        </select>
+                        구매 가능 회원등급을
+                        <label class='label mr-5 ml-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>비회원</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>일반</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>모범</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>임직원</span>
+                        </label>
+                      </div>
+                      <div class='leading-[40px]'>
+                        <select class='select-wrap mr-1'>
+                          <option>리스트 선택된(체크박스) 상품의</option>
+                          <option>리스트(검색결과) 전체 상품의</option>
+                        </select>
+                        접근 가능 회원등급을
+                        <label class='label mr-5 ml-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>비회원</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>일반</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>모범</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' />
+                          <span class='label-text'>임직원</span>
+                        </label>
+                      </div>
+                    </div>
+                    <span class='inline-block align-middle'>로 일괄 적용하여 수정합니다.</span>
+                  </div>
+                  <div class='pt-2'>
+                    <div class='inline-block align-middle w-52'>
+                      <label class='label w-52'>
+                        <input type='radio' />
+                        <span class='label-text'>회원 등급별 할인/적립 사용함</span>
+                      </label>
+                      <label class='label w-52 mt-1'>
+                        <input type='radio' />
+                        <span class='label-text'>회원 등급별 할인/적립 사용안함</span>
+                      </label>
+                    </div>
+                    <span class='inline-block align-middle'>로 일괄 적용하여 수정합니다.</span>
+                  </div>
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //회원등급 -->
+
+                <!-- 배송비 -->
+                <div data-tab-child='bb537014-1889-4df2-8e2b-f47fa2333e11'>
+                  <div class='leading-[40px] mb-3'>
+                    <select class='select-wrap'>
+                      <option>리스트 선택된(체크박스) 상품의</option>
+                      <option>리스트(검색결과) 전체 상품의</option>
+                    </select>
+                    배송비 조건을
+                  </div>
+                  <div class='mb-3'>
+                    조건명
+                    <input type='text' placeholder='placeholder' />
+                    <button type='button' class='btn-m'>검색</button>
+                  </div>
+                  <div class='inline-block align-middle mr-5'>
+                    <table  class='border-table'>
+                      <caption>
+                        배송비 조건
+                      </caption>
+                      <thead>
+                        <tr>
+                          <th scope='col' class='text-center'>선택</th>
+                          <th scope='col' class='text-center'>배송비조건내용</th>
+                          <th scope='col' class='text-center'>공급사</th>
+                          <th scope='col' class='text-center'>방식</th>
+                          <th scope='col' class='text-center'>기본배송비</th>
+                          <th scope='col' class='text-center'>유형</th>
+                          <th scope='col' class='text-center'>유형 상세</th>
+                          <th scope='col' class='text-center'>등록일</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class='text-center'>
+                            <label class='label'>
+                              <input type='radio' />
+                              <span class='label-text'></span>
+                            </label>
+                          </td>
+                          <td class='text-center'>전상품 무료 배송</td>
+                          <td class='text-center'>전체</td>
+                          <td class='text-center'>택배</td>
+                          <td class='text-center'>
+                            <label class='label'>
+                              <input type='checkbox' />
+                              <span class='label-text'></span>
+                            </label>
+                          </td>
+                          <td class='text-center'>무료</td>
+                          <td class='text-center'>0원</td>
+                          <td class='text-center'>2022-04-01</td>
+                        </tr>
+                        <tr>
+                          <td class='text-center'>
+                            <label class='label'>
+                              <input type='radio' />
+                              <span class='label-text'></span>
+                            </label>
+                          </td>
+                          <td class='text-center'>3만원 이상 무료</td>
+                          <td class='text-center'>본사</td>
+                          <td class='text-center'>택배</td>
+                          <td class='text-center'></td>
+                          <td class='text-center'>금액별 배송비</td>
+                          <td class='text-center'>~30,000원/배송비3,000원<br />30,000원~/배송비 0원</td>
+                          <td class='text-center'>2022-04-04</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <span class='inline-block align-middle'>로 일괄 적용하여 수정합니다.</span>
+                  <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='a67b9108-eafb-4c72-8fc0-fd916c3314cb'>
+                    <div class='paging new'>
+                      <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                      <a href='#' class='prev btn-paging w-[50px]'>
+                        <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                        <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                      </a>
+                      <span class='now btn-paging leading-[26px]'>1</span>
+                      <a href='#' class='btn-paging leading-[26px]'>2</a>
+                      <a href='#' class='btn-paging leading-[26px]'>3</a>
+                      <a href='#' class='btn-paging leading-[26px]'>4</a>
+                      <a href='#' class='next btn-paging w-[50px]'>
+                        <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                        <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                      </a>
+                      <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                    </div>
+                  </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+                  <div class='text-center py-3'>
+                    <button type='button' class='btn-blue'>확인</button>
+                  </div>
+                </div>
+                <!-- //배송비 -->
+
+                <!-- 입점사 승인 -->
+                <div data-tab-child='8e678fc0-4948-41af-8768-eecd18922a3b'>
+                  <div class='H-BOX'>
+                    <select class='select-wrap mr-5'>
+                      <option>리스트 선택된(체크박스) 상품의</option>
+                      <option>리스트(검색결과) 전체 상품의</option>
+                    </select>
+                    <label class='label mr-5'>
+                      <input type='radio' />
+                      <span class='label-text'>승인</span>
+                    </label>
+                    <label class='label mr-5'>
+                      <input type='radio' />
+                      <span class='label-text'>반려</span>
+                    </label>
+                    <label class='label mr-5'>
+                      <input type='radio' />
+                      <span class='label-text'>심사대기</span>
+                    </label>
+                    로 일괄 적용하여 수정합니다.
+                    <div class='text-center'>
+                      <button type='button' class='btn-blue'>확인</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- //입점사 승인 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

@@ -1,0 +1,186 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1300px]">
+    <div class="layer-header">
+      <h1>상품 리스트</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">상품 검색</h2>
+      <div class="tbl-box">
+        <table class="table" summary="상품 검색">
+
+          <colgroup>
+            <col style="width:20%">
+            <col style="width:80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row">상품 검색</th>
+            <td>
+              <select class="select-wrap" name="">
+                <option value="">선택</option>
+                <option value="">상품코드</option>
+                <option value="">상품명</option>
+              </select>
+              <input type="text" class="input-wrap"/>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">진열 상태</th>
+            <td>
+              <label class="label">
+                <input type="radio" checked/>
+                <span class="label-text">전체</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">진열</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">미진열</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">판매 상태</th>
+            <td>
+              <label class="label">
+                <input type="radio" checked/>
+                <span class="label-text">전체</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">판매중</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">판매중지</span>
+              </label>
+              <label class="label">
+                <input type="radio"/>
+                <span class="label-text">품절</span>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn-m">검색</button>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">상품 리스트</h2>
+      <div class="sorting-box flex justify-between">
+        <div class="left-box">
+          <span class="inline-block mt-6">조회 <span class="text-red">0</span>건 / 전체 <span class="text-red">0</span>건</span>
+        </div>
+        <div class="right-box">
+          <select class="select-wrap" name="">
+            <option value="">10개씩 보기</option>
+            <option value="">20개씩 보기</option>
+            <option value="">30개씩 보기</option>
+            <option value="">50개씩 보기</option>
+            <option value="">100개씩 보기</option>
+            <option value="">150개씩 보기</option>
+            <option value="">200개씩 보기</option>
+            <option value="">300개씩 보기</option>
+            <option value="">500개씩 보기</option>
+            <option value="">1000개씩 보기</option>
+            <option value="">5000개씩 보기</option>
+          </select>
+        </div>
+      </div>
+      <div id="app" class="mt-1"></div>
+      <div class="flex justify-between mt-1">
+        <p>
+          * 선택 항목
+          <button type="button" class="btn-warning-m ml-1">삭제</button>
+        </p>
+        <button type="button" class="btn-product-list-select btn-m">상품 추가</button>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">가격 일괄 수정</h2>
+      <div>
+        <select class="select-wrap" name="">
+          <option value="">선택</option>
+          <option value="">선택된 상품의 이벤트가의 금액을</option>
+          <option value="">검색 결과 전체 상품의 이벤트가의 금액을</option>
+        </select>
+        <input type="text" class="input-wrap" placeholder="placeholder"/>
+        <select class="select-wrap" name="">
+          <option value="">선택</option>
+          <option value="">원 균일가</option>
+          <option value="">원 할인</option>
+          <option value="">원 할증 (추가)</option>
+          <option value="">% 할인</option>
+          <option value="">% 할증 (추가)</option>
+        </select>
+        <span class="ml-1">로 적용하여 일괄 수정합니다.</span>
+      </div>
+      <div class="mt-1">
+        <span>수정된 금액은</span>
+        <select class="select-wrap mx-1" name="">
+          <option value="">선택</option>
+          <option value="">1</option>
+          <option value="">10</option>
+          <option value="">100</option>
+          <option value="">1000</option>
+        </select>
+        <span>원 단위로</span>
+        <select class="select-wrap mx-1" name="">
+          <option value="">선택</option>
+          <option value="">올림</option>
+          <option value="">내림</option>
+          <option value="">반올림</option>
+        </select>
+        <span>합니다.</span>
+      </div>
+      <div class="mt-3 text-center">
+        <button type="button" class="btn-product-apply btn-blue">적용</button>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">이벤트 요약 정보</h2>
+      <div class="tbl-box">
+        <table class="table" summary="이벤트 요약 정보">
+
+          <colgroup>
+            <col style="width:12.5%">
+            <col style="width:12.5%">
+            <col style="width:12.5%">
+            <col style="width:12.5%">
+            <col style="width:12.5%">
+            <col style="width:12.5%">
+            <col style="width:12.5%">
+            <col style="width:12.5%">
+          </colgroup>
+          <thead>
+          <tr>
+            <th scope="col" class="text-center">브랜드 수</th>
+            <th scope="col" class="text-center">상품 수 (SKU)</th>
+            <th scope="col" class="text-center">총 재고</th>
+            <th scope="col" class="text-center">소비자가 합계</th>
+            <th scope="col" class="text-center">판매가 합계</th>
+            <th scope="col" class="text-center">이벤트가 합계</th>
+            <th scope="col" class="text-center">할인율<br/>(정가 대비)</th>
+            <th scope="col" class="text-center">할인율<br/>(판매가 대비)</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="text-center">1</td>
+            <td class="text-center">30</td>
+            <td class="text-center">100</td>
+            <td class="text-center">32,000</td>
+            <td class="text-center">29,000</td>
+            <td class="text-center">19,000</td>
+            <td class="text-center">40.6</td>
+            <td class="text-center">34.5</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">확인</button>
+    </div>
+  </div>
+</div>

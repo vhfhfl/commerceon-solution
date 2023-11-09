@@ -1,0 +1,243 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 검색조건 -->
+            <div>
+              <div class='tit-box'><h3>정산 검색</h3></div>
+              <table class='table mt-1' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>업체 구분</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>본사</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>공급사</span>
+                      </label>
+                      <button type='button' class='btn-m ml-1'>공급사 선택</button>
+                      <div class='inline-grid grid-cols-[75px_1fr] mt-1'>
+                        <span class='text-sub-blue-700 font-semibold'>선택된 공급사 :</span>
+                        <div class='flex flex-wrap gap-[4px_8px]'>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>매출 구분</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>판매</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>정산 후 환불</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>정산 상태</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>정산 확정</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>정산 미확정</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>지급 상태</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>지급 완료</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>미지급</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>세금계산서</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>발급 완료</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>미발급</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>구매 확정일</th>
+                    <td>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <span>~</span>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <div class='period-tab'>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>오늘</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' checked='' />
+                          <span class='label-text'>7일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>3개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1년</span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='text-center mt-1'>
+                <button type='button' class='btn-m'>검색</button>
+                <button type='button' class='btn-white-m'>초기화</button>
+              </div>
+            </div>
+            <!-- //검색조건 -->
+
+            <!-- 정산리스트 -->
+            <div class='mt-10'>
+              <div class='tit-box'><h3>정산 리스트</h3></div>
+              <div class='flex justify-between items-end'>
+                <div>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</div>
+                <div class='text-sub-blue-500'>* 수수료 베이스로 계약된 업체는 수수료만 표기 / 공급가 베이스로 계약된 업체는 쿠폰 여부 상관 없이 공급가액만 표기.</div>
+              </div>
+              <div id='app' class='mt-1'></div>
+              <div class='flex justify-between items-start mt-1'>
+                <div>
+                  <div>
+                    <span>* 리스트</span>
+                    <select class='select-wrap mx-1'>
+                      <option>선택한 주문 건에 대한</option>
+                      <option>검색 결과 전체 주문 건에 대한</option>
+                    </select>
+                    <span>정산 상태를</span>
+                    <select class='select-wrap mx-1'>
+                      <option>정산 확정</option>
+                      <option>정산 미확정</option>
+                    </select>
+                    <span>으로 일괄 적용 및 수정</span>
+                    <button type='button' class='btn-m'>확인</button>
+                  </div>
+                  <div class='mt-1'>
+                    <span>* 리스트</span>
+                    <select class='select-wrap mx-1'>
+                      <option>선택한 주문 건에 대한</option>
+                      <option>검색 결과 전체 주문 건에 대한</option>
+                    </select>
+                    <span>지급 상태를</span>
+                    <select class='select-wrap mx-1'>
+                      <option>지급 완료</option>
+                      <option>미지급</option>
+                    </select>
+                    <span>으로 일괄 적용 및 수정</span>
+                    <button type='button' class='btn-m ml-1'>확인</button>
+                  </div>
+                  <div class='mt-1 text-sub-blue-500'>* 정산 후 환불 건은 상태값 변경 불가.</div>
+                </div>
+                <div>
+                  <button type='button' class='btn-white-m'>
+                    <span>상세 정산 내역 엑셀 다운로드</span>
+                    <span class='icon-download inline-block w-[16px] h-[16px] align-sub bg-icon-download bg-center bg-no-repeat'></span>
+                  </button>
+                  <button type='button' class='btn-white-m'>
+                    <span>요약 정산 내역 엑셀 다운로드</span>
+                    <span class='icon-download inline-block w-[16px] h-[16px] align-sub bg-icon-download bg-center bg-no-repeat'></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- //정산리스트 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

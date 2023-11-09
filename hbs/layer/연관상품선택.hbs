@@ -1,0 +1,197 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1000px]">
+    <div class="layer-header">
+      <h1>연관 상품 선택</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <table summary="연관 상품 선택" class="border-table">
+
+        <colgroup>
+          <col width="20%"/>
+          <col width="80%"/>
+        </colgroup>
+        <tbody>
+        <tr>
+          <th scope="row">상품 검색</th>
+          <td><input type="text" class="input-wrap"/></td>
+        </tr>
+        <tr>
+          <th scope="row">브랜드 선택</th>
+          <td>
+            <select class="select-wrap">
+              <option>브랜드 선택</option>
+              <option>블랙야크</option>
+              <option>아크테릭스</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">카테고리 선택</th>
+          <td>
+            <select class="select-wrap">
+              <option>카테고리 선택</option>
+            </select>
+            <select class="select-wrap">
+              <option>카테고리 선택</option>
+            </select>
+            <select class="select-wrap">
+              <option>카테고리 선택</option>
+            </select>
+            <select class="select-wrap">
+              <option>카테고리 선택</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">기간검색</th>
+          <td>
+            <select class="select-wrap">
+              <option>등록일</option>
+              <option>수정일</option>
+            </select>
+            <span class="input-calendar-wrap">
+                <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                <input type="text" class="inline-block float-right w-[76px] h-[38px]">
+              </span>
+            <span class="inline-block px-1">~</span>
+            <span class="input-calendar-wrap">
+                <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                <input type="text" class="inline-block float-right w-[76px] h-[38px]">
+              </span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">판매 금액</th>
+          <td>
+            <input type="text" class="input-wrap"/>
+            <span class="inline-block px-1">원 ~</span>
+            <input type="text" class="input-wrap"/>
+            <span class="inline-block px-1">원</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="pt-2 mb-4 text-center">
+        <button type="button" class="btn-m">검색</button>
+      </div>
+      <table summary="검색 결과 리스트" class="table">
+
+        <colgroup>
+          <col width="5%">
+          <col width="8%">
+          <col width="10%">
+          <col width="17%">
+          <col width="10%">
+          <col width="10%">
+          <col width="10%">
+          <col width="10%">
+          <col width="10%">
+          <col width="10%">
+        </colgroup>
+        <thead>
+        <tr>
+          <th scope="col" class="text-center">
+            <label class="label">
+              <input type="checkbox" name="">
+              <span class="label-text"></span>
+            </label>
+          </th>
+          <th scope="col" class="text-center">순번</th>
+          <th scope="col" class="text-center">이미지</th>
+          <th scope="col" class="text-center">상품명</th>
+          <th scope="col" class="text-center">판매가</th>
+          <th scope="col" class="text-center">브랜드명</th>
+          <th scope="col" class="text-center">공급사</th>
+          <th scope="col" class="text-center">재고</th>
+          <th scope="col" class="text-center">판매 상태</th>
+          <th scope="col" class="text-center">노출 여부</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="text-center">
+            <label class="label">
+              <input type="checkbox" name="">
+              <span class="label-text"></span>
+            </label>
+          </td>
+          <td class="text-center">4</td>
+          <td class="text-center">
+            <img src="http://img.atny.com/data/goods/ATNY/68/825368/OWGA096F21FAB004_J_OFFW-8484_a_list1_rb.png" width="50px"/>
+          </td>
+          <td class="text-center">스카이티</td>
+          <td class="text-center">10,000원</td>
+          <td class="text-center">브랜드1</td>
+          <td class="text-center">공급사1</td>
+          <td class="text-center">100</td>
+          <td class="text-center">판매중</td>
+          <td class="text-center">노출함</td>
+        </tr>
+        <tr>
+          <td class="text-center">
+            <label class="label">
+              <input type="checkbox" name="">
+              <span class="label-text"></span>
+            </label>
+          </td>
+          <td class="text-center">3</td>
+          <td class="text-center">
+            <img src="http://img.atny.com/data/goods/ATNY/68/825368/OWGA096F21FAB004_J_OFFW-8484_a_list1_rb.png" width="50px"/>
+          </td>
+          <td class="text-center">스카이티</td>
+          <td class="text-center">10,000원</td>
+          <td class="text-center">브랜드1</td>
+          <td class="text-center">공급사1</td>
+          <td class="text-center">100</td>
+          <td class="text-center">판매중</td>
+          <td class="text-center">노출함</td>
+        </tr>
+        <tr>
+          <td class="text-center">
+            <label class="label">
+              <input type="checkbox" name="">
+              <span class="label-text"></span>
+            </label>
+          </td>
+          <td class="text-center">2</td>
+          <td class="text-center">
+            <img src="http://img.atny.com/data/goods/ATNY/68/825368/OWGA096F21FAB004_J_OFFW-8484_a_list1_rb.png" width="50px"/>
+          </td>
+          <td class="text-center">스카이티</td>
+          <td class="text-center">10,000원</td>
+          <td class="text-center">브랜드1</td>
+          <td class="text-center">공급사1</td>
+          <td class="text-center">100</td>
+          <td class="text-center">판매중</td>
+          <td class="text-center">노출함</td>
+        </tr>
+        <tr>
+          <td class="text-center">
+            <label class="label">
+              <input type="checkbox" name="">
+              <span class="label-text"></span>
+            </label>
+          </td>
+          <td class="text-center">1</td>
+          <td class="text-center">
+            <img src="http://img.atny.com/data/goods/ATNY/68/825368/OWGA096F21FAB004_J_OFFW-8484_a_list1_rb.png" width="50px"/>
+          </td>
+          <td class="text-center">스카이티</td>
+          <td class="text-center">10,000원</td>
+          <td class="text-center">브랜드1</td>
+          <td class="text-center">공급사1</td>
+          <td class="text-center">100</td>
+          <td class="text-center">판매중</td>
+          <td class="text-center">노출함</td>
+        </tr>
+        </tbody>
+      </table>
+      <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">상품 추가</button>
+    </div>
+  </div>
+</div>

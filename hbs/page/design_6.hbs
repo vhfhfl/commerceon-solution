@@ -1,0 +1,115 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 기본정보 -->
+            <div>
+              <div class='tit-box'><h3>기본 정보</h3></div>
+              <table class='table mt-1' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>배너 그룹 구분</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>PC</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>Mobile</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>노출 여부</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>미노출</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>노출</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>배너 그룹 종류</th>
+                    <td>
+                      <select class='select-wrap'>
+                        <option>전체</option>
+                        <option>컨텐츠</option>
+                        <option>상품</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>배너 그룹명</th>
+                    <td><input type='text' class='input-wrap w-1/2' placeholder='placeholder' /></td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>디자인 스킨</th>
+                    <td>
+                      <select class='select-wrap'>
+                        <option>전체</option>
+                        <option>메인 컨텐츠 프레시</option>
+                        <option>메인 종합형 모던</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //기본정보 -->
+
+            <!-- ForATNY -->
+            <div class='mt-7'>
+              <div class='tit-box'><h3>For ATNY</h3></div>
+              <table class='table mt-1' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>애트니 특화 배너</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>사용안함</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>사용함</span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //ForATNY -->
+            <div class='text-center mt-7'>
+              <button type='button' class='btn-blue'>등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

@@ -1,0 +1,198 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 배너그룹검색 -->
+            <div>
+              <div class='tit-box'><h3>배너 그룹 검색</h3></div>
+              <table class='table mt-1' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>배너 그룹명</th>
+                    <td><input type='text' class='input-wrap' placeholder='placeholder' /></td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>기간 검색</th>
+                    <td>
+                      <div class='H-BOX'>
+                        <select class='select-wrap'>
+                          <option>전체</option>
+                          <option>등록일</option>
+                          <option>수정일</option>
+                        </select>
+                        <div>
+                          <span class='input-calendar-wrap'>
+                            <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                            <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                          </span>
+                          <span>~</span>
+                          <span class='input-calendar-wrap'>
+                            <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                            <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                          </span>
+                        </div>
+                        <div class='period-tab'>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>오늘</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>7일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>15일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>1개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>3개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' checked='' />
+                            <span class='label-text'>전체</span>
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>디자인 스킨</th>
+                    <td>
+                      <select class='select-wrap'>
+                        <option>전체</option>
+                        <option>메인 컨텐츠 프레시</option>
+                        <option>메인 종합형 모던</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>노출 여부</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>미노출</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>노출</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>배너 그룹 종류</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>컨텐츠</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>상품</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>배너 그룹 구분</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>PC</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>Mobile</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>애트니 특화 배너</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>사용안함</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>사용함</span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='text-center mt-1'>
+                <button type='button' class='btn-m'>검색</button>
+                <button type='button' class='btn-white-m'>초기화</button>
+              </div>
+            </div>
+            <!-- //배너그룹검색 -->
+
+            <!-- 배너그룹리스트 -->
+            <div class='mt-10'>
+              <div class='tit-box'><h3>배너 그룹 리스트</h3></div>
+              <div class='flex justify-between items-end mt-1'>
+                <div>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</div>
+                <div>
+                  <select class='select-wrap'>
+                    <option>10개씩 보기</option>
+                    <option>20개씩 보기</option>
+                    <option>30개씩 보기</option>
+                    <option>50개씩 보기</option>
+                    <option>100개씩 보기</option>
+                    <option>150개씩 보기</option>
+                    <option>200개씩 보기</option>
+                    <option>300개씩 보기</option>
+                    <option>500개씩 보기</option>
+                    <option>1000개씩 보기</option>
+                    <option>5000개씩 보기</option>
+                  </select>
+                </div>
+              </div>
+              <div id='app' class='mt-1'></div>
+              <div class='mt-1'>
+                <span class='mr-1'>* 선택 배너 그룹</span>
+                <button type='button' class='btn-warning-m'>삭제</button>
+              </div>
+            </div>
+            <!-- //배너그룹리스트 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

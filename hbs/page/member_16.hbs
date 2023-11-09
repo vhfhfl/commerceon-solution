@@ -1,0 +1,425 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='tit-box'><h3>자동 메일 발송 설정</h3></div>
+            <!-- 탭메뉴 -->
+            <div class='tab-auto-mail-setting tabmenu'>
+              <div class='tab'>
+                <ul>
+                  <li class='on'>회원정보</li>
+                  <li>주문/배송</li>
+                  <li>(포인트)/(예치금)</li>
+                  <li>프로모션/기타</li>
+                </ul>
+              </div>
+              <div class='tab-cont-section'>
+                <!-- 탭메뉴(1) - 회원정보 -->
+                <div class='pt-5 hidden on'>
+                  <div class='tbl-box'>
+                    <table class='table' >
+
+                      <colgroup>
+                        <col style='width:15%' />
+                        <col style='width:85%' />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope='row'>인증</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='certification' checked='' />
+                              <span class='label-text'>회원 가입시 본인 인증</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='certification' />
+                              <span class='label-text'>아이디 찾기 인증</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='certification' />
+                              <span class='label-text'>비밀번호 찾기 인증</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='certification' />
+                              <span class='label-text'>휴면 회원 해제 인증</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>안내</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information' />
+                              <span class='label-text'>회원 가입 완료 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information' />
+                              <span class='label-text'>가입 승인 완료 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information' />
+                              <span class='label-text'>가입 거부 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information' />
+                              <span class='label-text'>휴면 회원 전환 전 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information' />
+                              <span class='label-text'>회원 등급 변경 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information' />
+                              <span class='label-text'>비밀번호 변경 완료 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information' />
+                              <span class='label-text'>회원 탈퇴 완료 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information' />
+                              <span class='label-text'>회원 정보 변경 안내</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>정보 제공 동의</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information_provide_concent' />
+                              <span class='label-text'>이메일 수신 거부</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information_provide_concent' />
+                              <span class='label-text'>이메일 수신 동의</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='information_provide_concent' />
+                              <span class='label-text'>수신 동의 여부 확인</span>
+                            </label>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- //탭메뉴(1) - 회원정보 -->
+                <!-- 탭메뉴(2) - 주문/배송 -->
+                <div class='pt-5 hidden'>
+                  <div class='tbl-box'>
+                    <table class='table' >
+
+                      <colgroup>
+                        <col style='width:15%' />
+                        <col style='width:85%' />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope='row'>주문/배송</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' checked='' />
+                              <span class='label-text'>입금 대기</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' />
+                              <span class='label-text'>주문 무효</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' />
+                              <span class='label-text'>입금 확인</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' />
+                              <span class='label-text'>상품 준비 중</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' />
+                              <span class='label-text'>배송 준비 중</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' />
+                              <span class='label-text'>배송 중 (해외)</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' />
+                              <span class='label-text'>배송 중 (국내)</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' />
+                              <span class='label-text'>구매 확정</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='order' />
+                              <span class='label-text'>배송 완료</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>반품</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refuse' />
+                              <span class='label-text'>반품 요청</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refuse' />
+                              <span class='label-text'>반품 승인</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refuse' />
+                              <span class='label-text'>반품 회수 중</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refuse' />
+                              <span class='label-text'>반품 회수 완료</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refuse' />
+                              <span class='label-text'>반품 확정</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refuse' />
+                              <span class='label-text'>반품 보류</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>교환</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='exchange' />
+                              <span class='label-text'>교환 요청</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='exchange' />
+                              <span class='label-text'>교환 승인</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='exchange' />
+                              <span class='label-text'>교환 회수 중</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='exchange' />
+                              <span class='label-text'>교환 회수 완료</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='exchange' />
+                              <span class='label-text'>교환 반품 확정</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='exchange' />
+                              <span class='label-text'>교환 보류</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>환불</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refund' />
+                              <span class='label-text'>환불 요청</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refund' />
+                              <span class='label-text'>환불 보류</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refund' />
+                              <span class='label-text'>부분 환불 완료</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='refund' />
+                              <span class='label-text'>부분 환불 대기</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>기타</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='etc' />
+                              <span class='label-text'>재배송 중</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='etc' />
+                              <span class='label-text'>반송 중</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='etc' />
+                              <span class='label-text'>결제 취소</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='etc' />
+                              <span class='label-text'>결제 실패</span>
+                            </label>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- //탭메뉴(2) - 주문/배송 -->
+                <!-- 탭메뉴(3) - (포인트)/(예치금) -->
+                <div class='pt-5 hidden'>
+                  <div class='tbl-box'>
+                    <table class='table' >
+
+                      <colgroup>
+                        <col style='width:15%' />
+                        <col style='width:85%' />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope='row'>포인트</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='point' checked='' />
+                              <span class='label-text'>포인트 지급</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='point' />
+                              <span class='label-text'>포인트 차감</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='point' />
+                              <span class='label-text'>포인트 소멸</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>예치금</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='deposit' />
+                              <span class='label-text'>예치금 지급</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='deposit' />
+                              <span class='label-text'>예치금 차감</span>
+                            </label>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- //탭메뉴(3) - (포인트)/(예치금) -->
+                <!-- 탭메뉴(4) - 프로모션/기타 -->
+                <div class='pt-5 hidden'>
+                  <div class='tbl-box'>
+                    <table class='table' >
+
+                      <colgroup>
+                        <col style='width:15%' />
+                        <col style='width:85%' />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope='row'>프로모션</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='promotion' checked='' />
+                              <span class='label-text'>생일 축하</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='promotion' />
+                              <span class='label-text'>재입고 알림 신청</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='promotion' />
+                              <span class='label-text'>재입고 알림 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='promotion' />
+                              <span class='label-text'>쿠폰 만료 안내</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope='row'>보안</th>
+                          <td class='flex justify-start flex-wrap'>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='security' />
+                              <span class='label-text'>관리자 인증 메일</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='security' />
+                              <span class='label-text'>게시글 작성 안내</span>
+                            </label>
+                            <label class='label w-[20%] mb-1'>
+                              <input type='radio' name='security' />
+                              <span class='label-text'>게시글 답변 안내</span>
+                            </label>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- //탭메뉴(4) - 프로모션/기타 -->
+              </div>
+            </div>
+            <!-- //탭메뉴 -->
+            <div class='tit-box mt-10'><h3>조건 및 내용 설정</h3></div>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:20%' />
+                  <col style='width:80%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>자동 발송 사용 여부</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' name='auto_send_use' checked='' />
+                        <span class='label-text'>사용안함</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='auto_send_use' />
+                        <span class='label-text'>사용함</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>제목</th>
+                    <td>
+                      <input type='text' class='input-wrap !w-[250px]' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>발송자 이메일</th>
+                    <td>
+                      <input type='text' class='input-wrap !w-[250px]' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>내용</th>
+                    <td>
+                      <div id='app'></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class='mt-7 text-right'>
+              <button type='button' class='btn-blue'>저장</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

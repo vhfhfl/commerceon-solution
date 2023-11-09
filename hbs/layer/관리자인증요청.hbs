@@ -1,0 +1,57 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content">
+    <div class="layer-header">
+      <h1>관리자 인증 요청</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">인증 요청</h2>
+      <table class="table" summary="인증 요청">
+
+        <colgroup>
+          <col style="width:30%">
+          <col style="width:70%">
+        </colgroup>
+        <tbody>
+        <tr>
+          <th scope="row">인증 수단</th>
+          <td>
+            <div class="flex justify-between">
+              <div class="w-full leading-10">
+                <label class="label">
+                  <input type="radio" name="">
+                  <span class="label-text">휴대폰번호</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="">
+                  <span class="label-text">이메일</span>
+                </label>
+              </div>
+              <button type="button" class="btn-m whitespace-nowrap">인증 요청</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">인증 번호</th>
+          <td>
+            <div class="flex justify-between">
+              <input type="text" class="input-wrap w-full mr-1" placeholder="placeholder"/>
+              <button type="button" class="btn-m w-[97px] whitespace-nowrap">확인</button>
+            </div>
+            <p class="mt-1">
+              <i class="fa-solid fa-clock text-sub-blue-700"></i><span class="mx-1">유효시간 <span class="text-red">02:58</span></span>
+            </p>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <p class="mt-6 text-center text-main-blue">인증에 성공하였습니다.</p><!-- 인증성공 -->
+      <p class="mt-6 text-center text-red">인증번호가 유효하지 않습니다.</p><!-- 인증실패 -->
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">인증 성공</button>
+      <button type="button" class="btn-white-l">인증 실패</button>
+    </div>
+  </div>
+</div>

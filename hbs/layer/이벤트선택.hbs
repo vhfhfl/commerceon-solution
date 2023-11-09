@@ -1,0 +1,117 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[800px]">
+    <div class="layer-header">
+      <h1>이벤트 선택</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">이벤트 검색</h2>
+      <div class="tbl-box">
+        <table class="table" summary="이벤트 검색">
+
+          <colgroup>
+            <col style="width:20%">
+            <col style="width:80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row">이벤트명</th>
+            <td>
+              <input type="text" class="input-wrap w-full"/>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">기간 검색</th>
+            <td>
+              <select class="select-wrap" name="">
+                <option value="">선택</option>
+                <option value="">등록일</option>
+              </select>
+              <span class="input-calendar-wrap">
+                <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                <input type="text" class="inline-block float-right w-[76px] h-[38px]" placeholder="placeholder"/>
+              </span>
+              <span class="inline-block px-1">~</span>
+              <span class="input-calendar-wrap">
+                <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                <input type="text" class="inline-block float-right w-[76px] h-[38px]" placeholder="placeholder"/>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">유형 선택</th>
+            <td>
+              <label class="label">
+                <input type="radio" name="" checked/>
+                <span class="label-text">전체</span>
+              </label>
+              <label class="label">
+                <input type="radio" name=""/>
+                <span class="label-text">[응모] 이벤트</span>
+              </label>
+              <label class="label">
+                <input type="radio" name=""/>
+                <span class="label-text">[일반] 이벤트</span>
+              </label>
+              <label class="label">
+                <input type="radio" name=""/>
+                <span class="label-text">타임세일</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">진행 상태</th>
+            <td>
+              <label class="label">
+                <input type="radio" name="" checked/>
+                <span class="label-text">전체</span>
+              </label>
+              <label class="label">
+                <input type="radio" name=""/>
+                <span class="label-text">대기</span>
+              </label>
+              <label class="label">
+                <input type="radio" name=""/>
+                <span class="label-text">진행중</span>
+              </label>
+              <label class="label">
+                <input type="radio" name=""/>
+                <span class="label-text">종료</span>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="text-center mt-3">
+          <button type="button" class="btn-m">검색</button>
+        </div>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">이벤트 리스트</h2>
+      <div class="sorting-box flex justify-between">
+        <div class="left-box">
+          <span class="inline-block mt-6">조회 <span class="text-red">0</span>건 / 전체 <span class="text-red">0</span>건</span>
+        </div>
+        <div class="right-box">
+          <select class="select-wrap" name="">
+            <option value="">10개씩 보기</option>
+            <option value="">20개씩 보기</option>
+            <option value="">30개씩 보기</option>
+            <option value="">50개씩 보기</option>
+            <option value="">100개씩 보기</option>
+            <option value="">150개씩 보기</option>
+            <option value="">200개씩 보기</option>
+            <option value="">300개씩 보기</option>
+            <option value="">500개씩 보기</option>
+            <option value="">1000개씩 보기</option>
+            <option value="">5000개씩 보기</option>
+          </select>
+        </div>
+      </div>
+      <div id="app" class="mt-1"></div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">확인</button>
+    </div>
+  </div>
+</div>

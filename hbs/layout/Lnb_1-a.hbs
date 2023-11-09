@@ -1,0 +1,14 @@
+<!-- lnb :: START -->
+<div class='left-wrap'>
+  {{#LOOP 3}}
+    <div class='menu-tit'>MENU {{number}}</div>
+    <ul class='lnb'>
+      {{#LOOP 5}}
+        <li>
+          <a href="https://www.google.com" target="_blank">MENU {{../number}} - {{number}}</a>
+        </li>
+      {{/LOOP}}
+    </ul>
+  {{/LOOP}}
+</div>
+<!-- // lnb :: END -->

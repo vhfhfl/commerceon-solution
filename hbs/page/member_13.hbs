@@ -1,0 +1,187 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='tit-box'><h3>검색 조건</h3></div>
+            <!-- 검색 조건 -->
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:15%' />
+                  <col style='width:35%' />
+                  <col style='width:15%' />
+                  <col style='width:35%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>검색어</th>
+                    <td colspan='3'>
+                      <select class='select-wrap !w-[147px]'>
+                        <option>선택</option>
+                        <option>통합검색</option>
+                        <option>아이디</option>
+                        <option>이름</option>
+                        <option>닉네임</option>
+                        <option>휴대폰번호</option>
+                      </select>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                      <button type='button' class='btn-m'>검색</button>
+                      <button type='button' class='btn-white-m'>초기화</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>지급/차감 구분</th>
+                    <td>
+                      <label class='label mr-5'>
+                        <input type='radio' name='payment_division' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='payment_division' />
+                        <span class='label-text !text-main-blue'>지급 (+)</span>
+                      </label>
+                      <label class='label'>
+                        <input type='radio' name='payment_division' />
+                        <span class='label-text !text-red'>차감 (-)</span>
+                      </label>
+                    </td>
+                    <th scope='row'>금액 범위</th>
+                    <td>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                      <span class='inline-block px-1'>~</span>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>지급/차감일</th>
+                    <td>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <span class='inline-block px-1'>~</span>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <div class='period-tab mt-1'>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>오늘</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>7일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>15일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>3개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' checked='' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                      </div>
+                    </td>
+                    <th scope='row'>등급</th>
+                    <td>
+                      <select class='select-wrap !w-[147px]'>
+                        <option>선택</option>
+                        <option>브론즈</option>
+                        <option>실버</option>
+                        <option>골드</option>
+                        <option>플래티넘</option>
+                        <option>다이아</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>구분</th>
+                    <td colspan='3'>
+                      <label class='label mr-5'>
+                        <input type='radio' name='division' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='division' />
+                        <span class='label-text'>자동</span>
+                      </label>
+                      <label class='label'>
+                        <input type='radio' name='division' />
+                        <span class='label-text'>수동</span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //검색 조건 -->
+            <!-- (예치금) 지급/차감 리스트 -->
+            <div class='tit-box mt-10'><h3>(예치금) 지급/차감 리스트</h3></div>
+            <div class='sorting-box flex justify-between my-3'>
+              <div class='left-box'>
+                <span class='inline-block mt-6'>검색 <span class='text-red'>0</span>명 / 전체 <span class='text-red'>0</span>명</span>
+              </div>
+              <div class='right-box'>
+                <select class='select-wrap'>
+                  <option>10개씩 보기</option>
+                  <option>20개씩 보기</option>
+                  <option>30개씩 보기</option>
+                  <option>50개씩 보기</option>
+                  <option>100개씩 보기</option>
+                  <option>150개씩 보기</option>
+                  <option>200개씩 보기</option>
+                  <option>300개씩 보기</option>
+                  <option>500개씩 보기</option>
+                  <option>1000개씩 보기</option>
+                  <option>5000개씩 보기</option>
+                </select>
+              </div>
+            </div>
+            <div id='app'></div>
+            <!-- //(예치금) 지급/차감 리스트 -->
+            <!-- paging -->
+            <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='fc73f104-df01-4760-adaa-7366e575c004'>
+              <div class='paging new'>
+                <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                <a href='#' class='prev btn-paging w-[50px]'>
+                  <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                  <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                </a>
+                <span class='now btn-paging leading-[26px]'>1</span>
+                <a href='#' class='btn-paging leading-[26px]'>2</a>
+                <a href='#' class='btn-paging leading-[26px]'>3</a>
+                <a href='#' class='btn-paging leading-[26px]'>4</a>
+                <a href='#' class='next btn-paging w-[50px]'>
+                  <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                  <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                </a>
+                <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+              </div>
+            </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+            <!-- //paging -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

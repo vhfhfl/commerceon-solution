@@ -1,0 +1,98 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230814164206146'>
+              <script>Include('/hbs/component/TabBtnBox_1-a.hbs');</script>
+            </section>
+            <section class='RR'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'현재 사용중인 이용약관'});</script>
+              <div class='w-full py-20 text-center'>
+                <p>현재 사용중인 이용약관이 존재하지 않습니다.</p>
+                <button type='button' class='btn-service-reg btn-m mt-2'>등록</button>
+              </div>
+            </section>
+            <section class='RR'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'이용약관 히스토리'});</script>
+              <div class='w-full py-20 text-center'>
+                <p>리스트가 존재하지 않습니다.</p>
+              </div>
+            </section>
+            <section class='RR' data-seq='20230814164828169'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'현재 사용중인 개인정보 처리방침'});</script>
+              <div class='tbl-box'>
+                <table  class='table'>
+
+                  <colgroup>
+                    <col style='width: 15%' />
+                    <col style='width: 85%' />
+                  </colgroup>
+                  <tbody>
+                    {{#LOOP 3}}
+                      <tr>
+                        <th scope='row'>Label</th>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+              </div>
+              <div class='text-center mt-6'>
+                <button type='button' class='btn-privacy-modify btn-blue'>수정</button>
+              </div>
+            </section>
+            <section class='RR'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'개인정보 처리방침 히스토리'});</script>
+              <table class='table'>
+
+                <colgroup>
+                  <col style='width: 10%' />
+                  <col />
+                  <col style='width: 10%' />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope='col' class='text-center'>번호</th>
+                    <th scope='col' class='text-center'>수정일</th>
+                    <th scope='col' class='text-center'>관리</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#LOOP 5}}
+                    <tr>
+                      <td class='text-center'>{{number}}</td>
+                      <td class='text-center'>2022-11-11 07:54:11</td>
+                      <td class='text-center'>
+                        <button type='button' class='btn-privacy-detail btn-m'>상세보기</button>
+                      </td>
+                    </tr>
+                  {{/LOOP}}
+                </tbody>
+              </table>
+              <div class='w-full py-20 text-center'>
+                <p>현재 사용중인 마케팅 정보 수신 동의 약관이 존재하지 않습니다.</p>
+                <button type='button' class='btn-marketing-reg btn-m mt-2'>등록</button>
+              </div>
+            </section>
+            <section class='RR' data-seq='20230814165034932'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'이용약관 히스토리'});</script>
+              <div class='w-full py-20 text-center'>
+                <p>리스트가 존재하지 않습니다.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

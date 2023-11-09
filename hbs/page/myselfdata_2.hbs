@@ -1,0 +1,189 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 관심사정보 -->
+            <div>
+              <div class='tit-box'>
+                <h3 class='leading-[62px]'>관심사 정보</h3>
+              </div>
+              <table class='table TYPE2 mt-1' summary='관심사 정보'>
+                <caption>관심사 정보</caption>
+                <colgroup>
+                  <col class='w-[15%]'>
+                  <col class='w-[85%]'>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>관심사 항목 <span class='text-main-blue'>*</span></th>
+                    <td>
+                      <div class='divide-y-[1px] divide-solid divide-[#F1F2F7] space-y-[50px]'>
+                        <div>
+                          <button class='ml-[16px]'>
+                            <img src='../icon/2308281559.svg' alt='' />
+                          </button>
+                          <div class='mt-[10px]'>
+                            <article class='grid grid-cols-[auto_1fr]'>
+                              <button class='GrabBar'></button>
+                              <table class='border-table TYPE3' summary='관심사 서브 카테고리'>
+                                <caption>관심사 서브 카테고리</caption>
+                                <colgroup>
+                                  <col class='w-[15%]'>
+                                  <col class='w-[85%]'>
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th scope='row'>관심사 카테고리</th>
+                                    <td>
+                                      <input type='text' class='input-wrap TYPE2 w-[540px]' placeholder='메인 카테고리명을 입력해주세요.' />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope='row'>관심사 서브 카테고리</th>
+                                    <td>
+                                      <label class='label'>
+                                        <input type='checkbox'>
+                                        <span class='label-text whitespace-nowrap'>전체선택</span>
+                                      </label>
+                                      <div class='mt-[20px] space-y-[10px]'>
+                                        <div class='CenterLeft'>
+                                          <label class='label w-[84px]'>
+                                            <input type='checkbox'>
+                                            <span class='label-text whitespace-nowrap'>옵션 1</span>
+                                          </label>
+                                          <button class='cursor-grab'>
+                                            <img src='../icon/2308282211.svg' alt='' />
+                                          </button>
+                                          <input type='text' class='input-wrap TYPE2 w-[458px] ml-[6px]' placeholder='답변을 입력해주세요.' />
+                                          <button class='ml-[8px]'>
+                                            <label for='pc_image1' class='input-wrap IMG'></label>
+                                            <input type='file' id='pc_image1' class='absolute left-[-99999px]' />
+                                          </button>
+                                          <button class='ml-[14px]'>
+                                            <img src='../icon/2308281559.svg' alt='' />
+                                          </button>
+                                        </div>
+                                        <div class='CenterLeft'>
+                                          <label class='label w-[84px]'>
+                                            <input type='checkbox'>
+                                            <span class='label-text whitespace-nowrap'>옵션 2</span>
+                                          </label>
+                                          <button class='cursor-grab'>
+                                            <img src='../icon/2308282211.svg' alt='' />
+                                          </button>
+                                          <input type='text' class='input-wrap TYPE2 w-[458px] ml-[6px]' placeholder='답변을 입력해주세요.' />
+                                          <button class='ml-[8px]'>
+                                            <label for='pc_image2' class='input-wrap IMG'></label>
+                                            <input type='file' id='pc_image2' class='absolute left-[-99999px]' />
+                                          </button>
+                                          <button class='ml-[14px]'>
+                                            <img src='../icon/2308281600.svg' alt='' />
+                                          </button>
+                                        </div>
+                                      </div>
+                                      <div class='mt-[20px]'>
+                                        <button class='btn-m TYPE3'>선택항목 삭제</button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </article>
+                          </div>
+                        </div>
+                        <div class='pt-[10px]'>
+                          <button class='ml-[16px]'>
+                            <img src='../icon/2308281600.svg' alt='' />
+                          </button>
+                          <div class='mt-[10px]'>
+                            <article class='grid grid-cols-[auto_1fr]'>
+                              <button class='GrabBar'></button>
+                              <table class='border-table TYPE3' summary='관심사 서브 카테고리'>
+                                <caption>관심사 서브 카테고리</caption>
+                                <colgroup>
+                                  <col class='w-[15%]'>
+                                  <col class='w-[85%]'>
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th scope='row'>관심사 카테고리</th>
+                                    <td>
+                                      <input type='text' class='input-wrap TYPE2 w-[540px]' placeholder='메인 카테고리명을 입력해주세요.' />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope='row'>관심사 서브 카테고리</th>
+                                    <td>
+                                      <label class='label'>
+                                        <input type='checkbox'>
+                                        <span class='label-text whitespace-nowrap'>전체선택</span>
+                                      </label>
+                                      <div class='mt-[20px] space-y-[10px]'>
+                                        <div class='CenterLeft'>
+                                          <label class='label w-[84px]'>
+                                            <input type='checkbox'>
+                                            <span class='label-text whitespace-nowrap'>옵션 1</span>
+                                          </label>
+                                          <button class='cursor-grab'>
+                                            <img src='../icon/2308282211.svg' alt='' />
+                                          </button>
+                                          <input type='text' class='input-wrap TYPE2 w-[458px] ml-[6px]' placeholder='답변을 입력해주세요.' />
+                                          <button class='ml-[8px]'>
+                                            <label for='pc_image3' class='input-wrap IMG'></label>
+                                            <input type='file' id='pc_image3' class='absolute left-[-99999px]' />
+                                          </button>
+                                          <button class='ml-[14px]'>
+                                            <img src='../icon/2308281559.svg' alt='' />
+                                          </button>
+                                        </div>
+                                        <div class='CenterLeft'>
+                                          <label class='label w-[84px]'>
+                                            <input type='checkbox'>
+                                            <span class='label-text whitespace-nowrap'>옵션 2</span>
+                                          </label>
+                                          <button class='cursor-grab'>
+                                            <img src='../icon/2308282211.svg' alt='' />
+                                          </button>
+                                          <input type='text' class='input-wrap TYPE2 w-[458px] ml-[6px]' placeholder='답변을 입력해주세요.' />
+                                          <button class='ml-[8px]'>
+                                            <label for='pc_image4' class='input-wrap IMG'></label>
+                                            <input type='file' id='pc_image4' class='absolute left-[-99999px]' />
+                                          </button>
+                                          <button class='ml-[14px]'>
+                                            <img src='../icon/2308281600.svg' alt='' />
+                                          </button>
+                                        </div>
+                                      </div>
+                                      <div class='mt-[20px]'>
+                                        <button class='btn-m TYPE3'>선택항목 삭제</button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //관심사정보 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

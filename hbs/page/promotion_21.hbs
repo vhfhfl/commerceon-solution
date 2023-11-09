@@ -1,0 +1,186 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 할인코드검색 -->
+            <div class='tbl-box'>
+              <div class='tit-box'><h3>할인 코드 검색</h3></div><!-- 2023-01-20-LSE -->
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:15%' />
+                  <col style='width:85%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>코드 검색</th>
+                    <td>
+                      <select class='select-wrap' name=''>
+                        <option value=''>선택</option>
+                        <option value=''>할인코드명</option>
+                        <option value=''>코드정보</option>
+                        <option value=''>등록자</option>
+                      </select>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>코드 혜택</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' name='' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>상품 할인 쿠폰</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>배송비 할인 쿠폰</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>포인트 지급 쿠폰</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>기간 검색</th>
+                    <td>
+                      <select class='select-wrap align-middle' name=''>
+                        <option value=''>선택</option>
+                        <option value=''>등록일</option>
+                        <option value=''>쿠폰 사용일</option>
+                      </select>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' placeholder='placeholder' />
+                      </span>
+                      <span class='inline-block px-1'>~</span>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' placeholder='placeholder' />
+                      </span>
+                      <div class='period-tab'>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>오늘</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' checked='' />
+                          <span class='label-text'>7일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>15일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>3개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1년</span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>코드 유형</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' name='' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>1회용 코드</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>공용 코드</span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //할인코드검색 -->
+            <div class='text-center mt-6'>
+              <button type='button' class='btn-m'>검색</button>
+              <button type='button' class='btn-white-m'>초기화</button>
+            </div>
+            <!-- 탭메뉴 -->
+            <div class='tab-promotion-detail tabmenu mt-6'>
+              <div class='tab'>
+                <ul>
+                  <li class='on'>전체 (10)</li>
+                  <li>발급대기/중지 (3)</li>
+                  <li>발급중 (2)</li>
+                  <li>발급종료 (5)</li>
+                </ul>
+              </div>
+              <div class='tab-cont-section'>
+                <!-- 탭메뉴(1) - 전체 -->
+                <div class='pt-5 hidden on'>
+                  <div class='sorting-box flex justify-between'>
+                    <div class='left-box'>
+                      <span class='inline-block mt-6'>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</span>
+                    </div>
+                    <div class='right-box'>
+                      <select class='select-wrap' name=''>
+                        <option value=''>최근 등록 날짜</option>
+                        <option value=''>오래된 등록 날짜</option>
+                        <option value=''>할인 혜택 높은 순</option>
+                        <option value=''>할인 혜택 낮은 순</option>
+                        <option value=''>발급 수 높은 순</option>
+                        <option value=''>발급 수 낮은 순</option>
+                      </select>
+                      <select class='select-wrap' name=''>
+                        <option value=''>10개씩 보기</option>
+                        <option value=''>20개씩 보기</option>
+                        <option value=''>30개씩 보기</option>
+                        <option value=''>50개씩 보기</option>
+                        <option value=''>100개씩 보기</option>
+                        <option value=''>150개씩 보기</option>
+                        <option value=''>200개씩 보기</option>
+                        <option value=''>300개씩 보기</option>
+                        <option value=''>500개씩 보기</option>
+                        <option value=''>1000개씩 보기</option>
+                        <option value=''>5000개씩 보기</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div id='app' class='mt-1'>
+                    <button type='button' class='btn-issuance btn-m'>발급관리 (레이어 테스트 버튼 입니다.)</button>
+                  </div>
+                  <div class='sorting-box mt-1'>
+                    <span class='inline-block mr-1'>* 선택 항목</span>
+                    <button type='button' class='btn-warning-m'>삭제</button>
+                  </div>
+                </div>
+                <!-- //탭메뉴(1) - 전체 -->
+              </div>
+            </div>
+            <!-- //탭메뉴 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

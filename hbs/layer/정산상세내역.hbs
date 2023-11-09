@@ -1,0 +1,76 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1300px]">
+    <div class="layer-header">
+      <h1>정산 상세 내역</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">정산 내역</h2>
+      <div class="tbl-box">
+        <table class="table" summary="정산 내역">
+
+          <colgroup>
+            <col style="width:15%">
+            <col style="width:35%">
+            <col style="width:15%">
+            <col style="width:35%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row">공급사</th>
+            <td colspan="3">(주)커머스온</td>
+          </tr>
+          <tr>
+            <th scope="row">정산 상태</th>
+            <td>확정</td>
+            <th scope="row">지급 상태</th>
+            <td>지급 완료</td>
+          </tr>
+          <tr>
+            <th scope="row">세금계산서</th>
+            <td>미발급</td>
+            <th scope="row">결제 일시</th>
+            <td>22/05/01 11:00</td>
+          </tr>
+          <tr>
+            <th scope="row">정산 확정일</th>
+            <td>22/05/09</td>
+            <th scope="row">지급 완료일</th>
+            <td>22/07/31</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="app" class="mt-1"></div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">관리자 로그</h2>
+      <div class="tbl-box">
+        <table class="table" summary="관리자 로그">
+
+          <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+          </colgroup>
+          <thead>
+          <tr>
+            <th scope="col" class="text-center">처리 일자</th>
+            <th scope="col" class="text-center">처리 계정</th>
+            <th scope="col" class="text-center">상태</th>
+            <th scope="col" class="text-center">주문 상태</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="text-center">22/05/08 11:00</td>
+            <td class="text-center">ko.kw</td>
+            <td class="text-center">미확정/미지급 → 확정/미지급</td>
+            <td class="text-center">배송완료</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

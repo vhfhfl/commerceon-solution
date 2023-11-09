@@ -1,0 +1,237 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1300px]">
+    <div class="layer-header">
+      <h1>회원 검색</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <!-- 회원검색 -->
+      <div class="tbl-box">
+        <table class="table" summary="회원 선택">
+
+          <colgroup>
+            <col style="width:20%">
+            <col style="width:80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row">회원 검색</th>
+            <td>
+              <select class="select-wrap">
+                <option value="">선택</option>
+                <option value="">아이디</option>
+                <option value="">이름</option>
+              </select>
+              <input type="text" class="input-wrap" placeholder="placeholder"/>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">일자 기준 검색</th>
+            <td>
+              <select class="select-wrap align-middle" name="">
+                <option value="">선택</option>
+                <option value="">회원가입일</option>
+                <option value="">최종로그인일</option>
+                <option value="">휴면해제일</option>
+              </select>
+              <span class="input-calendar-wrap">
+                <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                <input type="text" class="inline-block float-right w-[76px] h-[38px]" placeholder="placeholder"/>
+              </span>
+              <span class="inline-block px-1">~</span>
+              <span class="input-calendar-wrap">
+                <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                <input type="text" class="inline-block float-right w-[76px] h-[38px]" placeholder="placeholder"/>
+              </span>
+              <div class="period-tab">
+                <label class="label">
+                  <input type="radio" name="period"/>
+                  <span class="label-text">오늘</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period" checked/>
+                  <span class="label-text">7일</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period"/>
+                  <span class="label-text">15일</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period"/>
+                  <span class="label-text">1개월</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period"/>
+                  <span class="label-text">3개월</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name="period"/>
+                  <span class="label-text">1년</span>
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">금액 기준 검색</th>
+            <td>
+              <select class="select-wrap" name="">
+                <option value="">선택</option>
+                <option value="">주문금액</option>
+                <option value="">예치금</option>
+                <option value="">포인트</option>
+              </select>
+              <input type="text" class="input-wrap mr-1" placeholder="placeholder"/>
+              <span>원 ~</span>
+              <input type="text" class="input-wrap mx-1" placeholder="placeholder"/>
+              <span>원</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">건수 기준 검색</th>
+            <td>
+              <select class="select-wrap" name="">
+                <option value="">선택</option>
+                <option value="">주문수</option>
+                <option value="">방문수</option>
+                <option value="">리뷰작성수</option>
+              </select>
+              <input type="text" class="input-wrap mr-1" placeholder="placeholder"/>
+              <span>건 ~</span>
+              <input type="text" class="input-wrap mx-1" placeholder="placeholder"/>
+              <span>건</span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 회원검색 -->
+      <!-- 회원검색 > 상세검색 -->
+      <div class="open-btn mt-1 mb-4 text-right">
+        <button type="button" class="btn px-4 py-1.5 text-xs font-bold">상세검색 열기 <i class="fa-solid fa-caret-down"></i></button>
+      </div>
+      <div class="detail-search-wrap hidden">
+        <div class="tbl-box">
+          <table class="table" summary="상세 검색">
+
+            <colgroup>
+              <col style="width:15%">
+              <col style="width:85%">
+            </colgroup>
+            <tbody>
+            <tr>
+              <th scope="row">SMS 수신 동의</th>
+              <td>
+                <label class="label">
+                  <input type="radio" name="" checked/>
+                  <span class="label-text">전체</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name=""/>
+                  <span class="label-text">수신</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name=""/>
+                  <span class="label-text">수신거부</span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">이메일 수신 동의</th>
+              <td>
+                <label class="label">
+                  <input type="radio" name="" checked/>
+                  <span class="label-text">전체</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name=""/>
+                  <span class="label-text">수신</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name=""/>
+                  <span class="label-text">수신거부</span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">가입 경로</th>
+              <td>
+                <label class="label">
+                  <input type="radio" name=""/>
+                  <span class="label-text">전체</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name=""/>
+                  <span class="label-text">PC</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name=""/>
+                  <span class="label-text">Mobile</span>
+                </label>
+                <label class="label">
+                  <input type="radio" name=""/>
+                  <span class="label-text">APP</span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">장기 미로그인 회원</th>
+              <td>
+                <input type="text" class="input-wrap" placeholder="placeholder"/>
+                <span class="ml-1">일 이상 로그인하지 않은 회원</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">휴면 전환 예정 회원</th>
+              <td>
+                <span>휴면 전환</span>
+                <select class="select-wrap mx-1" name="">
+                  <option value="">7</option>
+                  <option value="">30</option>
+                  <option value="">60</option>
+                </select>
+                <span>일 이내 회원</span>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <button type="button" class="btn-m">검색</button>
+      </div>
+      <!-- //회원검색 > 상세검색 -->
+      <h2 class="text-sub-blue-500 mt-6 mb-2">선택 회원</h2>
+      <div class="w-full">
+        <span class="inline-block">아이디1
+          <button type="button" class="w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1"><i class="fa-solid fa-xmark"></i></button>
+        </span>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">회원 리스트</h2>
+      <div class="sorting-box flex justify-between">
+        <div class="left-box">
+          <span class="inline-block mt-6">조회 <span class="text-red">0</span>건 / 전체 <span class="text-red">0</span>건</span>
+        </div>
+        <div class="right-box">
+          <select class="select-wrap" name="">
+            <option value="">10개씩 보기</option>
+            <option value="">20개씩 보기</option>
+            <option value="">30개씩 보기</option>
+            <option value="">50개씩 보기</option>
+            <option value="">100개씩 보기</option>
+            <option value="">150개씩 보기</option>
+            <option value="">200개씩 보기</option>
+            <option value="">300개씩 보기</option>
+            <option value="">500개씩 보기</option>
+            <option value="">1000개씩 보기</option>
+            <option value="">5000개씩 보기</option>
+          </select>
+        </div>
+      </div>
+      <div id="app" class="mt-1"></div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">확인</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,103 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230814165510534'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'관리자 검색'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <div class='H-BOX'>
+                          <select class='select-wrap'>
+                            <option>선택</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                          </select>
+                          <input type='text' class='input-wrap' placeholder='placeholder' />
+                          <button type='button' class='btn-m'>검색</button>
+                        </div>
+                      </td>
+                    </tr>
+                    {{#LOOP 2}}
+                      <tr>
+                        <th scope='col'>Label</th>
+                        <td>
+                          <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section data-seq='20230814165625283'>
+              <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt1:'관리자 리스트'});</script>
+              <div class='tbl-box'>
+                <table class='table center'>
+                  <thead>
+                    <tr>
+                      <th>번호</th>
+                      <th>구분</th>
+                      <th>계정 상태</th>
+                      <th>아이디/닉네임</th>
+                      <th>이름</th>
+                      <th>이메일</th>
+                      <th>연락처</th>
+                      <th>등록일</th>
+                      <th>최종로그인</th>
+                      <th>관리</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{#LOOP 3}}
+                      <tr>
+                        <td class='text-center'>{{number}}</td>
+                        <td class='text-center'>본사</td>
+                        <td class='text-center'>로그인 제한<br /><span class='text-red'>(2022-11-08 23:55:13)</span></td>
+                        <td class='text-center'>
+                          <button type='button' class='btn-authority'>test/테스트</button>
+                        </td>
+                        <td class='text-center'>한아름</td>
+                        <td class='text-center'>test@naver.com</td>
+                        <td class='text-center'>010-1111-0101</td>
+                        <td class='text-center'>2022-04-05 06:01:22</td>
+                        <td class='text-center'>2022-04-05 06:01:22</td>
+                        <td class='text-center'>
+                          <div class='H-BOX'>
+                            <button type='button' class='btn-white-m'>정보 수정</button>
+                            <button type='button' class='btn-white-m btn-authority-setting'>권한 설정</button>
+                          </div>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+                <script>Include('/hbs/component/BtnBox_1-b.hbs');</script>
+                <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

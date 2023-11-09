@@ -1,0 +1,343 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 가입정보조회 -->
+            <div>
+              <div class='tit-box'><h3>가입 정보 조회</h3></div>
+              <div class='TAB-UI tab mt-1'>
+                <ul>
+                  <li data-tab-key='f766f1b0-bc15-4384-ab95-7f2c54246a17' onclick='ACTIVE_TAB(this);' class='on'>시간</li>
+                  <li data-tab-key='28442577-0e11-40af-8acb-9ee7771d01a3' onclick='ACTIVE_TAB(this);'>일</li>
+                  <li data-tab-key='de4203e9-c2ab-4bc7-b622-58e3ce974d11' onclick='ACTIVE_TAB(this);'>요일</li>
+                  <li data-tab-key='046ca2f9-9c21-44fb-895a-89948ea46425' onclick='ACTIVE_TAB(this);'>월</li>
+                  <li data-tab-key='3fc5c6ec-4bdf-4018-89cb-8d85848b1835' onclick='ACTIVE_TAB(this);'>년</li>
+                </ul>
+              </div>
+              <div class='mt-[20px]'>
+                <div data-tab-child='f766f1b0-bc15-4384-ab95-7f2c54246a17' class='on'>
+                  <table class='table' >
+
+                    <colgroup>
+                      <col class='w-[15%]' />
+                      <col class='w-[85%]' />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope='row'>기간</th>
+                        <td>
+                          <span class='input-calendar-wrap'>
+                            <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                            <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                          </span>
+                          <span>~</span>
+                          <span class='input-calendar-wrap'>
+                            <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                            <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div data-tab-child='28442577-0e11-40af-8acb-9ee7771d01a3'>2</div>
+                <div data-tab-child='de4203e9-c2ab-4bc7-b622-58e3ce974d11'>3</div>
+                <div data-tab-child='046ca2f9-9c21-44fb-895a-89948ea46425'>4</div>
+                <div data-tab-child='3fc5c6ec-4bdf-4018-89cb-8d85848b1835'>5</div>
+              </div>
+              <div class='mt-1 text-center'>
+                <button type='button' class='btn-m'>검색</button>
+              </div>
+            </div>
+            <!-- //가입정보조회 -->
+
+            <!-- 가입자수 -->
+            <div class='mt-10'>
+              <div>
+                <div class='tit-box'><h3>1. 디바이스별</h3></div>
+                <div class='mt-1'>
+                  <table class='table w-1/2' >
+
+                    <colgroup>
+                      <col class='w-1/4' />
+                      <col class='w-1/4' />
+                      <col class='w-1/4' />
+                      <col class='w-1/4' />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope='col' class='text-center'>총 가입자수</th>
+                        <th scope='col' class='text-center'>PC</th>
+                        <th scope='col' class='text-center'>Mobile</th>
+                        <th scope='col' class='text-center'>Table</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class='text-center'>100,000</td>
+                        <td class='text-center'>30,000<br />(30%)</td>
+                        <td class='text-center'>69,500<br />(69.5%)</td>
+                        <td class='text-center'>500<br />(0.5%)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class='mt-7'>
+                <div class='tit-box'><h3>2. APP OS별</h3></div>
+                <div class='mt-1'>
+                  <table class='table w-1/2' >
+
+                    <colgroup>
+                      <col class='w-1/4' />
+                      <col class='w-1/4' />
+                      <col class='w-1/4' />
+                      <col class='w-1/4' />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope='col' class='text-center'>총 가입자수</th>
+                        <th scope='col' class='text-center'>PC</th>
+                        <th scope='col' class='text-center'>Mobile</th>
+                        <th scope='col' class='text-center'>기타</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class='text-center'>100,000</td>
+                        <td class='text-center'>700<br />(30%)</td>
+                        <td class='text-center'>250<br />(70%)</td>
+                        <td class='text-center'>50<br />(5%)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class='mt-7'>
+                <div class='tit-box'><h3>3. 채널별</h3></div>
+                <div class='mt-1'>
+                  <table class='table w-1/2' >
+
+                    <colgroup>
+                      <col class='w-1/6' />
+                      <col class='w-1/6' />
+                      <col class='w-1/6' />
+                      <col class='w-1/6' />
+                      <col class='w-1/6' />
+                      <col class='w-1/6' />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope='col' class='text-center whitespace-nowrap'>총 가입자수</th>
+                        <th scope='col' class='text-center'>일반 가입</th>
+                        <th scope='col' class='text-center'>카카오</th>
+                        <th scope='col' class='text-center'>네이버</th>
+                        <th scope='col' class='text-center'>페이스북</th>
+                        <th scope='col' class='text-center'>애플</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class='text-center'>100,000</td>
+                        <td class='text-center'>70000<br />(70%)</td>
+                        <td class='text-center'>15,500<br />(15%)</td>
+                        <td class='text-center'>10,000<br />(10%)</td>
+                        <td class='text-center'>3,000<br />(3%)</td>
+                        <td class='text-center'>2000<br />(2%)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- //가입자수 -->
+
+            <!-- 시간대별평균신규가입자 -->
+            <div class='mt-7'>
+              <div class='tit-box'><h3>시간대별 평균 신규 가입자</h3></div>
+              <div class='mt-1'>
+                <img src='../images/graph.jpg' />
+              </div>
+              <div class='mt-7'>
+                <img src='../images/graph.jpg' />
+              </div>
+            </div>
+            <!-- //시간대별평균신규가입자 -->
+
+            <!-- 가입정보 -->
+            <div class='mt-7'>
+              <table class='table' >
+
+                <thead>
+                  <tr>
+                    <th scope='col' class='text-center'>시간대</th>
+                    <th scope='col' class='text-center'>PC</th>
+                    <th scope='col' class='text-center'>Mobile<br />Web</th>
+                    <th scope='col' class='text-center'>Mobile<br />App</th>
+                    <th scope='col' class='text-center'>Tablet</th>
+                    <th scope='col' class='text-center'>일반가입</th>
+                    <th scope='col' class='text-center'>카카오</th>
+                    <th scope='col' class='text-center'>네이버</th>
+                    <th scope='col' class='text-center'>페이스북</th>
+                    <th scope='col' class='text-center'>애플</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='text-center'>00:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>01:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>02:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>03:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>04:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>05:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>06:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>07:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>08:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>09:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                  <tr>
+                    <td class='text-center'>10:00</td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                    <td class='text-center'></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='mt-1 text-right'>
+                <button type='button' class='btn-white-m'>
+                  <span>검색 다운로드</span>
+                  <span class='icon-download inline-block w-[16px] h-[16px] align-sub bg-icon-download bg-center bg-no-repeat'></span>
+                </button>
+              </div>
+            </div>
+            <!-- //가입정보 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

@@ -1,0 +1,128 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[900px]">
+    <div class="layer-header">
+      <h1>상품 추가</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div class="tit-box text-lg font-bold mb-2"><h3>주문정보</h3></div>
+      <table class="table" summary="주문정보">
+
+        <colgroup>
+          <col style="width:15%">
+          <col style="width:35%">
+          <col style="width:15%">
+          <col style="width:35%">
+        </colgroup>
+        <tbody>
+        <tr>
+          <th scope="row" class="text-center">주문번호</th>
+          <td class="text-center">1231403401341340</td>
+          <th scope="row" class="text-center">주문일시</th>
+          <td class="text-center">2022년 04월 00일 00시 00분</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="tit-box text-lg font-bold mt-7 mb-2"><h3>결제정보</h3></div>
+      <table class="table" summary="결제정보">
+
+        <colgroup>
+          <col style="width:20%">
+          <col style="width:20%">
+          <col style="width:20%">
+          <col style="width:20%">
+          <col style="width:20%">
+        </colgroup>
+        <thead>
+        <tr>
+          <th scope="row" class="text-center">상품 판매 금액</th>
+          <th scope="row" class="text-center">총 배송비</th>
+          <th scope="row" class="text-center">총 할인 금액</th>
+          <th scope="row" class="text-center">총 결제 금액</th>
+          <th scope="row" class="text-center">총 적립 금액</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="text-center">30,000원</td>
+          <td class="text-center">2,500원</td>
+          <td class="text-center">1,000원</td>
+          <td class="text-center">22,500원</td>
+          <td class="text-center">0원</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="tit-box text-lg font-bold mt-7 mb-2"><h3>주문상품</h3></div>
+      <div id="app"></div>
+      <div class="tit-box text-lg font-bold mt-7 mb-2"><h3>추가상품</h3></div>
+      <div id="app"></div>
+      <div class="flex justify-between mt-7">
+        <button type="button" class="btn-warning-m"><i class="fa-solid fa-xmark"></i> 선택 상품 삭제</button>
+        <button type="button" class="btn-inner-good-add btn-m"><i class="fa-solid fa-plus"></i> 상품 추가</button>
+      </div>
+      <div class="mt-7 text-center">
+        <button type="button" class="btn-m">결제 금액 계산</button>
+      </div>
+      <div class="mt-7 border-t border-t-sub-blue-200 border-dashed">
+        <div class="tit-box text-lg font-bold mt-7 mb-2"><h3>상품추가 결제금액</h3></div>
+        <div class="tbl-box">
+          <table class="table" summary="상품추가 결제금액">
+
+            <colgroup>
+              <col style="width:20%">
+              <col style="width:80%">
+            </colgroup>
+            <tbody>
+            <tr>
+              <th scope="row">매장분류</th>
+              <td>
+                <div class="flex justify-between">
+                  <select class="select-wrap flex-1 mr-2" name="">
+                    <option value="">대분류</option>
+                  </select>
+                  <select class="select-wrap flex-1 mr-2" name="">
+                    <option value="">중분류</option>
+                  </select>
+                  <select class="select-wrap flex-1 mr-2" name="">
+                    <option value="">소분류</option>
+                  </select>
+                  <select class="select-wrap flex-1" name="">
+                    <option value="">세분류</option>
+                  </select>
+                </div>
+                <div class="flex justify-between mt-2">
+                  <select class="select-wrap !w-[155px]" name="">
+                    <option value="">상품명</option>
+                  </select>
+                  <input type="text" class="input-wrap mx-2 flex-1">
+                  <button class="btn-m w-[155px]">검색</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">결제금액</th>
+              <td>
+                <p>
+                  기존 상품 금액 : 40,000 원<br/>
+                  추가 상품 금액 : 40,000 원<br/>
+                  <br/>
+                  총 상품 금액 : <span class="text-red">80,000원</span>
+                </p>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-7">
+          <h2 class="text-sub-blue-500">목록 (총 1개)</h2>
+          <div class="mt-2" id="app"></div>
+        </div>
+      </div>
+      <div class="layer-footer">
+        <button type="button" class="btn-blue">다음</button>
+        <button type="button" class="btn-white-l">취소</button>
+      </div>
+    </div>
+  </div>
+</div>

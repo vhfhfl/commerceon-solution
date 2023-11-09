@@ -1,0 +1,242 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 검색 조건 -->
+            <div class='tit-box'><h3>검색 조건</h3></div>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:15%' />
+                  <col style='width:35%' />
+                  <col style='width:15%' />
+                  <col style='width:35%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>검색어</th>
+                    <td>
+                      <select class='select-wrap !w-[147px]'>
+                        <option>선택</option>
+                        <option>전체</option>
+                        <option>수신자</option>
+                        <option>내용</option>
+                      </select>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                      <button type='button' class='btn-m'>검색</button>
+                      <button type='button' class='btn-white-m'>초기화</button>
+                    </td>
+                    <th scope='row'>발송구분</th>
+                    <td>
+                      <label class='label mr-5'>
+                        <input type='radio' name='division' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='division' />
+                        <span class='label-text'>SMS</span>
+                      </label>
+                      <label class='label'>
+                        <input type='radio' name='division' />
+                        <span class='label-text'>LMS</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>발송유형</th>
+                    <td>
+                      <label class='label mr-5'>
+                        <input type='radio' name='category' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='category' />
+                        <span class='label-text'>자동</span>
+                      </label>
+                      <label class='label'>
+                        <input type='radio' name='category' />
+                        <span class='label-text'>수동</span>
+                      </label>
+                    </td>
+                    <th scope='row'>발송상태</th>
+                    <td>
+                      <select class='select-wrap !w-[147px]'>
+                        <option>선택</option>
+                        <option>결과수신대기</option>
+                        <option>발송성공</option>
+                        <option>발송실패</option>
+                        <option>발송대기</option>
+                        <option>예약취소</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>발송일</th>
+                    <td colspan='3'>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <span class='inline-block px-1'>~</span>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <div class='period-tab'>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>오늘</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>7일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>15일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>3개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' checked='' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //검색 조건 -->
+            <!-- SMS 발송 리스트 -->
+            <div class='tit-box mt-10'><h3>SMS 발송 리스트</h3></div>
+            <div class='sorting-box flex justify-between my-3'>
+              <div class='left-box'>
+                <span class='inline-block mt-6'>검색 <span class='text-red'>0</span>명 / 전체 <span class='text-red'>0</span>명</span>
+              </div>
+              <div class='right-box'>
+                <select class='select-wrap w-[125px]'>
+                  <option>10개씩 보기</option>
+                  <option>20개씩 보기</option>
+                  <option>30개씩 보기</option>
+                  <option>50개씩 보기</option>
+                  <option>100개씩 보기</option>
+                  <option>150개씩 보기</option>
+                  <option>200개씩 보기</option>
+                  <option>300개씩 보기</option>
+                  <option>500개씩 보기</option>
+                  <option>1000개씩 보기</option>
+                  <option>5000개씩 보기</option>
+                </select>
+              </div>
+            </div>
+            <table class='table my-2' >
+
+              <colgroup>
+                <col style='width:4%' />
+                <col style='width:6%' />
+                <col style='width:6%' />
+                <col style='width:10%' />
+                <col style='width:4%' />
+                <col style='width:10%' />
+                <col style='width:8%' />
+                <col style='width:32%' />
+                <col style='width:12%' />
+                <col style='width:8%' />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope='row' class='text-center'>번호</th>
+                  <th scope='row' class='text-center'>발송유형</th>
+                  <th scope='row' class='text-center'>발송상태</th>
+                  <th scope='row' class='text-center'><strong>구분</strong> / (발송 건수)</th>
+                  <th scope='row' class='text-center'>구분</th>
+                  <th scope='row' class='text-center'>수신자</th>
+                  <th scope='row' class='text-center'>사용 포인트</th>
+                  <th scope='row' class='text-center'>내용</th>
+                  <th scope='row' class='text-center'>발송일시</th>
+                  <th scope='row' class='text-center'>상세보기</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class='text-center'>1</td>
+                  <td class='text-center'>자동</td>
+                  <td class='text-center'>발송성공</td>
+                  <td class='text-center'><strong>개인</strong> / (1건)</td>
+                  <td class='text-center'>SMS</td>
+                  <td class='text-center'>테스트<br />010-1111-2222</td>
+                  <td class='text-center'>1</td>
+                  <td class='text-center'>
+                    <div class='w-[475px] whitespace-nowrap overflow-hidden text-ellipsis'>안녕하세요 이지용 고객님 회원가입을 축하드립니다, 플러스 친구</div>
+                  </td>
+                  <td class='text-center'>2024-01-01 11:12:42</td>
+                  <td class='text-center'>
+                    <button type='button' class='btn-sms-detail-view btn-m w-full whitespace-nowrap'>상세보기</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class='text-center'>2</td>
+                  <td class='text-center'>수동</td>
+                  <td class='text-center'>발송실패</td>
+                  <td class='text-center'><strong>단체</strong> / (1,222건)</td>
+                  <td class='text-center'>LMS</td>
+                  <td class='text-center'>테스트2<br />010-2222-1111</td>
+                  <td class='text-center'>3</td>
+                  <td class='text-center'>
+                    <div class='w-[475px] whitespace-nowrap overflow-hidden text-ellipsis'>커머스온 5월 이벤트 안내 테스트 브랜드 50% 할인 테스트 브랜드 3</div>
+                  </td>
+                  <td class='text-center'>2024-04-01 21:22:12</td>
+                  <td class='text-center'>
+                    <button type='button' class='btn-sms-detail-view-all btn-m w-full whitespace-nowrap'>상세보기(전체)</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class='mt-2 text-right'>
+              <button type='button' class='btn-m'><i class='fa-solid fa-xmark'></i> 선택 삭제</button>
+            </div>
+            <!-- //SMS 발송 리스트 -->
+            <!-- paging -->
+            <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='201c51a2-73dc-4461-8c7c-f02daa9c48c3'>
+              <div class='paging new'>
+                <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                <a href='#' class='prev btn-paging w-[50px]'>
+                  <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                  <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                </a>
+                <span class='now btn-paging leading-[26px]'>1</span>
+                <a href='#' class='btn-paging leading-[26px]'>2</a>
+                <a href='#' class='btn-paging leading-[26px]'>3</a>
+                <a href='#' class='btn-paging leading-[26px]'>4</a>
+                <a href='#' class='next btn-paging w-[50px]'>
+                  <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                  <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                </a>
+                <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+              </div>
+            </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+            <!-- //paging -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

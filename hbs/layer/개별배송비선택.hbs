@@ -1,0 +1,79 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[800px]">
+    <div class="layer-header">
+      <h1>개별 배송비 선택</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <table summary="배송비 조건" class="table">
+
+        <thead>
+        <tr>
+          <th scope="col" class="text-center">선택</th>
+          <th scope="col" class="text-center">배송비조건내용</th>
+          <th scope="col" class="text-center">공급사</th>
+          <th scope="col" class="text-center">방식</th>
+          <th scope="col" class="text-center">기본배송비</th>
+          <th scope="col" class="text-center">유형</th>
+          <th scope="col" class="text-center">유형 상세</th>
+          <th scope="col" class="text-center">등록일</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="text-center">
+            <label class="label">
+              <input type="radio">
+              <span class="label-text"></span>
+            </label>
+          </td>
+          <td class="text-center">전상품 무료 배송</td>
+          <td class="text-center">전체</td>
+          <td class="text-center">택배</td>
+          <td class="text-center">
+            <label class="label">
+              <input type="checkbox">
+              <span class="label-text"></span>
+            </label>
+          </td>
+          <td class="text-center">무료</td>
+          <td class="text-center">0원</td>
+          <td class="text-center">2022-04-01</td>
+        </tr>
+        <tr>
+          <td class="text-center">
+            <label class="label">
+              <input type="radio">
+              <span class="label-text"></span>
+            </label>
+          </td>
+          <td class="text-center">3만원 이상 무료</td>
+          <td class="text-center">본사</td>
+          <td class="text-center">택배</td>
+          <td class="text-center"></td>
+          <td class="text-center">금액별 배송비</td>
+          <td class="text-center">~30,000원/배송비3,000원<br>30,000원~/배송비 0원</td>
+          <td class="text-center">2022-04-04</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="pt-2">
+        <label class="label">
+          <input type="radio" name="">
+          <span class="label-text">도서/산간 추가 요금 부과</span>
+        </label>
+        <label class="label">
+          <input type="radio" name="">
+          <span class="label-text">도서/산간 추가 요금 부과하지 않음</span>
+        </label>
+      </div>
+      <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+      <div class="text-center py-4">
+        <button class="btn-blue">적용</button>
+        <button class="btn-white-l">취소</button>
+      </div>
+      <div class="text-red mt-1">* 배송비를 추가하거나 수정/삭제하려는 경우 상품 관리 > 배송비 관리 메뉴에서 처리 가능.</div>
+    </div>
+  </div>
+</div>

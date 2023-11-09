@@ -1,0 +1,218 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 설문정보 -->
+            <div>
+              <div class='tit-box'>
+                <h3 class='leading-[62px]'>설문정보</h3>
+              </div>
+              <table class='table TYPE2 mt-1' summary='설문정보'>
+                <caption>설문정보</caption>
+                <colgroup>
+                  <col class='w-[15%]'>
+                  <col class='w-[85%]'>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>설문 제목 <span class='text-[#00B5EE]'>*</span></th>
+                    <td>
+                      <input type='text' class='input-wrap TYPE2 w-[540px]' placeholder='데이터 수집 요청명을 입력해주세요.' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>설문 설명</th>
+                    <td>
+                      <input type='text' class='input-wrap TYPE2 w-[540px]' placeholder='데이터 수집 요청명을 입력해주세요.' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>설문 항목 <span class='text-[#00B5EE]'>*</span></th>
+                    <td>
+                      <div class='divide-y-[1px] divide-solid divide-[#F1F2F7] space-y-[50px]'>
+                        <div>
+                          <article class='flex items-center justify-between'>
+                            <button class='ml-[16px]'>
+                              <img src='../icon/2308281559.svg' alt='' />
+                            </button>
+                            <select class='select-wrap'>
+                              <option>단답형</option>
+                              <option>장문형</option>
+                              <option>객관식질문</option>
+                              <option>체크박스</option>
+                              <option>드롭다운</option>
+                            </select>
+                          </article>
+                          <div class='mt-[10px]'>
+                            <article class='grid grid-cols-[auto_1fr]'>
+                              <button class='GrabBar'></button>
+                              <table class='border-table TYPE3' summary='설문항목'>
+                                <caption>설문항목</caption>
+                                <colgroup>
+                                  <col class='w-[15%]'>
+                                  <col class='w-[85%]'>
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th scope='row'>단답형 질문</th>
+                                    <td>
+                                      <input type='text' class='input-wrap TYPE2 w-[540px]' value='커머스 플랫폼 중 가장 선호하는 브랜드가 무엇입니까?' />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope='row'>이미지</th>
+                                    <td>
+                                      <label for='pc_file1' class='input-wrap FILE'>파일첨부</label>
+                                      <input type='file' id='pc_file1' class='absolute left-[-99999px]' />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope='row'>단답형 답변</th>
+                                    <td>
+                                      <label class='label'>
+                                        <input type='checkbox'>
+                                        <span class='label-text'>필수</span>
+                                      </label>
+                                      <input type='text' class='input-wrap TYPE2 w-[458px] ml-[34px]' placeholder='답변을 입력해주세요.' />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </article>
+                          </div>
+                        </div>
+                        <div class='pt-[10px]'>
+                          <article class='flex items-center justify-between'>
+                            <button class='ml-[16px]'>
+                              <img src='../icon/2308281600.svg' alt='' />
+                            </button>
+                            <select class='select-wrap'>
+                              <option>단답형</option>
+                              <option>장문형</option>
+                              <option>객관식질문</option>
+                              <option>체크박스</option>
+                              <option>드롭다운</option>
+                            </select>
+                          </article>
+                          <div class='mt-[10px]'>
+                            <article class='grid grid-cols-[auto_1fr]'>
+                              <button class='GrabBar'></button>
+                              <table class='border-table TYPE3' summary='설문항목'>
+                                <caption>설문항목</caption>
+                                <colgroup>
+                                  <col class='w-[15%]'>
+                                  <col class='w-[85%]'>
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                    <th scope='row'>드롭다운 질문</th>
+                                    <td>
+                                      <input type='text' class='input-wrap TYPE2 w-[540px]' placeholder='질문을 입력해주세요.' />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope='row'>이미지</th>
+                                    <td>
+                                      <label for='pc_file2' class='input-wrap FILE'>파일첨부</label>
+                                      <input type='file' id='pc_file2' class='absolute left-[-99999px]' />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope='row'>드롭다운 답변</th>
+                                    <td>
+                                      <div class='H-BOX'>
+                                        <label class='label'>
+                                          <input type='checkbox'>
+                                          <span class='label-text whitespace-nowrap'>필수</span>
+                                        </label>
+                                        <div class='ml-[25px] space-y-[10px]'>
+                                          <div class='flex items-start'>
+                                            <article class='CenterLeft leading-[40px]'>
+                                              <div class='w-[46px]'>옵션 1</div>
+                                              <button class='cursor-grab'>
+                                                <img src='../icon/2308282211.svg' alt='' />
+                                              </button>
+                                            </article>
+                                            <input type='text' class='input-wrap TYPE2 w-[458px] ml-[6px]' placeholder='답변을 입력해주세요.' />
+                                            <button class='ml-[8px]'>
+                                              <label for='pc_image1' class='input-wrap IMG'></label>
+                                              <input type='file' id='pc_image1' class='absolute left-[-99999px]' />
+                                            </button>
+                                            <button class='ml-[14px] leading-[40px]'>
+                                              <img src='../icon/2308281559.svg' alt='' />
+                                            </button>
+                                          </div>
+                                          <div class='flex items-start'>
+                                            <article class='CenterLeft leading-[40px]'>
+                                              <div class='w-[46px]'>옵션 2</div>
+                                              <button class='cursor-grab'>
+                                                <img src='../icon/2308282211.svg' alt='' />
+                                              </button>
+                                            </article>
+                                            <div class='ml-[6px]'>
+                                              <input type='text' class='input-wrap TYPE2 w-[458px]' placeholder='답변을 입력해주세요.' />
+                                              <div class='mt-[6px] flex items-center'>
+                                                <div class='w-[80px] p-[10px] bg-white border-[1px] border-solid border-[#F1F2F7]'>
+                                                  <img class='aspect-square' src='https://gifpng.com/60x60' alt='' />
+                                                </div>
+                                                <button class='ml-[6px]'>
+                                                  <img src='../icon/2308281602.svg' alt='' />
+                                                </button>
+                                              </div>
+                                            </div>
+                                            <button class='ml-[8px]'>
+                                              <label for='pc_image2' class='input-wrap IMG'></label>
+                                              <input type='file' id='pc_image2' class='absolute left-[-99999px]' />
+                                            </button>
+                                            <button class='ml-[14px] leading-[40px]'>
+                                              <img src='../icon/2308281600.svg' alt='' />
+                                            </button>
+                                          </div>
+                                          <div class='flex items-start'>
+                                            <article class='CenterLeft leading-[40px]'>
+                                              <div class='w-[46px]'>옵션 3</div>
+                                              <button class='cursor-grab'>
+                                                <img src='../icon/2308282211.svg' alt='' />
+                                              </button>
+                                            </article>
+                                            <input type='text' class='input-wrap TYPE2 w-[458px] ml-[6px]' placeholder='답변을 입력해주세요.' />
+                                            <button class='ml-[8px]'>
+                                              <label for='pc_image3' class='input-wrap IMG'></label>
+                                              <input type='file' id='pc_image3' class='absolute left-[-99999px]' />
+                                            </button>
+                                            <button class='ml-[14px] leading-[40px]'>
+                                              <img src='../icon/2308281600.svg' alt='' />
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //설문정보 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

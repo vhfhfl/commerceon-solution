@@ -1,0 +1,247 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <div class='tit-box'><h3>게시판 설정</h3></div>
+            <!-- 2022.11.03.수정 -->
+            <p class='text-red'>
+              * 1개의 게시글당 업로드 할 수 있는 '모든 첨부파일' 용량의 총 합은 50MB를 초과할 수 없습니다.
+              <br />
+              (아래 각 게시판 별로 설정 가능한 '파일 최대 크기'와는 별개입니다.)
+            </p>
+            <div class='tbl-box mt-1'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:5%' />
+                  <col style='width:10%' />
+                  <col style='width:13%' />
+                  <col style='width:7%' />
+                  <col style='width:20%' />
+                  <col style='width:45%' />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope='row' class='text-center'>번호</th>
+                    <th scope='row' class='text-center'>게시판명</th>
+                    <th scope='row' class='text-center'>금칙어 관리</th>
+                    <th scope='row' class='text-center'>사용 유무</th>
+                    <th scope='row' class='text-center'>업로드 용량 관리</th>
+                    <th scope='row' class='text-center'>권한 설정</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='text-center'>1</td>
+                    <td class='text-center'>게시판명</td>
+                    <td>
+                      <textarea class='block w-full h-[150px] overflow-y-auto p-2 border border-sub-blue-200 rounded-sm' placeholder='placeholder'></textarea>
+                    </td>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>사용함</span>
+                      </label>
+                      <br />
+                      <label class='label inline-block mt-1'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>사용안함</span>
+                      </label>
+                    </td>
+                    <td>
+                      <div>
+                        <p>파일 최대 크기 (이미지)</p>
+                        <input type='text' class='input-wrap mt-1' placeholder='placeholder'>MByte(s)</span>
+                        <p class='mt-3'>이미지 최대 크기 <strong>(가로)</strong></p>
+                        <input type='text' class='input-wrap mt-1' placeholder='placeholder'>px</span>
+                        <p class='mt-1 text-red'>* 이미지는 자동으로 리사이징 됩니다.</p>
+                      </div>
+                      <div class='mt-6'>
+                        <p>파일 최대 크기 (동영상)</p>
+                        <input type='text' class='input-wrap mt-1' placeholder='placeholder'>MByte(s)</span>
+                        <p class='mt-3'>동영상 최대 크기 <strong>(가로)</strong></p>
+                        <input type='text' class='input-wrap mt-1' placeholder='placeholder'>px</span>
+                        <p class='mt-1 text-red'>* 동영상 썸네일은 자동으로 생성됩니다.</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <span class='inline-block w-[110px] font-bold'>리스트 보기 권한</span>
+                        <label class='label inline-block mb-1'>
+                          <input type='radio' name='board_list_view' checked='' />
+                          <span class='label-text'>전체 (회원, 비회원)</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_list_view' />
+                          <span class='label-text'>관리자만</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_list_view' />
+                          <span class='label-text'>회원 전용</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_list_view' />
+                          <span class='label-text'>특정 회원 등급</span>
+                        </label>
+                        <p class='mt-1 pl-[112px]'>
+                          (
+                          <label class='label inline-block mb-1'>
+                            <input type='checkbox' name='board_list_view_grade' />
+                            <span class='label-text'>실버</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_list_view_grade' />
+                            <span class='label-text'>골드</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_list_view_grade' />
+                            <span class='label-text'>플래티넘</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_list_view_grade' />
+                            <span class='label-text'>...</span>
+                          </label>
+                          )
+                        </p>
+                      </div>
+                      <div class='mt-3'>
+                        <span class='inline-block w-[110px] font-bold'>게시글 읽기 권한</span>
+                        <label class='label mb-1'>
+                          <input type='radio' name='board_post_read' checked='' />
+                          <span class='label-text'>전체 (회원, 비회원)</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_post_read' />
+                          <span class='label-text'>관리자만</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_post_read' />
+                          <span class='label-text'>회원 전용</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_post_read' />
+                          <span class='label-text'>특정 회원 등급</span>
+                        </label>
+                        <p class='mt-1 pl-[112px]'>
+                          (
+                          <label class='label inline-block mb-1'>
+                            <input type='checkbox' name='board_post_read_grade' />
+                            <span class='label-text'>실버</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_post_read_grade' />
+                            <span class='label-text'>골드</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_post_read_grade' />
+                            <span class='label-text'>플래티넘</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_post_read_grade' />
+                            <span class='label-text'>...</span>
+                          </label>
+                          )
+                        </p>
+                      </div>
+                      <div class='mt-3'>
+                        <span class='inline-block w-[110px] font-bold'>게시글 쓰기 권한</span>
+                        <label class='label mb-1'>
+                          <input type='radio' name='board_post_write' checked='' />
+                          <span class='label-text'>전체 (회원, 비회원)</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_post_write' />
+                          <span class='label-text'>관리자만</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_post_write' />
+                          <span class='label-text'>회원 전용</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_post_write' />
+                          <span class='label-text'>특정 회원 등급</span>
+                        </label>
+                        <p class='mt-1 pl-[112px]'>
+                          (
+                          <label class='label inline-block mb-1'>
+                            <input type='checkbox' name='board_post_write_grade' />
+                            <span class='label-text'>실버</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_post_write_grade' />
+                            <span class='label-text'>골드</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_post_write_grade' />
+                            <span class='label-text'>플래티넘</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_post_write_grade' />
+                            <span class='label-text'>...</span>
+                          </label>
+                          )
+                        </p>
+                      </div>
+                      <div class='mt-3'>
+                        <span class='inline-block w-[110px] font-bold'>댓글 쓰기 권한</span>
+                        <label class='label mb-1'>
+                          <input type='radio' name='board_comment_write' checked='' />
+                          <span class='label-text'>전체 (회원, 비회원)</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_comment_write' />
+                          <span class='label-text'>관리자만</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_comment_write' />
+                          <span class='label-text'>회원 전용</span>
+                        </label>
+                        <label class='label inline-block mb-1 ml-5'>
+                          <input type='radio' name='board_comment_write' />
+                          <span class='label-text'>특정 회원 등급</span>
+                        </label>
+                        <p class='mt-1 pl-[112px]'>
+                          (
+                          <label class='label inline-block mb-1'>
+                            <input type='checkbox' name='board_comment_write_grade' />
+                            <span class='label-text'>실버</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_comment_write_grade' />
+                            <span class='label-text'>골드</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_comment_write_grade' />
+                            <span class='label-text'>플래티넘</span>
+                          </label>
+                          <label class='label inline-block mb-1 ml-5'>
+                            <input type='checkbox' name='board_comment_write_grade' />
+                            <span class='label-text'>...</span>
+                          </label>
+                          )
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class='mt-7 text-center'>
+              <button type='button' class='h-[44px] px-10 text-white text-center text-xs bg-main-blue border border-main-blue rounded-sm hover:bg-main-blue hover:bg-opacity-70 hover:border-opacity-70 active:bg-main-darkblue active:border-main-darkblue'>저장</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

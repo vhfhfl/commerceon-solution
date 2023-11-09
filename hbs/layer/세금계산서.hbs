@@ -1,0 +1,195 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[800px]">
+    <div class="layer-header">
+      <h1>세금계산서</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div class="print_guide">
+        <h2 class="text-sub-blue-500 mb-2">인쇄 가이드</h2>
+        <div class="pb-6 border-b border-dashed border-sub-blue-200">
+          <p class="mb-2">* 인쇄시 직인(도장 이미지)으로 인쇄하려면 아래와 같이 설정되어 있어야 가능합니다.</p>
+          <p>
+            인터넷 익스플로러 : 브라우저의 [도구 메뉴] - [인터넷 옵션] - [고급] - [인쇄]에서 [배경색 및 이미지 인쇄] 체크. <br/>
+            파이어폭스 : 브라우저의 [파일] - [인쇄 화면 설정] - [용지 및 설정] - [옵션]에서 [배경 인쇄(색상 및 그림)] 체크.
+          </p>
+        </div>
+      </div>
+      <!-- 전자세금계산서-공급받는자용 :: START -->
+      <div class="tax_invoice mt-6 w-full p-0 text-xs text-[#333] border-2 border-[#3b419f] relative">
+        <table class="table-fixed w-full break-all border border-[#3b419f] border-collapse z-[999]" cellspacing="0" cellpadding="0" summary="전자세금계산서">
+
+          <thead>
+          <tr>
+            <th colspan="23" rowspan="2" class="p-1 text-[#3b419f] text-center text-base font-bold border-b-2 border-double border-[#3b419f]">전 자 세 금 계 산 서 <span class="ml-1 text-[#333] text-xs font-semibold">(공급받는자 보관용)</span></th>
+            <th colspan="4" rowspan="2" class="p-1 text-right font-semibold border-b-2 border-double border-[#3b419f]">책&nbsp;번&nbsp;호<br/>일련번호</th>
+            <td colspan="4" class="p-1 text-right tracking-tighter border border-[#3b419f]"><span class="font-semibold"> 권</span></td>
+            <td colspan="4" class="p-1 text-right tracking-tighter border border-[#3b419f]"><span class="font-semibold"> 호</span></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="p-1 text-right tracking-tighter border-b-2 border-l border-double border-[#3b419f]">&nbsp;</td>
+            <td colspan="4" class="p-1 text-right tracking-tighter border-b-2 border-l border-double border-[#3b419f]"></td>
+          </tr>
+          <tr>
+            <th rowspan="4" class="p-1 text-center border border-[#3b419f]">공<br/>급<br/>자</th>
+            <th colspan="3" class="p-1 text-center font-semibold border border-[#3b419f]">등록번호</th>
+            <td colspan="13" class="p-1 text-center tracking-tighter font-bold text-[13px]">207-81-13463</td>
+            <th rowspan="4" class="p-1 text-center font-semibold border border-[#3b419f]">공<br/>급<br/>받<br/>는<br/>자</th>
+            <th colspan="3" class="p-1 text-center font-semibold border border-[#3b419f]">등록번호</th>
+            <td colspan="14" class="p-1 text-[13px] text-center tracking-tighter font-bold border border-[#3b419f]">000-00-0000</td>
+          </tr>
+          <tr>
+            <th colspan="3" class="p-1 text-center font-semibold border border-[#3b419f]">상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;호<br/>(법인명)</th>
+            <td colspan="6" class="p-1 text-left tracking-tighter border border-[#3b419f]">(주)슈페리어</td>
+            <th colspan="2" class="p-1 text-center font-semibold border border-[#3b419f]">성&nbsp;&nbsp;&nbsp;명</th>
+            <td colspan="5" class="p-1 text-left tracking-tighter border border-[#3b419f]">김대환</td>
+            <th colspan="3" class="p-1 text-center font-semibold border border-[#3b419f]">상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;호<br/>(법인명)</th>
+            <td colspan="6" class="p-1 text-left tracking-tighter border border-[#3b419f]">공급사</td>
+            <th colspan="2" class="p-1 text-center font-semibold border border-[#3b419f]">성&nbsp;&nbsp;&nbsp;명</th>
+            <td colspan="6" class="p-1 text-left tracking-tighter border border-[#3b419f]">테스트</td>
+          </tr>
+          <tr>
+            <th colspan="3" class="p-1 text-center font-semibold border border-[#3b419f]">사업장<br/>소재지</th>
+            <td colspan="13" class="p-1 text-left tracking-tighter border border-[#3b419f]">서울특별시 강남구 테헤란로 614 (슈페리어사옥)</td>
+            <th colspan="3" class="p-1 text-center font-semibold border border-[#3b419f]">사업장<br/>소재지</th>
+            <td colspan="14" class="p-1 text-left tracking-tighter border border-[#3b419f]">서울 구로구 구로1동 111-1호 에이스테크노2차 000호</td>
+          </tr>
+          <tr>
+            <th colspan="3" class="p-1 text-center font-semibold border border-[#3b419f]">업&nbsp;&nbsp;&nbsp;태</th>
+            <td colspan="6" class="p-1 text-left tracking-tighter border border-[#3b419f]">제조업</td>
+            <th colspan="2" class="p-1 text-center font-semibold border border-[#3b419f]">종&nbsp;&nbsp;&nbsp;목</th>
+            <td colspan="5" class="p-1 text-left tracking-tighter border border-[#3b419f]">기성복</td>
+            <th colspan="3" class="p-1 text-center font-semibold border border-[#3b419f]">업태</th>
+            <td colspan="6" class="p-1 text-left tracking-tighter border border-[#3b419f]">기타</td>
+            <th colspan="2" class="p-1 text-center font-semibold border border-[#3b419f]">종&nbsp;&nbsp;&nbsp;목</th>
+            <td colspan="6" class="p-1 text-left tracking-tighter border border-[#3b419f]">기타</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th colspan="4" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">작성일자</th>
+            <th colspan="13" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">공급가액</th>
+            <th colspan="10" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">세액</th>
+            <th colspan="8" class="p-1 text-center font-semibold border border-t-2 border-b border-double border-[#3b419f]">비고</th>
+          </tr>
+          <tr>
+            <th colspan="2" class="p-1 text-center font-normal border border-[#3b419f]">년</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">월</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">일</th>
+            <!-- 공급가액 -->
+            <th colspan="2" class="p-1 text-center font-normal border border-[#3b419f]">공란수</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">백</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">십</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">억</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">천</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">백</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">십</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">만</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">천</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">백</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">십</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">일</th>
+            <!-- 세액 -->
+            <th class="p-1 text-center font-normal border border-[#3b419f]">십</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">억</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">천</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">백</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">십</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">만</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">천</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">백</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">십</th>
+            <th class="p-1 text-center font-normal border border-[#3b419f]">일</th>
+            <th colspan="8" class="p-1 text-center font-normal border-b border-[#3b419f]"></th>
+          </tr>
+          <tr>
+            <td colspan="2" class="p-1 text-center tracking-tighter whitespace-nowrap border border-[#3b419f]">2022</td>
+            <td class="p-1 text-center tracking-tighter whitespace-nowrap border border-[#3b419f]">12</td>
+            <td class="p-1 text-center tracking-tighter whitespace-nowrap border border-[#3b419f]">15</td>
+            <!-- 공급가액 -->
+            <td colspan="2" class="p-1 text-center tracking-tighter whitespace-nowrap border border-[#3b419f]">4</td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]">6</td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]">1</td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]">3</td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]">6</td>
+            <!-- 세액 -->
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]">6</td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]">1</td>
+            <td class="p-1 text-center tracking-tighter border border-[#3b419f]">4</td>
+            <td colspan="8" class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+          </tr>
+          <tr>
+            <th class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">월</th>
+            <th class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">일</th>
+            <th colspan="8" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">품목</th>
+            <th colspan="4" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">규격</th>
+            <th colspan="3" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">수량</th>
+            <th colspan="4" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">단가</th>
+            <th colspan="6" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">공급가액</th>
+            <th colspan="4" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">세액</th>
+            <th colspan="4" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">비고</th>
+          </tr>
+          <tr>
+            <td class="p-1 text-center tracking-tighter whitespace-nowrap border border-[#3b419f]">08</td>
+            <td class="p-1 text-center tracking-tighter whitespace-nowrap border border-[#3b419f]">31</td>
+            <td colspan="8" class="p-1 text-center tracking-tighter border border-[#3b419f]">수수료</td>
+            <td colspan="4" class="p-1 text-center tracking-tighter border border-[#3b419f]">11</td>
+            <td colspan="3" class="p-1 text-center tracking-tighter border border-[#3b419f]">11</td>
+            <td colspan="4" class="p-1 text-right tracking-tighter border border-[#3b419f]">11</td>
+            <td colspan="6" class="p-1 text-right tracking-tighter border border-[#3b419f]">6,136원</td>
+            <td colspan="4" class="p-1 text-right tracking-tighter border border-[#3b419f]">614원</td>
+            <td colspan="4" class="p-1 text-center tracking-tighter border border-[#3b419f]">-</td>
+          </tr>
+          <tr>
+            <td class="p-1 text-center tracking-tighter whitespace-nowrap border border-[#3b419f]"></td>
+            <td class="p-1 text-center tracking-tighter whitespace-nowrap border border-[#3b419f]"></td>
+            <td colspan="8" class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="4" class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="3" class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="4" class="p-1 text-right tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="6" class="p-1 text-right tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="4" class="p-1 text-right tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="4" class="p-1 text-center tracking-tighter border border-[#3b419f]">-</td>
+          </tr>
+          </tbody>
+          <tfoot>
+          <tr>
+            <th colspan="6" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">합계금액</th>
+            <th colspan="6" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">현금</th>
+            <th colspan="6" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">수표</th>
+            <th colspan="6" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">어음</th>
+            <th colspan="6" class="p-1 text-center font-semibold border border-t-2 border-double border-[#3b419f]">외상미수금</th>
+            <td colspan="5" rowspan="2" class="p-1 text-center tracking-tighter border border-t-2 border-[#3b419f]">위 금액을 <strong>[ 영수 ]</strong> 함.</td>
+          </tr>
+          <tr>
+            <td colspan="6" class="p-1 text-center tracking-tighter border border-[#3b419f]">6,750원</td>
+            <td colspan="6" class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="6" class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="6" class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+            <td colspan="6" class="p-1 text-center tracking-tighter border border-[#3b419f]"></td>
+          </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- //전자세금계산서-공급받는자용 :: END -->
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-print btn-blue">인쇄하기</button>
+    </div>
+  </div>
+</div>

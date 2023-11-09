@@ -1,0 +1,118 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 추천스킨 -->
+            <div>
+              <div class='tit-box'><h3>추천 스킨</h3></div>
+              <div class='grid grid-cols-[repeat(4,1fr)] gap-2 mt-1'>
+                <div class='p-1 border border-sub-blue-200'>
+                  <img class='w-full h-auto max-h-[177px] object-cover' src='../images/test_pc.jpeg' alt='' />
+                  <div class='grid grid-cols-[1fr_1fr] gap-1 mt-1'>
+                    <button type='button' class='btn-m'>미리보기</button>
+                    <button type='button' class='btn-white-m'>다운로드</button>
+                  </div>
+                </div>
+                <div class='p-1 border border-sub-blue-200'>
+                  <img class='w-full h-auto max-h-[177px] object-cover' src='../images/test_pc.jpeg' alt='' />
+                  <div class='grid grid-cols-[1fr_1fr] gap-1 mt-1'>
+                    <button type='button' class='btn-m'>미리보기</button>
+                    <button type='button' class='btn-white-m'>다운로드</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //추천스킨 -->
+
+            <!-- 현재사용중인스킨 -->
+            <div class='mt-7'>
+              <div class='tit-box'><h3>현재 사용중인 스킨</h3></div>
+              <div class='grid grid-cols-[1fr_2fr] gap-2 mt-1'>
+                <div class='text-center relative'>
+                  <span class='text-2xl absolute top-2 left-2'><i class='fa-solid fa-bookmark'></i></span>
+                  <img class='w-full h-auto max-h-[250px] object-cover' src='../images/test_pc.jpeg' alt='' />
+                  <button type='button' class='block w-full btn-m mt-1'>미리보기</button>
+                </div>
+                <div>
+                  <table class='table' >
+
+                    <colgroup>
+                      <col class='w-1/5' />
+                      <col class='w-4/5' />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope='row' colspan='2'>테스트 사이트 닷컴 (https://www.test.com)</th>
+                      </tr>
+                      <tr>
+                        <th scope='row'>스킨명</th>
+                        <td>메인_컨텐츠형_프레시_라이브</td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>스킨 환경</th>
+                        <td>반응형</td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>스킨 배포 버전</th>
+                        <td>v2.11</td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>등록 일시</th>
+                        <td>2022-02-22 18:45:21</td>
+                      </tr>
+                      <tr>
+                        <th scope='row'>수정 일시</th>
+                        <td>2022-04-12 22:11:22</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class='mt-1 text-right text-sub-blue-500'>* 쇼핑몰 방문자에게 보여지는 스킨입니다. 선택된 스킨이 실제 쇼핑몰에서 보여집니다.</div>
+                </div>
+              </div>
+            </div>
+            <!-- //현재사용중인스킨 -->
+
+            <!-- 보유스킨리스트 -->
+            <div class='mt-7'>
+              <div class='tit-box'><h3>보유 스킨 리스트</h3></div>
+              <div class='flex justify-between items-end mt-1'>
+                <div>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</div>
+                <div>
+                  <select class='select-wrap'>
+                    <option>10개씩 보기</option>
+                    <option>20개씩 보기</option>
+                    <option>30개씩 보기</option>
+                    <option>50개씩 보기</option>
+                    <option>100개씩 보기</option>
+                    <option>150개씩 보기</option>
+                    <option>200개씩 보기</option>
+                    <option>300개씩 보기</option>
+                    <option>500개씩 보기</option>
+                    <option>1000개씩 보기</option>
+                    <option>5000개씩 보기</option>
+                  </select>
+                </div>
+              </div>
+              <div id='app' class='mt-1'></div>
+              <div class='mt-1'>
+                <span class='mr-1'>* 선택한 스킨을</span>
+                <button type='button' class='btn-m'>사용 스킨으로</button>
+              </div>
+            </div>
+            <!-- //보유스킨리스트 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

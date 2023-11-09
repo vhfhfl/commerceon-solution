@@ -1,0 +1,92 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230815192546738'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'엑셀 다운로드 양식 검색'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='10%' />
+                    <col width='90%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <input type='text' class='input-wrap min-w-[20%]' placeholder='placeholder' />
+                      </td>
+                    </tr>
+                    {{#LOOP 2}}
+                      <tr>
+                        <th scope='col'>Label</th>
+                        <td>
+                          <select class='select-wrap min-w-[20%]'>
+                            <option>select</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                          </select>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+              </div>
+              <div class='text-center mt-6'>
+                <button type='button' class='btn-m'>검색</button>
+                <button type='button' class='btn-white-m'>초기화</button>
+              </div>
+            </section>
+            <section data-seq='20230815192738346'>
+              <script>Include('/hbs/component/TitleBox_3-a.hbs',{txt1:'엑셀 다운로드 양식 리스트'});</script>
+              <div class='tbl-box'>
+                <table  class='table'>
+
+                  <tbody>
+                    <tr>
+                      <th scope='col' class='text-center'>번호</th>
+                      <th scope='col' class='text-center'>다운로드 양식명</th>
+                      <th scope='col' class='text-center'>메뉴 분류</th>
+                      <th scope='col' class='text-center'>상세 항목</th>
+                      <th scope='col' class='text-center'>등록일시</th>
+                      <th scope='col' class='text-center'>등록일</th>
+                      <th scope='col' class='text-center'>관리</th>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    {{#LOOP 3}}
+                      <tr>
+                        <td class='text-center'>{{number}}</td>
+                        <td class='text-center'>통합 주문 리스트</td>
+                        <td class='text-center'>주문</td>
+                        <td class='text-center'>주문 리스트</td>
+                        <td class='text-center'>2022-04-05 06:01:22</td>
+                        <td class='text-center'>2022-04-05 06:01:22</td>
+                        <td class='text-center'>
+                          <button type='button' class='btn-white-m'>수정</button>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+                <script>Include('/hbs/component/BtnBox_1-b.hbs');</script>
+                <script>Include('/hbs/component/Paging_1-a.hbs');</script>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

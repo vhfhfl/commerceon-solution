@@ -1,0 +1,208 @@
+<div class='layer'>
+  <div class='bg-layer'></div>
+  <div class='layer-content !w-[1300px]'>
+    <div class='layer-header'>
+      <h1>상품 후기 상세보기</h1>
+      <button type='button' class='btn-close-layer'><span class='icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat'></span></button>
+    </div>
+    <div class='layer-body'>
+      <div>
+        <div class='flex justify-between flex-nowrap mb-1'>
+          <div>
+            <h2 class='text-sub-blue-500 mt-5'>기본 정보</h2>
+          </div>
+          <div class='text-right'>
+            <button type='button' class='btn-m'>베스트 후기 지정</button>
+            <button type='button' class='btn-m'>(포인트) 지급</button>
+            <button type='button' class='btn-m'>노출 승인</button>
+            <button type='button' class='btn-warning-m'>반려</button>
+            <button type='button' class='btn-warning-m'>삭제</button>
+          </div>
+        </div>
+        <table class='table' >
+
+          <colgroup>
+            <col style='width:15%' />
+            <col style='width:35%' />
+            <col style='width:15%' />
+            <col style='width:35%' />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope='row'>문의유형</th>
+              <td>사이즈 문의</td>
+              <th scope='row'>작성자</th>
+              <td>홍** / 골드 <span class='text-sub-blue-500 text-[11px]'>(106.241.28.3)</span></td>
+            </tr>
+            <tr>
+              <th scope='row'>이메일</th>
+              <td>test@test.com</td>
+              <th scope='row'>휴대폰번호</th>
+              <td>010-1234-5678</td>
+            </tr>
+            <tr>
+              <th scope='row'>구매일시</th>
+              <td>2022-11-25 13:23:00</td>
+              <th scope='row'>배송완료일시</th>
+              <td>2022-11-25 13:23:00</td>
+            </tr>
+            <tr>
+              <th scope='row'>작성일시</th>
+              <td>2022-11-25 13:23:00</td>
+              <th scope='row'>승인상태</th>
+              <td>승인대기</td>
+            </tr>
+            <tr>
+              <th scope='row'>조회수</th>
+              <td>2,202회</td>
+              <th scope='row'>IP</th>
+              <td>123.123.123.1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2 class='text-sub-blue-500 mt-6 mb-2'>상품 정보</h2>
+        <div class='flex flex-nowrap justify-between gap-2'>
+          <div class='flex-auto w-1/12'>
+            <img class='w-full' src='https://gifpng.com/101x101/685CCD/FFEAB8/' alt='' />
+          </div>
+          <div class='flex-auto w-11/12'>
+            <p class='text-sm'><i class='fa-solid fa-star text-yellow-400'></i><span class='ml-0.5'>(4.2)</span></p>
+            <p class='mt-1 truncate font-bold'>테스트 상품명</p>
+            <p class='mt-1 truncate'>남성 스니커즈</p>
+            <p class='mt-1 truncate text-sub-blue-500'>(US8 / 260mm) + 50,000원</p>
+            <p class='mt-1'>370,000원</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class='text-sub-blue-500 mt-6 mb-2'>첨부 이미지/동영상</h2>
+        <!-- swiper_pdtreview :: START -->
+        <div class='swiper_pdtreview w-1/2' data-swiper='basic'>
+          <div class='swiper'>
+            <div class='swiper-wrapper'>
+              {{#LOOP 2}}
+                <div class='swiper-slide'>
+                  <div class='swiper-item'>
+                    <img src='https://gifpng.com/614x315/685CCD/FFEAB8/' alt='' />
+                  </div>
+                </div>
+              {{/LOOP}}
+            </div>
+          </div>
+          <div class='swiper-bottom-nav-box'>
+            <div class='swiper-nav-button swiper-button-prev'></div>
+            <div class='swiper-pagination'></div>
+            <div class='swiper-nav-button swiper-button-next'></div>
+          </div>
+        </div>
+        <script>
+          const swiper_pdtreview = new Swiper(".swiper_pdtreview > .swiper", { loop : true, navigation : { prevEl : ".swiper_pdtreview .swiper-button-prev", nextEl : ".swiper_pdtreview .swiper-button-next", }, pagination : { el : ".swiper_pdtreview .swiper-pagination", clickable : true, }, });
+        </script>
+        <!-- // swiper_pdtreview :: END -->
+      </div>
+      <div>
+        <h2 class='text-sub-blue-500 mt-6 mb-2'>후기 내용</h2>
+        <div class='h-[100px] overflow-y-auto mt-1 p-2 bg-main-lightblue border border-sub-blue-200 rounded-sm'>
+          <div class='text-sm'>
+            <span class='label-text font-bold !text-sub-blue-500'>BEST</span>
+            <i class='fa-solid fa-star text-yellow-400'></i>
+            <span class='ml-0.5 text-black'>(4.2)</span>
+          </div>
+          <p class='mt-1'>테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.</p>
+        </div>
+      </div>
+      <div>
+        <h2 class='text-sub-blue-500 mt-6 mb-2'>반려 사유</h2>
+        <div class='h-[100px] overflow-y-auto p-2 bg-main-lightblue border border-sub-blue-200 rounded-sm'>반려 사유 입니다.</div>
+      </div>
+      <div>
+        <h2 class='text-sub-blue-500 mt-6 mb-2'>댓글 (<span class='text-red'>2</span>)</h2>
+        <div class='font-bold'>관리자</div>
+        <div class='relative'>
+          <div class='h-[100px] overflow-y-auto mt-1 p-2 bg-main-lightblue border border-sub-blue-200 rounded-sm'>
+            테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다. 테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.
+          </div>
+          <p class='p-1 text-sub-blue-500 text-[11px] text-right'>2022-02-22 22:22:22</p>
+        </div>
+        <div class='mt-1'>
+          <div>
+            <span class='font-bold'>홍** / 골드</span>
+            <span class='pl-1 text-sub-blue-500 text-[11px]'>(106.241.28.3)</span>
+          </div>
+          <div class='relative'>
+            <div class='h-[100px] overflow-y-auto mt-1 p-2 bg-main-lightblue border border-sub-blue-200 rounded-sm'>
+              테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.테스트 입니다.
+            </div>
+            <p class='p-1 text-sub-blue-500 text-[11px] text-right'>2022-02-22 22:22:22</p>
+          </div>
+        </div>
+        <div>
+          <div class='font-bold'>댓글 작성</div>
+          <div class='flex justify-between'>
+            <textarea class='flex-auto w-full h-[100px] overflow-y-auto mr-1 p-2 border border-sub-blue-200 rounded-sm'></textarea>
+            <button class='flex-auto h-[100px] whitespace-nowrap btn-m'>작성</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class='text-sub-blue-500 mt-6 mb-2'>관리자 메모 (<span class='text-red'>1</span>)</h2>
+        <div class='font-bold'>관리자</div>
+        <div class='relative'>
+          <div class='mt-1'>
+            <textarea class='w-full h-[100px] overflow-y-auto p-2 bg-main-lightblue border border-sub-blue-200 rounded-sm' name='' readonly>테스트 입니다.</textarea>
+          </div>
+          <p class='px-1 text-sub-blue-500 text-[11px] text-right'>2022-03-11 10:00:51</p>
+          <div class='mt-2 text-right'>
+            <button type='button' class='btn-m'>수정</button>
+            <button type='button' class='btn-reply-delete btn-warning-m'>삭제</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class='text-sub-blue-500 mt-6 mb-2'>메모 작성</h2>
+        <div class='flex justify-between'>
+          <textarea class='flex-auto w-full h-[100px] overflow-y-auto mr-1 p-2 border border-sub-blue-200 rounded-sm'></textarea>
+          <button class='flex-auto h-[100px] whitespace-nowrap btn-m'>작성</button>
+        </div>
+      </div>
+      <div class='w-full mt-10'>
+        <div class='table table-fixed w-full border-collapse border-y border-y-sub-blue-200 box-border'>
+          <ul class='table-row border-b border-b-sub-blue-200'>
+            <li class='table-cell w-[70px] py-3 px-2 align-middle break-all text-center box-border'>
+              <span class='cursor-pointer relative'><i class='fa-solid fa-sort-up absolute top-1 left-0'></i></span>
+              <span class='ml-4 cursor-pointer'>다음글</span>
+            </li>
+            <li class='table-cell py-3 px-2 align-middle break-all truncate box-border'>
+              <span class='inline-block h-5 leading-5 px-1 border border-[#92E7E1] text-[#00B0A5] rounded'>N</span>
+              <span>테스트 다음글 입니다.</span>
+            </li>
+            <li class='table-cell w-[100px] py-3 px-2 align-middle break-all text-center box-border'>
+              <span class='font-bold'>아이디</span>
+            </li>
+            <li class='table-cell w-[140px] py-3 px-2 align-middle break-all text-center box-border'>
+              <span>2022-05-31 10:22:22</span>
+            </li>
+          </ul>
+          <ul class='table-row'>
+            <li class='table-cell w-[70px] py-3 px-2 align-middle break-all text-center box-border'>
+              <span class='cursor-pointer relative'><i class='fa-solid fa-sort-down absolute -top-0.5 left-0'></i></span>
+              <span class='ml-4 cursor-pointer'>이전글</span>
+            </li>
+            <li class='table-cell py-3 px-2 align-middle break-all truncate box-border'>
+              <span class='inline-block h-5 leading-5 px-1 border border-[#F5BFCC] text-[#E54E73] rounded'>H</span>
+              <span>테스트 이전글 입니다.</span>
+            </li>
+            <li class='table-cell w-[100px] py-3 px-2 align-middle break-all text-center box-border'>
+              <span class='font-bold'>아이디</span>
+            </li>
+            <li class='table-cell w-[140px] py-3 px-2 align-middle break-all text-center box-border'>
+              <span>2022-05-31 10:22:22</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

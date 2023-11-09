@@ -1,0 +1,127 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[800px]">
+    <div class="layer-header">
+      <h1>상품 추가</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <div class="tbl-box">
+        <table summary="판매마켓 및 판매자 아이디 정보" class="border-table">
+
+          <colgroup>
+            <col width="20%">
+            <col width="80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th colspan="2" class="h-[40px]">
+              <span class="text-main-blue">STEP 1.</span> 판매마켓 및 판매자 아이디를 선택하세요.
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">판매마켓</th>
+            <td>
+              <select class="select-wrap w-full">
+                <option>마켓을 선택하세요</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">판매자 아이디</th>
+            <td>
+              <select class="select-wrap w-full">
+                <option>관리자 아이디</option>
+              </select>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tbl-box mt-5">
+        <table summary="상품 필수정보" class="border-table">
+
+          <colgroup>
+            <col width="20%">
+            <col width="80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th colspan="2" class="h-[40px]">
+              <span class="text-main-blue">STEP 2.</span> 필수정보를 선택하세요.
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">필수정보</th>
+            <td>
+              <select class="select-wrap w-full">
+                <option>판매 마켓 및 아이디를 선택해주세요</option>
+              </select>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tbl-box mt-5">
+        <table summary="전송할 상품 정보" class="border-table">
+
+          <colgroup>
+            <col width="20%">
+            <col width="80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th colspan="2" class="h-[40px]">
+              <span class="text-main-blue">STEP 3.</span> 전송할 상품을 선택하세요.
+            </th>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">필수정보</th>
+            <td>
+              <button type="button" class="btn-white-m">상품 선택</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea class="w-full border border-sub-blue-200 h-20"></textarea>
+              <div class="text-red">※ [마켓가격]란에 가격 입력 시 배포 시 해당 가격으로 일괄 배포됩니다.</div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">중복전송여부</th>
+            <td>
+              <label class="label">
+                <input type="radio" name="">
+                <span class="label-text">등록상품 제외</span>
+              </label>
+              <label class="label">
+                <input type="radio" name="">
+                <span class="label-text">모두등록</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">카테고리 타입</th>
+            <td>
+              <label class="label">
+                <input type="radio" name="">
+                <span class="label-text">매칭 카테고리</span>
+              </label>
+              <label class="label">
+                <input type="radio" name="">
+                <span class="label-text">필수정보 카테고리</span>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="layer-footer">
+      <div>
+        <button type="button" class="btn-m">추가</button>
+        <button type="button" class="btn-close-layer btn-white-m">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>

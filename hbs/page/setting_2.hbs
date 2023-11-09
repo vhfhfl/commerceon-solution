@@ -1,0 +1,33 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230813223005639'>
+              <div class='flex justify-between items-end'>
+                <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'외부 스크립트 관리'});</script>
+                <div>
+                  <button type='button' class='btn-m'>
+                    <i class='fa-solid fa-plus'></i>
+                    외부 스크립트 등록
+                  </button>
+                </div>
+              </div>
+              <script>Include('/hbs/component/BtnBox_1-b.hbs');</script>
+            </section>
+            <script>Include('/hbs/component/BtnBox_1-a.hbs');</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

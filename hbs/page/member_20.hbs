@@ -1,0 +1,176 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- SMS발송설정// -->
+            <div>
+              <div class='tit-box'><h3>SMS 발송 설정</h3></div>
+              <div class='tbl-box'>
+                <table class='table' >
+
+                  <colgroup>
+                    <col style='width:15%' />
+                    <col style='width:85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>SMS 잔여 포인트</th>
+                      <td>
+                        <span>10,000P</span>
+                        <button type='button' class='btn-m ml-1'>충전</button>
+                        <div class="mt-1 pl-[10px] text-red text-xs relative before:content-['*'] before:inline-block before:absolute before:top-0 before:left-0">
+                          회원 &gt; SMS/메일/카카오 알림톡 알림 &gt; SMS/메일/카카오 알림톡 API 관리 에서 설정한 SMS 업체에서 잔여 포인트 충전이 가능합니다.<br />
+                          알리고 : https://smartsms.aligo.in/shop/charge.html<br />
+                          다이렉트센드 : https://directsend.co.kr/index.php/payment/charge
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>발신번호</th>
+                      <td>
+                        <span>02-2222-2222</span>
+                        <div class="mt-1 pl-[10px] text-red text-xs relative before:content-['*'] before:inline-block before:absolute before:top-0 before:left-0">
+                          발신번호 사전등록제 : (전기통신사업법 제 84조의 2) 거짓으로 표시된 전화번호로 인한 이용자 피해 예방을 위해 사전 등록한 발신번호로만 SMS를 발송하실 수 있습니다.<br />
+                          발신번호 사전등록은 회원 &gt; SMS/메일/카카오 알림톡 알림 &gt; SMS/메일/카카오 알림톡 API 관리 에서 설정한 SMS 업체에서 등록 가능합니다.<br />
+                          <br />
+                          알리고 발신번호 사전등록 : https://smartsms.aligo.in/cert_step2.html<br />
+                          다이렉트센드 발신번호 사전등록 : https://directsend.co.kr/index.php/sms/send_number
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>대상회원 선택</th>
+                      <td>
+                        <div>
+                          <label class='label'>
+                            <input type='radio' name='all-member' />
+                            <span class='label-text'>전체 회원</span>
+                          </label>
+                          <div class='mt-1 pl-7'>
+                            <label class='label'>
+                              <input type='checkbox' />
+                              <div class='label-text'>수신 동의한 회원에게만 발송</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class='mt-1'>
+                          <label class='label'>
+                            <input type='radio' name='level' />
+                            <span class='label-text'>선택 회원 등급</span>
+                            <select class='select-wrap ml-1'>
+                              <option>선택</option>
+                            </select>
+                          </label>
+                          <div class='mt-1 pl-7'>
+                            <label class='label'>
+                              <input type='checkbox' />
+                              <div class='label-text'>수신 동의한 회원에게만 발송</div>
+                            </label>
+                          </div>
+                          <div class='text-red mt-1'>* 정보통신망법에 따라 수신 거부한 회원에게는 광고성 정보를 발송할 수 없으며, 위반 시 과태료가 부과됩니다.</div>
+                        </div>
+                        <div class='mt-6'>
+                          <label class='label'>
+                            <input type='radio' name='select-member' />
+                            <span class='label-text'>선택 회원</span>
+                          </label>
+                          <button type='button' class='btn-m ml-1'>선택하기</button>
+                          <p class='mt-3'>1,202명 <span class='text-red'>(수신 거부 대상자 12명 포함)</span></p>
+                          <select class='select-wrap block w-[250px] h-[200px] mt-1 pr-2 bg-none' multiple='' name=''>
+                            <option value=''>010-1111-22222</option>
+                            <option value=''>010-2222-22222</option>
+                          </select>
+                          <div class='mt-1'>
+                            <button type='button' class='btn-white-m'><i class='fa-solid fa-xmark'></i> 선택 삭제</button>
+                            <button type='button' class='btn-m'><i class='fa-solid fa-xmark'></i> 전체 삭제</button>
+                          </div>
+                        </div>
+                        <div class='mt-6'>
+                          <div class='H-BOX'>
+                            <label class='label'>
+                              <input type='radio' name='input' />
+                              <span class='label-text'>직접 입력</span>
+                            </label>
+                            <input class='input-wrap ml-1' type='text' placeholder='placeholder' />
+                            <button type='button' class='btn-m'>추가</button>
+                          </div>
+                          <p class='mt-3'>발송 인원 총 <span class='text-red'>12</span>명</p>
+                          <select class='select-wrap block w-[250px] h-[200px] mt-1 pr-2 bg-none' multiple='' name=''>
+                            <option value=''>010-1111-22222</option>
+                            <option value=''>010-2222-22222</option>
+                          </select>
+                          <div class='mt-1'>
+                            <button type='button' class='btn-white-m'><i class='fa-solid fa-xmark'></i> 선택 삭제</button>
+                            <button type='button' class='btn-m'><i class='fa-solid fa-xmark'></i> 전체 삭제</button>
+                          </div>
+                        </div>
+                        <div class='text-red mt-1'>* 정보통신망법에 따라 수신 거부한 회원에게는 광고성 정보를 발송할 수 없으며, 위반 시 과태료가 부과됩니다.</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>발송 설정</th>
+                      <td>
+                        <label class='label'>
+                          <input type='radio' name='sex' />
+                          <span class='label-text'>즉시 발송</span>
+                        </label>
+                        <div class='mt-1'>
+                          <label class='label mr-1'>
+                            <input type='radio' name='sex' />
+                            <span class='label-text'>예약 발송</span>
+                          </label>
+                          <span class='input-calendar-wrap'>
+                            <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                            <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                          </span>
+                          <span>부터 순차 발송</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>내용</th>
+                      <td>
+                        <div class='w-[250px]'>
+                          <table class='border-table w-full' >
+
+                            <thead>
+                              <tr>
+                                <th scope='col'>메시지 작성</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class='!p-0'>
+                                  <textarea class='block w-full h-[200px] overflow-y-auto p-2'></textarea>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p class='mt-1 text-right'><span class='text-red'>216</span>/2000 바이트</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- //SMS발송설정 -->
+            <div class='mt-7 text-center'>
+              <button type='button' class='btn-blue'>전송</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

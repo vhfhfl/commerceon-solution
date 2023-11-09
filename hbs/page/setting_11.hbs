@@ -1,0 +1,81 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230818142658250'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1: '상품 구매 권한 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-b.hbs');</script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <article style='display:flex; align-items:flex-start; flex-direction:column; gap:4px;'>
+                          {{#LOOP 2}}
+                            <label class='label'>
+                              <input type='radio' {{ON 1 'checked'}} />
+                              <span class='label-text'>Radio {{number}}</span>
+                            </label>
+                          {{/LOOP}}
+                          <label class='label'>
+                            <input type='radio' />
+                            <span class='label-text'>Radio 3</span>
+                          </label>
+                          <div class='pl-7'>
+                            <span class='text-sub-blue-300'>본인인증 후 주문자가 만14세 미만일 경우, 비회원주문이 불가합니다.</span>
+                          </div>
+                        </article>
+                        <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                        <script>Include('/hbs/component/MsgBlack_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section data-seq='20230818143642741'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1: '(포인트)/쿠폰 중복사용 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='15%' />
+                    <col width='85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-b.hbs');</script>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <script>Include('/hbs/component/BtnBox_1-a.hbs');</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

@@ -1,0 +1,29 @@
+{{! <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'관리자 검색'});</script> }}
+{{#DV}}
+  {{SAFE 'txt1'}}
+  {{!--{{SAFE 'array' '1|2|3'}}--}}
+{{/DV}}
+<article class='CenterBetween py-1 mb-2' style='align-items:flex-end;'>
+  <div>
+    <div class='tit-box'>
+      <h3>{{txt1}}</h3>
+    </div>
+    <article class='CenterLeft' style="gap:2px;">
+      <span>AAA</span>
+      <span class='!text-red'>0</span>
+      <span>건</span>
+      <span>/</span>
+      <span>BBB</span>
+      <span class='!text-red'>0</span>
+      <span>건</span>
+    </article>
+  </div>
+  <div>
+    <select class='select-wrap'>
+      <option>10개씩 보기</option>
+      <option>30개씩 보기</option>
+      <option>50개씩 보기</option>
+      <option>100개씩 보기</option>
+    </select>
+  </div>
+</article>

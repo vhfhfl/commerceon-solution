@@ -1,0 +1,43 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content">
+    <div class="layer-header">
+      <h1>브랜드 선택</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">브랜드 검색</h2>
+      <div>
+        <select class="select-wrap" name="">
+          <option value="">브랜드명</option>
+          <option value="">브랜드코드</option>
+          <option value="">아이디</option>
+          <option value="">공급사명</option>
+        </select>
+        <input type="text" class="input-wrap" placeholder="placeholder">
+        <button type="button" class="btn-m">검색</button>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">선택 브랜드</h2>
+      <div class="w-full">
+          <span class="inline-block">테스트 브랜드
+            <button type="button" class="w-4 h-4 align-middle text-center border border-sub-blue-300 text-sub-blue-700 mr-1 mb-1"><i class="fa-solid fa-xmark"></i></button>
+          </span>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">브랜드 리스트</h2>
+      <div class="flex justify-between items-end pb-1">
+        <div>조회 <span class="!text-red">0</span>개 / 전체 <span class="!text-red">0</span>개</div>
+        <select class="select-wrap">
+          <option>10개</option>
+          <option>30개</option>
+          <option>50개</option>
+          <option>100개</option>
+        </select>
+      </div>
+      <div id="app" class="mt-1"></div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">확인</button>
+      <button type="button" class="btn-white-l">취소</button>
+    </div>
+  </div>
+</div>

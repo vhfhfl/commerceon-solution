@@ -1,0 +1,31 @@
+<div id='page'>
+  <main>
+    {{!--prettier-ignore--}}
+    <style>
+      html{ background-color:#ffffd4; }
+      main section{
+        margin-top:50px;
+        margin-bottom:50px;
+        outline:1px dashed red;
+        position:relative;
+      }
+      .layer{
+        display:block;
+      }
+      .layer .bg-layer{
+        display:none;
+      }
+      .layer .layer-content{ position:relative; top:0; left:0; transform:none; }
+    </style>
+    <div class='H1'>Layer Guide</div>
+    {{#EACH window.HBS_DATA.layer}}
+      <section>
+        <div class='H3'>
+          <input style='display:inline-block; width:100%; outline:none; border:none;' readonly type='text' value='{{obj.name}}' onclick='this.select();' />
+        </div>
+        <br />
+        <script>Include('{{obj.path}}');</script>
+      </section>
+    {{/EACH}}
+  </main>
+</div>

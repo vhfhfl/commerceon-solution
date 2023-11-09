@@ -1,0 +1,439 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 주문 검색 -->
+            <div class='tit-box'><h3>주문 검색</h3></div>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:15%' />
+                  <col style='width:35%' />
+                  <col style='width:15%' />
+                  <col style='width:35%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>공급사</th>
+                    <td colspan='3'>
+                      <label class='label mr-5'>
+                        <input type='radio' name='supplier' checked='' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label mr-5'>
+                        <input type='radio' name='supplier' />
+                        <span class='label-text'>본사</span>
+                      </label>
+                      <label class='label'>
+                        <input type='radio' name='supplier' />
+                        <span class='label-text'>공급사</span>
+                      </label>
+                      <button type='button' class='btn-supplier_select btn-m ml-5'>공급사 선택</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>검색어</th>
+                    <td>
+                      <select class='select-wrap !w-[147px]' name=''>
+                        <option value=''>주문번호</option>
+                        <option value=''>송장번호</option>
+                        <option value=''>상품명</option>
+                        <option value=''>상품코드</option>
+                        <option value=''>주문자/입금자/수령인명</option>
+                        <option value=''>주문자연락처</option>
+                        <option value=''>주문자이메일</option>
+                        <option value=''>배송지주소</option>
+                        <option value=''>공급사명(추후)</option>
+                      </select>
+                      <input class='input-wrap' type='text' />
+                      <button class='btn-searchword-setting btn-m'>설정</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>기간검색</th>
+                    <td colspan='5'>
+                      <select class='select-wrap !w-[147px]'>
+                        <option value=''>주문일</option>
+                        <option value=''>결제확인일</option>
+                        <option value=''>송장입력일</option>
+                        <option value=''>배송일</option>
+                        <option value=''>배송완료일</option>
+                        <option value=''>구매확정일</option>
+                        <option value=''>취소완료일</option>
+                        <option value=''>반품접수일</option>
+                        <option value=''>반품완료일</option>
+                        <option value=''>교환접수일</option>
+                        <option value=''>교환완료일</option>
+                        <option value=''>환불접수일</option>
+                        <option value=''>환불완료일</option>
+                      </select>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <span class='inline-block px-1'>~</span>
+                      <span class='input-calendar-wrap'>
+                        <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                        <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                      </span>
+                      <div class='period-tab'>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>오늘</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' checked='' />
+                          <span class='label-text'>7일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>15일</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>3개월</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='period' />
+                          <span class='label-text'>1년</span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //주문 검색 -->
+            <!-- 주문 검색 > 상세검색 -->
+            <div class='open-btn mt-1 mb-4 text-right'>
+              <button type='button' class='btn px-4 py-1.5 text-xs font-bold'>상세검색 열기 <i class='fa-solid fa-caret-down'></i></button>
+            </div>
+            <div class='detail-search-wrap hidden'>
+              <div class='tbl-box'>
+                <table class='table' >
+
+                  <colgroup>
+                    <col style='width:15%' />
+                    <col style='width:35%' />
+                    <col style='width:15%' />
+                    <col style='width:35%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>주문상태</th>
+                      <td colspan='3'>
+                        <div class='flex justify-start flex-wrap'>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>전체</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>입금대기</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>결제완료</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>상품준비중</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>배송준비중</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>배송중</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>배송완료</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>구매확정</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>취소요청</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>취소완료</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>반품요청</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>반품승인</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>반품회수중</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>반품회수완료</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>반품확정</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>반품보류</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' checked='' />
+                            <span class='label-text'>교환요청</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' checked='' />
+                            <span class='label-text'>교환승인</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' checked='' />
+                            <span class='label-text'>교환회수중</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' checked='' />
+                            <span class='label-text'>교환보류</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' checked='' />
+                            <span class='label-text'>교환완료</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' checked='' />
+                            <span class='label-text'>재배송중</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>반송중</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>결제취소</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>결제실패</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>반품완료</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>환불요청</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>환불보류</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='state' />
+                            <span class='label-text'>환불완료</span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>결제수단</th>
+                      <td colspan='3'>
+                        <div class='flex justify-start flex-wrap'>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>전체</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>무통장</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>신용카드</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>계좌이체</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>마일리지</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>포인트</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>가상계좌</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>휴대폰</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>에스크로</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>네이버페이</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>카카오페이</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>페이코</span>
+                          </label>
+                          <label class='label w-[10%] mb-1'>
+                            <input type='checkbox' name='payment' />
+                            <span class='label-text'>토스</span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>회원여부</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' name='member' checked='' />
+                          <span class='label-text'>전체</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='radio' name='member' />
+                          <span class='label-text'>회원</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='member' />
+                          <span class='label-text'>비회원</span>
+                        </label>
+                      </td>
+                      <th scope='row'>주문형태</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='checkbox' name='order_form' checked='' />
+                          <span class='label-text'>PC</span>
+                        </label>
+                        <label class='label mr-5'>
+                          <input type='checkbox' name='order_form' checked='' />
+                          <span class='label-text'>모바일 WEB</span>
+                        </label>
+                        <label class='label'>
+                          <input type='checkbox' name='order_form' checked='' />
+                          <span class='label-text'>모바일 APP</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>브랜드검색</th>
+                      <td>
+                        <button class='btn-choose-brand btn-m'>브랜드 선택</button>
+                        <div class='flex justify-start flex-wrap align-middle mt-3'>
+                          <p class='flex-auto w-[16%]'>선택된 브랜드 :</p>
+                          <p class='flex-auto w-[84%]'>
+                            <span>나이키
+                              <button class='h-[18px] ml-1 px-1 text-sub-blue-900 text-center text-xs border border-sub-blue-200 rounded-sm hover:bg-main-lightblue active:text-white active:bg-sub-blue-900 active:border-sub-blue-900'><i class='fa-solid fa-xmark mt-[2px]'></i></button>
+                            </span>
+                            <span class='ml-5'>아디다스
+                              <button class='h-[18px] ml-1 px-1 text-sub-blue-900 text-center text-xs border border-sub-blue-200 rounded-sm hover:bg-main-lightblue active:text-white active:bg-sub-blue-900 active:border-sub-blue-900'><i class='fa-solid fa-xmark mt-[2px]'></i></button>
+                            </span>
+                          </p>
+                        </div>
+                      </td>
+                      <th scope='row'>NFT 신청</th>
+                      <td>
+                        <label class='label mr-5'>
+                          <input type='radio' name='nft' checked='' />
+                          <span class='label-text'>신청</span>
+                        </label>
+                        <label class='label'>
+                          <input type='radio' name='nft' />
+                          <span class='label-text'>미신청</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>부틱검색</th>
+                      <td colspan='3'>
+                        <select class='select-wrap !w-[147px]' name=''>
+                          <option value=''>전체</option>
+                          <option value=''>lofam</option>
+                          <option value=''>adda</option>
+                          <option value=''>amr</option>
+                          <option value=''>baseblu</option>
+                          <option value=''>boucci</option>
+                          <option value=''>coltoti</option>
+                          <option value=''>follifollie</option>
+                          <option value=''>gigio</option>
+                          <option value=''>gnb</option>
+                          <option value=''>julian</option>
+                          <option value=''>leam</option>
+                          <option value=''>luxlet</option>
+                          <option value=''>monti</option>
+                          <option value=''>oluxury</option>
+                          <option value=''>tessabit</option>
+                          <option value=''>vietti</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- //주문 검색 > 상세검색 -->
+            <div class='mt-7 text-right'>
+              <button type='button' class='btn-white-l px-9'>초기화</button>
+              <button type='button' class='btn-blue'>검색</button>
+            </div>
+            <!-- 주문리스트 -->
+            <div class='tit-box mt-10'><h3>주문 리스트</h3></div>
+            <p>검색 <span class='text-red'>3</span>개 / 전체 <span class='text-red'>43</span>개</p>
+            <div class='mt-7'>
+              <span class='inline-block mr-1'>* 선택한 주문을 </span>
+              <select class='select-wrap' name=''>
+                <option value=''>주문상태</option>
+                <option value=''>교환접수</option>
+                <option value=''>반송중</option>
+                <option value=''>재배송중</option>
+                <option value=''>교환보류</option>
+                <option value=''>교환완료</option>
+              </select>
+              <button type='button' class='btn-m'>일괄처리</button>
+              <div class='mt-1' id='app'></div>
+            </div>
+            <div class='mt-1 text-right'>
+              <button type='button' class='btn-all-excel-download btn-white-m-sub'><span class='inline-block relative top-[-3px] right-[3px]'>전체(검색) 엑셀 다운로드 </span><span class='icon-download inline-block w-[16px] h-[16px] bg-icon-download bg-center bg-no-repeat'></span></button>
+              <button type='button' class='btn-excel-download btn-white-m-sub'><span class='inline-block relative top-[-3px] right-[3px]'>선택 엑셀 다운로드 </span><span class='icon-download inline-block w-[16px] h-[16px] bg-icon-download bg-center bg-no-repeat'></span></button>
+            </div>
+            <div class='w-full p-10 text-sub-blue-500 text-center border border-dashed border-sub-blue-200'>검색된 주문이 없습니다.</div>
+            <!-- //주문리스트 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

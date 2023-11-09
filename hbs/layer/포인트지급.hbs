@@ -1,0 +1,95 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content">
+    <div class="layer-header">
+      <h1>포인트 지급</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <p><span class="text-red">($회원)</span>에게 <span class="text-main-blue">3,000</span> (포인트)를 지급합니다.</p>
+      <table class="table mt-1" summary="포인트 지급">
+
+        <colgroup>
+          <col style="width:20%">
+          <col style="width:80%">
+        </colgroup>
+        <tbody>
+        <tr>
+          <th scope="row">금액 설정 <span class="text-red">*</span></th>
+          <td>
+            <label class="label">
+              <input type="radio" name="">
+              <span class="label-text"><span class="text-main-blue">3,000</span> (포인트) 지급</span>
+            </label>
+            <div class="mt-1">
+              <label class="label">
+                <input type="radio" name="">
+                <span class="label-text">직접 입력</span>
+                <input type="text" class="input-wrap ml-2" placeholder="placeholder">
+              </label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">유효 기간 <span class="text-red">*</span></th>
+          <td>
+            <label class="label">
+              <input type="radio" name="">
+              <span class="label-text">기본 설정</span>
+            </label>
+            <div class="mt-1">
+              <label class="label">
+                <input type="radio" name="">
+                <span class="label-text">직접 설정</span>
+                <span class="input-calendar-wrap ml-2">
+                  <button type="button" class="btn-calender"><span class="icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat"></span></button>
+                  <input type="text" class="inline-block float-right w-[76px] h-[38px]">
+                </span>
+              </label>
+            </div>
+            <p class="text-red mt-1">* 유효 기간을 '기본 설정'으로 지정하는 경우, '회원 > 회원 관리 > (포인트) 기본 설정 관리'의 기본 정책을 따르게 됩니다.</p>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">사유 <span class="text-red">*</span></th>
+          <td>
+            <label class="label">
+              <input type="radio" name="">
+              <span class="label-text">후기 작성</span>
+            </label>
+            <div class="mt-1">
+              <label class="label">
+                <input type="radio" name="">
+                <span class="label-text">직접 입력</span>
+                <div class="mt-1 pl-7">
+                  <input type="text" class="input-wrap w-full" placeholder="placeholder">
+                </div>
+              </label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">안내</th>
+          <td>
+            <label class="label">
+              <input type="checkbox" name="">
+              <span class="label-text">SMS</span>
+            </label>
+            <label class="label">
+              <input type="checkbox" name="">
+              <span class="label-text">메일</span>
+            </label>
+            <label class="label">
+              <input type="checkbox" name="">
+              <span class="label-text">카카오톡</span>
+            </label>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">지급</button>
+    </div>
+  </div>
+</div>

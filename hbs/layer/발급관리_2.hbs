@@ -1,0 +1,72 @@
+<div class="layer-issuance layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content !w-[1300px]">
+    <div class="layer-header">
+      <h1>발급 관리</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <h2 class="text-sub-blue-500 mb-2">검색 조건</h2>
+      <div class="tbl-box">
+        <table class="table" summary="발급 관리">
+
+          <colgroup>
+            <col style="width:20%">
+            <col style="width:80%">
+          </colgroup>
+          <tbody>
+          <tr>
+            <th scope="row">할인 코드명</th>
+            <td>겨울맞이 할인 이벤트</td>
+          </tr>
+          <tr>
+            <th scope="row">발급 현황</th>
+            <td>전체 발급 : 000명 (사용 : 00명 / 미사용 : 00명)</td>
+          </tr>
+          <tr>
+            <th scope="row">사용(유효) 기간</th>
+            <td>사용가능일 : 2022-04-01 부터 2022-04-31 까지</td>
+          </tr>
+          <tr>
+            <th scope="row">회원 검색</th>
+            <td>
+              <select class="select-wrap" name="">
+                <option value="">선택</option>
+                <option value="">아이디</option>
+                <option value="">이름</option>
+              </select>
+              <input type="text" class="input-wrap" placeholder="placeholder"/>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">사용 여부</th>
+            <td>
+              <label class="label">
+                <input type="radio" name="" checked/>
+                <span class="label-text">전체</span>
+              </label>
+              <label class="label">
+                <input type="radio" name=""/>
+                <span class="label-text">사용</span>
+              </label>
+              <label class="label">
+                <input type="radio" name=""/>
+                <span class="label-text">미사용</span>
+              </label>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center mt-3">
+        <button type="button" class="btn-m">검색</button>
+      </div>
+      <h2 class="text-sub-blue-500 mt-6 mb-2">할인 코드 리스트</h2>
+      <p class="text-right text-red">총 혜택 금액 : 100,000원</p>
+      <div id="app" class="mt-1"></div>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">확인</button>
+    </div>
+  </div>
+</div>

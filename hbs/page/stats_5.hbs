@@ -1,0 +1,530 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 검색조건 -->
+            <div>
+              <div class='tit-box'><h3>상품별 매출 통계</h3></div>
+              <table class='table mt-1' >
+
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>상품 정보 조회</th>
+                    <td>
+                      <div class='H-BOX'>
+                        <select class='select-wrap'>
+                          <option>전체</option>
+                          <option>상품명</option>
+                          <option>수동관리코드</option>
+                        </select>
+                        <input type='text' class='input-wrap' />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>기간별 검색</th>
+                    <td>
+                      <div class='H-BOX'>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <span>~</span>
+                        <span class='input-calendar-wrap'>
+                          <button type='button' class='btn-calender'><span class='icon-calender inline-block w-[14px] h-[14px] bg-icon-calender bg-center bg-no-repeat'></span></button>
+                          <input type='text' class='inline-block float-right w-[76px] h-[38px]' />
+                        </span>
+                        <div class='period-tab'>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>오늘</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' checked='' />
+                            <span class='label-text'>7일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>15일</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>1개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>3개월</span>
+                          </label>
+                          <label class='label'>
+                            <input type='radio' name='period' />
+                            <span class='label-text'>1년</span>
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>업체별 검색</th>
+                    <td>
+                      <label class='label'>
+                        <input type='radio' />
+                        <span class='label-text'>전체</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>본사</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' />
+                        <span class='label-text'>공급사</span>
+                      </label>
+                      <button type='button' class='btn-m ml-1'>공급사 선택</button>
+                      <div class='inline-grid grid-cols-[75px_1fr] mt-1'>
+                        <span class='text-sub-blue-700 font-semibold'>선택된 공급사 :</span>
+                        <div class='flex flex-wrap gap-[4px_8px]'>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>테스트 공급사</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>카테고리 검색</th>
+                    <td>
+                      <div class='inline-grid grid-flow-col gap-2 items-center'>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-1뎁스선택-</option>
+                          <option>FASHION</option>
+                          <option>OUTDOOR</option>
+                          <option>LUXURY</option>
+                          <option>MENS</option>
+                          <option>WOMEN</option>
+                          <option>TRAVEL</option>
+                          <option>TICKET</option>
+                          <option>COSMETIC</option>
+                          <option>CAR</option>
+                          <option>HOME</option>
+                        </select>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-2뎁스선택-</option>
+                          <option>APPERAL</option>
+                          <option>EQUIPMENT</option>
+                          <option>SHOSE</option>
+                          <option>CAMPING</option>
+                          <option>PERFUME</option>
+                          <option>AUDIO</option>
+                          <option>GAME</option>
+                        </select>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-3뎁스선택-</option>
+                          <option>JACKET</option>
+                          <option>PANTS</option>
+                          <option>SHIRTS</option>
+                          <option>BELT</option>
+                        </select>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-4뎁스선택-</option>
+                          <option>바람막이</option>
+                          <option>방수자켓</option>
+                          <option>다운자켓</option>
+                          <option>샤워가운</option>
+                          <option>조끼</option>
+                          <option>트레이닝자켓</option>
+                        </select>
+                        <select multiple='' class='w-28 h-28 border border-sub-blue-200 rounded-sm bg-none'>
+                          <option>-5뎁스선택-</option>
+                          <option>바람막이</option>
+                          <option>방수자켓</option>
+                          <option>다운자켓</option>
+                          <option>샤워가운</option>
+                          <option>조끼</option>
+                          <option>트레이닝자켓</option>
+                        </select>
+                        <button type='button' class='btn-m'>선택</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>브랜드 검색</th>
+                    <td>
+                      <button type='button' class='btn-m ml-1'>브랜드 선택</button>
+                      <div class='inline-grid grid-cols-[75px_1fr] mt-1'>
+                        <span class='text-sub-blue-700 font-semibold'>선택된 브랜드 :</span>
+                        <div class='flex flex-wrap gap-[4px_8px]'>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>파타고니아</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>샤넬</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>프라다</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>보테가 베네타</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>카카오</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                          <div class='cursor-default'>
+                            <span class='align-text-bottom'>네이버</span>
+                            <button type='button' class='w-4 h-4 text-center border border-sub-blue-300 text-sub-blue-700 mb-0.5'><i class='fa-solid fa-xmark'></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>기획전</th>
+                    <td>
+                      <select class='select-wrap'>
+                        <option>-기획전-</option>
+                        <option>신상품이벤트</option>
+                        <option>얼리버드이벤트</option>
+                        <option>마지막땡처리</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='mt-1 text-center'>
+                <button type='button' class='btn-m'>검색</button>
+              </div>
+            </div>
+            <!-- //검색조건 -->
+
+            <!-- 리스트 -->
+            <div class='mt-10'>
+              <div>
+                <label class='label'>
+                  <input type='radio' />
+                  <span class='label-text'>상품 코드별</span>
+                </label>
+                <label class='label ml-5'>
+                  <input type='radio' />
+                  <span class='label-text'>상품 옵션별</span>
+                </label>
+              </div>
+              <!-- 상품코드별 -->
+              <div class='mt-1'>
+                <div class='flex justify-between items-end'>
+                  <div>
+                    <div>조회 <span class='text-red'>0</span>건 / 전체 <span class='text-red'>0</span>건</div>
+                    <div class='text-sub-blue-400'>* 리스트의 이미지 클릭시 고객 상룸 상세 페이지, 시스템 상품 순번 클릭시 관리자 상품 등록/수정 페이지 새창 열기 표시</div>
+                  </div>
+                  <div>
+                    <select class='select-wrap'>
+                      <option>판매 금액 높은 순</option>
+                      <option>판매 수량 많은 순</option>
+                    </select>
+                    <select class='select-wrap'>
+                      <option>10개씩 보기</option>
+                      <option>20개씩 보기</option>
+                      <option>30개씩 보기</option>
+                      <option>50개씩 보기</option>
+                      <option>100개씩 보기</option>
+                      <option>150개씩 보기</option>
+                      <option>200개씩 보기</option>
+                      <option>300개씩 보기</option>
+                      <option>500개씩 보기</option>
+                      <option>1000개씩 보기</option>
+                      <option>5000개씩 보기</option>
+                    </select>
+                  </div>
+                </div>
+                <table class='table mt-1' >
+
+                  <thead>
+                    <tr>
+                      <th scope='col' class='text-center'>순위</th>
+                      <th scope='col' class='text-center'>이미지</th>
+                      <th scope='col' class='text-center'>시스템<br />상품순번</th>
+                      <th scope='col' class='text-center'>수동관리코드</th>
+                      <th scope='col' class='text-center'>상품명</th>
+                      <th scope='col' class='text-center'>공급사</th>
+                      <th scope='col' class='text-center'>소비자가</th>
+                      <th scope='col' class='text-center'>최저가</th>
+                      <th scope='col' class='text-center'>평균판매율</th>
+                      <th scope='col' class='text-center'>총 판매수량</th>
+                      <th scope='col' class='text-center'>총 판매금액</th>
+                      <th scope='col' class='text-center'>판매건수</th>
+                      <th scope='col' class='text-center'>판매상태</th>
+                      <th scope='col' class='text-center'>진열상태</th>
+                      <th scope='col' class='text-center'>재고</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='text-center'>4</td>
+                      <td class='text-center'>
+                        <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                      </td>
+                      <td class='text-center'>0010101</td>
+                      <td class='text-center'>bac1321</td>
+                      <td class='text-center'>스카이티</td>
+                      <td class='text-center'>본사</td>
+                      <td class='text-center'>100,000</td>
+                      <td class='text-center'>70%</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>77,111</td>
+                      <td class='text-center'>5,154,870,000</td>
+                      <td class='text-center'>5,555</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>진열</td>
+                      <td class='text-center'>무한</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>4</td>
+                      <td class='text-center'>
+                        <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                      </td>
+                      <td class='text-center'>0010101</td>
+                      <td class='text-center'>bac1321</td>
+                      <td class='text-center'>스카이티</td>
+                      <td class='text-center'>본사</td>
+                      <td class='text-center'>100,000</td>
+                      <td class='text-center'>70%</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>77,111</td>
+                      <td class='text-center'>5,154,870,000</td>
+                      <td class='text-center'>5,555</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>진열</td>
+                      <td class='text-center'>무한</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>4</td>
+                      <td class='text-center'>
+                        <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                      </td>
+                      <td class='text-center'>0010101</td>
+                      <td class='text-center'>bac1321</td>
+                      <td class='text-center'>스카이티</td>
+                      <td class='text-center'>본사</td>
+                      <td class='text-center'>100,000</td>
+                      <td class='text-center'>70%</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>77,111</td>
+                      <td class='text-center'>5,154,870,000</td>
+                      <td class='text-center'>5,555</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>진열</td>
+                      <td class='text-center'>무한</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>4</td>
+                      <td class='text-center'>
+                        <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                      </td>
+                      <td class='text-center'>0010101</td>
+                      <td class='text-center'>bac1321</td>
+                      <td class='text-center'>스카이티</td>
+                      <td class='text-center'>본사</td>
+                      <td class='text-center'>100,000</td>
+                      <td class='text-center'>70%</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>77,111</td>
+                      <td class='text-center'>5,154,870,000</td>
+                      <td class='text-center'>5,555</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>진열</td>
+                      <td class='text-center'>무한</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class='mt-1 text-right'>
+                  <button type='button' class='btn-white-m'>
+                    <span>검색 다운로드</span>
+                    <span class='icon-download inline-block w-[16px] h-[16px] align-sub bg-icon-download bg-center bg-no-repeat'></span>
+                  </button>
+                </div>
+                <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='ac30db56-2b82-41bd-b993-63f33450d665'>
+                  <div class='paging new'>
+                    <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                    <a href='#' class='prev btn-paging w-[50px]'>
+                      <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                      <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                    </a>
+                    <span class='now btn-paging leading-[26px]'>1</span>
+                    <a href='#' class='btn-paging leading-[26px]'>2</a>
+                    <a href='#' class='btn-paging leading-[26px]'>3</a>
+                    <a href='#' class='btn-paging leading-[26px]'>4</a>
+                    <a href='#' class='next btn-paging w-[50px]'>
+                      <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                      <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                    </a>
+                    <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                  </div>
+                </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+              </div>
+              <!-- //상품코드별 -->
+              <!-- 상품 옵션별 -->
+              <div class='mt-7'>
+                <div class='text-right'>
+                  <select class='select-wrap'>
+                    <option>판매 금액 높은 순</option>
+                    <option>판매 수량 많은 순</option>
+                  </select>
+                  <select class='select-wrap'>
+                    <option>10개씩 보기</option>
+                    <option>30개씩 보기</option>
+                    <option>50개씩 보기</option>
+                    <option>100개씩 보기</option>
+                  </select>
+                </div>
+                <table class='table mt-1' >
+
+                  <thead>
+                    <tr>
+                      <th scope='col' class='text-center'>순위</th>
+                      <th scope='col' class='text-center'>이미지</th>
+                      <th scope='col' class='text-center'>시스템<br />상품순번</th>
+                      <th scope='col' class='text-center'>수동관리코드</th>
+                      <th scope='col' class='text-center'>상품명</th>
+                      <th scope='col' class='text-center'>옵션</th>
+                      <th scope='col' class='text-center'>공급사</th>
+                      <th scope='col' class='text-center'>소비자가</th>
+                      <th scope='col' class='text-center'>평균판매율</th>
+                      <th scope='col' class='text-center'>총 판매수량</th>
+                      <th scope='col' class='text-center'>총 판매금액</th>
+                      <th scope='col' class='text-center'>판매건수</th>
+                      <th scope='col' class='text-center'>판매상태</th>
+                      <th scope='col' class='text-center'>진열상태</th>
+                      <th scope='col' class='text-center'>재고</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='text-center'>4</td>
+                      <td class='text-center'>
+                        <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                      </td>
+                      <td class='text-center'>0010101</td>
+                      <td class='text-center'>bac1321</td>
+                      <td class='text-center'>스카이티</td>
+                      <td class='text-center'>Black-S</td>
+                      <td class='text-center'>본사</td>
+                      <td class='text-center'>100,000</td>
+                      <td class='text-center'>70%</td>
+                      <td class='text-center'>77,111</td>
+                      <td class='text-center'>5,154,870,000</td>
+                      <td class='text-center'>5,555</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>진열</td>
+                      <td class='text-center'>무한</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>4</td>
+                      <td class='text-center'>
+                        <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                      </td>
+                      <td class='text-center'>0010101</td>
+                      <td class='text-center'>bac1321</td>
+                      <td class='text-center'>스카이티</td>
+                      <td class='text-center'>Black-S</td>
+                      <td class='text-center'>본사</td>
+                      <td class='text-center'>100,000</td>
+                      <td class='text-center'>70%</td>
+                      <td class='text-center'>77,111</td>
+                      <td class='text-center'>5,154,870,000</td>
+                      <td class='text-center'>5,555</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>진열</td>
+                      <td class='text-center'>무한</td>
+                    </tr>
+                    <tr>
+                      <td class='text-center'>4</td>
+                      <td class='text-center'>
+                        <img src='http://img.atny.com/data/goods/ATNY/23/1292323/049_70d5a254-a1fa-4489-bf4f-6fbe8cc763f6_list1_rb.png' width='40px' alt='남성 반팔셔츠' class='inline' />
+                      </td>
+                      <td class='text-center'>0010101</td>
+                      <td class='text-center'>bac1321</td>
+                      <td class='text-center'>스카이티</td>
+                      <td class='text-center'>Black-S</td>
+                      <td class='text-center'>본사</td>
+                      <td class='text-center'>100,000</td>
+                      <td class='text-center'>70%</td>
+                      <td class='text-center'>77,111</td>
+                      <td class='text-center'>5,154,870,000</td>
+                      <td class='text-center'>5,555</td>
+                      <td class='text-center'>50%</td>
+                      <td class='text-center'>진열</td>
+                      <td class='text-center'>무한</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class='mt-1 text-right'>
+                  <button type='button' class='btn-white-m'>
+                    <span>검색 다운로드</span>
+                    <span class='icon-download inline-block w-[16px] h-[16px] align-sub bg-icon-download bg-center bg-no-repeat'></span>
+                  </button>
+                </div>
+                <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='3f7369bf-c1c7-426d-b8d2-38c9bb82b77c'>
+                  <div class='paging new'>
+                    <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                    <a href='#' class='prev btn-paging w-[50px]'>
+                      <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                      <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                    </a>
+                    <span class='now btn-paging leading-[26px]'>1</span>
+                    <a href='#' class='btn-paging leading-[26px]'>2</a>
+                    <a href='#' class='btn-paging leading-[26px]'>3</a>
+                    <a href='#' class='btn-paging leading-[26px]'>4</a>
+                    <a href='#' class='next btn-paging w-[50px]'>
+                      <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                      <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                    </a>
+                    <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                  </div>
+                </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+              </div>
+              <!-- //상품 옵션별 -->
+            </div>
+            <!-- //리스트 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

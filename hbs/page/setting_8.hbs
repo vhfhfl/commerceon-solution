@@ -1,0 +1,122 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230815193132037'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'엑셀 다운로드 파일 검색'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col width='10%' />
+                    <col width='90%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <input type='text' class='input-wrap min-w-[20%]' placeholder='placeholder' />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='col'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                    {{#LOOP 2}}
+                      <tr>
+                        <th scope='col'>Label</th>
+                        <td>
+                          <select class='select-wrap min-w-[20%]'>
+                            <option>select</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                          </select>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+              </div>
+              <div class='text-center mt-6'>
+                <button type='button' class='btn-m'>검색</button>
+                <button type='button' class='btn-white-m'>초기화</button>
+              </div>
+            </section>
+            <section data-seq='20230815193806724'>
+              <script>Include('/hbs/component/TitleBox_3-a.hbs',{txt1:'엑셀 다운로드 양식 리스트'});</script>
+              <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+            </section>
+            <div class='tbl-box mt-1'>
+              <table class='table center'>
+                <tbody>
+                  <tr>
+                    <th>번호</th>
+                    <th>상태</th>
+                    <th>메뉴 분류</th>
+                    <th>상세 항목</th>
+                    <th>다운로드 양식명</th>
+                    <th>파일명</th>
+                    <th>다운로드 기간</th>
+                    <th>생성일시</th>
+                    <th>다운로드</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  {{#LOOP 3}}
+                    <tr>
+                      <td>{{number}}</td>
+                      <td>생성중</td>
+                      <td>주문</td>
+                      <td>주문 리스트</td>
+                      <td>통합 주문 리스트</td>
+                      <td>202_통합주문</td>
+                      <td>~ 2022-08-01</td>
+                      <td>2022-07-22 11:05:34</td>
+                      <td>
+                        <button type='button' class='btn-excel-download-certi btn-m'>다운로드</button>
+                      </td>
+                    </tr>
+                  {{/LOOP}}
+                </tbody>
+              </table>
+              <div class='mt-1'>
+                선택 양식
+                <button type='button' class='btn-warning-m'>삭제</button>
+              </div>
+              <!-- START : Handlebars.component : ../components/paging.hbs --><div class='PAGING' data-cpntid='a77b6cc5-7920-4e6f-ae42-63359f399e3e'>
+                <div class='paging new'>
+                  <a href='#' class='first btn-paging'><span class='icon-arrow-prev-first inline-block w-[25px] h-[25px] bg-icon-arrow-prev-first bg-center bg-no-repeat'></span></a>
+                  <a href='#' class='prev btn-paging w-[50px]'>
+                    <span class='icon-arrow-prev inline-block w-[25px] h-[25px] bg-icon-arrow-prev bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-left text-sub-blue-900'>이전</span>
+                  </a>
+                  <span class='now btn-paging leading-[26px]'>1</span>
+                  <a href='#' class='btn-paging leading-[26px]'>2</a>
+                  <a href='#' class='btn-paging leading-[26px]'>3</a>
+                  <a href='#' class='btn-paging leading-[26px]'>4</a>
+                  <a href='#' class='next btn-paging w-[50px]'>
+                    <span class='icon-arrow-next inline-block w-[25px] h-[25px] bg-icon-arrow-next bg-center bg-no-repeat'></span>
+                    <span class='inline-block h-full leading-[26px] float-right text-sub-blue-900'>다음</span>
+                  </a>
+                  <a href='#' class='last btn-paging'><span class='icon-arrow-next-last inline-block w-[25px] h-[25px] bg-icon-arrow-next-last bg-center bg-no-repeat'></span></a>
+                </div>
+              </div><!-- // END : Handlebars.component : ../components/paging.hbs -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

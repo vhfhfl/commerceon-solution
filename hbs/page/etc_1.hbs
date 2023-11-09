@@ -1,0 +1,766 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <!-- import -->
+          <!-- swiperjs : https://swiperjs.com/demos -->
+          <link rel='stylesheet' href='../libs/swiper-bundle.min.css' />
+          <script src='../libs/swiper-bundle.min.js'></script>
+          <!-- // import -->
+
+          <!-- 페이지 타이틀 :: START -->
+          <div class='cont-nav sticky top-0 bg-white z-50'>
+            <div class='flex'>
+              <h2 class='mr-4 text-lg font-bold leading-[inherit]'>커머스온</h2>
+              <div class='mr-[34px] text-[12px] font-semibold'>commerceon.co.kr</div>
+              <div class='text-[12px] font-semibold mr-[39px]'>
+                <div class='inline-block mr-[11px]'>
+                  <span>SMS</span>
+                  <span class='text-main-blue'>13,815</span>
+                  <span>건</span>
+                </div>
+                <div class='inline-block'>
+                  <span>알림톡</span>
+                  <span class='text-main-blue'>22,031</span>
+                  <span>건</span>
+                </div>
+              </div>
+              <div class='font-semibold h-auto' style='display:flex; align-items:center;'>
+                <span class='!leading-none mr-[6px]'>용량</span>
+                <div class='!leading-none w-[104px] h-[16px] inline-block bg-sub-blue-100 mr-[6px] overflow-hidden'>
+                  <div class='_per_bar relative bg-main-blue h-full' style='width:77%;'></div>
+                </div>
+                <span class='!leading-none text-main-blue'>6.1G</span><span>&nbsp;/&nbsp;</span>
+                <span>10G</span>
+              </div>
+            </div>
+            <div class='flex'>
+              <div>
+                <span class='font-semibold text-[#DC3545] mr-[3px]'>(긴급)</span>
+                <span class='font-semibold mr-[6px]'>SKT 알뜰폰 본인인증 서비스 점검 안내 (8/21)</span>
+                <span>
+                  <i class='fa-solid fa-sort'></i>
+                </span>
+              </div>
+              <div class='ml-[91px]'>
+                <div class='inline-block font-semibold text-[12px] text-gray-900'>
+                  <button type='button'>testadmin2</button>
+                  <span>&nbsp;/&nbsp;</span>
+                  <button type='button'>닉네임</button>
+                </div>
+                <div class='inline-block font-semibold text-[12px] text-sub-blue-400 ml-[16px]'>
+                  <button type='button'>정보수정</button>
+                  <span>&nbsp;/&nbsp;</span>
+                  <button type='button'>로그아웃</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // 페이지 타이틀 :: END -->
+          <div class='p-7'>
+            <div class='_tabs_ui_1 flex justify-center gap-[46px]'>
+              <label class='inline-block cursor-pointer pt-[4px]'>
+                <input class='sr-only peer absolute' name='20221219134112824' type='radio' checked='' />
+                <div class='font-semibold text-[18px] text-[#E0E0E0] peer-checked:text-main-blue'>오늘</div>
+                <div class='mt-[4px] border-b-[1px] border-b-[transparent] peer-checked:border-b-main-blue'></div>
+              </label>
+              <label class='inline-block cursor-pointer pt-[4px]'>
+                <input class='sr-only peer absolute' name='20221219134112824' type='radio' />
+                <div class='font-semibold text-[18px] text-[#E0E0E0] peer-checked:text-main-blue'>이번주</div>
+                <div class='mt-[4px] border-b-[1px] border-b-[transparent] peer-checked:border-b-main-blue'></div>
+              </label>
+              <label class='inline-block cursor-pointer pt-[4px]'>
+                <input class='sr-only peer absolute' name='20221219134112824' type='radio' />
+                <div class='font-semibold text-[18px] text-[#E0E0E0] peer-checked:text-main-blue'>이번달</div>
+                <div class='mt-[4px] border-b-[1px] border-b-[transparent] peer-checked:border-b-main-blue'></div>
+              </label>
+            </div>
+            <div class='_title_ui_3 mt-[25px] py-[8px] border-b border-b-sub-blue-100'>
+              <div class='text-[12px] text-sub-blue-400'>기준일자: 2022-07-25</div>
+            </div>
+            <div class='mt-[19px]'>
+              <img style='width:1328px; margin-left:-30px;' src='../images/temp/group_266.png' alt='차트 영역 임시 이미지' />
+            </div>
+            <div class='_divide_ui mt-[22px]'></div>
+            <section class='mt-[31px] flex gap-[60px]'>
+              <!-- 신규 게시글 현황 :: START -->
+              <div class='flex-none w-[442px]'>
+                <div class='_title_ui_2 inline-flex items-center mb-[14px]'>
+                  <div class='font-bold text-[20px] mr-[5px]'>신규 게시글 현황</div>
+                  <div class='text-[12px] text-sub-blue-400'>(최근 일주일 2022-07-20 ~ 2022-07-27)</div>
+                </div>
+                <!-- swiper_new_bulletin :: START -->
+                <div class='swiper_new_bulletin' data-swiper='basic'>
+                  <div class='swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden'>
+                    <div class='swiper-wrapper' id='swiper-wrapper-1297a13c2f017b5b' aria-live='polite' style='transition-duration: 0ms; transform: translate3d(-442px, 0px, 0px);'><div class='swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next' data-swiper-slide-index='1' role='group' aria-label='2 / 2' style='width: 442px;'>
+                        <div class='swiper-item'>
+                          <table class='table'>
+                            <thead>
+                              <tr>
+                                <th class='text-center'><span>구분</span></th>
+                                <th class='text-center'><strong>건</strong><strong>/</strong><strong class='text-[#DC3545]'>미답변</strong></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class='text-center'><span>상품 문의</span></td>
+                                <td class='text-center'><strong>2</strong><strong>/</strong><strong class='text-[#DC3545]'>2</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>1:1 문의</span></td>
+                                <td class='text-center'><strong>3</strong><strong>/</strong><strong class='text-[#DC3545]'>1</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>상품 후기</span></td>
+                                <td class='text-center'><strong>14</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>공급사 게시물</span></td>
+                                <td class='text-center'><strong>1</strong></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class='swiper-slide swiper-slide-active' data-swiper-slide-index='0' role='group' aria-label='1 / 2' style='width: 442px;'>
+                        <div class='swiper-item'>
+                          <table class='table'>
+                            <thead>
+                              <tr>
+                                <th class='text-center'><span>구분</span></th>
+                                <th class='text-center'><strong>건</strong><strong>/</strong><strong class='text-[#DC3545]'>미답변</strong></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class='text-center'><span>상품 문의</span></td>
+                                <td class='text-center'><strong>2</strong><strong>/</strong><strong class='text-[#DC3545]'>2</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>1:1 문의</span></td>
+                                <td class='text-center'><strong>3</strong><strong>/</strong><strong class='text-[#DC3545]'>1</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>상품 후기</span></td>
+                                <td class='text-center'><strong>14</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>공급사 게시물</span></td>
+                                <td class='text-center'><strong>1</strong></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class='swiper-slide swiper-slide-next swiper-slide-duplicate-prev' data-swiper-slide-index='1' role='group' aria-label='2 / 2' style='width: 442px;'>
+                        <div class='swiper-item'>
+                          <table class='table'>
+                            <thead>
+                              <tr>
+                                <th class='text-center'><span>구분</span></th>
+                                <th class='text-center'><strong>건</strong><strong>/</strong><strong class='text-[#DC3545]'>미답변</strong></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class='text-center'><span>상품 문의</span></td>
+                                <td class='text-center'><strong>2</strong><strong>/</strong><strong class='text-[#DC3545]'>2</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>1:1 문의</span></td>
+                                <td class='text-center'><strong>3</strong><strong>/</strong><strong class='text-[#DC3545]'>1</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>상품 후기</span></td>
+                                <td class='text-center'><strong>14</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>공급사 게시물</span></td>
+                                <td class='text-center'><strong>1</strong></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class='swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active' data-swiper-slide-index='0' role='group' aria-label='1 / 2' style='width: 442px;'>
+                        <div class='swiper-item'>
+                          <table class='table'>
+                            <thead>
+                              <tr>
+                                <th class='text-center'><span>구분</span></th>
+                                <th class='text-center'><strong>건</strong><strong>/</strong><strong class='text-[#DC3545]'>미답변</strong></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class='text-center'><span>상품 문의</span></td>
+                                <td class='text-center'><strong>2</strong><strong>/</strong><strong class='text-[#DC3545]'>2</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>1:1 문의</span></td>
+                                <td class='text-center'><strong>3</strong><strong>/</strong><strong class='text-[#DC3545]'>1</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>상품 후기</span></td>
+                                <td class='text-center'><strong>14</strong></td>
+                              </tr>
+                              <tr>
+                                <td class='text-center'><span>공급사 게시물</span></td>
+                                <td class='text-center'><strong>1</strong></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div></div>
+                    <span class='swiper-notification' aria-live='assertive' aria-atomic='true'></span></div>
+                  <div class='swiper-bottom-nav-box'>
+                    <div class='swiper-nav-button swiper-button-prev' tabindex='0' role='button' aria-label='Previous slide' aria-controls='swiper-wrapper-1297a13c2f017b5b'></div>
+                    <div class='swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal'><span class='swiper-pagination-bullet swiper-pagination-bullet-active' tabindex='0' role='button' aria-label='Go to slide 1' aria-current='true'></span><span class='swiper-pagination-bullet' tabindex='0' role='button' aria-label='Go to slide 2'></span></div>
+                    <div class='swiper-nav-button swiper-button-next' tabindex='0' role='button' aria-label='Next slide' aria-controls='swiper-wrapper-1297a13c2f017b5b'></div>
+                  </div>
+                </div>
+                <script>
+                  const swiper_new_bulletin = new Swiper(".swiper_new_bulletin > .swiper", { loop : true, navigation : { prevEl : ".swiper_new_bulletin .swiper-button-prev", nextEl : ".swiper_new_bulletin .swiper-button-next", }, pagination : { el : ".swiper_new_bulletin .swiper-pagination", clickable : true, }, });
+                </script>
+                <!-- // swiper_new_bulletin :: END -->
+              </div>
+              <!-- // 신규 게시글 현황 :: END -->
+              <!-- 주문처리 :: START -->
+              <div class='grow min-w-[0px]'>
+                <div class='_title_ui_2 inline-flex items-center mb-[14px]'>
+                  <div class='font-bold text-[20px] mr-[5px]'>주문처리</div>
+                  <div class='text-[12px] text-sub-blue-400'>(최근 일주일 2022-07-20 ~ 2022-07-27)</div>
+                </div>
+                <!-- swiper_new_order :: START -->
+                <div class='swiper_new_order' data-swiper='basic'>
+                  <div class='swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden'>
+                    <div class='swiper-wrapper' id='swiper-wrapper-4bca81eb089b5364' aria-live='polite' style='transition-duration: 0ms; transform: translate3d(-902px, 0px, 0px);'><div class='swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next' data-swiper-slide-index='1' role='group' aria-label='2 / 2' style='width: 902px;'>
+                        <div class='swiper-item'>
+                          <table class='table center'>
+                            <colgroup>
+                              <col class='w-[16.98%]' />
+                              <col />
+                              <col class='w-[16.98%]' />
+                              <col />
+                              <col class='w-[16.98%]' />
+                              <col />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th>입금대기</th>
+                                <td>99</td>
+                                <th>배송완료</th>
+                                <td>99</td>
+                                <th>결제취소</th>
+                                <td>99</td>
+                              </tr>
+                              <tr>
+                                <th>입금확인</th>
+                                <td>99</td>
+                                <th>구매확정</th>
+                                <td>99</td>
+                                <th>결제실패</th>
+                                <td>99</td>
+                              </tr>
+                              <tr>
+                                <th>상품준비중</th>
+                                <td>99</td>
+                                <th>반품요청</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>배송준비중</th>
+                                <td>99</td>
+                                <th>환불요청</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>배송중(해외+국내)</th>
+                                <td>99</td>
+                                <th>재배송중</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class='swiper-slide swiper-slide-active' data-swiper-slide-index='0' role='group' aria-label='1 / 2' style='width: 902px;'>
+                        <div class='swiper-item'>
+                          <table class='table center'>
+                            <colgroup>
+                              <col class='w-[16.98%]' />
+                              <col />
+                              <col class='w-[16.98%]' />
+                              <col />
+                              <col class='w-[16.98%]' />
+                              <col />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th>입금대기</th>
+                                <td>99</td>
+                                <th>배송완료</th>
+                                <td>99</td>
+                                <th>결제취소</th>
+                                <td>99</td>
+                              </tr>
+                              <tr>
+                                <th>입금확인</th>
+                                <td>99</td>
+                                <th>구매확정</th>
+                                <td>99</td>
+                                <th>결제실패</th>
+                                <td>99</td>
+                              </tr>
+                              <tr>
+                                <th>상품준비중</th>
+                                <td>99</td>
+                                <th>반품요청</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>배송준비중</th>
+                                <td>99</td>
+                                <th>환불요청</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>배송중(해외+국내)</th>
+                                <td>99</td>
+                                <th>재배송중</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class='swiper-slide swiper-slide-next swiper-slide-duplicate-prev' data-swiper-slide-index='1' role='group' aria-label='2 / 2' style='width: 902px;'>
+                        <div class='swiper-item'>
+                          <table class='table center'>
+                            <colgroup>
+                              <col class='w-[16.98%]' />
+                              <col />
+                              <col class='w-[16.98%]' />
+                              <col />
+                              <col class='w-[16.98%]' />
+                              <col />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th>입금대기</th>
+                                <td>99</td>
+                                <th>배송완료</th>
+                                <td>99</td>
+                                <th>결제취소</th>
+                                <td>99</td>
+                              </tr>
+                              <tr>
+                                <th>입금확인</th>
+                                <td>99</td>
+                                <th>구매확정</th>
+                                <td>99</td>
+                                <th>결제실패</th>
+                                <td>99</td>
+                              </tr>
+                              <tr>
+                                <th>상품준비중</th>
+                                <td>99</td>
+                                <th>반품요청</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>배송준비중</th>
+                                <td>99</td>
+                                <th>환불요청</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>배송중(해외+국내)</th>
+                                <td>99</td>
+                                <th>재배송중</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class='swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active' data-swiper-slide-index='0' role='group' aria-label='1 / 2' style='width: 902px;'>
+                        <div class='swiper-item'>
+                          <table class='table center'>
+                            <colgroup>
+                              <col class='w-[16.98%]' />
+                              <col />
+                              <col class='w-[16.98%]' />
+                              <col />
+                              <col class='w-[16.98%]' />
+                              <col />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <th>입금대기</th>
+                                <td>99</td>
+                                <th>배송완료</th>
+                                <td>99</td>
+                                <th>결제취소</th>
+                                <td>99</td>
+                              </tr>
+                              <tr>
+                                <th>입금확인</th>
+                                <td>99</td>
+                                <th>구매확정</th>
+                                <td>99</td>
+                                <th>결제실패</th>
+                                <td>99</td>
+                              </tr>
+                              <tr>
+                                <th>상품준비중</th>
+                                <td>99</td>
+                                <th>반품요청</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>배송준비중</th>
+                                <td>99</td>
+                                <th>환불요청</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>배송중(해외+국내)</th>
+                                <td>99</td>
+                                <th>재배송중</th>
+                                <td>99</td>
+                                <th></th>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div></div>
+                    <span class='swiper-notification' aria-live='assertive' aria-atomic='true'></span></div>
+                  <div class='swiper-bottom-nav-box'>
+                    <div class='swiper-nav-button swiper-button-prev' tabindex='0' role='button' aria-label='Previous slide' aria-controls='swiper-wrapper-4bca81eb089b5364'></div>
+                    <div class='swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal'><span class='swiper-pagination-bullet swiper-pagination-bullet-active' tabindex='0' role='button' aria-label='Go to slide 1' aria-current='true'></span><span class='swiper-pagination-bullet' tabindex='0' role='button' aria-label='Go to slide 2'></span></div>
+                    <div class='swiper-nav-button swiper-button-next' tabindex='0' role='button' aria-label='Next slide' aria-controls='swiper-wrapper-4bca81eb089b5364'></div>
+                  </div>
+                </div>
+                <script>
+                  const swiper_new_order = new Swiper(".swiper_new_order > .swiper", { loop : true, navigation : { prevEl : ".swiper_new_order .swiper-button-prev", nextEl : ".swiper_new_order .swiper-button-next", }, pagination : { el : ".swiper_new_order .swiper-pagination", clickable : true, }, });
+                </script>
+                <!-- // swiper_new_order :: END -->
+              </div>
+              <!-- // 주문처리 :: END -->
+            </section>
+            <section>
+              <div class='mt-[28px] flex justify-between items-center'>
+                <div>
+                  <div class='_title_ui_2 inline-flex items-center'>
+                    <div class='font-bold text-[20px] mr-[5px]'>쇼핑몰 통계</div>
+                    <div class='text-[12px] text-sub-blue-400'>(최근 일주일 2022-07-20 ~ 2022-07-27)</div>
+                  </div>
+                </div>
+                <div>
+                  <button type='button' class='btn-black'>더보기 +</button>
+                </div>
+              </div>
+              <div class='_tabs_ui_2 flex space-x-[46px] border-b-[1px] border-b-[#F1F2F7] mt-[23px]'>
+                <label class='inline-block cursor-pointer pt-[4px]'>
+                  <input class='sr-only peer absolute' name='20221219162959590' type='radio' checked='' />
+                  <div class='font-semibold text-[15px] text-[#E0E0E0] peer-checked:text-main-blue'>매출</div>
+                  <div class='relative bottom-[-1px] mt-[4px] border-b-[1px] border-b-[transparent] peer-checked:border-b-main-blue'></div>
+                </label>
+                <label class='inline-block cursor-pointer pt-[4px]'>
+                  <input class='sr-only peer absolute' name='20221219162959590' type='radio' />
+                  <div class='font-semibold text-[15px] text-[#E0E0E0] peer-checked:text-main-blue'>방문자</div>
+                  <div class='relative bottom-[-1px] mt-[4px] border-b-[1px] border-b-[transparent] peer-checked:border-b-main-blue'></div>
+                </label>
+                <label class='inline-block cursor-pointer pt-[4px]'>
+                  <input class='sr-only peer absolute' name='20221219162959590' type='radio' />
+                  <div class='font-semibold text-[15px] text-[#E0E0E0] peer-checked:text-main-blue'>회원가입</div>
+                  <div class='relative bottom-[-1px] mt-[4px] border-b-[1px] border-b-[transparent] peer-checked:border-b-main-blue'></div>
+                </label>
+              </div>
+              <div class='mt-[28px]'>
+                <img style='margin-left:-30px;' src='../images/temp/group_267.png' alt='라인차트 임시 이미지' />
+              </div>
+            </section>
+            <div class='_divide_ui mt-[39px]'></div>
+            <!-- 게시판 :: START -->
+            <section class='mt-[24px] divide-x-[1px] divide-[#F1F2F7] grid grid-cols-3 gap-0' style='display:grid;'>
+              <!-- 공지사항 :: START -->
+              <article class='py-[8px] pr-[45px]'>
+                <div class='flex justify-between'>
+                  <div class='_title_ui_2 inline-flex items-center'>
+                    <div class='font-bold text-[20px] mr-[5px]'>공지사항</div>
+                  </div>
+                  <a class='font-semibold text-gray-900'>더보기 +</a>
+                </div>
+                <ul class='mt-[25px] mb-[12px] space-y-[20px]'>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                </ul>
+
+              </article>
+              <!-- // 공지사항 :: END -->
+              <!-- 패치리스트 :: START -->
+              <article class='py-[8px] px-[45px]'>
+                <div class='flex justify-between'>
+                  <div class='_title_ui_2 inline-flex items-center'>
+                    <div class='font-bold text-[20px] mr-[5px]'>패치리스트</div>
+                  </div>
+                  <a class='font-semibold text-gray-900'>더보기 +</a>
+                </div>
+                <ul class='mt-[25px] mb-[12px] space-y-[20px]'>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                </ul>
+
+              </article>
+              <!-- // 패치리스트 :: END -->
+              <!-- 진행중인 이벤트 -->
+              <article class='py-[8px] pl-[45px]'>
+                <div class='flex justify-between'>
+                  <div class='_title_ui_2 inline-flex items-center'>
+                    <div class='font-bold text-[20px] mr-[5px]'>진행중인 이벤트</div>
+                  </div>
+                  <a class='font-semibold text-gray-900'>더보기 +</a>
+                </div>
+                <ul class='mt-[25px] mb-[12px] space-y-[20px]'>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class='flex justify-between'>
+                      <div class='grow flex mr-[10px] min-w-[0px]'>
+                        <div class='flex-none text-[13px] text-[#DC3545] font-semibold mr-[4px]'>(공지)</div>
+                        <div class='grow text-[15px] text-[#0f1222] min-w-[0px]'>
+                          <div class='truncate'>
+                            인터넷 익스플로러 지원 종료 관련에 따른 상세 안내
+                          </div>
+                        </div>
+                      </div>
+                      <div class='flex-none text-sub-blue-400 font-semibold'>2022-07-01</div>
+                    </a>
+                  </li>
+                </ul>
+
+              </article>
+              <!-- // 진행중인 이벤트 -->
+            </section>
+            <!-- // 게시판 :: END -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>
+<div class='LayerPopup On'>
+  <script>Include('/hbs/layer/Alert_1-a.hbs');</script>
+</div>

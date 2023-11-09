@@ -1,0 +1,222 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230818141259425'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'계정 보안 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col style='width: 15%' />
+                    <col style='width: 85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <article class='CenterLeft' style='gap:4px;'>
+                          <span>Lorem Ipsum is</span>
+                          <script>Include('/hbs/component/SelectBox_1-a.hbs');</script>
+                          <span>simply dummy text</span>
+                        </article>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        <div class='mt-2'>
+                          <article class='CenterLeft' style='gap:4px;'>
+                            <input type='text' class='input-wrap' placeholder='placeholder' />
+                            <span>Lorem Ipsum is</span>
+                          </article>
+                          <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section data-seq='20230818141333429'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'관리자 보안 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col style='width: 15%' />
+                    <col style='width: 85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/CheckBox_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        <div class='mt-2'>
+                          <article class='CenterLeft' style='gap:4px;'>
+                            <input type='text' class='input-wrap' placeholder='placeholder' />
+                            <span>Lorem Ipsum is</span>
+                          </article>
+                          <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section data-seq='20230818141402663'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'자동 로그아웃'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col style='width: 15%' />
+                    <col style='width: 85%' />
+                  </colgroup>
+                  <tbody>
+                    {{#LOOP 2}}
+                      <tr>
+                        <th scope='row'>Label</th>
+                        <td>
+                          <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                          <div class='mt-2'>
+                            <article class='CenterLeft' style='gap:4px;'>
+                              <script>Include('/hbs/component/SelectBox_1-a.hbs');</script>
+                              <span>Lorem Ipsum is simply dummy text</span>
+                            </article>
+                          </div>
+                        </td>
+                      </tr>
+                    {{/LOOP}}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section data-seq='20230818141423850'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'엑셀 다운로드 보안 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col style='width: 15%' />
+                    <col style='width: 85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <article class='CenterLeft' style='gap:4px;'>
+                          <input type='text' class='input-wrap' placeholder='placeholder' />
+                          <span>일</span>
+                        </article>
+                        <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <article class='CenterLeft' style='gap:4px;'>
+                          <span class='pr-5'>관리자</span>
+                          <script>Include('/hbs/component/CheckBox_1-a.hbs');</script>
+                        </article>
+                        <article class='CenterLeft mt-1' style='gap:4px;'>
+                          <span class='pr-5'>공급사</span>
+                          <script>Include('/hbs/component/CheckBox_1-a.hbs');</script>
+                        </article>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/CheckBox_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section data-seq='20230818141539311'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'IP 접속 제한 설정'});</script>
+              <div class='tbl-box'>
+                <table class='table'>
+                  <colgroup>
+                    <col style='width: 15%' />
+                    <col style='width: 85%' />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope='row'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        <div class='mt-2'>
+                          <div class='tbl-box'>
+                            <table class='border-table w-auto'>
+                              <tbody>
+                                <tr>
+                                  <th scope='row'>접속 불가 IP 추가</th>
+                                  <td>
+                                    <div class='H-BOX'>
+                                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                                      <button type='button' class='btn-m'>추가</button>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope='row'>접속 불가 IP</th>
+                                  <td>
+                                    {{#LOOP 3}}
+                                      <div class='mb-2'>{{number}}. 106.241.24.3
+                                        <button type='button' class='rounded-sm bg-red text-white w-12 h-7 text-xs'>
+                                          <i class='fa-solid fa-xmark'></i>
+                                          삭제
+                                        </button>
+                                      </div>
+                                    {{/LOOP}}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <script>Include('/hbs/component/BtnBox_1-a.hbs');</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

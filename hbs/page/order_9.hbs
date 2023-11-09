@@ -1,0 +1,279 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <!-- 결제정보 -->
+            <div class='tit-box'><h3>결제 정보</h3></div>
+            <div class='tbl-box'>
+              <p>* 주문한 상품 2개 중 <span class='text-red'>2</span>개 환불 요청</p>
+              <table class='table mt-3' >
+
+                <colgroup>
+                  <col style='width:16.6666%' />
+                  <col style='width:16.6666%' />
+                  <col style='width:16.6666%' />
+                  <col style='width:16.6666%' />
+                  <col style='width:16.6666%' />
+                  <col style='width:16.6666%' />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope='row' class='text-center'>상품 판매금액</th>
+                    <th scope='row' class='text-center'>총 배송비</th>
+                    <th scope='row' class='text-center'>총 할인금액</th>
+                    <th scope='row' class='text-center'>총 추가결제금액</th>
+                    <th scope='row' class='text-center'>총 결제금액</th>
+                    <th scope='row' class='text-center'>총 적립금액</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class='text-center'>60,000 원</td>
+                    <td class='text-center'>0 원</td>
+                    <td class='text-center'>10,000 원</td>
+                    <td class='text-center'>0 원</td>
+                    <td class='text-center'>50,000 원</td>
+                    <td class='text-center'>0 원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //결제정보 -->
+            <!-- 환불상품 -->
+            <div class='tit-box text-lg font-bold mt-10 mb-2'><h3>환불 상품</h3></div>
+            <div id='app'></div>
+            <div class='mt-3'>
+              <span class='inline-block mr-1'>* 선택한 상품을 </span>
+              <select class='select-wrap' name=''>
+                <option value=''>상품상태</option>
+                <option value=''>결제완료</option>
+                <option value=''>상품준비중</option>
+                <option value=''>배송완료</option>
+                <option value=''>반품접수</option>
+              </select>
+              <button type='button' class='btn-m'>변경</button>
+            </div>
+            <!-- //환불상품 -->
+            <!-- 쿠폰/할인/혜택환불정보 -->
+            <div class='tit-box text-lg font-bold mt-10 mb-2'><h3>쿠폰/할인/혜택 환불 정보</h3></div>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:20%' />
+                  <col style='width:80%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>상품 금액</th>
+                    <td>60,000 원</td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>회원 할인 금액</th>
+                    <td>
+                      <span>3,000원</span>
+                      <p class='mt-1'>C등급 회원 할인 5% 할인 (<span class='text-red'>-3,000</span>원)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>총 상품 쿠폰 할인 금액</th>
+                    <td>
+                      <p>2,000원</p>
+                      <p class='mt-1'>[쿠폰번호] 티셔츠 상품할인쿠폰 (<span class='text-red'>-1,000</span>원)</p>
+                      <p class='mt-1'>[쿠폰번호] 생일쿠폰 (<span class='text-red'>-1,000</span>원)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>총 주문 쿠폰 할인 금액</th>
+                    <td>
+                      <p><input type='text' class='input-wrap text-right mx-1' value='5,000' /> 원</p>
+                      <p class='mt-1'>[쿠폰번호] 주문서 5,000원 정액쿠폰 (<span class='text-red'>-5,000</span>원)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>코드 할인 금액</th>
+                    <td>
+                      <p><input type='text' class='input-wrap text-right mx-1' /> 원</p>
+                      <p class='mt-1'>[할인코드] ASDASD141 (<span class='text-red'>-1,000</span>원)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>포인트 할인 금액</th>
+                    <td>
+                      <p class='inline-block mr-5'><input type='text' class='input-wrap text-right mx-1' /> 원</p>
+                      <label class='label'>
+                        <input type='radio' name='' checked='' />
+                        <span class='label-text'>환불함</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>환불안함</span>
+                      </label>
+                      <span class='ml-5'>(최대 반환 가능 포인트 : <span class='text-red'>0</span>원)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>예치금 할인 금액</th>
+                    <td>
+                      <p class='inline-block mr-5'><input type='text' class='input-wrap text-right mx-1' value='5,000' />원</p>
+                      <label class='label'>
+                        <input type='radio' name='' checked='' />
+                        <span class='label-text'>환불함</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='' />
+                        <span class='label-text'>환불안함</span>
+                      </label>
+                      <span class='ml-5'>(최대 반환 가능 예치금 : <span class='text-red'>0</span>원)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>총 배송비</th>
+                    <td>
+                      <p class='inline-block mr-5'><input type='text' class='input-wrap text-right mx-1' value='3,000' />원</p>
+                      <label class='label'>
+                        <input type='radio' name='shipping' checked='' />
+                        <span class='label-text'>편도</span>
+                      </label>
+                      <label class='label ml-5'>
+                        <input type='radio' name='shipping' />
+                        <span class='label-text'>왕복</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>총 적립 금액</th>
+                    <td>
+                      <p><span class='text-main-blue'>(+) 0</span> 원</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>총 환불 금액</th>
+                    <td>
+                      <p>47,000 원</p>
+                      <p class='mt-1 text-sub-blue-500'>(상품금액 - 회원할인금액 - 총상품쿠폰할인금액 - 코드할인금액 - 포인트할인금액 - 예치금할인금액 - 총배송비)</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //쿠폰/할인/혜택환불정보 -->
+            <!-- 환불방법설정 -->
+            <div class='tit-box text-lg font-bold mt-10 mb-2'><h3>환불 방법 설정</h3></div>
+            <div class='tbl-box'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:20%' />
+                  <col style='width:80%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>환불 금액</th>
+                    <td>47,000 원</td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>환불 수단</th>
+                    <td>
+                      <select class='select-wrap' name=''>
+                        <option value=''>환불 수단</option>
+                        <option value=''>무통장 입금</option>
+                        <option value=''>PG 환불</option>
+                        <option value=''>예치금 환불</option>
+                      </select>
+                      <p class='mt-1 text-red'>* 운영자가 고객 환불 계좌로 개별 환불 입금을 하여야 합니다.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>PG 환불 금액</th>
+                    <td>
+                      <input type='text' class='input-wrap mr-1' /><span>원</span>
+                      <p class='mt-1 text-red'>* 계약된 PG사로 입력된 금액 만큼 카드 승인 취소 요청 됩니다.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>환불 사유</th>
+                    <td>단순변심</td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>환불 상세 사유</th>
+                    <td>
+                      <p>[관리자] 주문 상품 5건 중 2건 미출고</p>
+                      <label class='label block mt-1'>
+                        <input type='checkbox' name='refund' />
+                        <span class='label-text'>상세사유를 고객에게 노출합니다.</span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>환불 계좌 정보</th>
+                    <td>
+                      <select class='select-wrap' name=''>
+                        <option value=''>은행 선택</option>
+                      </select>
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                      <input type='text' class='input-wrap' placeholder='placeholder' />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //환불방법설정 -->
+            <!-- 관리자메모 -->
+            <div class='tit-box text-lg font-bold mt-10 mb-2'><h3>관리자 메모</h3></div>
+            <div id='app'></div>
+            <div class='tbl-box mt-7'>
+              <table class='table' >
+
+                <colgroup>
+                  <col style='width:20%' />
+                  <col style='width:80%' />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope='row'>메모 구분</th>
+                    <td>
+                      <select class='select-wrap !w-[147px]' name=''>
+                        <option value=''>메모 구분</option>
+                        <option value=''>입금/주문</option>
+                        <option value=''>배송</option>
+                        <option value=''>품절</option>
+                        <option value=''>교환</option>
+                        <option value=''>반품</option>
+                        <option value=''>환불</option>
+                        <option value=''>A/S</option>
+                        <option value=''>기타</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope='row'>메모</th>
+                    <td class='flex justify-between'>
+                      <textarea class='flex-auto w-11/12 h-[100px] overflow-y-auto mr-4 p-2 border border-sub-blue-200 rounded-sm'></textarea>
+                      <button class='flex-auto w-1/12 h-[100px] btn-m'>등록</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //관리자메모 -->
+            <div class='mt-7 text-right'>
+              <button type='button' class='btn-white-l px-10'>취소</button>
+              <button type='button' class='btn-blue'>확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

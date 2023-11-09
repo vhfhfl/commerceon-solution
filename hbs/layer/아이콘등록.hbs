@@ -1,0 +1,50 @@
+<div class="layer">
+  <div class="bg-layer"></div>
+  <div class="layer-content">
+    <div class="layer-header">
+      <h1>아이콘 등록</h1>
+      <button type="button" class="btn-close-layer"><span class="icon-close-layer text-2xl inline-block w-[30px] h-[30px] bg-icon-close-layer bg-center bg-no-repeat"></span></button>
+    </div>
+    <div class="layer-body">
+      <table summary="아이콘 등록" class="table">
+
+        <tbody>
+        <tr>
+          <th scope="row">아이콘 명칭 <span class="text-red">*</span></th>
+          <td><input type="text" class="input-wrap" placeholder="placeholder"></td>
+        </tr>
+        <tr>
+          <th scope="row">아이콘 코드</th>
+          <td><span class="text-red">등록 시 자동 생성/수정 불가</span></td>
+        </tr>
+        <tr>
+          <th scope="row">사용 상태</th>
+          <td>
+            <label class="label">
+              <input type="radio">
+              <span class="label-text">사용함</span>
+            </label>
+            <label class="label">
+              <input type="radio">
+              <span class="label-text">사용안함</span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">아이콘 이미지 등록</th>
+          <td>
+            <div class="border-sub-blue-200 rounded-sm relative overflow-hidden">
+              <input class="bg-main-lightblue leading-[38px] pl-2 border border-sub-blue-200 rounded-sm" value="파일선택" disabled="disabled">
+              <label for="pc_file" class="rounded-sm bg-main-blue h-[40px] text-white inline-block px-4 leading-[40px] align-top">찾아보기</label>
+              <input type="file" id="pc_file" class="absolute left-[-99999px]">
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="layer-footer">
+      <button type="button" class="btn-blue">저장</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div id='wrap'>
+  <script>
+    Include('/hbs/layout/Header_1-a.hbs');
+  </script>
+  <div class='wrap'>
+    <div class='content flex justify-between'>
+      <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
+      <div class='content-wrap'>
+        <div class='content-inner text-xs shadow-lg'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
+          <div class='p-7'>
+            <section data-seq='20230818154043633'>
+              <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'상품 진열 설정'});</script>
+              <table class='table'>
+                <colgroup>
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
+                </colgroup>
+                <tbody>
+                  {{#LOOP 2}}
+                    <tr>
+                      <th scope='col'>Label</th>
+                      <td>
+                        <script>Include('/hbs/component/RadioBox_1-a.hbs');</script>
+                        <script>Include('/hbs/component/MsgRed_1-a.hbs');</script>
+                      </td>
+                    </tr>
+                  {{/LOOP}}
+                </tbody>
+              </table>
+            </section>
+            <script>Include('/hbs/component/BtnBox_1-a.hbs');</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>
