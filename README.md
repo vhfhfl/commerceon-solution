@@ -2,7 +2,7 @@
 커머스온 솔루션
 
 ## 📌 URL
-- http://tbh.pages.commerceon.co.kr/markup-admin/dist/html/sitemap.html
+- https://commerceon-solution-dltjdms-projects.vercel.app/html/sitemap.html
 
 ## 📌 개요
 - Static HTML ouput
