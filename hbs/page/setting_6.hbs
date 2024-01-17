@@ -2,6 +2,9 @@
   <script>
     Include('/hbs/layout/Header_1-a.hbs');
   </script>
+  <script>
+    Include('/hbs/component/FloatingUtil.hbs');
+  </script>
   <div class='wrap'>
     <div class='content flex justify-between'>
       <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
@@ -14,8 +17,8 @@
               <div class='tbl-box'>
                 <table class='table'>
                   <colgroup>
-                    <col width='15%' />
-                    <col width='85%' />
+                    <col class='w-[15%]' />
+                    <col class='w-[85%]' />
                   </colgroup>
                   <tbody>
                     <tr>
@@ -63,7 +66,7 @@
             <section data-seq='20230815192145821'>
               <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'관리자 개인정보 접속기록 리스트'});</script>
               <div class='tbl-box'>
-                <table  class='table'>
+                <table class='table'>
 
                   <thead>
                     <tr>

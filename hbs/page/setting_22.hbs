@@ -2,6 +2,9 @@
   <script>
     Include('/hbs/layout/Header_1-a.hbs');
   </script>
+  <script>
+    Include('/hbs/component/FloatingUtil.hbs');
+  </script>
   <div class='wrap'>
     <div class='content flex justify-between'>
       <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
@@ -9,13 +12,12 @@
         <div class='content-inner text-xs shadow-lg'>
           <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
           <div class='p-7'>
-            <div class='tit-box'><h3>결제 수단 설정</h3></div><!-- 2022-11-17-수정 -->
+            <div class='tit-box'><h3>결제 수단 설정</h3></div>
             <div class='tbl-box'>
-              <table class='table' >
-
+              <table class='table'>
                 <colgroup>
-                  <col style='width:15%' />
-                  <col style='width:85%' />
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
                 </colgroup>
                 <tbody>
                   <tr><!-- 2022-11-17-수정 (이하동일)-->
@@ -99,7 +101,7 @@
                 </tbody>
               </table>
             </div>
-            <div class='text-center mt-7'><!-- 2022-11-17-수정 -->
+            <div class='text-center mt-7'>
               <button type='button' class='h-[44px] px-10 text-white text-center text-xs bg-main-blue border border-main-blue rounded-sm hover:bg-main-blue hover:bg-opacity-70 hover:border-opacity-70 active:bg-main-darkblue active:border-main-darkblue'>저장</button>
             </div>
           </div>

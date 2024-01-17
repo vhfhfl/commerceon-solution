@@ -2,6 +2,9 @@
   <script>
     Include('/hbs/layout/Header_1-a.hbs');
   </script>
+  <script>
+    Include('/hbs/component/FloatingUtil.hbs');
+  </script>
   <div class='wrap'>
     <div class='content flex justify-between'>
       <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
@@ -10,22 +13,20 @@
           <script>Include('/hbs/component/TitleBox_1-a.hbs');</script>
           <div class='p-7'>
             <div class='tit-box'><h3>게시판 설정</h3></div>
-            <!-- 2022.11.03.수정 -->
             <p class='text-red'>
               * 1개의 게시글당 업로드 할 수 있는 '모든 첨부파일' 용량의 총 합은 50MB를 초과할 수 없습니다.
               <br />
               (아래 각 게시판 별로 설정 가능한 '파일 최대 크기'와는 별개입니다.)
             </p>
             <div class='tbl-box mt-1'>
-              <table class='table' >
-
+              <table class='table'>
                 <colgroup>
-                  <col style='width:5%' />
-                  <col style='width:10%' />
-                  <col style='width:13%' />
-                  <col style='width:7%' />
-                  <col style='width:20%' />
-                  <col style='width:45%' />
+                  <col class='w-[5%]' />
+                  <col class='w-[10%]' />
+                  <col class='w-[13%]' />
+                  <col class='w-[7%]' />
+                  <col class='w-[20%]' />
+                  <col class='w-[45%]' />
                 </colgroup>
                 <thead>
                   <tr>

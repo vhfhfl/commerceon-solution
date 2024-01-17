@@ -358,7 +358,7 @@
     @apply text-lg font-bold mb-2;
   }
   .wrap .content .content-wrap .content-inner .cont-nav {
-    @apply flex justify-between w-full px-7 h-[60px] leading-[60px] border-b border-b-sub-blue-100;
+    @apply flex justify-between w-full h-[60px] bg-white leading-[60px] z-[200];
   }
   .wrap .content .content-wrap .content-inner .cont-nav + .p-7 > section + section {
     margin-top: 24px;

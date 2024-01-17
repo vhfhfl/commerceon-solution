@@ -2,6 +2,9 @@
   <script>
     Include('/hbs/layout/Header_1-a.hbs');
   </script>
+  <script>
+    Include('/hbs/component/FloatingUtil.hbs');
+  </script>
   <div class='wrap'>
     <div class='content flex justify-between'>
       <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
@@ -11,12 +14,11 @@
           <div class='p-7 overflow-x-hidden'>
             <!-- 기본정보 -->
             <div class='tbl-box'>
-              <div class='tit-box'><h3>기본 정보</h3></div><!-- 2023-01-20-LSE -->
-              <table class='table' >
-
+              <div class='tit-box'><h3>기본 정보</h3></div>
+              <table class='table'>
                 <colgroup>
-                  <col style='width:15%' />
-                  <col style='width:85%' />
+                  <col class='w-[15%]' />
+                  <col class='w-[85%]' />
                 </colgroup>
                 <tbody>
                   <tr>
@@ -106,7 +108,7 @@
             <!-- //기본정보 -->
             <!-- 이벤트배너 -->
             <div class='tit-box mt-6'><h3>이벤트 배너</h3></div>
-            <div class='w-full overflow-auto whitespace-nowrap'><!-- 2023-01-20-LSE -->
+            <div class='w-full overflow-auto whitespace-nowrap'>
               <ul>
                 <li class='sticky left-0 inline-block float-left w-[140px] h-[50px] p-4 align-middle bg-main-lightblue border-y border-y-sub-blue-100 text-center font-bold z-50'>이미지</li>
                 <li class='inline-block w-[350px] h-[50px] ml-[-3px] p-4 align-middle bg-main-lightblue border-y border-y-sub-blue-100 text-center font-bold'>리스트 이미지</li>
@@ -219,17 +221,16 @@
               </ul>
             </div>
             <!-- //이벤트배너 -->
-            <!-- 이벤트내용 --><!-- 2023-01-20-LSE -->
+            <!-- 이벤트내용 -->
             <div class='tbl-box'>
               <div class='tit-box mt-6'><h3>이벤트 내용</h3></div>
               <div id='app' class='mt-1'></div>
             </div>
             <!-- //이벤트내용 -->
-            <!-- 이벤트결과 --><!-- 2023-01-20-LSE -->
+            <!-- 이벤트결과 -->
             <div class='tbl-box'>
               <div class='tit-box mt-6'><h3>이벤트 결과</h3></div>
-              <table class='table' >
-
+              <table class='table'>
                 <colgroup>
                   <col class='w-1/2' />
                   <col class='w-1/2' />

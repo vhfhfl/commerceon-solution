@@ -2,6 +2,9 @@
   <script>
     Include('/hbs/layout/Header_1-a.hbs');
   </script>
+  <script>
+    Include('/hbs/component/FloatingUtil.hbs');
+  </script>
   <div class='wrap'>
     <div class='content flex justify-between'>
       <script>Include('/hbs/layout/Lnb_1-a.hbs');</script>
@@ -14,8 +17,8 @@
               <div class='tbl-box'>
                 <table class='table'>
                   <colgroup>
-                    <col width='10%' />
-                    <col width='90%' />
+                    <col class='w-[10%]' />
+                    <col class='w-[90%]' />
                   </colgroup>
                   <tbody>
                     <tr>
@@ -48,7 +51,7 @@
             <section data-seq='20230815192738346'>
               <script>Include('/hbs/component/TitleBox_3-a.hbs',{txt1:'엑셀 다운로드 양식 리스트'});</script>
               <div class='tbl-box'>
-                <table  class='table'>
+                <table class='table'>
 
                   <tbody>
                     <tr>

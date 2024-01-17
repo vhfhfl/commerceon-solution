@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-  <script src="../js/viewport.js"></script>
+  <script src="/js/viewport.js"></script>
   <!--Icon-->
   <link rel="icon" href="data:," />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -14,20 +14,21 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon/favicon-512x512.png" />
   <link rel="icon" href="/favicon/favicon.ico" />
   <!--Library-->
-  <script src="../libs/jquery-3.7.0.min.js"></script>
-  <script src="../libs/fontawesome.6.4.0.js"></script>
-  <link href="../libs/swiper-bundle.min.css" rel="stylesheet" />
-  <script src="../libs/swiper-bundle.min.js"></script>
+  <script src="/libs/jquery-3.7.0.min.js"></script>
+  <script src="/libs/fontawesome.6.4.0.js"></script>
+  <link href="/libs/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="/libs/swiper-bundle.min.js"></script>
   <!--Core-->
-  <script src="../libs/ua-parser.min.js"></script>
-  <script src="../js/app_info.js"></script>
-  <link href="../css/output.css" rel="stylesheet" />
-  <script src="../js/util.js"></script>
-  <script src="../js/common.js"></script>
-  <script src="../js/ui_setter.js"></script>
-  <script src="../js/enterframe.js"></script>
+  <script src="/libs/ua-parser.min.js"></script>
+  <script src="/js/app_info.js"></script>
+  <link href="/css/output.css" rel="stylesheet" />
+  <script src="/js/util.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/ui_setter.js"></script>
+  <script src="/js/enterframe.js"></script>
   <!--Publishing 전용 개발 X-->
-  <link href='../css/sitemap.css' rel='stylesheet' />
+  <link href='/css/sitemap.css' rel='stylesheet' />
+
 </head>
 
 <body>
@@ -759,6 +760,18 @@
         </ul>
       </div>
     </header>
+    <article class="FloatingUtil fixed bottom-[88px] right-[106px] z-[100]">
+      <article class="flex flex-col items-end justify-start gap-[12px]">
+        <button class="group w-[42px] aspect-square duration-300 ease-out will-change-auto [[data-scroll-top='0']_&amp;]:hidden">
+          <img class="group-hover:hidden" src="/icon/2401161524_1.svg" alt="">
+          <img class="hidden group-hover:block" src="/icon/2401161524_1_on.svg" alt="">
+        </button>
+        <button id="Btn-1dd937890" class="group w-[42px] aspect-square duration-300 ease-out will-change-auto">
+          <img class="group-hover:hidden" src="/icon/2401161524_2.svg" alt="">
+          <img class="hidden group-hover:block" src="/icon/2401161524_2_on.svg" alt="">
+        </button>
+      </article>
+    </article>
     <div class="wrap">
       <div class="content flex justify-between">
         <!-- lnb :: START -->
@@ -821,22 +834,24 @@
         <!-- // lnb :: END -->
         <div class="content-wrap">
           <div class="content-inner text-xs shadow-lg">
-            <div class="cont-nav flex justify-between">
-              <div class="cont-nav-left">
-                <h2 class="inline-block mr-4 text-lg font-bold">Page Title</h2>
-                <span class="inline-block text-sub-blue-400 bg-main text-xs">
-                  Depth 1
-                  <i class="fa-solid fa-angle-right"></i>
-                  Depth 2
-                  <i class="fa-solid fa-angle-right"></i>
-                  Depth 3
-                </span>
-              </div>
-              <div class="cont-nav-right">
-                <button type="button" class="btn-blue">
-                  <i class="fa-solid fa-plus"></i>
-                  Button
-                </button>
+            <div class="cont-nav StickyBox" data-sticky-offset="80">
+              <div class="FixedShell z-[200] CenterBetween px-7 bg-white border-b-[1px] border-solid border-b-sub-blue-100">
+                <div class="cont-nav-left">
+                  <h2 class="inline-block mr-4 text-lg font-bold">Page Title</h2>
+                  <span class="inline-block text-sub-blue-400 bg-main text-xs">
+                    Depth 1
+                    <i class="fa-solid fa-angle-right"></i>
+                    Depth 2
+                    <i class="fa-solid fa-angle-right"></i>
+                    Depth 3
+                  </span>
+                </div>
+                <div class="cont-nav-right">
+                  <button type="button" class="btn-blue">
+                    <i class="fa-solid fa-plus"></i>
+                    Button
+                  </button>
+                </div>
               </div>
             </div>
             <div class="p-7">

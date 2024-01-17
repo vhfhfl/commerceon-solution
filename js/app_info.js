@@ -89,10 +89,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   function infoScrollTop() {
     const el_html = document.querySelector('html');
+    const btn = document.querySelector('#Btn-1dd937890')
 
     function update() {
       const st = window.pageYOffset || document.documentElement.scrollTop;
-      el_html.setAttribute('data-scroll-top', st);
+      const sb = el_html.scrollHeight - el_html.clientHeight;
+
+      if((sb - st) < 100) {
+        btn.style.display = 'none'
+      } else {
+        btn.style.display = 'block'
+      }
+      if(st < 100) {
+        el_html.setAttribute('data-scroll-top', st);
+      }
     }
 
     update();
